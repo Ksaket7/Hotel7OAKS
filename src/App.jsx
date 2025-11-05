@@ -11,17 +11,21 @@ import Footer from "./components/Footer.jsx";
 import "./index.css";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/ContactUs.jsx";
+import Hotel from "./pages/Hotels.jsx";
+import ToursAndPackages from "./pages/ToursAndPackages.jsx";
+
 
 function App() {
   return (
     <Router>
-
       <Navbar />
 
       <Routes>
         {/* Home Page */}
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/hotels" element={<Hotel />} />
+        <Route path="/tours" element={<ToursAndPackages />} />
 
         {/* Individual Pages (can be reused or extended later) */}
         <Route path="/packages" element={<Packages />} />

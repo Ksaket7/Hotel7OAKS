@@ -45,25 +45,25 @@ const WhyUs = () => {
   ];
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-8 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
         {/* Section Label */}
-        <p className="text-green-600 text-sm uppercase tracking-wide font-ssBookD mb-3">
+        <p className="text-green-600 text-lg tracking-wide font-ssBookD mb-5">
           Popular
         </p>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-rsR text-black mb-2">
+        <h2 className="text-3xl md:text-4xl font-rsR text-black my-7">
           Why Us?
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-600 text-base md:text-lg font-ssLB mb-16">
+        <p className="text-gray-600 text-base md:text-lg font-ssLB my-7">
           Here’s what sets us apart
         </p>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-12 text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-12 text-left mt-16">
           {features.map((feature, index) => (
             <div
               key={index}

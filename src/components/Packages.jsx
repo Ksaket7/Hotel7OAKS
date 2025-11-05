@@ -49,7 +49,7 @@ const Packages = () => {
   ];
 
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-8 bg-white overflow-hidden">
       <div
         ref={sectionRef}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col justify-center items-center text-center"
@@ -65,12 +65,12 @@ const Packages = () => {
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-900 text-sm sm:text-base md:text-md font-ssLB lg:w-max mx-auto px-4 whitespace-normal lg:whitespace-nowrap text-center mb-12">
+        <p className="text-gray-900 text-sm sm:text-base md:text-md font-ssLB lg:w-max mx-auto px-4 whitespace-normal lg:whitespace-nowrap text-center my-5">
           From serene getaways to adventurous treks and spiritual journeys — choose a package that fits your dream escape.
         </p>
 
         {/* Package Grid */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12 px-4 sm:px-6 lg:px-8">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12 px-4 sm:px-6 lg:px-8 mt-8">
           {packages.map((pkg, index) => (
             <div
               key={index}

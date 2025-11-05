@@ -32,7 +32,7 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-8 bg-white">
       <div
         ref={containerRef}
         className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 text-center"

@@ -49,25 +49,25 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-8 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
         {/* Section Label */}
-        <p className="text-green-600 text-sm uppercase tracking-wide font-ssBookD mb-3">
+        <p className="text-green-600 text-lg tracking-wide font-ssBookD mb-5">
           Popular
         </p>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-rsR text-black mb-2">
+        <h2 className="text-3xl md:text-4xl font-rsR text-black my-7">
           What do our customers say?
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-600 text-base md:text-lg font-ssLB mb-16">
+        <p className="text-gray-600 text-base md:text-lg font-ssLB my-7">
           Here’s what sets us apart
         </p>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 my-16">
           {testimonials.map((t, index) => (
             <div
               key={index}
@@ -76,9 +76,7 @@ const Testimonials = () => {
               {/* Icon Placeholder */}
               <div className="w-10 h-10 bg-black rounded-full mb-4"></div>
               {/* Heading */}
-              <h3 className="text-lg font-ssSBH text-black mb-2">
-                {t.title}
-              </h3>
+              <h3 className="text-lg font-ssSBH text-black mb-2">{t.title}</h3>
               {/* Description */}
               <p className="text-gray-700 font-ssLB text-sm leading-relaxed">
                 {t.desc}

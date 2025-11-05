@@ -49,25 +49,25 @@ const Tours = () => {
   ];
 
   return (
-    <section className="py-16 bg-white overflow-hidden">
+    <section className="py-8 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-8xl mx-auto px-6 text-center">
         {/* Section Label */}
-        <p className="text-green-600 text-sm uppercase tracking-wide font-ssBookD mb-6">
+        <p className="text-green-600 text-lg  tracking-wide font-ssBookD mb-6">
           Popular
         </p>
 
         {/* Main Heading */}
-        <h2 className="text-3xl md:text-4xl font-rsR text-gray-900 leading-snug my-6">
+        <h2 className="text-3xl md:text-4xl font-rsR text-gray-900 leading-snug my-7">
           Tours
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-900 text-base md:text-lg font-ssBookD my-6">
+        <p className="text-gray-900 text-base md:text-lg font-ssBookD my-7">
           Discover your next Adventure with Oak7
         </p>
 
         {/* Tour Images Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 px-12 mt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 px-12 mt-16">
           {tours.map((tour, index) => (
             <div
               key={index}

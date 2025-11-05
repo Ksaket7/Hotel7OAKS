@@ -26,7 +26,7 @@ const CTA = () => {
   }, []);
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-8 bg-white overflow-hidden">
       <div
         ref={sectionRef}
         className="max-w-4xl mx-auto px-6 flex flex-col items-center text-center"

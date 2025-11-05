@@ -57,10 +57,10 @@ const Treks = () => {
   ];
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-8 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <p className="text-green-600 text-sm uppercase tracking-wide font-ssBookD text-center mb-5">
+        <p className="text-green-600 text-lg  tracking-wide font-ssBookD text-center mb-5">
           Trending
         </p>
 

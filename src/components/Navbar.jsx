@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
-  // Optionally keep scroll listener for future effects (active link highlight)
   useEffect(() => {
+    // optional scroll listener for styling in future
     const handleScroll = () => {};
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -16,11 +17,31 @@ const Navbar = () => {
   const links = [
     { name: "HOME", path: "/" },
     { name: "ABOUT", path: "/about" },
-    { name: "TRIPS", path: "/trips" },
+    { name: "HOTELS", path: "/hotels" },
     { name: "TOURS & PACKAGES", path: "/tours" },
     { name: "TREKS", path: "/treks" },
     { name: "CONTACT", path: "/contact" },
   ];
+
+  // Animation variants for mobile dropdown
+  const dropdownVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.4, ease: "easeOut", staggerChildren: 0.05 },
+    },
+    exit: {
+      opacity: 0,
+      y: -20,
+      transition: { duration: 0.3, ease: "easeIn" },
+    },
+  };
+
+  const linkVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+  };
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white backdrop-blur-md shadow-sm transition-all duration-300">
@@ -64,13 +85,25 @@ const Navbar = () => {
         >
           {open ? <X size={26} /> : <Menu size={26} />}
         </button>
+      </div>
 
-        {/* --- Mobile Dropdown --- */}
+      {/* --- Mobile Dropdown (Animated) --- */}
+      <AnimatePresence>
         {open && (
-          <div className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden py-6 px-8">
-            <ul className="space-y-4 text-gray-700 font-ssBookD text-sm">
+          <motion.div
+            key="mobile-menu"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={dropdownVariants}
+            className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden py-6 px-8"
+          >
+            <motion.ul
+              className="space-y-4 text-gray-700 font-ssBookD text-sm"
+              variants={dropdownVariants}
+            >
               {links.map((link, index) => (
-                <li key={index}>
+                <motion.li key={index} variants={linkVariants}>
                   <Link
                     to={link.path}
                     onClick={() => setOpen(false)}
@@ -82,19 +115,21 @@ const Navbar = () => {
                   >
                     {link.name}
                   </Link>
-                </li>
+                </motion.li>
               ))}
-              <li>
+
+              {/* CTA Button inside dropdown */}
+              <motion.li variants={linkVariants}>
                 <Link to="/contact" onClick={() => setOpen(false)}>
-                  <button className="mt-4 w-full bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 font-ssBD">
+                  <button className="mt-4 w-full bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 font-ssBD transition-all">
                     Plan a Trip
                   </button>
                 </Link>
-              </li>
-            </ul>
-          </div>
+              </motion.li>
+            </motion.ul>
+          </motion.div>
         )}
-      </div>
+      </AnimatePresence>
     </nav>
   );
 };
