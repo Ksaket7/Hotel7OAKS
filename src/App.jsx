@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import "./index.css";
 import AboutUs from "./pages/AboutUs";
+import Contact from "./pages/ContactUs.jsx";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <Route path="/trips" element={<TripsAndTours />} />
         <Route path="/whyus" element={<WhyUs />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contact" element={<CTA />} />
+        <Route path="/contact" element={<Contact />} />
 
         {/* Footer as standalone route (optional) */}
         <Route path="/footer" element={<Footer />} />

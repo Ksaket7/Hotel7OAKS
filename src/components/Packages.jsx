@@ -52,26 +52,25 @@ const Packages = () => {
     <section className="py-20 bg-white overflow-hidden">
       <div
         ref={sectionRef}
-        className="max-w-full mx-auto px-6 text-center flex flex-col justify-evenly items-center"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col justify-center items-center text-center"
       >
         {/* Section Label */}
-        <p className="text-green-600 text-lg  tracking-wide font-ssBookD mb-5">
+        <p className="text-green-600 text-sm sm:text-base md:text-lg tracking-wide font-ssBookD mb-3">
           Popular
         </p>
 
         {/* Main Heading */}
-        <h2 className="text-3xl  w-max md:text-4xl font-rsR text-gray-900 leading-snug my-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-rsR text-gray-900 leading-snug whitespace-normal lg:whitespace-nowrap my-4">
           Handpicked Packages for Every Explorer
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-900 text-base md:text-lg font-ssBookD my-6">
-          From serene getaways to adventurous treks and spiritual journeys —
-          choose a package that fits your dream escape
+        <p className="text-gray-900 text-sm sm:text-base md:text-md font-ssLB lg:w-max mx-auto px-4 whitespace-normal lg:whitespace-nowrap text-center mb-12">
+          From serene getaways to adventurous treks and spiritual journeys — choose a package that fits your dream escape.
         </p>
 
-        {/* Package Images Grid */}
-        <div className=" w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 px-12 mt-6">
+        {/* Package Grid */}
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12 px-4 sm:px-6 lg:px-8">
           {packages.map((pkg, index) => (
             <div
               key={index}
@@ -81,15 +80,15 @@ const Packages = () => {
               <img
                 src={pkg.img}
                 alt={pkg.title}
-                className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover transition-transform duration-300 group-hover:scale-105"
               />
 
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center ">
-                <h3 className="text-white font-ssBookD text-lg mb-2">
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
+                <h3 className="text-white font-ssBookD text-base sm:text-lg md:text-xl mb-3">
                   {pkg.title}
                 </h3>
-                <button className="bg-green-600 hover:bg-green-700 text-white font-ssBookD px-4 py-2 rounded-full text-sm transition-all">
+                <button className="bg-green-600 hover:bg-green-700 text-white font-ssBookD px-4 sm:px-5 py-2 rounded-full text-sm transition-all">
                   View Details
                 </button>
               </div>

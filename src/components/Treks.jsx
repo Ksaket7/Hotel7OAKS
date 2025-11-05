@@ -64,61 +64,63 @@ const Treks = () => {
           Trending
         </p>
 
-        <h2 className="text-3xl md:text-4xl font-rsR text-center text-gray-900 my-7">
+        <h2 className="text-3xl md:text-4xl font-rsR text-center text-gray-900 my-7 whitespace-normal lg:whitespace-nowrap">
           Trek the Himalayas with Us
         </h2>
 
-        <p className="text-gray-900 text-center text-base md:text-md font-ssBookD my-7">
+        <p className="text-gray-900 text-center text-base md:text-md font-ssBookD my-7 max-w-3xl mx-auto">
           Discover Uttarakhand’s most iconic trails — from beginner-friendly
           hikes to challenging high-altitude expeditions.
         </p>
 
         {/* Trek Items */}
-        <div className="flex flex-col mt-20">
+        <div className="flex flex-col gap-12 mt-16 overflow-x-auto no-scrollbar">
           {treks.map((trek, index) => (
             <div
               key={index}
-              className={`flex flex-col md:flex-row items-center justify-between gap-10 ${
+              className={`flex flex-row items-center justify-center gap-6 min-w-[320px] sm:min-w-[480px] md:min-w-full ${
                 index % 2 !== 0 ? "md:flex-row-reverse" : ""
               }`}
             >
               {/* Image */}
-              <div className="flex-1">
+              <div className="w-[45%] sm:w-[40%] md:w-1/2 flex-shrink-0">
                 <img
                   src={trek.image}
                   alt={trek.title}
-                  className="w-full h-80 object-cover rounded-xl shadow-md"
+                  className="w-full h-40 sm:h-56 md:h-80 object-cover rounded-xl shadow-md"
                 />
               </div>
 
               {/* Text Content */}
-              <div className="flex-1 text-left md:pl-10">
-                <span className="text-xs font-ssBookD text-green-700 bg-green-100 px-3 py-1 rounded-full uppercase tracking-wide">
+              <div className="w-[55%] sm:w-[60%] md:w-1/2 flex flex-col text-left md:pl-10">
+                <span className="text-xs font-ssBookD text-green-700 bg-green-100 px-3 py-1 rounded-full uppercase tracking-wide w-fit mb-2">
                   {trek.tag}
                 </span>
 
-                <h3 className="text-2xl md:text-3xl font-ssBD text-gray-900 mt-4 mb-2">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-ssBD text-gray-900 mb-2">
                   {trek.title}
                 </h3>
 
-                <p className="text-gray-800 font-ssLB mb-4">{trek.desc}</p>
+                <p className="text-gray-800 font-ssLB text-sm sm:text-base mb-4">
+                  {trek.desc}
+                </p>
 
-                <div className="flex items-center gap-6 mb-4 text-gray-900 font-ssLB text-sm">
+                <div className="flex items-center gap-4 sm:gap-6 mb-4 text-gray-900 font-ssLB text-xs sm:text-sm">
                   <div className="flex items-center gap-2">
-                    <MapPin size={16} />
+                    <MapPin size={14} />
                     <span>{trek.difficulty}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Clock size={16} />
+                    <Clock size={14} />
                     <span>{trek.days}</span>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-6">
-                  <p className="text-green-700 text-lg font-ssBD">
+                <div className="flex items-center gap-4 sm:gap-6">
+                  <p className="text-green-700 text-sm sm:text-lg font-ssBD">
                     {trek.price}
                   </p>
-                  <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-ssBD text-sm transition-all">
+                  <button className="bg-green-600 hover:bg-green-700 text-white px-4 sm:px-5 py-1.5 sm:py-2 rounded-full font-ssBD text-xs sm:text-sm transition-all">
                     View Details →
                   </button>
                 </div>
