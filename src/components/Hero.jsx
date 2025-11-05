@@ -83,18 +83,18 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 text-black font-ssBookD flex flex-col items-center max-w-3xl px-6">
-        <p
+      <div className="relative z-10 text-white font-ssBookD flex flex-col items-center max-w-3xl px-6">
+        <h1
           ref={paraRef}
-          className="mt-5 text-lg md:text-xl w-max text-black font-ssLB mb-3"
+          className="mt-5 text-lg md:text-xl w-max text-white text-s font-ssLB mb-3 [text-shadow:_0_2px_10px_rgba(0,0,0,0.8)]"
         >
           Whether it’s trekking through snow-clad peaks or embarking on the
           sacred Char Dham Yatra, Oak7 is your trusted travel partner.
-        </p>
+        </h1>
 
         <h1
           ref={textRef}
-          className="text-5xl md:text-8xl w-max  font-ssBD leading-tight tracking-tight font-bold"
+          className="text-5xl md:text-8xl w-max font-ssBD leading-tight tracking-tight font-bold text-white [text-shadow:_0_4px_25px_rgba(0,0,0,0.5)]"
         >
           Journeys of Adventure & Faith
         </h1>
@@ -103,10 +103,10 @@ const Hero = () => {
           ref={btnRef}
           className="mt-10 flex flex-col sm:flex-row justify-center gap-4"
         >
-          <button className="bg-green-600 hover:bg-green-700 font-ssBD text-white px-7 py-2.5 rounded-full  transition-all">
+          <button className="bg-green-600 hover:bg-green-700 font-ssBookD text-white px-7 py-2.5 rounded-full  transition-all">
             Explore Packages
           </button>
-          <button className="border border-gray-300 text-gray-800 bg-white/70 px-7 py-2.5 rounded-full hover:bg-white hover:text-green-800 font-ssBD transition-all">
+          <button className="border border-gray-300 text-gray-800 font-ssBookD bg-white/70 px-7 py-2.5 rounded-full hover:bg-white hover:text-green-800  transition-all">
             Inquire Now
           </button>
         </div>

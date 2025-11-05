@@ -49,26 +49,29 @@ const Packages = () => {
   ];
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
-      <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
+    <section className="py-20 bg-white overflow-hidden">
+      <div
+        ref={sectionRef}
+        className="max-w-full mx-auto px-6 text-center flex flex-col justify-evenly items-center"
+      >
         {/* Section Label */}
-        <p className="text-green-600 text-sm uppercase tracking-wide font-ssBookD mb-3">
+        <p className="text-green-600 text-lg  tracking-wide font-ssBookD mb-5">
           Popular
         </p>
 
         {/* Main Heading */}
-        <h2 className="text-3xl md:text-4xl font-rsR text-black leading-snug mb-3">
+        <h2 className="text-3xl  w-max md:text-4xl font-rsR text-gray-900 leading-snug my-4">
           Handpicked Packages for Every Explorer
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-600 text-base md:text-lg font-ssLB mb-12">
+        <p className="text-gray-900 text-base md:text-lg font-ssBookD my-6">
           From serene getaways to adventurous treks and spiritual journeys —
           choose a package that fits your dream escape
         </p>
 
         {/* Package Images Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-10">
+        <div className=" w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 px-12 mt-6">
           {packages.map((pkg, index) => (
             <div
               key={index}
@@ -78,12 +81,12 @@ const Packages = () => {
               <img
                 src={pkg.img}
                 alt={pkg.title}
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
               />
 
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
-                <h3 className="text-white font-ssSBH text-lg mb-2">
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center ">
+                <h3 className="text-white font-ssBookD text-lg mb-2">
                   {pkg.title}
                 </h3>
                 <button className="bg-green-600 hover:bg-green-700 text-white font-ssBookD px-4 py-2 rounded-full text-sm transition-all">

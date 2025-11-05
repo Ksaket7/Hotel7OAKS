@@ -1,103 +1,95 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
+  // Optionally keep scroll listener for future effects (active link highlight)
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) setScrolled(true);
-      else setScrolled(false);
-    };
+    const handleScroll = () => {};
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const links = [
-    { name: "HOME", href: "#" },
-    { name: "ABOUT", href: "#" },
-    { name: "TRIPS", href: "#" },
-    { name: "TOURS & PACKAGES", href: "#" },
-    { name: "TREKS", href: "#" },
-    { name: "CONTACT", href: "#" },
+    { name: "HOME", path: "/" },
+    { name: "ABOUT", path: "/about" },
+    { name: "TRIPS", path: "/trips" },
+    { name: "TOURS & PACKAGES", path: "/tours" },
+    { name: "TREKS", path: "/treks" },
+    { name: "CONTACT", path: "/contact" },
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/80 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
-      }`}
-    >
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white/40 backdrop-blur-md shadow-sm transition-all duration-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
         {/* --- Left: Logo --- */}
-        <h1
-          className={`text-xl md:text-2xl tracking-tight font-ssSBH ${
-            scrolled ? "text-green-800" : "text-black"
-          }`}
-        >
-          OAK7
-        </h1>
+        <Link to="/">
+          <h1 className="text-xl md:text-2xl tracking-tight font-ssSBH text-green-800">
+            OAK7
+          </h1>
+        </Link>
 
         {/* --- Center: Nav Links --- */}
-        <ul
-          className={`hidden md:flex space-x-10 font-ssBookD text-sm tracking-wide transition-all ${
-            scrolled ? "text-gray-800" : "text-black"
-          }`}
-        >
+        <ul className="hidden md:flex space-x-10 font-ssBookD text-sm tracking-wide text-gray-800">
           {links.map((link, index) => (
             <li key={index}>
-              <a
-                href={link.href}
-                className="hover:text-green-600 transition-colors duration-200"
+              <Link
+                to={link.path}
+                className={`hover:text-green-600 transition-colors duration-200 ${
+                  location.pathname === link.path
+                    ? "text-green-700 font-ssBD"
+                    : ""
+                }`}
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
         {/* --- Right: Plan Trip Button --- */}
-        <button
-          className={`hidden md:block font-ssBD text-sm px-5 py-2 rounded-full transition-all ${
-            scrolled
-              ? "bg-green-600 text-white hover:bg-green-700"
-              : "bg-white/25 text-white hover:bg-white hover:text-green-700"
-          }`}
-        >
-          Plan a Trip
-        </button>
+        <Link to="/contact">
+          <button className="hidden md:block font-ssBookD text-sm px-5 py-2 rounded-full bg-green-600 text-white hover:bg-green-700 transition-all">
+            Plan a Trip
+          </button>
+        </Link>
 
-        {/* --- Mobile Menu --- */}
+        {/* --- Mobile Menu Toggle --- */}
         <button
-          className={`md:hidden ${
-            scrolled ? "text-gray-800" : "text-white"
-          }`}
+          className="md:hidden text-gray-800"
           onClick={() => setOpen(!open)}
         >
           {open ? <X size={26} /> : <Menu size={26} />}
         </button>
 
+        {/* --- Mobile Dropdown --- */}
         {open && (
           <div className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden py-6 px-8">
             <ul className="space-y-4 text-gray-700 font-ssBookD text-sm">
               {links.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.path}
                     onClick={() => setOpen(false)}
-                    className="block hover:text-green-700"
+                    className={`block hover:text-green-700 ${
+                      location.pathname === link.path
+                        ? "text-green-700 font-ssBD"
+                        : ""
+                    }`}
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li>
-                <button className="mt-4 w-full bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 font-ssBD">
-                  Plan a Trip
-                </button>
+                <Link to="/contact" onClick={() => setOpen(false)}>
+                  <button className="mt-4 w-full bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 font-ssBD">
+                    Plan a Trip
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>

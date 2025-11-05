@@ -12,7 +12,6 @@ import Footer from "../components/Footer";
 const HomePage = () => {
   return (
     <div className="overflow-x-hidden">
-      <Navbar />
       <Hero />
       <Stats />
       <Packages />
@@ -21,7 +20,6 @@ const HomePage = () => {
       <WhyUs />
       <Testimonials />
       <CTA />
-      <Footer />
     </div>
   );
 };

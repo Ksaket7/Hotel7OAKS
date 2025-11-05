@@ -49,25 +49,25 @@ const Tours = () => {
   ];
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
-      <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
+    <section className="py-16 bg-white overflow-hidden">
+      <div ref={sectionRef} className="max-w-8xl mx-auto px-6 text-center">
         {/* Section Label */}
-        <p className="text-green-600 text-sm uppercase tracking-wide font-ssBookD mb-3">
+        <p className="text-green-600 text-sm uppercase tracking-wide font-ssBookD mb-6">
           Popular
         </p>
 
         {/* Main Heading */}
-        <h2 className="text-3xl md:text-4xl font-rsR text-black leading-snug mb-3">
+        <h2 className="text-3xl md:text-4xl font-rsR text-gray-900 leading-snug my-6">
           Tours
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-600 text-base md:text-lg font-ssLB mb-12">
+        <p className="text-gray-900 text-base md:text-lg font-ssBookD my-6">
           Discover your next Adventure with Oak7
         </p>
 
         {/* Tour Images Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 px-12 mt-20">
           {tours.map((tour, index) => (
             <div
               key={index}
@@ -77,7 +77,7 @@ const Tours = () => {
               <img
                 src={tour.img}
                 alt={tour.title}
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
               />
 
               {/* Hover Overlay */}

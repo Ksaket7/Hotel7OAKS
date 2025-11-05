@@ -6,127 +6,40 @@ html {
   scroll-behavior: smooth;
 }
 
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.hide-scrollbar {
-  -ms-overflow-style: none; /* IE/Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-/* 🌊 Custom Colors */
-:root {
-  --color-white: #dede13;
-  --color-surface: #0;
-  --color-background: #ffff2e;
-  --color-green: #27AE60;
-  --color-orange: #F2994A;
-}
-
-body {
-  background-color: var(--color-background);
-  @apply antialiased;
-}
-
-/* 🌊 Custom CSS Variables */
-:root {
-  --color-white: #fdfdf7;
-  --color-surface: #0;
-  --color-background: #fdfdf7;
-  --color-green: #27AE60;
-  --color-orange: #F2994A;
-}
-
-/* 🌌 Base Styles */
-body {
-  background-color: var(--color-background);
-  /* color: white; */
-  font-family: var(--font-sans);
-  @apply antialiased;
-}
-
-/* 🧩 Utility Classes */
-.text-white {
-  color: var(--color-white);
-}
-.bg-white {
-  background-color: var(--color-white);
-}
-.bg-surface {
-  background-color: var(--color-surface);
-}
-.bg-background {
-  background-color: var(--color-background);
-}
-.text-green {
-  color: var(--color-green);
-}
-.text-orange {
-  color: var(--color-orange);
-}
-.bg-green {
-  background-color: var(--color-green);
-}
-.bg-orange {
-  background-color: var(--color-orange);
-}
-
-/* Hide scrollbar but allow scrolling */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-/* 🌟 Custom Selection */
-::selection {
-  background-color: var(--color-green);
-  color: white; /* Keep text readable */
-}
-
-::-moz-selection {
-  background-color: var(--color-green);
-  color: white;
-}
-
 /* 📁 Font Imports */
 @font-face {
   font-family: "RockSalt-Regular";
-  src: url("../public/fonts/RockSalt-Regular.ttf") format("truetype");
-  /* font-weight: 700; */
+  src: url("/fonts/RockSalt-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Sequel-Sans-Book-Disp";
-  src: url("../public/fonts/Sequel-Sans-Book-Disp.otf") format("opentype");
-  /* font-weight: 800 */
+  src: url("/fonts/Sequel-Sans-Book-Disp.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Sequel-Sans-Light-Body";
-  src: url("../public/fonts/Sequel-Sans-Light-Body.otf") format("opentype");
-  /* font-weight: 700; */
+  src: url("/fonts/Sequel-Sans-Light-Body.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Sequel-Sans-Semi-Bold-Head";
-  src: url("../public/fonts/Sequel-Sans-Semi-Bold-Head.otf") format("opentype");
-  /* font-weight: 500; */
+  src: url("/fonts/Sequel-Sans-Semi-Bold-Head.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Sequel-Sans-Bold-Disp";
-  src: url("../public/fonts/Sequel-Sans-Bold-Disp.otf") format("opentype");
-  /* font-weight: 400; */
+  src: url("/fonts/Sequel-Sans-Bold-Disp.otf") format("opentype");
 }
 
-/* 🖋 Tailwind @theme to register custom fonts */
-@theme {
-  --font-rsR: "RockSalt-Regular", sans-serif;
-  --font-ssBookD: "Sequel-Sans-Book-Disp", sans-serif;
-  --font-ssLB: "Sequel-Sans-Light-Body", sans-serif;
-  --font-ssSBH: "Sequel-Sans-Semi-Bold-Head", sans-serif;
-  --font-ssBD: "Sequel-Sans-Bold-Disp", sans-serif;
+/* 🌿 Base Styles */
+body {
+  @apply antialiased;
+  background-color: #fdfdf7;
+}
+
+/* 🌿 Custom Selection */
+::selection {
+  background-color: #27AE60;
+  color: white;
 }

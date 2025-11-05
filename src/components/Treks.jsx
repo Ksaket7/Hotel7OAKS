@@ -60,20 +60,21 @@ const Treks = () => {
     <section className="py-24 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <p className="text-green-600 text-sm uppercase tracking-wide font-ssBookD text-center mb-2">
+        <p className="text-green-600 text-sm uppercase tracking-wide font-ssBookD text-center mb-5">
           Trending
         </p>
 
-        <h2 className="text-3xl md:text-4xl font-rsR text-center text-black mb-3">
+        <h2 className="text-3xl md:text-4xl font-rsR text-center text-gray-900 my-7">
           Trek the Himalayas with Us
         </h2>
 
-        <p className="text-gray-600 text-center text-base md:text-lg font-ssLB mb-16">
-          Discover Uttarakhand’s most iconic trails — from beginner-friendly hikes to challenging high-altitude expeditions.
+        <p className="text-gray-900 text-center text-base md:text-md font-ssBookD my-7">
+          Discover Uttarakhand’s most iconic trails — from beginner-friendly
+          hikes to challenging high-altitude expeditions.
         </p>
 
         {/* Trek Items */}
-        <div className="flex flex-col space-y-20">
+        <div className="flex flex-col mt-20">
           {treks.map((trek, index) => (
             <div
               key={index}
@@ -96,13 +97,13 @@ const Treks = () => {
                   {trek.tag}
                 </span>
 
-                <h3 className="text-2xl md:text-3xl font-ssBD text-black mt-4 mb-2">
+                <h3 className="text-2xl md:text-3xl font-ssBD text-gray-900 mt-4 mb-2">
                   {trek.title}
                 </h3>
 
-                <p className="text-gray-600 font-ssLB mb-4">{trek.desc}</p>
+                <p className="text-gray-800 font-ssLB mb-4">{trek.desc}</p>
 
-                <div className="flex items-center gap-6 mb-4 text-gray-600 font-ssLB text-sm">
+                <div className="flex items-center gap-6 mb-4 text-gray-900 font-ssLB text-sm">
                   <div className="flex items-center gap-2">
                     <MapPin size={16} />
                     <span>{trek.difficulty}</span>

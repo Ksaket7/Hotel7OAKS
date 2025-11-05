@@ -6,15 +6,21 @@ import TripsAndTours from "./components/Tours";
 import WhyUs from "./components/WhyUs";
 import Testimonials from "./components/Testimonials";
 import CTA from "./components/CTA";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 import "./index.css";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
     <Router>
+
+      <Navbar />
+
       <Routes>
         {/* Home Page */}
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutUs />} />
 
         {/* Individual Pages (can be reused or extended later) */}
         <Route path="/packages" element={<Packages />} />
@@ -27,6 +33,8 @@ function App() {
         {/* Footer as standalone route (optional) */}
         <Route path="/footer" element={<Footer />} />
       </Routes>
+
+      <Footer />
     </Router>
   );
 }

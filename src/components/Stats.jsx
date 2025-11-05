@@ -39,14 +39,14 @@ const Stats = () => {
             key={index}
             className={`flex flex-col items-center justify-center py-6 px-6 relative ${
               index !== stats.length - 1
-                ? "after:content-[''] after:absolute after:top-6 after:bottom-6 after:right-0 after:w-[8px] after:bg-gray-300 after: rounded-s-2xl"
+                ? "after:content-[''] after:absolute after:top-6 after:bottom-6 after:right-0 after:w-[8px] after:bg-gray-300 after:rounded-md"
                 : ""
             }`}
           >
-            <h3 className="text-4xl md:text-6xl text-black font-bold tracking-tight">
+            <h3 className="text-4xl md:text-6xl text-gray-900 font-ssBD tracking-tight">
               {stat.value}
             </h3>
-            <p className="mt-2 text-gray-600 font-ssBD text-lg md:text-base tracking-wide">
+            <p className="mt-2 text-gray-600 font-ssLB text-lg md:text-base tracking-wide">
               {stat.label}
             </p>
           </div>
