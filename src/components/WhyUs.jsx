@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ShieldCheck, Cog, Leaf, Headphones } from "lucide-react";
+import BrushStroke from "./BrushStroke";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,54 +29,60 @@ const WhyUs = () => {
 
   const features = [
     {
+      icon: <ShieldCheck size={26} className="text-green-700" />,
       title: "Experienced Guides",
-      desc: "Our certified local guides ensure you have a safe, insightful, and memorable journey on every trek and tour.",
+      desc: "Certified Himalayan experts who ensure every trek stays safe, smooth and meaningful.",
     },
     {
+      icon: <Cog size={26} className="text-green-700" />,
       title: "Customizable Packages",
-      desc: "We understand every traveler is unique — that’s why our packages can be tailored to match your preferences.",
+      desc: "We tailor your itinerary exactly the way you want — pace, stay, food, routes and more.",
     },
     {
+      icon: <Leaf size={26} className="text-green-700" />,
       title: "Sustainable Travel",
-      desc: "We’re committed to eco-friendly practices, ensuring our adventures respect the environment and local communities.",
+      desc: "We follow Leave-No-Trace ethics and support local communities and eco-living.",
     },
     {
+      icon: <Headphones size={26} className="text-green-700" />,
       title: "24/7 Support",
-      desc: "Whether before, during, or after your trip, our dedicated team is always just a call away to assist you.",
+      desc: "We stay available — before booking, during your trek and even after you return.",
     },
   ];
 
   return (
-    <section className="py-8 bg-white overflow-hidden">
+    <section className="py-12 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
-        {/* Section Label */}
-        <p className="text-green-600 text-lg tracking-wide font-ssBookD mb-5">
+
+        <p className="text-green-600 text-sm tracking-wide font-ssBookD mb-3">
           Popular
         </p>
 
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-rsR text-black my-7">
-          Why Us?
-        </h2>
+        <div className="relative inline-block mb-10">
+          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900">
+            Why Us?
+          </h2>
+          <BrushStroke
+            color="#27AE60"
+            width={140}
+            className="absolute left-1/2 -translate-x-1/2 -bottom-3"
+          />
+        </div>
 
-        {/* Subtext */}
-        <p className="text-gray-600 text-base md:text-lg font-ssLB my-7">
+        <p className="text-gray-600 text-base font-ssLB mb-14">
           Here’s what sets us apart
         </p>
 
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-12 text-left mt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 text-left">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex items-start gap-5 bg-gray-200 rounded-xl p-6 hover:shadow-md transition-all duration-300"
+              className="flex items-start gap-5 border border-gray-200 rounded-xl p-6 hover:shadow-md transition-all duration-300"
             >
-              {/* Icon Placeholder */}
-              <div className="w-10 h-10 bg-black rounded-full flex-shrink-0"></div>
+              <div>{feature.icon}</div>
 
-              {/* Text Content */}
               <div>
-                <h3 className="text-lg font-ssSBH text-black mb-2">
+                <h3 className="text-lg font-ssSBH text-black mb-1">
                   {feature.title}
                 </h3>
                 <p className="text-gray-700 font-ssLB text-sm leading-relaxed">
@@ -84,6 +92,7 @@ const WhyUs = () => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

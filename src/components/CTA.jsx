@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import BrushStroke from "./BrushStroke";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,9 +33,16 @@ const CTA = () => {
         className="max-w-4xl mx-auto px-6 flex flex-col items-center text-center"
       >
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-ssBD text-black leading-tight mb-4 whitespace-normal lg:whitespace-nowrap text-center lg:w-max">
-          Ready to embark on your next adventure
-        </h2>
+        <div className="relative text-center mb-10">
+          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900 whitespace-normal lg:whitespace-nowrap inline-block">
+            Ready to embark on your next adventure
+          </h2>
+          <BrushStroke
+            color="#27AE60"
+            width={240}
+            className="absolute left-1/2 -translate-x-1/2 -bottom-3"
+          />
+        </div>
 
         {/* Subtext */}
         <p className="text-gray-700 font-ssLB text-sm sm:text-base md:text-lg mb-10 text-center whitespace-normal lg:whitespace-nowrap lg:w-max">

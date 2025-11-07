@@ -1,21 +1,18 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
+import Slider from "react-slick";
 import { gsap } from "gsap";
 
 const Hero = () => {
   const textRef = useRef(null);
   const paraRef = useRef(null);
   const btnRef = useRef(null);
-  const imageRefs = useRef([]);
-  const [currentImage, setCurrentImage] = useState(0);
 
-  const images = [
-    "https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=1600&q=80",
-    "https://images.unsplash.com/photo-1508261305435-63174d10c0a6?auto=format&fit=crop&w=1600&q=80",
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80",
-    "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80",
-  ];
-
-  // GSAP text animations
+const images = [
+  
+  "https://plus.unsplash.com/premium_photo-1661963741928-673ed7f7c00b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171https://plus.unsplash.com/premium_photo-1661963741928-673ed7f7c00b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2071"
+];
+  
+  // Text entrance animation (once)
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
     tl.fromTo(
@@ -37,52 +34,45 @@ const Hero = () => {
       );
   }, []);
 
-  // Background slider animation
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const nextImage = (currentImage + 1) % images.length;
-      const currentSlide = imageRefs.current[currentImage];
-      const nextSlide = imageRefs.current[nextImage];
-
-      gsap.to(currentSlide, {
-        x: "-100%",
-        opacity: 0,
-        duration: 1.2,
-        ease: "power2.inOut",
-      });
-      gsap.fromTo(
-        nextSlide,
-        { x: "100%", opacity: 0 },
-        { x: "0%", opacity: 1, duration: 1.2, ease: "power2.inOut" }
-      );
-
-      setCurrentImage(nextImage);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [currentImage]);
+  // React-Slick settings (slides left continuously)
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 1200,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: false, // we want sliding, not fading
+    cssEase: "ease-in-out",
+    arrows: false,
+    pauseOnHover: false,
+    draggable: false,
+    swipe: false,
+  };
 
   return (
     <section className="relative flex flex-col justify-center items-center text-center min-h-screen overflow-hidden">
-      {/* Background Layer */}
+      {/* === Slider Background Layer === */}
       <div className="absolute inset-0 w-full h-full">
-        {images.map((src, index) => (
-          <div
-            key={index}
-            ref={(el) => (imageRefs.current[index] = el)}
-            className="absolute inset-0 bg-cover bg-center transition-all duration-1000"
-            style={{
-              backgroundImage: `url(${src})`,
-              opacity: index === 0 ? 1 : 0,
-              zIndex: index === currentImage ? 1 : 0,
-            }}
-          />
-        ))}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <Slider {...settings} className="h-full">
+          {images.map((src, index) => (
+            <div key={index}>
+              <div
+                className="w-full h-screen bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${src})`,
+                }}
+              >
+                <div className="absolute inset-0 bg-black/10"></div>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
 
-      {/* Hero Content */}
+      {/* === Hero Text Content === */}
       <div className="relative z-10 text-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 max-w-[90%] sm:max-w-2xl md:max-w-4xl text-center">
-        {/* Subtitle */}
         <h2
           ref={paraRef}
           className="mt-5 text-base sm:text-lg md:text-xl text-white font-ssLB mb-4 [text-shadow:_0_2px_10px_rgba(0,0,0,0.8)] lg:whitespace-nowrap"
@@ -91,15 +81,13 @@ const Hero = () => {
           sacred Char Dham Yatra, Oak7 is your trusted travel partner.
         </h2>
 
-        {/* Main Heading */}
         <h1
           ref={textRef}
-          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-ssBD leading-tight tracking-tight font-bold text-white [text-shadow:_0_4px_25px_rgba(0,0,0,0.5)] whitespace-normal lg:whitespace-nowrap"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-ssBD font-bold text-white [text-shadow:_0_4px_25px_rgba(0,0,0,0.5)] whitespace-normal lg:whitespace-nowrap leading-relaxed"
         >
           Journeys of Adventure & Faith
         </h1>
 
-        {/* Buttons */}
         <div
           ref={btnRef}
           className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 w-full sm:w-auto"

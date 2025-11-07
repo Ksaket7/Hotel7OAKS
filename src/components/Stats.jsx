@@ -5,11 +5,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Stats = () => {
-  const containerRef = useRef(null);
+  const statsRef = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(
-      containerRef.current.children,
+      statsRef.current.children,
       { y: 40, opacity: 0 },
       {
         y: 0,
@@ -17,53 +17,56 @@ const Stats = () => {
         stagger: 0.2,
         duration: 0.8,
         scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top 85%",
+          trigger: statsRef.current,
+          start: "top 80%",
         },
       }
     );
   }, []);
 
   const stats = [
-    { value: "10K+", label: "Happy Customers" },
-    { value: "05+", label: "Years of Experience" },
-    { value: "50+", label: "Total Destinations" },
-    { value: "4.9", label: "Average Rating" },
+    { value: "10K+", label: "Happy customers" },
+    { value: "05+", label: "Years of experience" },
+    { value: "50+", label: "Total destinations" },
+    { value: "4.9", label: "Average rating" },
   ];
 
   return (
-    <section className="py-8 bg-white">
-      <div
-        ref={containerRef}
-        className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 text-center"
-      >
-        {stats.map((stat, index) => {
-          // --- RESPONSIVE LINE LOGIC ---
-          // Show divider for:
-          // Desktop: all except last
-          // Mobile: only first and third (index 0, 2)
-          const showDivider =
-            (index !== stats.length - 1 && window.innerWidth >= 768) ||
-            (window.innerWidth < 768 && index % 2 === 0);
+    <section className="w-full bg-white py-28">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 px-6 items-start">
+        
+        {/* LEFT CONTENT */}
+        <div>
+          <p className="text-xs font-ssLB tracking-wide text-gray-600 mb-4">
+            Our impact
+          </p>
 
-          return (
-            <div
-              key={index}
-              className={`flex flex-col items-center justify-center py-6 px-6 relative ${
-                showDivider
-                  ? "after:content-[''] after:absolute after:top-6 after:bottom-6 after:right-0 after:w-[8px] after:bg-gray-300 after:rounded-md"
-                  : ""
-              }`}
-            >
-              <h3 className="text-4xl md:text-6xl text-gray-900 font-ssBD tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-ssBD leading-tight text-black mb-6">
+            Trusted adventures <br /> across the Himalayas
+          </h2>
+
+          <p className="text-base font-ssLB text-gray-600 max-w-md">
+            Discover why travelers choose Oak7 for unforgettable journeys
+          </p>
+        </div>
+
+        {/* RIGHT STATS */}
+        <div
+          ref={statsRef}
+          className="grid grid-cols-2 gap-y-14 gap-x-12 text-left"
+        >
+          {stats.map((stat, index) => (
+            <div key={index}>
+              <h3 className="text-5xl md:text-6xl font-ssBD text-black leading-none">
                 {stat.value}
               </h3>
-              <p className="mt-2 text-gray-600 font-ssLB text-lg md:text-base tracking-wide">
+              <p className="mt-2 text-gray-600 font-ssLB text-sm">
                 {stat.label}
               </p>
             </div>
-          );
-        })}
+          ))}
+        </div>
+
       </div>
     </section>
   );

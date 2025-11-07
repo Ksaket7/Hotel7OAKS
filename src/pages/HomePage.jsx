@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Stats from "../components/Stats";
 import Packages from "../components/Packages";
@@ -6,8 +5,8 @@ import Treks from "../components/Treks";
 import Tours from "../components/Tours";
 import WhyUs from "../components/WhyUs";
 import Testimonials from "../components/Testimonials";
+import ImageMarquee from "../components/ImageMarquee";
 import CTA from "../components/CTA";
-import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
@@ -19,6 +18,7 @@ const HomePage = () => {
       <Tours />
       <WhyUs />
       <Testimonials />
+      <ImageMarquee />
       <CTA />
     </div>
   );

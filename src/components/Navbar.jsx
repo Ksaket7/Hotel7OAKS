@@ -16,10 +16,10 @@ const Navbar = () => {
 
   const links = [
     { name: "HOME", path: "/" },
-    { name: "ABOUT", path: "/about" },
     { name: "HOTELS", path: "/hotels" },
     { name: "TOURS & PACKAGES", path: "/tours" },
     { name: "TREKS", path: "/treks" },
+    { name: "ABOUT", path: "/about" },
     { name: "CONTACT", path: "/contact" },
   ];
 

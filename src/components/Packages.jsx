@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import BrushStroke from "./BrushStroke";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,9 +61,16 @@ const Packages = () => {
         </p>
 
         {/* Main Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-rsR text-gray-900 leading-snug whitespace-normal lg:whitespace-nowrap my-4">
-          Handpicked Packages for Every Explorer
-        </h2>
+        <div className="relative text-center mb-10">
+          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900 whitespace-normal lg:whitespace-nowrap inline-block">
+            Handpicked Packages for Traveler
+          </h2>
+          <BrushStroke
+            color="#000000"
+            width={240}
+            className="absolute left-1/2 -translate-x-1/2 -bottom-3"
+          />
+        </div>
 
         {/* Subtext */}
         <p className="text-gray-900 text-sm sm:text-base md:text-md font-ssLB lg:w-max mx-auto px-4 whitespace-normal lg:whitespace-nowrap text-center my-5">

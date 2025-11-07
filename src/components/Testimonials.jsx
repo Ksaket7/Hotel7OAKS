@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Quote } from "lucide-react";
+import BrushStroke from "./BrushStroke";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,56 +30,49 @@ const Testimonials = () => {
   const testimonials = [
     {
       title: "Excellent Experience",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "The trek felt well organised, safe and extremely enjoyable. Highly professional throughout.",
     },
     {
       title: "Loved Every Moment",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "The views were unreal. The team was warm, caring and supportive all along the expedition.",
     },
     {
       title: "Highly Recommend",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Perfect balance of adventure and comfort. Worth every minute and every rupee!",
     },
-  ];
-
-  const images = [
-    "https://via.placeholder.com/250x350?text=Customer+1",
-    "https://via.placeholder.com/250x350?text=Customer+2",
-    "https://via.placeholder.com/250x350?text=Customer+3",
-    "https://via.placeholder.com/250x350?text=Customer+4",
-    "https://via.placeholder.com/250x350?text=Customer+5",
   ];
 
   return (
     <section className="py-8 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
-        {/* Section Label */}
-        <p className="text-green-600 text-lg tracking-wide font-ssBookD mb-5">
-          Popular
+        
+        <p className="text-green-600 text-sm tracking-wide font-ssBookD mb-3">
+          Customers
         </p>
 
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-rsR text-black my-7">
-          What do our customers say?
-        </h2>
+        <div className="relative inline-block mb-10">
+          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900">
+            What Do Our Customers Say?
+          </h2>
+          <BrushStroke
+            color="#27AE60"
+            width={240}
+            className="absolute left-1/2 -translate-x-1/2 -bottom-3"
+          />
+        </div>
 
-        {/* Subtext */}
-        <p className="text-gray-600 text-base md:text-lg font-ssLB my-7">
-          Here’s what sets us apart
+        <p className="text-gray-600 text-base md:text-lg font-ssLB mb-14">
+          Genuine feedback from real trekkers
         </p>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 my-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {testimonials.map((t, index) => (
             <div
               key={index}
-              className="flex flex-col bg-gray-200 rounded-xl p-6 text-left hover:shadow-md transition-all duration-300"
+              className="flex flex-col bg-[#F6F6F6] rounded-xl p-7 text-left hover:shadow-lg transition duration-300"
             >
-              {/* Icon Placeholder */}
-              <div className="w-10 h-10 bg-black rounded-full mb-4"></div>
-              {/* Heading */}
+              <Quote className="text-green-700 mb-4" size={30} />
               <h3 className="text-lg font-ssSBH text-black mb-2">{t.title}</h3>
-              {/* Description */}
               <p className="text-gray-700 font-ssLB text-sm leading-relaxed">
                 {t.desc}
               </p>
@@ -85,21 +80,6 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Image Strip */}
-        <div className="flex flex-wrap justify-center items-center gap-6">
-          {images.map((img, index) => (
-            <div
-              key={index}
-              className="overflow-hidden rounded-xl shadow-sm w-44 h-64 sm:w-48 sm:h-72 md:w-52 md:h-80 transition-transform duration-500 hover:scale-105"
-            >
-              <img
-                src={img}
-                alt={`Customer ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

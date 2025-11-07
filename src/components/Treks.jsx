@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MapPin, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Mountain, MapPinned } from "lucide-react";
+import trek from "../assets/Images/trek.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,107 +28,61 @@ const Treks = () => {
     );
   }, []);
 
-  const treks = [
-    {
-      title: "Mountains Majesty Trek",
-      tag: "HIMALAYAS",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      difficulty: "Difficult",
-      days: "14 days",
-      price: "₹ 15750",
-      image: "https://via.placeholder.com/600x400?text=Trek+1",
-    },
-    {
-      title: "Valley Serenity Trek",
-      tag: "HIMALAYAS",
-      desc: "Experience peace and challenge in equal measure as you journey across serene Himalayan valleys.",
-      difficulty: "Moderate",
-      days: "10 days",
-      price: "₹ 13200",
-      image: "https://via.placeholder.com/600x400?text=Trek+2",
-    },
-    {
-      title: "Snow Ridge Expedition",
-      tag: "HIMALAYAS",
-      desc: "Trek through the breathtaking snow trails and experience the grandeur of the mighty peaks.",
-      difficulty: "Difficult",
-      days: "12 days",
-      price: "₹ 18900",
-      image: "https://via.placeholder.com/600x400?text=Trek+3",
-    },
-  ];
-
   return (
-    <section className="py-8 bg-white overflow-hidden">
-      <div ref={sectionRef} className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <p className="text-green-600 text-lg  tracking-wide font-ssBookD text-center mb-5">
-          Trending
-        </p>
+    <section className="w-full bg-white ">
+      <div ref={sectionRef} className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 px-6 items-center">
 
-        <h2 className="text-3xl md:text-4xl font-rsR text-center text-gray-900 my-7 whitespace-normal lg:whitespace-nowrap">
-          Trek the Himalayas with Us
-        </h2>
+        <div className="-ml-10">
+          <img
+            src={trek}
+            alt="trekker"
+            className="rounded-xl w-full object-cover"
+          />
+        </div>
 
-        <p className="text-gray-900 text-center text-base md:text-md font-ssBookD my-7 max-w-3xl mx-auto">
-          Discover Uttarakhand’s most iconic trails — from beginner-friendly
-          hikes to challenging high-altitude expeditions.
-        </p>
+        <div>
+          <p className="text-sm uppercase tracking-wider font-ssLB text-green-600 mb-3">
+            Treks
+          </p>
 
-        {/* Trek Items */}
-        <div className="flex flex-col gap-12 mt-16 overflow-x-auto no-scrollbar">
-          {treks.map((trek, index) => (
-            <div
-              key={index}
-              className={`flex flex-row items-center justify-center gap-6 min-w-[320px] sm:min-w-[480px] md:min-w-full ${
-                index % 2 !== 0 ? "md:flex-row-reverse" : ""
-              }`}
-            >
-              {/* Image */}
-              <div className="w-[45%] sm:w-[40%] md:w-1/2 flex-shrink-0">
-                <img
-                  src={trek.image}
-                  alt={trek.title}
-                  className="w-full h-40 sm:h-56 md:h-80 object-cover rounded-xl shadow-md"
-                />
-              </div>
+          <h2 className="text-4xl md:text-5xl font-ssBD text-black leading-tight mb-6">
+            Trek the Himalayas <br /> with us
+          </h2>
 
-              {/* Text Content */}
-              <div className="w-[55%] sm:w-[60%] md:w-1/2 flex flex-col text-left md:pl-10">
-                <span className="text-xs font-ssBookD text-green-700 bg-green-100 px-3 py-1 rounded-full uppercase tracking-wide w-fit mb-2">
-                  {trek.tag}
-                </span>
+          <p className="text-gray-800 font-ssLB leading-relaxed max-w-md mb-12">
+            Discover the raw beauty of Uttarakhand’s most legendary mountain trails.
+            Every path tells a story of adventure and resilience.
+          </p>
 
-                <h3 className="text-lg sm:text-xl md:text-2xl font-ssBD text-gray-900 mb-2">
-                  {trek.title}
-                </h3>
-
-                <p className="text-gray-800 font-ssLB text-sm sm:text-base mb-4">
-                  {trek.desc}
-                </p>
-
-                <div className="flex items-center gap-4 sm:gap-6 mb-4 text-gray-900 font-ssLB text-xs sm:text-sm">
-                  <div className="flex items-center gap-2">
-                    <MapPin size={14} />
-                    <span>{trek.difficulty}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock size={14} />
-                    <span>{trek.days}</span>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4 sm:gap-6">
-                  <p className="text-green-700 text-sm sm:text-lg font-ssBD">
-                    {trek.price}
-                  </p>
-                  <button className="bg-green-600 hover:bg-green-700 text-white px-4 sm:px-5 py-1.5 sm:py-2 rounded-full font-ssBD text-xs sm:text-sm transition-all">
-                    View Details →
-                  </button>
-                </div>
-              </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-12">
+            <div>
+              <Mountain size={22} className="text-green-700 mb-3" />
+              <h4 className="font-ssBD text-black mb-1">Kedarnath trail</h4>
+              <p className="text-gray-700 font-ssLB text-sm leading-relaxed">
+                Ancient pilgrimage route through rugged mountain terrain, challenging and transformative.
+              </p>
             </div>
-          ))}
+
+            <div>
+              <MapPinned size={22} className="text-green-700 mb-3" />
+              <h4 className="font-ssBD text-black mb-1">Auli expedition</h4>
+              <p className="text-gray-700 font-ssLB text-sm leading-relaxed">
+                High-altitude snow trek revealing pristine landscapes and breathtaking Himalayan panoramas.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <Link
+              to="/treks"
+              className="px-12 py-3 rounded-full bg-green-600 text-white font-ssBD text-sm hover:bg-green-700"
+            >
+              Explore
+            </Link>
+            <button className="px-12 py-3 rounded-full text-green-600 border border-green-600 font-ssBD text-sm hover:bg-green-700 hover:text-white transition">
+              Details
+            </button>
+          </div>
         </div>
       </div>
     </section>
