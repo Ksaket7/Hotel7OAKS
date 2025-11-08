@@ -9,6 +9,8 @@ import Hotel from "./pages/Hotels.jsx";
 import ToursAndPackages from "./pages/ToursAndPackages.jsx";
 import Treks from "./pages/Treks.jsx";
 import TrekDetails from "./pages/TrekDetails.jsx";
+import TourPackageDetails from "./pages/ToursPackagesDetails.jsx";
+import HotelDetail from "./pages/HotelDetails.jsx";
 
 function App() {
   return (
@@ -20,7 +22,10 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/hotels" element={<Hotel />} />
+        <Route path="/hotels/:id" element={<HotelDetail />} />
         <Route path="/tours" element={<ToursAndPackages />} />
+        <Route path="/tours/:id" element={<TourPackageDetails />} />
+
         <Route path="/treks" element={<Treks />} />
         <Route path="/treks/:id" element={<TrekDetails />} />
         <Route path="/contact" element={<Contact />} />

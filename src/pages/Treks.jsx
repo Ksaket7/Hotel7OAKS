@@ -46,7 +46,7 @@ const Treks = () => {
             Adventure Awaits
           </p>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-rsR text-white leading-snug whitespace-normal lg:whitespace-nowrap mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-ssBD text-white leading-snug whitespace-normal lg:whitespace-nowrap mb-4">
             Treks of Uttarakhand
           </h2>
 
@@ -63,7 +63,7 @@ const Treks = () => {
           Popular Treks
         </p>
 
-        <h2 className="text-3xl md:text-4xl font-rsR text-center text-gray-900 my-7 whitespace-normal lg:whitespace-nowrap">
+        <h2 className="text-3xl md:text-4xl font-ssBD text-center text-gray-900 my-7 whitespace-normal lg:whitespace-nowrap">
           Explore the Majestic Himalayas
         </h2>
 
@@ -118,7 +118,7 @@ const Treks = () => {
                   </p>
 
                   <Link
-                    to={`/treks/${index}`}
+                    to={`/treks/${trek.id}`}
                     className="bg-green-600 hover:bg-green-700 text-white px-4 sm:px-5 py-1.5 sm:py-2 rounded-full font-ssBD text-xs sm:text-sm transition-all"
                   >
                     View Details →

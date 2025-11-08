@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 import BrushStroke from "./BrushStroke";
+import { toursData } from "../data/toursnpackages";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,44 +28,21 @@ const Packages = () => {
     );
   }, []);
 
-  const packages = [
-    {
-      title: "Char Dham Yatra",
-      img: "https://via.placeholder.com/400x250?text=Char+Dham+Yatra",
-      link: "#",
-    },
-    {
-      title: "Valley of Flowers",
-      img: "https://via.placeholder.com/400x250?text=Valley+of+Flowers",
-      link: "#",
-    },
-    {
-      title: "Kedarnath Expedition",
-      img: "https://via.placeholder.com/400x250?text=Kedarnath+Trek",
-      link: "#",
-    },
-    {
-      title: "Auli Skiing Adventure",
-      img: "https://via.placeholder.com/400x250?text=Auli+Skiing",
-      link: "#",
-    },
-  ];
-
   return (
     <section className="py-8 bg-white overflow-hidden">
       <div
         ref={sectionRef}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col justify-center items-center text-center"
       >
-        {/* Section Label */}
+        {/* Label */}
         <p className="text-green-600 text-sm sm:text-base md:text-lg tracking-wide font-ssBookD mb-3">
           Popular
         </p>
 
-        {/* Main Heading */}
+        {/* Heading */}
         <div className="relative text-center mb-10">
-          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900 whitespace-normal lg:whitespace-nowrap inline-block">
-            Handpicked Packages for Traveler
+          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900 inline-block">
+            Handpicked Tour Packages
           </h2>
           <BrushStroke
             color="#000000"
@@ -73,32 +52,32 @@ const Packages = () => {
         </div>
 
         {/* Subtext */}
-        <p className="text-gray-900 text-sm sm:text-base md:text-md font-ssLB lg:w-max mx-auto px-4 whitespace-normal lg:whitespace-nowrap text-center my-5">
-          From serene getaways to adventurous treks and spiritual journeys — choose a package that fits your dream escape.
+        <p className="text-gray-900 text-sm sm:text-base md:text-md font-ssLB lg:w-max mx-auto px-4 my-5">
+          From serene getaways to adventurous treks and spiritual journeys — choose a tour package that fits your dream escape.
         </p>
 
         {/* Package Grid */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12 px-4 sm:px-6 lg:px-8 mt-8">
-          {packages.map((pkg, index) => (
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
+          {toursData.map((pkg) => (
             <div
-              key={index}
-              onClick={() => (window.location.href = pkg.link)}
+              key={pkg.id}
               className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md hover:scale-[1.03] transition-transform duration-300"
             >
               <img
-                src={pkg.img}
+                src={pkg.image}
                 alt={pkg.title}
-                className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
-
-              {/* Hover Overlay */}
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
-                <h3 className="text-white font-ssBookD text-base sm:text-lg md:text-xl mb-3">
+                <h3 className="text-white font-ssBookD text-lg mb-3">
                   {pkg.title}
                 </h3>
-                <button className="bg-green-600 hover:bg-green-700 text-white font-ssBookD px-4 sm:px-5 py-2 rounded-full text-sm transition-all">
+                <Link
+                  to={`/tours/${pkg.id}`}
+                  className="bg-green-600 hover:bg-green-700 text-white font-ssBookD px-5 py-2 rounded-full text-sm transition-all"
+                >
                   View Details
-                </button>
+                </Link>
               </div>
             </div>
           ))}

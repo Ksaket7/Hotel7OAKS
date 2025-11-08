@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BrushStroke from "./BrushStroke";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,9 +52,12 @@ const CTA = () => {
         </p>
 
         {/* CTA Button */}
-        <button className="bg-green-600 hover:bg-green-700 text-white font-ssBookD text-sm sm:text-base px-6 sm:px-8 py-2.5 sm:py-3 rounded-full transition-all duration-300 shadow-sm">
-          Contact Us Now
-        </button>
+        <Link
+          to="/contact"
+          className="inline-block bg-green-600 hover:bg-green-700 text-white font-ssBookD text-base px-8 py-3 rounded-full transition-all duration-300 shadow-sm"
+        >
+          Contact Us
+        </Link>
       </div>
     </section>
   );

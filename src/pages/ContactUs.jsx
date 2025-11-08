@@ -59,7 +59,7 @@ const Contact = () => {
         {/* Left: Contact Info */}
         <div className="flex flex-col justify-center relative">
           <div className="relative inline-block mx-auto md:mx-0 mb-12">
-            <h2 className="text-3xl md:text-4xl font-rsR text-black relative z-10">
+            <h2 className="text-3xl md:text-4xl font-ssBD text-black relative z-10">
               Get in Touch
             </h2>
             {/* Brush stroke underline */}
@@ -142,7 +142,7 @@ const Contact = () => {
       {/* ---------- MAP / CTA ---------- */}
       <section className="py-24 bg-gray-50 text-center relative">
         <div className="relative inline-block mb-8">
-          <h2 className="text-3xl md:text-4xl font-rsR text-black relative z-10">
+          <h2 className="text-3xl md:text-4xl font-ssBD text-black relative z-10">
             Visit Our Office
           </h2>
           {/* Brush stroke underline */}

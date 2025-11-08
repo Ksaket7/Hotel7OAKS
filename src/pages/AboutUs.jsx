@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom"; // ✅ Import Link for navigation
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -141,9 +142,14 @@ const AboutUs = () => {
           Discover the beauty, peace, and adventure that Uttarakhand has to
           offer.
         </p>
-        <button className="bg-green-600 hover:bg-green-700 text-white font-ssBookD text-base px-8 py-3 rounded-full transition-all duration-300 shadow-sm">
+
+        {/* ✅ Updated Contact Button */}
+        <Link
+          to="/contact"
+          className="inline-block bg-green-600 hover:bg-green-700 text-white font-ssBookD text-base px-8 py-3 rounded-full transition-all duration-300 shadow-sm"
+        >
           Contact Us
-        </button>
+        </Link>
       </section>
     </div>
   );
