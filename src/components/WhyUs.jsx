@@ -53,11 +53,6 @@ const WhyUs = () => {
   return (
     <section className="py-12 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
-
-        <p className="text-green-600 text-sm tracking-wide font-ssBookD mb-3">
-          Popular
-        </p>
-
         <div className="relative inline-block mb-10">
           <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900">
             Why Us?
@@ -92,7 +87,6 @@ const WhyUs = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

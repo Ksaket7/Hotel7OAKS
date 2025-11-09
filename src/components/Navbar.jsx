@@ -16,9 +16,9 @@ const Navbar = () => {
 
   const links = [
     { name: "HOME", path: "/" },
-    { name: "HOTELS", path: "/hotels" },
     { name: "TOURS & PACKAGES", path: "/tours" },
     { name: "TREKS", path: "/treks" },
+    { name: "HOTELS", path: "/hotels" },
     { name: "ABOUT", path: "/about" },
     { name: "CONTACT", path: "/contact" },
   ];
