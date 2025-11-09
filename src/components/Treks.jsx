@@ -49,7 +49,7 @@ const Treks = () => {
             trails. Every path tells a story of adventure and resilience.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
             <div>
               <Mountain size={22} className="text-green-700 mb-3" />
               <h4 className="font-ssBD text-gray-800 mb-1">Kedarnath trail</h4>
