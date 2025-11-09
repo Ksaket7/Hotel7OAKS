@@ -29,13 +29,16 @@ const HotelPreview = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-8 bg-white overflow-hidden">
       {/* === Section Heading === */}
       <div className="text-center max-w-3xl mx-auto px-6 mb-12">
-        <h2 className="text-4xl md:text-5xl font-ssBD text-gray-900 mb-4">
+        <p className="text-green text-xl tracking-wide font-dsB mb-3">
           Hotels
+        </p>
+        <h2 className="text-4xl md:text-5xl font-ssBD text-gray-900 mb-4">
+          The Best Stays in Your Budget
         </h2>
-        <p className="text-gray-800 text-lg">
+        <p className="text-gray-800 text-lg font-ssLB">
           Experience the best of Uttarakhand’s hospitality — from cozy lakeside
           lodges to mountain-view resorts curated just for you.
         </p>
@@ -94,7 +97,7 @@ const HotelPreview = () => {
       <div className="text-center mt-12">
         <Link
           to="/hotels"
-          className="bg-green text-white px-8 py-3 rounded-lg font-semibold transition-all"
+          className="bg-green text-white px-8 py-3 rounded-lg font-ssLB transition-all"
         >
           View All Hotels
         </Link>

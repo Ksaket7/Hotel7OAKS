@@ -53,15 +53,14 @@ const WhyUs = () => {
   return (
     <section className="py-12 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
-        <div className="relative inline-block mb-10">
-          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900">
+        <div className="relative inline-block mb-4">
+          <p className="text-lg tracking-wider font-dsB text-green mb-3">
             Why Us?
+          </p>
+          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900">
+            The Oak7 Advantage
           </h2>
-          <BrushStroke
-            color="#27AE60"
-            width={140}
-            className="absolute left-1/2 -translate-x-1/2 -bottom-3"
-          />
+         
         </div>
 
         <p className="text-gray-800 text-base font-ssLB mb-14">

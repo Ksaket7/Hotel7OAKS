@@ -41,7 +41,7 @@ const Treks = () => {
         </div>
 
         <div>
-          <p className="text-lg  tracking-wider font-ssBookD text-green mb-3">
+          <p className="text-lg tracking-wider font-dsB text-green mb-3">
             Treks
           </p>
 

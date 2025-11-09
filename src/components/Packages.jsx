@@ -35,25 +35,21 @@ const Packages = () => {
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col justify-center items-center text-center"
       >
         {/* Label */}
-        <p className="text-green text-sm sm:text-base md:text-lg tracking-wide font-ssBookD mb-3">
-          Popular
-        </p>
 
         {/* Heading */}
-        <div className="relative text-center mb-10">
+        <div className="relative text-center mb-4">
+          <p className="text-green text-xl tracking-wide font-dsB mb-3">
+            Popular
+          </p>
           <h2 className="text-4xl md:text-5xl font-ssBD text-gray-800 inline-block">
             Handpicked Tour Packages
           </h2>
-          <BrushStroke
-            color="#000000"
-            width={240}
-            className="absolute left-1/2 -translate-x-1/2 -bottom-3"
-          />
         </div>
 
         {/* Subtext */}
-        <p className="text-gray-900 text-sm sm:text-base md:text-md font-ssLB lg:w-max mx-auto px-4 my-5">
-          From serene getaways to adventurous treks and spiritual journeys — choose a tour package that fits your dream escape.
+        <p className="text-gray-900 text-sm sm:text-base md:text-md font-ssLB lg:w-max mx-auto px-4 ,b-5">
+          From serene getaways to adventurous treks and spiritual journeys —
+          choose a tour package that fits your dream escape.
         </p>
 
         {/* Package Grid */}

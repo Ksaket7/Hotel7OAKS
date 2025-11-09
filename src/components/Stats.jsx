@@ -33,12 +33,12 @@ const Stats = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-28">
+    <section className="w-full bg-white py-12">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
         {/* LEFT CONTENT */}
         <div className="max-w-xl">
-          <p className="text-green text-lg font-ssBookD tracking-wide mb-3">
+          <p className="text-green text-lg font-dsB tracking-wide mb-3">
             Our Impact
           </p>
 

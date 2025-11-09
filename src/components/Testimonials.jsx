@@ -46,19 +46,15 @@ const Testimonials = () => {
     <section className="py-8 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
         
-        <p className="text-green text-lg tracking-wide font-ssBookD mb-3">
-          Customers
+        <p className="text-green text-xl tracking-wide font-dsB mb-3">
+          Testimonials
         </p>
 
         <div className="relative inline-block mb-10">
           <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900">
             What Do Our Customers Say?
           </h2>
-          <BrushStroke
-            color="#27AE60"
-            width={240}
-            className="absolute left-1/2 -translate-x-1/2 -bottom-3"
-          />
+          
         </div>
 
         <p className="text-gray-800 text-base md:text-lg font-ssLB mb-14">

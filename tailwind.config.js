@@ -10,6 +10,7 @@ export default {
         ssLB: ["Sequel-Sans-Light-Body", "sans-serif"],
         ssSBH: ["Sequel-Sans-Semi-Bold-Head", "sans-serif"],
         ssBD: ["Sequel-Sans-Bold-Disp", "sans-serif"],
+        dsB: ["DancingScript-Bold", "serif"],
       },
 
       colors: {
