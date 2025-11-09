@@ -16,6 +16,7 @@ const Stats = () => {
         opacity: 1,
         stagger: 0.2,
         duration: 0.8,
+        ease: "power3.out",
         scrollTrigger: {
           trigger: statsRef.current,
           start: "top 80%",
@@ -25,42 +26,47 @@ const Stats = () => {
   }, []);
 
   const stats = [
-    { value: "10K+", label: "Happy customers" },
-    { value: "05+", label: "Years of experience" },
-    { value: "50+", label: "Total destinations" },
-    { value: "4.9", label: "Average rating" },
+    { value: "10K+", label: "Happy Customers" },
+    { value: "05+", label: "Years of Experience" },
+    { value: "50+", label: "Total Destinations" },
+    { value: "4.9", label: "Average Rating" },
   ];
 
   return (
     <section className="w-full bg-white py-28">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 px-6 items-start">
-        
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
         {/* LEFT CONTENT */}
-        <div>
-          <p className="text-xs font-ssLB tracking-wide text-gray-600 mb-4">
-            Our impact
+        <div className="max-w-xl">
+          <p className="text-green text-sm font-ssBookD tracking-wide mb-3">
+            Our Impact
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-ssBD leading-tight text-black mb-6">
-            Trusted adventures <br /> across the Himalayas
+          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900 leading-tight mb-6">
+            Trusted Adventures Across <br /> the Himalayas
           </h2>
 
-          <p className="text-base font-ssLB text-gray-600 max-w-md">
-            Discover why travelers choose Oak7 for unforgettable journeys
+          <p className="text-gray text-base font-ssLB leading-relaxed max-w-md">
+            Explore why travelers choose Oak7 — from unforgettable Himalayan
+            journeys to outstanding hospitality and expert guidance. Your adventure
+            is crafted with care, passion and years of experience.
           </p>
         </div>
 
-        {/* RIGHT STATS */}
+        {/* RIGHT STATS GRID */}
         <div
           ref={statsRef}
-          className="grid grid-cols-2 gap-y-14 gap-x-12 text-left"
+          className="grid grid-cols-2 gap-x-12 gap-y-12"
         >
           {stats.map((stat, index) => (
-            <div key={index}>
-              <h3 className="text-5xl md:text-6xl font-ssBD text-black leading-none">
+            <div
+              key={index}
+              className="p-4 pl-0 border-l-2 border-green-600/20"
+            >
+              <h3 className="text-4xl md:text-5xl font-ssBD text-gray-900">
                 {stat.value}
               </h3>
-              <p className="mt-2 text-gray-600 font-ssLB text-sm">
+              <p className="mt-2 text-gray-600 font-ssLB text-sm tracking-wide">
                 {stat.label}
               </p>
             </div>

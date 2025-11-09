@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+
   theme: {
     extend: {
       fontFamily: {
@@ -10,7 +11,12 @@ export default {
         ssSBH: ["Sequel-Sans-Semi-Bold-Head", "sans-serif"],
         ssBD: ["Sequel-Sans-Bold-Disp", "sans-serif"],
       },
+
+      colors: {
+        "green": "#16A34A",    // ✅ single global brand color
+      },
     },
   },
+
   plugins: [],
 };

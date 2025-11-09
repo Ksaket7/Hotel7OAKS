@@ -1,15 +1,23 @@
+/* ✅ Slick Carousel Imports */
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
+
+/* ✅ Tailwind Layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+/* ✅ Smooth Scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* 📁 Font Imports */
+/* ✅ Brand Color Variable */
+:root {
+  --color-green: #16A34A;
+}
+
+/* ✅ Font Imports */
 @font-face {
   font-family: "RockSalt-Regular";
   src: url("/fonts/RockSalt-Regular.ttf") format("truetype");
@@ -35,14 +43,25 @@ html {
   src: url("/fonts/Sequel-Sans-Bold-Disp.otf") format("opentype");
 }
 
-/* 🌿 Base Styles */
+/* ✅ Global Styles */
 body {
   @apply antialiased;
   background-color: #fdfdf7;
 }
 
-/* 🌿 Custom Selection */
+/* ✅ Global Text Selection (brand green) */
 ::selection {
-  background-color: #27AE60;
+  background-color: var(--color-green); /* #16A34A */
+  color: white;
+}
+
+/* ✅ Optional: Brand default link color */
+a {
+  color: var(--color-green);
+}
+
+/* ✅ Optional global button style (brand accent) */
+button {
+  background-color: var(--color-green);
   color: white;
 }
