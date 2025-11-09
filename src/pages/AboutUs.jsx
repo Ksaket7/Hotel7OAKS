@@ -54,7 +54,7 @@ const AboutUs = () => {
         ref={sectionRef}
         className="py-24 max-w-6xl mx-auto px-6 text-center md:text-left"
       >
-        <h2 className="text-3xl md:text-4xl font-rsR text-center text-black mb-12">
+        <h2 className="text-3xl md:text-4xl font-ssBD text-center text-black mb-12">
           Who We Are
         </h2>
 
@@ -87,7 +87,7 @@ const AboutUs = () => {
 
       {/* ---------- OUR VISION ---------- */}
       <section className="py-24 bg-gray-50 text-center px-6">
-        <h2 className="text-3xl md:text-4xl font-rsR text-black mb-6">
+        <h2 className="text-3xl md:text-4xl font-ssBD text-black mb-6">
           Our Vision
         </h2>
         <p className="max-w-3xl mx-auto text-gray-700 font-ssLB text-base leading-relaxed">
@@ -99,7 +99,7 @@ const AboutUs = () => {
 
       {/* ---------- OUR PROMISE / VALUES ---------- */}
       <section className="py-24 max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-rsR text-center text-black mb-12">
+        <h2 className="text-3xl md:text-4xl font-ssBD text-center text-black mb-12">
           What We Stand For
         </h2>
 
