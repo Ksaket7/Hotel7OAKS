@@ -64,7 +64,7 @@ const WhyUs = () => {
           />
         </div>
 
-        <p className="text-gray-600 text-base font-ssLB mb-14">
+        <p className="text-gray-800 text-base font-ssLB mb-14">
           Here’s what sets us apart
         </p>
 

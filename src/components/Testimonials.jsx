@@ -46,7 +46,7 @@ const Testimonials = () => {
     <section className="py-8 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
         
-        <p className="text-green text-sm tracking-wide font-ssBookD mb-3">
+        <p className="text-green text-lg tracking-wide font-ssBookD mb-3">
           Customers
         </p>
 
@@ -61,7 +61,7 @@ const Testimonials = () => {
           />
         </div>
 
-        <p className="text-gray-600 text-base md:text-lg font-ssLB mb-14">
+        <p className="text-gray-800 text-base md:text-lg font-ssLB mb-14">
           Genuine feedback from real trekkers
         </p>
 
