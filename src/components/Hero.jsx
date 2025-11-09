@@ -9,10 +9,9 @@ const Hero = () => {
   const btnRef = useRef(null);
 
   const images = [
-    "https://plus.unsplash.com/premium_photo-1661963741928-673ed7f7c00b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171https://plus.unsplash.com/premium_photo-1661963741928-673ed7f7c00b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2071",
+    "https://plus.unsplash.com/premium_photo-1661963741928-673ed7f7c00b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2071",
   ];
 
-  // Text entrance animation (once)
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
     tl.fromTo(
@@ -34,7 +33,6 @@ const Hero = () => {
       );
   }, []);
 
-  // React-Slick settings (slides left continuously)
   const settings = {
     dots: false,
     infinite: true,
@@ -43,7 +41,7 @@ const Hero = () => {
     autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    fade: false, // we want sliding, not fading
+    fade: false,
     cssEase: "ease-in-out",
     arrows: false,
     pauseOnHover: false,
@@ -53,39 +51,36 @@ const Hero = () => {
 
   return (
     <section className="relative flex flex-col justify-center items-center text-center min-h-screen overflow-hidden">
-      {/* === Slider Background Layer === */}
+      {/* Slider Background */}
       <div className="absolute inset-0 w-full h-full">
         <Slider {...settings} className="h-full">
           {images.map((src, index) => (
             <div key={index}>
               <div
                 className="w-full h-screen bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${src})`,
-                }}
+                style={{ backgroundImage: `url(${src})` }}
               >
-                <div className="absolute inset-0 bg-black/10"></div>
+                <div className="absolute inset-0 bg-black/20"></div>
               </div>
             </div>
           ))}
         </Slider>
       </div>
 
-      {/* === Hero Text Content === */}
+      {/* Hero Content */}
       <div className="relative z-10 text-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 max-w-[90%] sm:max-w-2xl md:max-w-4xl text-center">
         <h2
           ref={paraRef}
-          className="mt-5 text-base sm:text-lg md:text-xl text-white font-ssLB mb-4 [text-shadow:_0_2px_10px_rgba(0,0,0,0.8)] lg:whitespace-nowrap"
+          className="mt-5 text-sm sm:text-base md:text-lg text-white font-ssLB mb-5 tracking-wide leading-relaxed max-w-xl"
         >
-          Whether it’s trekking through snow-clad peaks or embarking on the
-          sacred Char Dham Yatra, Oak7 is your trusted travel partner.
+          Whether it’s trekking through snow-clad peaks or embarking on the sacred Char Dham Yatra, Oak7 is your trusted travel partner.
         </h2>
 
         <h1
           ref={textRef}
-          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-ssBD font-bold text-white [text-shadow:_0_4px_25px_rgba(0,0,0,0.5)] whitespace-normal lg:whitespace-nowrap leading-relaxed"
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-ssBD font-bold text-white [text-shadow:_0_4px_25px_rgba(0,0,0,0.5)] whitespace-normal lg:whitespace-nowrap leading-tight"
         >
-          Journeys of Adventure & Faith
+          Journeys of Adventure &amp; Faith
         </h1>
 
         <div

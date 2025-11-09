@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import BrushStroke from "./BrushStroke";
 import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -38,11 +37,6 @@ const CTA = () => {
           <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900 whitespace-normal lg:whitespace-nowrap inline-block">
             Ready to embark on your next adventure
           </h2>
-          <BrushStroke
-            color="#27AE60"
-            width={240}
-            className="absolute left-1/2 -translate-x-1/2 -bottom-3"
-          />
         </div>
 
         {/* === Subtext === */}

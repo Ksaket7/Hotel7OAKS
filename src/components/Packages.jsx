@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-import BrushStroke from "./BrushStroke";
 import { toursData } from "../data/toursnpackages";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -29,16 +28,14 @@ const Packages = () => {
   }, []);
 
   return (
-    <section className="py-8 bg-white overflow-hidden">
+    <section className="py-8 bg-gray-200 overflow-hidden">
       <div
         ref={sectionRef}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col justify-center items-center text-center"
       >
-        {/* Label */}
-
-        {/* Heading */}
+        {/* Label & Heading */}
         <div className="relative text-center mb-4">
-          <p className="text-green text-xl tracking-wide font-dsB mb-3">
+          <p className="text-green text-xl lg:text-2xl tracking-wide font-dsB mb-3">
             Popular
           </p>
           <h2 className="text-4xl md:text-5xl font-ssBD text-gray-800 inline-block">
@@ -47,7 +44,7 @@ const Packages = () => {
         </div>
 
         {/* Subtext */}
-        <p className="text-gray-900 text-sm sm:text-base md:text-md font-ssLB lg:w-max mx-auto px-4 ,b-5">
+        <p className="text-gray-900 text-sm sm:text-base md:text-md font-ssLB lg:w-max mx-auto px-4 mb-5">
           From serene getaways to adventurous treks and spiritual journeys —
           choose a tour package that fits your dream escape.
         </p>
@@ -64,13 +61,22 @@ const Packages = () => {
                 alt={pkg.title}
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
-                <h3 className="text-white font-ssBookD text-lg mb-3">
+              <div className="p-4 bg-white text-center">
+                <h3 className="text-gray-900 font-ssBookD text-lg mb-1">
                   {pkg.title}
                 </h3>
+                <div className="flex justify-center space-x-6 text-ssLB text-gray-800 mb-3">
+                  <span>{pkg.location}</span>
+                  <span>{pkg.duration}</span>
+                </div>
+              </div>
+
+              {/* Hover overlay with price and button in single column */}
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-center items-center space-y-4 rounded-xl text-white px-6">
+                <span className="text-xl font-semibold">{pkg.price}</span>
                 <Link
                   to={`/tours/${pkg.id}`}
-                  className="bg-green hover:bg-greenH text-white font-ssBookD px-5 py-2 rounded-full text-sm transition-all"
+                  className="bg-green hover:bg-greenH text-white font-ssBookD px-6 py-2 rounded-full text-sm transition-all"
                 >
                   View Details
                 </Link>
@@ -78,6 +84,15 @@ const Packages = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="text-center mt-12">
+        <Link
+          to="/tours"
+          className="bg-green hover:bg-greenH text-white px-8 py-3 rounded-full font-ssLB transition-all"
+        >
+          View All
+        </Link>
       </div>
     </section>
   );

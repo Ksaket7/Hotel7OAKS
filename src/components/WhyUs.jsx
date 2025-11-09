@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ShieldCheck, Cog, Leaf, Headphones } from "lucide-react";
-import BrushStroke from "./BrushStroke";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,7 +53,7 @@ const WhyUs = () => {
     <section className="py-12 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
         <div className="relative inline-block mb-4">
-          <p className="text-lg tracking-wider font-dsB text-green mb-3">
+          <p className="text-lg tracking-wider lg:text-2xl font-dsB text-green mb-3">
             Why Us?
           </p>
           <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900">
@@ -73,7 +72,7 @@ const WhyUs = () => {
               key={index}
               className="flex items-start gap-5 border border-gray-200 rounded-xl p-6 hover:shadow-md transition-all duration-300"
             >
-              <div>{feature.icon}</div>
+              <div className="text-green">{feature.icon}</div>
 
               <div>
                 <h3 className="text-lg font-ssSBH text-black mb-1">

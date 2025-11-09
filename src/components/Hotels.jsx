@@ -29,10 +29,10 @@ const HotelPreview = () => {
   }, []);
 
   return (
-    <section className="py-8 bg-white overflow-hidden">
+    <section className="py-8 bg-gray-200 overflow-hidden">
       {/* === Section Heading === */}
       <div className="text-center max-w-3xl mx-auto px-6 mb-12">
-        <p className="text-green text-xl tracking-wide font-dsB mb-3">
+        <p className="text-green text-xl lg:text-2xl tracking-wide font-dsB mb-3">
           Hotels
         </p>
         <h2 className="text-4xl md:text-5xl font-ssBD text-gray-900 mb-4">
@@ -97,7 +97,7 @@ const HotelPreview = () => {
       <div className="text-center mt-12">
         <Link
           to="/hotels"
-          className="bg-green text-white px-8 py-3 rounded-lg font-ssLB transition-all"
+          className="bg-green hover:bg-greenH text-white px-8 py-3 rounded-full font-ssLB transition-all"
         >
           View All Hotels
         </Link>

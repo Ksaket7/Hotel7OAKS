@@ -4,12 +4,13 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { treksData } from "../data/treks";
+import Form from "../components/Form";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const TrekDetails = () => {
   const { id } = useParams();
-  const trek = treksData.find((t) => t.id === id); // ✅ Corrected logic
+  const trek = treksData.find((t) => t.id === id);
 
   useEffect(() => {
     gsap.fromTo(
@@ -25,7 +26,6 @@ const TrekDetails = () => {
     );
   }, []);
 
-  // Handle invalid IDs gracefully
   if (!trek) {
     return (
       <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center">
@@ -57,12 +57,10 @@ const TrekDetails = () => {
 
       {/* === Trek Info === */}
       <div className="max-w-6xl mx-auto px-6 mt-14">
-        {/* Tag */}
         <p className="text-green-700 text-sm font-ssBookD bg-green-100 px-3 py-1 rounded-full uppercase tracking-wide w-fit detail-block">
           {trek.tag}
         </p>
 
-        {/* Difficulty + Duration */}
         <div className="flex items-center gap-6 my-6 text-gray-900 font-ssLB text-sm detail-block">
           <div className="flex items-center gap-2">
             <MapPin size={16} />
@@ -74,17 +72,14 @@ const TrekDetails = () => {
           </div>
         </div>
 
-        {/* Description */}
         <p className="text-gray-800 font-ssLB text-base leading-relaxed max-w-3xl detail-block">
           {trek.desc}
         </p>
 
-        {/* Price */}
         <p className="mt-10 text-green-600 text-3xl font-ssBD detail-block">
           Package Price: {trek.price}
         </p>
 
-        {/* Back Button */}
         <div className="mt-8 detail-block">
           <Link
             to="/treks"
@@ -94,6 +89,9 @@ const TrekDetails = () => {
           </Link>
         </div>
       </div>
+
+      {/* === Inquiry Form Section === */}
+      <Form itemName={trek.title} itemType="Trek" />
     </section>
   );
 };

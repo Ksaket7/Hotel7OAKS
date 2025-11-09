@@ -34,45 +34,40 @@ const Stats = () => {
 
   return (
     <section className="w-full bg-white py-12">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-
-        {/* LEFT CONTENT */}
-        <div className="max-w-xl">
-          <p className="text-green text-lg font-dsB tracking-wide mb-3">
+      <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-16 items-center">
+        {/* Left Content: Heading + Stats */}
+        <div className="md:col-span-2">
+          <p className="text-green text-lg lg:text-2xl font-dsB tracking-wide mb-3">
             Our Impact
           </p>
 
-          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-800 leading-tight mb-6">
-            Trusted Adventures Across <br /> the Himalayas
+          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-800 leading-tight mb-8 max-w-xl">
+            Trusted Adventures Across the Himalayas
           </h2>
 
-          <p className="text-gray-800 text-base font-ssLB leading-relaxed max-w-md">
-            Explore why travelers choose Oak7 — from unforgettable Himalayan
-            journeys to outstanding hospitality and expert guidance. Your adventure
-            is crafted with care, passion and years of experience.
-          </p>
+          {/* Stats Grid */}
+          <div ref={statsRef} className="grid grid-cols-2 gap-x-12  gap-y-12 max-w-xl">
+            {stats.map((stat, index) => (
+              <div key={index} className="p-4 pl-0 ">
+                <h3 className="text-4xl md:text-5xl font-ssBD text-gray-800">
+                  {stat.value}
+                </h3>
+                <p className="mt-2 text-gray-800 font-ssLB text-sm tracking-wide">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
 
-        {/* RIGHT STATS GRID */}
-        <div
-          ref={statsRef}
-          className="grid grid-cols-2 gap-x-12 gap-y-12"
-        >
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="p-4 pl-0 border-l-2 border-green-600/20"
-            >
-              <h3 className="text-4xl md:text-5xl font-ssBD text-gray-800">
-                {stat.value}
-              </h3>
-              <p className="mt-2 text-gray-600 font-ssLB text-sm tracking-wide">
-                {stat.label}
-              </p>
-            </div>
-          ))}
+        {/* Right Side Image */}
+        <div className="flex justify-center items-center">
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+            alt="Himalayas adventure"
+            className="rounded-lg shadow-xl object-cover max-w-full h-[320px]"
+          />
         </div>
-
       </div>
     </section>
   );

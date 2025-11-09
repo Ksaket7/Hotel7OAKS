@@ -69,7 +69,7 @@ const Contact = () => {
           </p>
           <div className="space-y-7">
             <div className="flex items-center gap-4">
-              <span className="inline-block font-bold text-green-700 rounded-full bg-green-100 p-2">
+              <span className="inline-block font-bold text-green rounded-full bg-green-100 p-2">
                 <MapPin size={20} />
               </span>
               <p className="font-ssLB text-gray-700 text-base">
@@ -77,13 +77,13 @@ const Contact = () => {
               </p>
             </div>
             <div className="flex items-center gap-4">
-              <span className="inline-block font-bold text-green-700 rounded-full bg-green-100 p-2">
+              <span className="inline-block font-bold text-green rounded-full bg-green-100 p-2">
                 <Phone size={20} />
               </span>
               <p className="font-ssLB text-gray-700 text-base">+91 98765 43210</p>
             </div>
             <div className="flex items-center gap-4">
-              <span className="inline-block font-bold text-green-700 rounded-full bg-green-100 p-2">
+              <span className="inline-block font-bold text-green rounded-full bg-green-100 p-2">
                 <Mail size={20} />
               </span>
               <p className="font-ssLB text-gray-700 text-base">info@oak7adventures.com</p>
@@ -145,7 +145,7 @@ const Contact = () => {
         <p className="text-gray-600 font-ssLB mb-8 max-w-2xl mx-auto">
           Drop by for a cup of tea in Rishikesh—let’s plan your adventure together!
         </p>
-        <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl border border-green-100">
+        <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl border border-green-100 p-4 md:p-0">
           <iframe
             title="Oak7 Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.892631773125!2d78.3237720150928!3d30.121962181861237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390915fe146d1a1d%3A0xa7dc2bb3c61b153a!2sRishikesh%2C%20Uttarakhand%20249192!5e0!3m2!1sen!2sin!4v1701256922508!5m2!1sen!2sin"

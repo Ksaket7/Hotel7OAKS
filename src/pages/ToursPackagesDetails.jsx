@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { toursData } from "../data/toursnpackages";
+import Form from "../components/Form";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -97,6 +98,7 @@ const TourPackageDetails = () => {
           Package Price: {tour.price}
         </p>
       </div>
+      <Form itemName={tour.title} itemType="Package" />
     </section>
   );
 };

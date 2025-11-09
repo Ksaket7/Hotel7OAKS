@@ -39,7 +39,7 @@ const Treks = () => {
         <div className="absolute inset-0 bg-black/55"></div>
 
         <div className="relative z-10 px-6 max-w-3xl">
-          <span className="inline-block px-5 py-1.5 mb-4 rounded-full text-sm font-medium text-green bg-white/10 border border-white/20 backdrop-blur-sm">
+          <span className="inline-block px-5 py-1.5 mb-4 rounded-full text-sm font-ssLBH text-white bg-white/10 border border-white/20 backdrop-blur-sm">
             Adventure Awaits
           </span>
 
@@ -125,7 +125,7 @@ const Treks = () => {
                 </div>
 
                 {/* ✅ Price + Button */}
-                <div className="flex items-center gap-6 pt-2">
+                <div className="flex justify-between items-center gap-6 pt-2">
                   <p className="text-green font-ssBD text-lg tracking-wide">
                     {trek.price}
                   </p>

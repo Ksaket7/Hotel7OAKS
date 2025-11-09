@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { hotelsData } from "../data/hotels";
+import Form from "../components/Form";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -99,7 +100,9 @@ const HotelDetail = () => {
             </div>
           ))}
         </div>
-      </div>
+          </div>
+          <Form itemName={hotel.name} itemType="Hotel" />
+
     </section>
   );
 };

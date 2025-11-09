@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Quote } from "lucide-react";
-import BrushStroke from "./BrushStroke";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +45,7 @@ const Testimonials = () => {
     <section className="py-8 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
         
-        <p className="text-green text-xl tracking-wide font-dsB mb-3">
+        <p className="text-green text-xl lg:text-2xl tracking-wide font-dsB mb-3">
           Testimonials
         </p>
 
@@ -67,7 +66,7 @@ const Testimonials = () => {
               key={index}
               className="flex flex-col bg-[#F6F6F6] rounded-xl p-7 text-left hover:shadow-lg transition duration-300"
             >
-              <Quote className="text-green-700 mb-4" size={30} />
+              <Quote className="text-green mb-4" size={30} />
               <h3 className="text-lg font-ssSBH text-black mb-2">{t.title}</h3>
               <p className="text-gray-700 font-ssLB text-sm leading-relaxed">
                 {t.desc}

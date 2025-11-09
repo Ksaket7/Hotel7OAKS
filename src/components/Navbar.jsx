@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, SlidersHorizontal } from "lucide-react"; // added Sliders icon for filter
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -41,6 +41,12 @@ const Navbar = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
   };
 
+  // === Mobile Filter Button Handler ===
+  const toggleMobileFilters = () => {
+    // Dispatch event listened by ToursAndPackages page
+    window.dispatchEvent(new CustomEvent("toggleFilters"));
+  };
+
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white backdrop-blur-md shadow-sm transition-all duration-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
@@ -51,16 +57,14 @@ const Navbar = () => {
           </h1>
         </Link>
 
-        {/* --- Center: Nav Links --- */}
+        {/* --- Center: Nav Links (Desktop) --- */}
         <ul className="hidden md:flex space-x-10 font-ssBookD text-sm tracking-wide">
           {links.map((link, index) => (
             <li key={index}>
               <Link
                 to={link.path}
                 className={`text-black hover:text-greenH transition-colors duration-200 ${
-                  location.pathname === link.path
-                    ? "text-green font-ssBD"
-                    : ""
+                  location.pathname === link.path ? "text-green font-ssBD" : ""
                 }`}
               >
                 {link.name}
@@ -69,20 +73,36 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* --- Right: Plan Trip Button --- */}
-        <Link to="/contact">
-          <button className="hidden md:block font-ssBookD text-sm px-5 py-2 rounded-full bg-green text-white hover:bg-greenH transition-all">
-            Plan a Trip
-          </button>
-        </Link>
+        {/* --- Right: Buttons --- */}
+        <div className="flex items-center gap-3">
+          {/* Desktop Plan Trip Button */}
+          <Link to="/contact">
+            <button className="hidden md:block font-ssBookD text-sm px-5 py-2 rounded-full bg-green text-white hover:bg-greenH transition-all">
+              Plan a Trip
+            </button>
+          </Link>
 
-        {/* --- Mobile Menu Toggle --- */}
-        <button
-          className="md:hidden bg-white text-black"
-          onClick={() => setOpen(!open)}
-        >
-          {open ? <X size={26} /> : <Menu size={26} />}
-        </button>
+          {/* --- Mobile Filter Button --- */}
+          {["/tours", "/hotels"].includes(location.pathname)&& (
+            <button
+              onClick={toggleMobileFilters}
+              className="md:hidden p-2 rounded-full text-green bg-white hover:bg-gray-100"
+              aria-label="Open Filters"
+              title="Open Filters"
+            >
+              <SlidersHorizontal size={22} />
+            </button>
+          )}
+
+          {/* --- Mobile Menu Toggle --- */}
+          <button
+            className="md:hidden p-2 rounded-full text-green bg-white hover:bg-gray-100"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle Menu"
+          >
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* --- Mobile Dropdown (Animated) --- */}

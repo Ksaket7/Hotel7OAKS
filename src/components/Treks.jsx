@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { Mountain, MapPinned } from "lucide-react";
-import trek from "../assets/Images/trek.png"
+import trek from "../assets/Images/trek.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,19 +29,14 @@ const Treks = () => {
   }, []);
 
   return (
-    <section className="w-full bg-white ">
-      <div ref={sectionRef} className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 px-6 items-center">
-
-        <div className="-ml-10">
-          <img
-            src={trek}
-            alt="trekker"
-            className="rounded-xl w-full object-cover"
-          />
-        </div>
-
-        <div>
-          <p className="text-lg tracking-wider font-dsB text-green mb-3">
+    <section className="w-full bg-white py-8">
+      <div
+        ref={sectionRef}
+        className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 px-6 items-center"
+      >
+        {/* Content: order 1 on mobile, order 2 on desktop */}
+        <div className="order-1 md:order-2 flex-1">
+          <p className="text-lg lg:text-2xl tracking-wider font-dsB text-green mb-3">
             Treks
           </p>
 
@@ -50,16 +45,17 @@ const Treks = () => {
           </h2>
 
           <p className="text-gray-800 font-ssLB leading-relaxed max-w-md mb-12">
-            Discover the raw beauty of Uttarakhand’s most legendary mountain trails.
-            Every path tells a story of adventure and resilience.
+            Discover the raw beauty of Uttarakhand’s most legendary mountain
+            trails. Every path tells a story of adventure and resilience.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 ">
             <div>
               <Mountain size={22} className="text-green-700 mb-3" />
               <h4 className="font-ssBD text-gray-800 mb-1">Kedarnath trail</h4>
               <p className="text-gray-800 font-ssLB text-sm leading-relaxed">
-                Ancient pilgrimage route through rugged mountain terrain, challenging and transformative.
+                Ancient pilgrimage route through rugged mountain terrain,
+                challenging and transformative.
               </p>
             </div>
 
@@ -67,21 +63,39 @@ const Treks = () => {
               <MapPinned size={22} className="text-green-700 mb-3" />
               <h4 className="font-ssBD text-gray-800 mb-1">Auli expedition</h4>
               <p className="text-gray-800 font-ssLB text-sm leading-relaxed">
-                High-altitude snow trek revealing pristine landscapes and breathtaking Himalayan panoramas.
+                High-altitude snow trek revealing pristine landscapes and
+                breathtaking Himalayan panoramas.
               </p>
             </div>
           </div>
 
-          <div className="flex gap-4">
+          {/* BUTTON: hidden on mobile, visible on md+ */}
+          <div className="hidden md:flex gap-4">
             <Link
               to="/treks"
               className="px-12 py-3 w-full text-center rounded-full bg-green text-white font-ssBD text-sm hover:bg-greenH"
             >
               Explore
             </Link>
-            {/* <button className="px-12 py-3 rounded-full text-green-600 border border-green-600 font-ssBD text-sm hover:bg-greenH hover:text-white transition">
-              Details
-            </button> */}
+          </div>
+        </div>
+
+        {/* Image: order 2 on mobile, order 1 on desktop */}
+        <div className="order-2 md:order-1 flex-1 flex flex-col items-center">
+          <img
+            src={trek}
+            alt="trekker"
+            className="rounded-xl w-full object-cover max-w-md"
+          />
+
+          {/* Button centered below image on mobile only */}
+          <div className="mt-6 w-full px-6 md:hidden flex justify-center">
+            <Link
+              to="/treks"
+              className="px-12 py-3 w-auto text-center rounded-full bg-green text-white font-ssBD text-sm hover:bg-greenH"
+            >
+              Explore
+            </Link>
           </div>
         </div>
       </div>
