@@ -30,7 +30,7 @@ const Treks = () => {
 
       {/* ✅ HERO SECTION */}
       <div
-        className="relative w-full h-[65vh] flex items-center justify-center text-center bg-cover bg-center"
+        className="relative w-full h-[70vh] flex items-center justify-center text-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1920')",
