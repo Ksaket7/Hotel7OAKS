@@ -21,6 +21,7 @@ import TourPackageDetails from "./pages/ToursPackagesDetails.jsx";
 import HotelDetail from "./pages/HotelDetails.jsx";
 import Loader from "./components/Loader.jsx"; // 👈 Import your loader
 import Error404 from "./pages/Error.jsx";
+import ScrollToTop from "./components/ScrollTop.jsx";
 
 // --- RouteTransitionWrapper for smooth fade-ins on navigation ---
 const RouteTransitionWrapper = ({ children }) => (
@@ -49,6 +50,7 @@ function AppContent() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route
