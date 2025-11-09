@@ -35,7 +35,7 @@ const Packages = () => {
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col justify-center items-center text-center"
       >
         {/* Label */}
-        <p className="text-green-600 text-sm sm:text-base md:text-lg tracking-wide font-ssBookD mb-3">
+        <p className="text-green text-sm sm:text-base md:text-lg tracking-wide font-ssBookD mb-3">
           Popular
         </p>
 

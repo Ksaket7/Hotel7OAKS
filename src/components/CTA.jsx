@@ -54,7 +54,7 @@ const CTA = () => {
         {/* CTA Button */}
         <Link
           to="/contact"
-          className="inline-block bg-green-600 hover:bg-green-700 text-white font-ssBookD text-base px-8 py-3 rounded-full transition-all duration-300 shadow-sm"
+          className="inline-block bg-green hover:bg-green-700 text-white font-ssBookD text-base px-8 py-3 rounded-full transition-all duration-300 shadow-sm"
         >
           Contact Us
         </Link>

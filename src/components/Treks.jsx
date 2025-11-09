@@ -41,7 +41,7 @@ const Treks = () => {
         </div>
 
         <div>
-          <p className="text-sm uppercase tracking-wider font-ssLB text-green-600 mb-3">
+          <p className="text-sm uppercase tracking-wider font-ssLB text-green mb-3">
             Treks
           </p>
 

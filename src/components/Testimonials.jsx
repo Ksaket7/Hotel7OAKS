@@ -46,7 +46,7 @@ const Testimonials = () => {
     <section className="py-8 bg-white overflow-hidden">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
         
-        <p className="text-green-600 text-sm tracking-wide font-ssBookD mb-3">
+        <p className="text-green text-sm tracking-wide font-ssBookD mb-3">
           Customers
         </p>
 

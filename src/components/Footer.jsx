@@ -8,7 +8,7 @@ const Footer = () => {
         {/* === Brand Section === */}
         <div>
           <h3 className="text-xl font-bold text-white mb-3">
-            OAK<span className="text-green-600">7</span>
+            OAK<span className="text-green">7</span>
           </h3>
           <p className="text-gray-400">
             Travel, Trek, and Explore the unexplored — with safety and trust.
