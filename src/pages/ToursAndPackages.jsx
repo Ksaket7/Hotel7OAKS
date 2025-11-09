@@ -79,12 +79,12 @@ const ToursAndPackages = () => {
 
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500">
               <p className="text-white mb-2">{tour.duration}</p>
-              <p className="text-green-400 font-semibold mb-3">
+              <p className="text-white font-semibold mb-3">
                 {tour.price}
               </p>
               <Link
                 to={`/tours/${tour.id}`}
-                className="bg-green-600 hover:bg-green-700 text-white text-sm px-5 py-2 rounded-full transition-all"
+                className="bg-green hover:bg-greenH text-white text-sm px-5 py-2 rounded-full transition-all"
               >
                 View Details
               </Link>

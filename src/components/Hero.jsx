@@ -1,17 +1,17 @@
 import { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const textRef = useRef(null);
   const paraRef = useRef(null);
   const btnRef = useRef(null);
 
-const images = [
-  
-  "https://plus.unsplash.com/premium_photo-1661963741928-673ed7f7c00b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171https://plus.unsplash.com/premium_photo-1661963741928-673ed7f7c00b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2071"
-];
-  
+  const images = [
+    "https://plus.unsplash.com/premium_photo-1661963741928-673ed7f7c00b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171https://plus.unsplash.com/premium_photo-1661963741928-673ed7f7c00b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2071",
+  ];
+
   // Text entrance animation (once)
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
@@ -90,14 +90,19 @@ const images = [
 
         <div
           ref={btnRef}
-          className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 w-full sm:w-auto"
+          className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 w-full"
         >
-          <button className="bg-green-600 hover:bg-green-700 font-ssBookD text-white px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base rounded-full transition-all w-[80%] sm:w-auto">
-            Explore Packages
-          </button>
-          <button className="border border-white/70 text-gray-900 sm:text-gray-800 font-ssBookD bg-white/80 hover:bg-white hover:text-green-800 px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base rounded-full transition-all w-[80%] sm:w-auto">
-            Inquire Now
-          </button>
+          <Link to="/tours" className="w-auto">
+            <button className="bg-green hover:bg-greenH font-ssBookD text-white px-5 sm:px-8 py-2 sm:py-3 text-sm sm:text-base rounded-full transition-all whitespace-nowrap">
+              Explore Packages
+            </button>
+          </Link>
+
+          <Link to="/contact" className="w-auto">
+            <button className="border border-white/70 text-gray-900 sm:text-gray-800 font-ssBookD bg-white/80 hover:bg-white hover:text-green-800 px-5 sm:px-8 py-2 sm:py-3 text-sm sm:text-base rounded-full transition-all whitespace-nowrap">
+              Inquire Now
+            </button>
+          </Link>
         </div>
       </div>
     </section>

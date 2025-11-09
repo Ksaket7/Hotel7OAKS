@@ -33,7 +33,7 @@ const CTA = () => {
         ref={sectionRef}
         className="max-w-4xl mx-auto px-6 flex flex-col items-center text-center"
       >
-        {/* Heading */}
+        {/* === Heading === */}
         <div className="relative text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900 whitespace-normal lg:whitespace-nowrap inline-block">
             Ready to embark on your next adventure
@@ -45,16 +45,16 @@ const CTA = () => {
           />
         </div>
 
-        {/* Subtext */}
+        {/* === Subtext === */}
         <p className="text-gray-700 font-ssLB text-sm sm:text-base md:text-lg mb-10 text-center whitespace-normal lg:whitespace-nowrap lg:w-max">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.
         </p>
 
-        {/* CTA Button */}
+        {/* === CTA Button === */}
         <Link
           to="/contact"
-          className="inline-block bg-green hover:bg-green-700 text-white font-ssBookD text-base px-8 py-3 rounded-full transition-all duration-300 shadow-sm"
+          className="inline-block bg-green hover:bg-greenH text-white font-ssBookD text-base px-8 py-3 rounded-full transition-all duration-300 shadow-sm"
         >
           Contact Us
         </Link>

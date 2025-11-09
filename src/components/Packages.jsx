@@ -41,7 +41,7 @@ const Packages = () => {
 
         {/* Heading */}
         <div className="relative text-center mb-10">
-          <h2 className="text-4xl md:text-5xl font-ssBD text-gray-900 inline-block">
+          <h2 className="text-4xl md:text-5xl font-ssBD text-gray-800 inline-block">
             Handpicked Tour Packages
           </h2>
           <BrushStroke
@@ -74,7 +74,7 @@ const Packages = () => {
                 </h3>
                 <Link
                   to={`/tours/${pkg.id}`}
-                  className="bg-green-600 hover:bg-green-700 text-white font-ssBookD px-5 py-2 rounded-full text-sm transition-all"
+                  className="bg-green hover:bg-greenH text-white font-ssBookD px-5 py-2 rounded-full text-sm transition-all"
                 >
                   View Details
                 </Link>

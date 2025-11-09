@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MapPin, Star } from "lucide-react";
 import { Link } from "react-router-dom";
-import { hotelsData } from "../data/hotels"; // ✅ adjust import path if needed
+import { hotelsData } from "../data/hotels"; // ✅ adjust path if needed
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,7 +35,7 @@ const HotelPreview = () => {
         <h2 className="text-4xl md:text-5xl font-ssBD text-gray-900 mb-4">
           Hotels
         </h2>
-        <p className="text-gray-600 text-lg">
+        <p className="text-gray-800 text-lg">
           Experience the best of Uttarakhand’s hospitality — from cozy lakeside
           lodges to mountain-view resorts curated just for you.
         </p>
@@ -76,12 +76,12 @@ const HotelPreview = () => {
 
             {/* Hover Overlay */}
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500">
-              <p className="text-green-400 font-semibold text-lg mb-3">
+              <p className="text-white font-semibold text-lg mb-3">
                 {hotel.price}
               </p>
               <Link
                 to={`/hotels/${hotel.id}`}
-                className="bg-green-600 hover:bg-green-700 text-white text-sm px-6 py-2 rounded-full transition-all"
+                className="bg-green hover:bg-greenH text-white text-sm px-6 py-2 rounded-full transition-all"
               >
                 View Details
               </Link>
@@ -94,7 +94,7 @@ const HotelPreview = () => {
       <div className="text-center mt-12">
         <Link
           to="/hotels"
-          className="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-lg font-semibold transition-all"
+          className="bg-green hover:bg-greenH text-white px-8 py-3 rounded-lg font-semibold transition-all"
         >
           View All Hotels
         </Link>

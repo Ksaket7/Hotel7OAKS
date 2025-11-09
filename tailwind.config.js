@@ -13,7 +13,8 @@ export default {
       },
 
       colors: {
-        "green": "#16A34A",    // ✅ single global brand color
+        green: "#16A34A",
+        greenH: "#008000", // ✅ single global brand color
       },
     },
   },

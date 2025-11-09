@@ -41,11 +41,11 @@ const Treks = () => {
         </div>
 
         <div>
-          <p className="text-sm uppercase tracking-wider font-ssLB text-green mb-3">
+          <p className="text-lg  tracking-wider font-ssBookD text-green mb-3">
             Treks
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-ssBD text-black leading-tight mb-6">
+          <h2 className="text-4xl md:text-5xl font-ssBD text-gray-900 leading-tight mb-6">
             Trek the Himalayas <br /> with us
           </h2>
 
@@ -57,16 +57,16 @@ const Treks = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-12">
             <div>
               <Mountain size={22} className="text-green-700 mb-3" />
-              <h4 className="font-ssBD text-black mb-1">Kedarnath trail</h4>
-              <p className="text-gray-700 font-ssLB text-sm leading-relaxed">
+              <h4 className="font-ssBD text-gray-800 mb-1">Kedarnath trail</h4>
+              <p className="text-gray-800 font-ssLB text-sm leading-relaxed">
                 Ancient pilgrimage route through rugged mountain terrain, challenging and transformative.
               </p>
             </div>
 
             <div>
               <MapPinned size={22} className="text-green-700 mb-3" />
-              <h4 className="font-ssBD text-black mb-1">Auli expedition</h4>
-              <p className="text-gray-700 font-ssLB text-sm leading-relaxed">
+              <h4 className="font-ssBD text-gray-800 mb-1">Auli expedition</h4>
+              <p className="text-gray-800 font-ssLB text-sm leading-relaxed">
                 High-altitude snow trek revealing pristine landscapes and breathtaking Himalayan panoramas.
               </p>
             </div>
@@ -75,13 +75,13 @@ const Treks = () => {
           <div className="flex gap-4">
             <Link
               to="/treks"
-              className="px-12 py-3 rounded-full bg-green-600 text-white font-ssBD text-sm hover:bg-green-700"
+              className="px-12 py-3 w-full text-center rounded-full bg-green text-white font-ssBD text-sm hover:bg-greenH"
             >
               Explore
             </Link>
-            <button className="px-12 py-3 rounded-full text-green-600 border border-green-600 font-ssBD text-sm hover:bg-green-700 hover:text-white transition">
+            {/* <button className="px-12 py-3 rounded-full text-green-600 border border-green-600 font-ssBD text-sm hover:bg-greenH hover:text-white transition">
               Details
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
