@@ -41,7 +41,7 @@ const Packages = () => {
 
         {/* Heading */}
         <div className="relative text-center mb-10">
-          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900 inline-block">
+          <h2 className="text-4xl md:text-5xl font-ssBD text-gray-900 inline-block">
             Handpicked Tour Packages
           </h2>
           <BrushStroke
