@@ -94,7 +94,7 @@ const HotelPreview = () => {
       <div className="text-center mt-12">
         <Link
           to="/hotels"
-          className="bg-green hover:bg-greenH text-white px-8 py-3 rounded-lg font-semibold transition-all"
+          className="bg-green text-white px-8 py-3 rounded-lg font-semibold transition-all"
         >
           View All Hotels
         </Link>
