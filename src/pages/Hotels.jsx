@@ -8,7 +8,6 @@ import {
   Search,
   X,
   SlidersHorizontal,
-  ChevronDown,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { hotelsData } from "../data/hotels";
@@ -26,9 +25,6 @@ const Hotel = () => {
   const [ratingMin, setRatingMin] = useState("any");
   const [locationsSelected, setLocationsSelected] = useState(["All"]);
   const [drawerOpen, setDrawerOpen] = useState(false);
-
-  // Dropdown toggles (mobile)
-  const [openDropdown, setOpenDropdown] = useState(null);
 
   // === Normalize price ===
   const hotelsWithRawPrice = useMemo(() => {
@@ -69,7 +65,9 @@ const Hotel = () => {
     }
 
     if (!(locationsSelected.length === 1 && locationsSelected[0] === "All")) {
-      filtered = filtered.filter((h) => locationsSelected.includes(h.location));
+      filtered = filtered.filter((h) =>
+        locationsSelected.includes(h.location)
+      );
     }
 
     filtered = filtered.filter((h) => {
@@ -93,13 +91,7 @@ const Hotel = () => {
     }
 
     return filtered;
-  }, [
-    searchText,
-    locationsSelected,
-    priceRange,
-    ratingMin,
-    hotelsWithRawPrice,
-  ]);
+  }, [searchText, locationsSelected, priceRange, ratingMin, hotelsWithRawPrice]);
 
   // === Sorting ===
   const sortedHotels = useMemo(() => {
@@ -140,6 +132,16 @@ const Hotel = () => {
     setPriceRange("any");
     setRatingMin("any");
     setLocationsSelected(["All"]);
+  };
+
+  const toggleLocation = (loc) => {
+    if (loc === "All") return setLocationsSelected(["All"]);
+    let newSet = [...locationsSelected];
+    if (newSet.includes("All")) newSet = [];
+    if (newSet.includes(loc)) newSet = newSet.filter((l) => l !== loc);
+    else newSet.push(loc);
+    if (newSet.length === 0) newSet = ["All"];
+    setLocationsSelected(newSet);
   };
 
   const removeFilter = (type, value) => {
@@ -368,18 +370,10 @@ const Hotel = () => {
         }`}
         onClick={() => setDrawerOpen(false)}
       />
-
       <aside
         className={`fixed top-0 right-0 z-50 h-full w-full max-w-xs md:hidden bg-white shadow-xl transform transition-transform duration-300 ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
         }`}
-        style={{
-          overflowY: "auto",
-          WebkitOverflowScrolling: "touch",
-          overscrollBehavior: "contain",
-          contain: "layout",
-          touchAction: "manipulation",
-        }}
       >
         <div className="p-4 border-b border-gray-200 flex items-center justify-between">
           <h3 className="text-lg font-semibold">Filters</h3>
@@ -391,8 +385,7 @@ const Hotel = () => {
           </button>
         </div>
 
-        {/* === Filter content === */}
-        <div className="p-4 space-y-6">
+        <div className="p-4 space-y-4 overflow-y-auto h-full">
           {/* Search */}
           <div>
             <label className="text-sm text-gray-700 mb-1 block">Search</label>
@@ -432,67 +425,123 @@ const Hotel = () => {
             </div>
           </div>
 
-          {/* === Inline dropdowns for mobile === */}
-          <Dropdown
-            label="Location"
-            value={
-              locationsSelected.length === 1 ? locationsSelected[0] : "All"
-            }
-            options={allLocations}
-            openDropdown={openDropdown}
-            setOpenDropdown={setOpenDropdown}
-            id="location"
-            onSelect={(val) =>
-              val === "All"
-                ? setLocationsSelected(["All"])
-                : setLocationsSelected([val])
-            }
-          />
+          {/* Location */}
+          <div>
+            <label className="text-sm text-gray-700 mb-1 block">Location</label>
+            <select
+              value={
+                locationsSelected.length === 1 ? locationsSelected[0] : "All"
+              }
+              onChange={(e) => {
+                const value = e.target.value;
+                if (value === "All") setLocationsSelected(["All"]);
+                else setLocationsSelected([value]);
+              }}
+              className="w-full px-4 py-2 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green"
+            >
+              {allLocations.map((loc) => (
+                <option key={loc} value={loc}>
+                  {loc}
+                </option>
+              ))}
+            </select>
+          </div>
 
-          <Dropdown
-            label="Price"
-            value={priceRange}
-            options={[
-              { value: "any", label: "Any Price" },
-              { value: "lt2k", label: "Below ₹2,000" },
-              { value: "2to5", label: "₹2,000 – ₹5,000" },
-              { value: "5to10", label: "₹5,000 – ₹10,000" },
-              { value: "gt10", label: "Above ₹10,000" },
-            ]}
-            openDropdown={openDropdown}
-            setOpenDropdown={setOpenDropdown}
-            id="price"
-            onSelect={setPriceRange}
-          />
+          {/* Price */}
+          <div>
+            <label className="text-sm text-gray-700 mb-1 block">Price</label>
+            <select
+              value={priceRange}
+              onChange={(e) => setPriceRange(e.target.value)}
+              className="w-full px-4 py-2 rounded-xl border border-gray-300"
+            >
+              <option value="any">Any Price</option>
+              <option value="lt2k">Below ₹2,000</option>
+              <option value="2to5">₹2,000 – ₹5,000</option>
+              <option value="5to10">₹5,000 – ₹10,000</option>
+              <option value="gt10">Above ₹10,000</option>
+            </select>
+          </div>
 
-          <Dropdown
-            label="Rating"
-            value={ratingMin}
-            options={[
-              { value: "any", label: "Any Rating" },
-              { value: "4", label: "⭐ 4.0+" },
-              { value: "4.5", label: "⭐ 4.5+" },
-            ]}
-            openDropdown={openDropdown}
-            setOpenDropdown={setOpenDropdown}
-            id="rating"
-            onSelect={setRatingMin}
-          />
+          {/* Rating */}
+          <div>
+            <label className="text-sm text-gray-700 mb-1 block">Rating</label>
+            <select
+              value={ratingMin}
+              onChange={(e) => setRatingMin(e.target.value)}
+              className="w-full px-4 py-2 rounded-xl border border-gray-300"
+            >
+              <option value="any">Any Rating</option>
+              <option value="4">⭐ 4.0+</option>
+              <option value="4.5">⭐ 4.5+</option>
+            </select>
+          </div>
 
-          <Dropdown
-            label="Sort by"
-            value={sortBy}
-            options={[
-              { value: "", label: "Recommended" },
-              { value: "price_low", label: "Price: Low → High" },
-              { value: "price_high", label: "Price: High → Low" },
-              { value: "rating", label: "Rating: High → Low" },
-            ]}
-            openDropdown={openDropdown}
-            setOpenDropdown={setOpenDropdown}
-            id="sort"
-            onSelect={setSortBy}
-          />
+          {/* Sort */}
+          <div>
+            <label className="text-sm text-gray-700 mb-1 block">Sort by</label>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="w-full px-4 py-2 rounded-xl border border-gray-300"
+            >
+              <option value="">Recommended</option>
+              <option value="price_low">Price: Low → High</option>
+              <option value="price_high">Price: High → Low</option>
+              <option value="rating">Rating: High → Low</option>
+            </select>
+          </div>
+
+          {/* Active chips */}
+          {anyFilterActive && (
+            <div>
+              <label className="text-sm text-gray-700 mb-2 block">
+                Active Filters
+              </label>
+              <div className="flex flex-wrap gap-2">
+                {searchText && (
+                  <button
+                    onClick={() => removeFilter("search")}
+                    className="bg-green/10 text-green px-3 py-1.5 rounded-full flex items-center gap-1 text-sm"
+                  >
+                    <span>{searchText}</span>
+                    <X size={14} />
+                  </button>
+                )}
+                {locationsSelected
+                  .filter((l) => l !== "All")
+                  .map((loc) => (
+                    <button
+                      key={loc}
+                      onClick={() => removeFilter("location", loc)}
+                      className="bg-green/10 text-green px-3 py-1.5 rounded-full flex items-center gap-1 text-sm"
+                    >
+                      <MapPin size={14} />
+                      <span>{loc}</span>
+                      <X size={14} />
+                    </button>
+                  ))}
+                {priceRange !== "any" && (
+                  <button
+                    onClick={() => removeFilter("price")}
+                    className="bg-green/10 text-green px-3 py-1.5 rounded-full flex items-center gap-1 text-sm"
+                  >
+                    <span>{priceLabels[priceRange]}</span>
+                    <X size={14} />
+                  </button>
+                )}
+                {ratingMin !== "any" && (
+                  <button
+                    onClick={() => removeFilter("rating")}
+                    className="bg-green/10 text-green px-3 py-1.5 rounded-full flex items-center gap-1 text-sm"
+                  >
+                    <span>{ratingLabels[ratingMin]}</span>
+                    <X size={14} />
+                  </button>
+                )}
+              </div>
+            </div>
+          )}
         </div>
       </aside>
 
@@ -546,9 +595,9 @@ const Hotel = () => {
                       "Comfortable rooms • Scenic views • Verified hospitality • Calm environment"}
                   </p>
                   <Link to={`${hotel.id}`}>
-                    <button className="w-full py-3 bg-green text-white rounded-full font-semibold hover:bg-greenH transition-all flex items-center justify-center gap-2">
-                      Book Now <ArrowRight size={18} />
-                    </button>
+                  <button className="w-full py-3 bg-green text-white rounded-full font-semibold hover:bg-greenH transition-all flex items-center justify-center gap-2">
+                    Book Now <ArrowRight size={18} />
+                  </button>
                   </Link>
                 </div>
               </div>
@@ -557,62 +606,6 @@ const Hotel = () => {
         </div>
       </div>
     </section>
-  );
-};
-
-// ====== Reusable inline dropdown component (for mobile) ======
-const Dropdown = ({
-  label,
-  value,
-  options,
-  id,
-  onSelect,
-  openDropdown,
-  setOpenDropdown,
-}) => {
-  const current =
-    typeof options[0] === "string"
-      ? value
-      : options.find((opt) => opt.value === value)?.label || "Select";
-
-  return (
-    <div className="relative">
-      <label className="text-sm text-gray-700 mb-1 block">{label}</label>
-      <button
-        type="button"
-        onClick={() => setOpenDropdown(openDropdown === id ? null : id)}
-        className="w-full flex justify-between items-center px-4 py-2 border border-gray-300 rounded-xl bg-white"
-      >
-        <span className="truncate text-gray-800 text-sm">{current}</span>
-        <ChevronDown
-          size={16}
-          className={`transition-transform ${
-            openDropdown === id ? "rotate-180" : ""
-          }`}
-        />
-      </button>
-
-      {openDropdown === id && (
-        <ul className="absolute left-0 top-full mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-md z-50 max-h-48 overflow-auto">
-          {options.map((opt) => {
-            const val = typeof opt === "string" ? opt : opt.value;
-            const labelText = typeof opt === "string" ? opt : opt.label;
-            return (
-              <li
-                key={val}
-                onClick={() => {
-                  onSelect(val);
-                  setOpenDropdown(null);
-                }}
-                className="px-4 py-2 hover:bg-green/10 text-sm text-gray-800 cursor-pointer"
-              >
-                {labelText}
-              </li>
-            );
-          })}
-        </ul>
-      )}
-    </div>
   );
 };
 
