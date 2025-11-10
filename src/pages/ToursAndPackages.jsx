@@ -393,6 +393,13 @@ const ToursAndPackages = () => {
         className={`fixed top-0 right-0 z-50 h-full w-full max-w-xs md:hidden bg-white shadow-xl transform transition-transform duration-300 ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
         }`}
+        style={{
+          overflowY: "auto",
+          WebkitOverflowScrolling: "touch",
+          overscrollBehavior: "contain",
+          contain: "layout",
+          touchAction: "manipulation",
+        }}
       >
         <div className="p-4 border-b border-gray-200 flex items-center justify-between">
           <h3 className="text-lg font-semibold">Filters</h3>
@@ -629,9 +636,9 @@ const ToursAndPackages = () => {
                   </p>
 
                   <Link to={`${tour.id}`}>
-                  <button className="w-full py-3 bg-green text-white rounded-full font-semibold hover:bg-greenH transition-all flex items-center justify-center gap-2">
-                    Explore <ArrowRight size={18} />
-                  </button>
+                    <button className="w-full py-3 bg-green text-white rounded-full font-semibold hover:bg-greenH transition-all flex items-center justify-center gap-2">
+                      Explore <ArrowRight size={18} />
+                    </button>
                   </Link>
                 </div>
               </div>
