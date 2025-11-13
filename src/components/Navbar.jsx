@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, SlidersHorizontal } from "lucide-react"; // added Sliders icon for filter
+import { Menu, X } from "lucide-react"; // added Sliders icon for filter
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -81,18 +81,6 @@ const Navbar = () => {
               Plan a Trip
             </button>
           </Link>
-
-          {/* --- Mobile Filter Button --- */}
-          {["/tours", "/hotels"].includes(location.pathname)&& (
-            <button
-              onClick={toggleMobileFilters}
-              className="md:hidden p-2 rounded-full text-green bg-white hover:bg-gray-100"
-              aria-label="Open Filters"
-              title="Open Filters"
-            >
-              <SlidersHorizontal size={22} />
-            </button>
-          )}
 
           {/* --- Mobile Menu Toggle --- */}
           <button
