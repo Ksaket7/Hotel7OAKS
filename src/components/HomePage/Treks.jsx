@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { Mountain, MapPinned } from "lucide-react";
-import trek from "../assets/Images/trek.png";
+import trek from "../../assets/Images/trek.png";
 
 gsap.registerPlugin(ScrollTrigger);
 

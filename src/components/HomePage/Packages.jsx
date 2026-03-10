@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-import { toursData } from "../data/toursnpackages";
+import { toursData } from "../../data/toursnpackages";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,7 +23,7 @@ const Packages = () => {
           trigger: sectionRef.current,
           start: "top 85%",
         },
-      }
+      },
     );
   }, []);
 

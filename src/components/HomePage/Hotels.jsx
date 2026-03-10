@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MapPin, Star } from "lucide-react";
 import { Link } from "react-router-dom";
-import { hotelsData } from "../data/hotels"; // ✅ adjust path if needed
+import { hotelsData } from "../../data/hotels"; // ✅ adjust path if needed
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,7 +24,7 @@ const HotelPreview = () => {
           trigger: gridRef.current,
           start: "top 85%",
         },
-      }
+      },
     );
   }, []);
 

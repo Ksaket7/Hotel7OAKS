@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { toursData } from "../data/toursnpackages";
-import Form from "../components/Form";
+import Form from "../components/Common/Form";
 
 gsap.registerPlugin(ScrollTrigger);
 

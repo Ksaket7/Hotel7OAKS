@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MapPin, Phone, Mail } from "lucide-react";
-import BrushStroke from "../components/BrushStroke";
+import BrushStroke from "../components/HomePage/BrushStroke";
 
 gsap.registerPlugin(ScrollTrigger);
 

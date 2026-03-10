@@ -8,8 +8,8 @@ import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import HomePage from "./pages/HomePage";
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
+import Navbar from "./components/Common/Navbar.jsx";
+import Footer from "./components/Common/Footer.jsx";
 import "./index.css";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/ContactUs.jsx";
@@ -19,9 +19,9 @@ import Treks from "./pages/Treks.jsx";
 import TrekDetails from "./pages/TrekDetails.jsx";
 import TourPackageDetails from "./pages/ToursPackagesDetails.jsx";
 import HotelDetail from "./pages/HotelDetails.jsx";
-import Loader from "./components/Loader.jsx"; // 👈 Import your loader
+import Loader from "./components/Common/Loader.jsx"; // 👈 Import your loader
 import Error404 from "./pages/Error.jsx";
-import ScrollToTop from "./components/ScrollTop.jsx";
+import ScrollToTop from "./components/HomePage/ScrollTop.jsx";
 
 // --- RouteTransitionWrapper for smooth fade-ins on navigation ---
 const RouteTransitionWrapper = ({ children }) => (
