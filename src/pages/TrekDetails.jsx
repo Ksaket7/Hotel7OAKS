@@ -3,7 +3,7 @@ import { MapPin, Clock, Mountain, MessageCircle } from "lucide-react";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { treksData } from "../data/treks";
+import { treksData } from "../data/treks/treks";
 import Form from "../components/Common/Form";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -14,15 +14,17 @@ const TrekDetails = () => {
 
   const handleWhatsAppClick = () => {
     const phoneNumber = "919876543210";
-    const message = encodeURIComponent(`Hi! I'm interested in ${trek?.title || 'this trek'}. Can you share more details?`);
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+    const message = encodeURIComponent(
+      `Hi! I'm interested in ${trek?.title || "this trek"}. Can you share more details?`,
+    );
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
 
   useEffect(() => {
     gsap.fromTo(
       ".detail-block",
       { y: 40, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, stagger: 0.15, ease: "power3.out" }
+      { y: 0, opacity: 1, duration: 1, stagger: 0.15, ease: "power3.out" },
     );
   }, []);
 
@@ -46,7 +48,7 @@ const TrekDetails = () => {
     <section className="bg-white overflow-hidden pb-20">
       {/* === HERO === */}
       <div
-        className="relative w-full h-[80vh] bg-cover bg-center flex items-center justify-center"
+        className="relative w-full h-[70vh] bg-cover bg-center flex items-center justify-center"
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url(${trek.images[0]})`,
         }}
@@ -62,13 +64,16 @@ const TrekDetails = () => {
           <p className="text-green text-sm font-ssBookD bg-green/10 px-3 py-1 rounded-full tracking-wide w-fit">
             {trek.tag}
           </p>
-          
+
           <div className="flex justify-start sm:justify-end">
             <button
               onClick={handleWhatsAppClick}
               className="group flex items-center gap-2 bg-green hover:bg-greenH text-white font-ssBookD px-5 py-2.5 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.02] whitespace-nowrap text-sm"
             >
-              <MessageCircle size={16} className="group-hover:scale-110 transition-transform" />
+              <MessageCircle
+                size={16}
+                className="group-hover:scale-110 transition-transform"
+              />
               Chat with us
             </button>
           </div>
@@ -92,11 +97,11 @@ const TrekDetails = () => {
           </div>
         </div>
 
-        <p className="text-gray-900 font-ssLB text-base leading-relaxed max-w-3xl detail-block">
+        <p className="text-gray-900 font-ssLB text-base leading-relaxed w-full text-justify detail-block">
           {trek.desc}
         </p>
 
-        <p className="mt-10 text-gray-900 text-3xl font-ssBD detail-block">
+        <p className="mt-10 text-greenH text-3xl font-ssBD detail-block">
           Package Price: {trek.price}
         </p>
       </div>
@@ -109,30 +114,44 @@ const TrekDetails = () => {
 
         <div className="grid md:grid-cols-4 gap-6 text-center">
           {trek.region && (
-            <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group">
-              <p className="text-gray-500 text-sm group-hover:text-green transition-colors">Region</p>
+            <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col justify-center align-middle">
+              <p className="text-gray-500 text-sm group-hover:text-greenH transition-colors">
+                Region
+              </p>
               <p className="font-ssSBH text-gray-900 text-lg">{trek.region}</p>
             </div>
           )}
 
           {trek.startingPoint && (
-            <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group">
-              <p className="text-gray-500 text-sm group-hover:text-green transition-colors">Starting Point</p>
-              <p className="font-ssSBH text-gray-900 text-lg">{trek.startingPoint}</p>
+            <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col justify-center align-middle">
+              <p className="text-gray-500 text-sm group-hover:text-greenH transition-colors">
+                Starting Point
+              </p>
+              <p className="font-ssSBH text-gray-900 text-lg">
+                {trek.startingPoint}
+              </p>
             </div>
           )}
 
           {trek.distance && (
-            <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group">
-              <p className="text-gray-500 text-sm group-hover:text-green transition-colors">Distance</p>
-              <p className="font-ssSBH text-gray-900 text-lg">{trek.distance}</p>
+            <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col justify-center align-middle">
+              <p className="text-gray-500 text-sm group-hover:text-greenH transition-colors">
+                Distance
+              </p>
+              <p className="font-ssSBH text-gray-900 text-lg">
+                {trek.distance}
+              </p>
             </div>
           )}
 
           {trek.bestSeason && (
-            <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group">
-              <p className="text-gray-500 text-sm group-hover:text-green transition-colors">Best Season</p>
-              <p className="font-ssSBH text-gray-900 text-lg">{trek.bestSeason}</p>
+            <div className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col justify-center align-middle">
+              <p className="text-gray-500 text-sm group-hover:text-greenH transition-colors">
+                Best Season
+              </p>
+              <p className="font-ssSBH text-gray-900 text-lg">
+                {trek.bestSeason}
+              </p>
             </div>
           )}
         </div>
@@ -160,9 +179,14 @@ const TrekDetails = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             {trek.highlights.map((item, i) => (
-              <div key={i} className="bg-gradient-to-r from-green/5 to-emerald-50 p-6 rounded-2xl shadow-sm hover:shadow-xl border border-green/20 hover:border-green/40 transition-all duration-300">
+              <div
+                key={i}
+                className="bg-gradient-to-r from-green/5 to-emerald-50 p-6 rounded-2xl shadow-sm hover:shadow-xl border border-green/20 hover:border-green/40 transition-all duration-300"
+              >
                 <div className="w-2 h-2 bg-green rounded-full mb-4"></div>
-                <p className="text-gray-900 font-ssLB leading-relaxed">{item}</p>
+                <p className="text-gray-900 font-ssLB leading-relaxed">
+                  {item}
+                </p>
               </div>
             ))}
           </div>
@@ -171,7 +195,7 @@ const TrekDetails = () => {
 
       {/* === ITINERARY === */}
       <div className="max-w-5xl mx-auto px-6 mt-20 detail-block">
-        <h2 className="text-3xl font-ssBD text-gray-900 mb-10 text-center bg-gradient-to-r from-green to-greenH bg-clip-text text-transparent">
+        <h2 className="text-3xl font-ssBD  mb-10 text-center  text-gray-900">
           Trek Itinerary
         </h2>
 
@@ -181,12 +205,14 @@ const TrekDetails = () => {
               key={i}
               className="relative mb-12 pl-4 before:content-[''] before:absolute before:w-5 before:h-5 before:bg-gradient-to-r before:from-green before:to-greenH before:rounded-full before:-left-[0.875rem] before:top-2 before:shadow-md before:ring-2 before:ring-green/30"
             >
-              <div className="bg-white/80 backdrop-blur-sm border border-gray-100/50 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-400 border-green/10 hover:border-green/20">
+              <div className="bg-white/80 backdrop-blur-sm border rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-400 border-green/10 hover:border-green/20">
                 <h3 className="text-xl font-ssBD bg-gradient-to-r from-green to-greenH bg-clip-text text-transparent mb-4 pt-4 pl-4">
                   {item.day}
                 </h3>
                 <div className="p-6">
-                  <h4 className="text-lg font-ssSBH text-gray-900 mb-4">{item.title}</h4>
+                  <h4 className="text-lg font-ssSBH text-gray-900 mb-4">
+                    {item.title}
+                  </h4>
                   <ul className="list-disc pl-6 text-gray-900 font-ssLB text-sm leading-relaxed space-y-2">
                     {item.details.map((d, idx) => (
                       <li key={idx}>{d}</li>
@@ -209,11 +235,16 @@ const TrekDetails = () => {
               </h3>
               <div className="space-y-3">
                 {trek.included.map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 p-3 bg-white/50 rounded-xl hover:bg-white hover:shadow-sm transition-all">
+                  <div
+                    key={i}
+                    className="flex items-start gap-3 p-3 bg-white/50 rounded-xl hover:bg-white hover:shadow-sm transition-all"
+                  >
                     <div className="w-6 h-6 bg-green rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white font-bold text-sm">✔</span>
                     </div>
-                    <span className="font-ssLB text-gray-900 leading-relaxed">{item}</span>
+                    <span className="font-ssLB text-gray-900 leading-relaxed">
+                      {item}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -227,11 +258,16 @@ const TrekDetails = () => {
               </h3>
               <div className="space-y-3">
                 {trek.excluded.map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 p-3 bg-white/50 rounded-xl hover:bg-white hover:shadow-sm transition-all">
+                  <div
+                    key={i}
+                    className="flex items-start gap-3 p-3 bg-white/50 rounded-xl hover:bg-white hover:shadow-sm transition-all"
+                  >
                     <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white font-bold text-sm">✖</span>
                     </div>
-                    <span className="font-ssLB text-gray-900 leading-relaxed">{item}</span>
+                    <span className="font-ssLB text-gray-900 leading-relaxed">
+                      {item}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -253,7 +289,7 @@ const TrekDetails = () => {
           </div>
         </div>
       )}
-
+      <Form itemName={trek.title} itemType="Trek" />
       {/* === CTA SECTION === */}
       <div className="max-w-6xl mx-auto px-6 mt-20 mb-16 detail-block">
         <div className="bg-gradient-to-r from-green to-greenH p-12 rounded-3xl text-white text-center shadow-2xl">
@@ -277,8 +313,6 @@ const TrekDetails = () => {
           </div>
         </div>
       </div>
-
-      <Form itemName={trek.title} itemType="Trek" />
     </section>
   );
 };
