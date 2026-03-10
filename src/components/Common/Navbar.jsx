@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react"; // added Sliders icon for filter
+import { Menu, X, Phone } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {};
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -23,120 +26,195 @@ const Navbar = () => {
   ];
 
   const dropdownVariants = {
-    hidden: { opacity: 0, y: -20 },
+    hidden: { opacity: 0, y: -20, scale: 0.95 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.4, ease: "easeOut", staggerChildren: 0.05 },
+      scale: 1,
+      transition: { duration: 0.3, ease: "easeOut", staggerChildren: 0.08 },
     },
     exit: {
       opacity: 0,
-      y: -20,
-      transition: { duration: 0.3, ease: "easeIn" },
+      y: -10,
+      scale: 0.95,
+      transition: { duration: 0.2 },
     },
   };
 
   const linkVariants = {
-    hidden: { opacity: 0, y: 10 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+    hidden: { opacity: 0, x: -20 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.25 } },
   };
 
-  // === Mobile Filter Button Handler ===
-  const toggleMobileFilters = () => {
-    // Dispatch event listened by ToursAndPackages page
-    window.dispatchEvent(new CustomEvent("toggleFilters"));
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "919876543210";
+    const message = encodeURIComponent("Hi! I'd like to plan a trip with Oak7.");
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white backdrop-blur-md shadow-sm transition-all duration-300">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-        {/* --- Left: Logo --- */}
-        <Link to="/">
-          <h1 className="text-xl md:text-2xl tracking-tight font-ssSBH text-green">
-            OAK7
-          </h1>
-        </Link>
+    <motion.nav 
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled 
+          ? "bg-white/95 shadow-lg backdrop-blur-xl border-b border-gray-100" 
+          : "bg-white/80 backdrop-blur-md shadow-sm"
+      }`}
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-3 lg:py-4">
+          
+          {/* Logo */}
+          <motion.div className="flex-shrink-0">
+            <Link to="/" className="group">
+              <h1 className={`text-2xl lg:text-3xl font-ssSBH tracking-tight bg-gradient-to-r ${
+                scrolled 
+                  ? "bg-gradient-to-r from-green to-greenH" 
+                  : "from-green via-green to-greenH"
+              } bg-clip-text text-transparent group-hover:scale-105 transition-all duration-300`}>
+                OAK7
+              </h1>
+            </Link>
+          </motion.div>
 
-        {/* --- Center: Nav Links (Desktop) --- */}
-        <ul className="hidden md:flex space-x-10 font-ssBookD text-sm tracking-wide">
-          {links.map((link, index) => (
-            <li key={index}>
-              <Link
-                to={link.path}
-                className={`text-black hover:text-greenH transition-colors duration-200 ${
-                  location.pathname === link.path ? "text-green font-ssBD" : ""
-                }`}
+          {/* Desktop Nav */}
+          <motion.ul 
+            className="hidden lg:flex items-center space-x-1"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            {links.map((link, index) => (
+              <motion.li 
+                key={index}
+                className="relative group"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
               >
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+                <Link
+                  to={link.path}
+                  className={`px-4 py-2 rounded-xl text-sm font-ssBookD tracking-wide transition-all duration-300 flex items-center gap-1 ${
+                    location.pathname === link.path
+                      ? "text-green bg-green/10 font-ssBD shadow-lg ring-2 ring-green/20"
+                      : "text-gray-700 hover:text-green hover:bg-green/5"
+                  }`}
+                >
+                  {link.name}
+                  {location.pathname === link.path && (
+                    <motion.div
+                      className="h-1 w-1 bg-green rounded-full"
+                      layoutId="activeIndicator"
+                      transition={{ duration: 0.3 }}
+                    />
+                  )}
+                </Link>
+              </motion.li>
+            ))}
+          </motion.ul>
 
-        {/* --- Right: Buttons --- */}
-        <div className="flex items-center gap-3">
-          {/* Desktop Plan Trip Button */}
-          <Link to="/contact">
-            <button className="hidden md:block font-ssBookD text-sm px-5 py-2 rounded-full bg-green text-white hover:bg-greenH transition-all">
-              Plan a Trip
-            </button>
-          </Link>
+          {/* Desktop CTAs */}
+          <motion.div 
+            className="hidden lg:flex items-center gap-3"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center gap-2 text-sm font-ssBookD px-6 py-2.5 bg-green text-white rounded-full hover:bg-greenH shadow-lg hover:shadow-xl transition-all duration-300 border border-green/20"
+              onClick={handleWhatsAppClick}
+            >
+              <Phone size={18} />
+              Chat Now
+            </motion.button>
+            
+            <Link to="/contact">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="text-sm font-ssBookD px-6 py-2.5 bg-white text-green border-2 border-green rounded-full hover:bg-green hover:text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                Plan Trip
+              </motion.button>
+            </Link>
+          </motion.div>
 
-          {/* --- Mobile Menu Toggle --- */}
-          <button
-            className="md:hidden p-2 rounded-full text-green bg-white hover:bg-gray-100"
+          {/* Mobile menu button */}
+          <motion.button
+            className={`lg:hidden p-2 rounded-xl text-green transition-all ${
+              scrolled ? "bg-white/80 shadow-md" : "bg-white/50 backdrop-blur-sm"
+            } hover:bg-green/5 hover:shadow-lg`}
             onClick={() => setOpen(!open)}
+            whileTap={{ scale: 0.95 }}
             aria-label="Toggle Menu"
           >
             {open ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          </motion.button>
         </div>
       </div>
 
-      {/* --- Mobile Dropdown (Animated) --- */}
+      {/* Mobile Menu */}
       <AnimatePresence>
         {open && (
           <motion.div
-            key="mobile-menu"
             initial="hidden"
             animate="visible"
             exit="exit"
             variants={dropdownVariants}
-            className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden py-6 px-8"
+            className="lg:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl shadow-2xl border-t border-gray-100"
           >
-            <motion.ul
-              className="space-y-4 font-ssBookD text-sm"
+            <motion.div 
               variants={dropdownVariants}
+              className="max-w-7xl mx-auto px-6 py-8"
             >
-              {links.map((link, index) => (
-                <motion.li key={index} variants={linkVariants}>
-                  <Link
-                    to={link.path}
-                    onClick={() => setOpen(false)}
-                    className={`block text-black hover:text-greenH ${
-                      location.pathname === link.path
-                        ? "text-green font-ssBD"
-                        : ""
-                    }`}
+              <motion.ul className="space-y-3" variants={linkVariants}>
+                {links.map((link, index) => (
+                  <motion.li key={index}>
+                    <Link
+                      to={link.path}
+                      onClick={() => setOpen(false)}
+                      className={`block py-4 px-6 rounded-2xl text-lg font-ssBookD transition-all duration-300 border-l-4 ${
+                        location.pathname === link.path
+                          ? "text-green bg-green/10 font-ssBD border-green shadow-xl"
+                          : "text-gray-800 hover:text-green hover:bg-green/5 border-transparent hover:border-green/30"
+                      }`}
+                    >
+                      {link.name}
+                    </Link>
+                  </motion.li>
+                ))}
+                
+                <motion.div variants={linkVariants} className="pt-6 mt-4 border-t border-gray-100">
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    onClick={() => {
+                      setOpen(false);
+                      handleWhatsAppClick();
+                    }}
+                    className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-green text-white rounded-2xl font-ssBD text-lg shadow-xl hover:shadow-2xl hover:bg-greenH transition-all duration-300 border border-green/20"
                   >
-                    {link.name}
+                    <Phone size={20} />
+                    Chat on WhatsApp
+                  </motion.button>
+                  
+                  <Link 
+                    to="/contact"
+                    onClick={() => setOpen(false)}
+                    className="block w-full text-center py-4 px-6 mt-3 bg-white text-green border-2 border-green rounded-2xl font-ssBD text-lg hover:bg-green hover:text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    Plan a Trip →
                   </Link>
-                </motion.li>
-              ))}
-
-              {/* CTA Button inside dropdown */}
-              <motion.li variants={linkVariants}>
-                <Link to="/contact" onClick={() => setOpen(false)}>
-                  <button className="mt-4 w-full bg-green text-white px-4 py-2 rounded-full hover:bg-greenH font-ssBD transition-all">
-                    Plan a Trip
-                  </button>
-                </Link>
-              </motion.li>
-            </motion.ul>
+                </motion.div>
+              </motion.ul>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+    </motion.nav>
   );
 };
 

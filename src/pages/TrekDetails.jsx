@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { MapPin, Clock, Mountain } from "lucide-react";
+import { MapPin, Clock, Mountain, MessageCircle } from "lucide-react";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,6 +11,13 @@ gsap.registerPlugin(ScrollTrigger);
 const TrekDetails = () => {
   const { id } = useParams();
   const trek = treksData.find((t) => t.id === id);
+
+  const handleWhatsAppClick = () => {
+    // Replace with your WhatsApp number and pre-filled message
+    const phoneNumber = "919876543210"; // Your WhatsApp number (with country code)
+    const message = encodeURIComponent(`Hi! I'm interested in ${trek?.title || 'this trek'}. Can you share more details?`);
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+  };
 
   useEffect(() => {
     gsap.fromTo(
@@ -51,12 +58,29 @@ const TrekDetails = () => {
         </h1>
       </div>
 
-      {/* === INFO === */}
-      <div className="max-w-6xl mx-auto px-6 mt-14">
-        <p className="text-green text-sm font-ssBookD bg-green/10 px-3 py-1 rounded-full  tracking-wide w-fit detail-block">
-          {trek.tag}
-        </p>
+      {/* === TAG + WHATSAPP ROW === */}
+      <div className="max-w-6xl mx-auto px-6 mt-14 detail-block">
+        <div className="flex flex-row sm:items-center gap-4 justify-between">
+          {/* Left: Spiritual/Scenic tag */}
+          <p className="text-green text-sm font-ssBookD bg-green/10 px-3 py-1 rounded-full tracking-wide w-fit">
+            {trek.tag}
+          </p>
+          
+          {/* Right: WhatsApp Button */}
+          <div className="flex justify-start sm:justify-end">
+            <button
+              onClick={handleWhatsAppClick}
+              className="group flex items-center gap-2 bg-green hover:bg-greenH text-white font-ssBookD px-5 py-2.5 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.02] whitespace-nowrap text-sm"
+            >
+              <MessageCircle size={16} className="group-hover:scale-110 transition-transform" />
+              Chat with us
+            </button>
+          </div>
+        </div>
+      </div>
 
+      {/* === INFO ICONS === */}
+      <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-wrap items-center gap-6 my-6 text-gray-900 font-ssSBH text-sm detail-block">
           <div className="flex items-center gap-2">
             <MapPin size={16} className="text-green" />
