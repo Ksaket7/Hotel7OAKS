@@ -210,7 +210,7 @@ const Hotel = () => {
     <section className="min-h-screen bg-white">
 
       {/* HERO */}
-      <div className="relative w-full h-[60vh] flex items-center justify-center text-center bg-black">
+      <div className="relative w-full h-[70vh] flex items-center justify-center text-center bg-black">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -220,13 +220,13 @@ const Hotel = () => {
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 px-6 max-w-3xl mx-auto">
-          <span className="inline-block px-4 py-1.5 mb-3 rounded-full text-sm text-white bg-white/10 border border-white/20 backdrop-blur-sm">
+          <span className="inline-block px-4 py-1.5 mb-3 rounded-full text-sm font-ssBookD tracking-wider text-white bg-white/10 border border-white/20 backdrop-blur-sm">
             Find Your Perfect Stay
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-3 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-ssBD text-white mb-3 leading-tight">
             Hotels & Mountain Stays
           </h1>
-          <p className="text-white/90 text-base md:text-lg max-w-xl mx-auto">
+          <p className="text-white/90 text-base md:text-lg max-w-xl font-ssLB mx-auto">
             Handpicked hotels offering comfort, luxury, and breathtaking
             landscapes across Uttarakhand.
           </p>

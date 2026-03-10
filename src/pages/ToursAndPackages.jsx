@@ -230,7 +230,7 @@ const ToursAndPackages = () => {
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 px-6 max-w-4xl mx-auto">
-          <span className="inline-block px-5 py-1.5 mb-4 rounded-full text-sm font-medium text-white bg-white/10 border border-white/20 backdrop-blur-sm">
+          <span className="inline-block px-5 py-1.5 mb-4 rounded-full text-sm font-ssBookD tracking-wider text-white bg-white/10 border border-white/20 backdrop-blur-sm">
             Discover Your Next Journey
           </span>
           <h1 className="text-5xl md:text-7xl font-ssBD text-white mb-4 leading-tight">
