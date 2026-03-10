@@ -26,10 +26,10 @@ const Treks = () => {
         className="relative w-full h-[70vh] flex items-center justify-center text-center bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1920')",
+            "url('https://images.pexels.com/photos/32284790/pexels-photo-32284790.jpeg')",
         }}
       >
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
         <div className="relative z-10 px-6 max-w-3xl">
           <span className="inline-block px-5 py-1.5 mb-4 rounded-full text-sm text-white bg-white/10 border border-white/20 backdrop-blur-sm font-ssBookD tracking-wider">
             Adventure Awaits

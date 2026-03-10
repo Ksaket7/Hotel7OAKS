@@ -225,10 +225,10 @@ const ToursAndPackages = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1920')",
+              "url('https://images.pexels.com/photos/7846474/pexels-photo-7846474.jpeg')",
           }}
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 px-6 max-w-4xl mx-auto">
           <span className="inline-block px-5 py-1.5 mb-4 rounded-full text-sm font-ssBookD tracking-wider text-white bg-white/10 border border-white/20 backdrop-blur-sm">
             Discover Your Next Journey

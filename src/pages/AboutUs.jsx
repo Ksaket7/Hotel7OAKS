@@ -33,10 +33,10 @@ const AboutUs = () => {
         className="relative flex flex-col justify-center items-center text-center min-h-[70vh] bg-cover bg-center px-6"
         style={{
           backgroundImage:
-            "url('https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&fit=crop&w=1600&q=80')",
+            "url('https://images.pexels.com/photos/16635811/pexels-photo-16635811.jpeg')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-transparent backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-black/30"></div>
         <div className="relative z-10 text-white max-w-3xl drop-shadow-xl flex flex-col items-center">
           <span className="mb-4 px-6 py-2 rounded-full bg-white/10 border border-white/20 font-semibold text-green-300 text-sm tracking-wider shadow-sm backdrop-blur-md">
             Who We Are

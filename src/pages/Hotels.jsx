@@ -215,10 +215,10 @@ const Hotel = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1600&q=80')",
+              "url('https://images.pexels.com/photos/939723/pexels-photo-939723.jpeg')",
           }}
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 px-6 max-w-3xl mx-auto">
           <span className="inline-block px-4 py-1.5 mb-3 rounded-full text-sm font-ssBookD tracking-wider text-white bg-white/10 border border-white/20 backdrop-blur-sm">
             Find Your Perfect Stay

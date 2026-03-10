@@ -34,10 +34,10 @@ const Contact = () => {
         className="relative flex flex-col justify-center items-center text-center min-h-[70vh] bg-cover bg-center px-6"
         style={{
           backgroundImage:
-            "url('https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&fit=crop&w=1600&q=80')",
+            "url('https://images.pexels.com/photos/1047966/pexels-photo-1047966.jpeg')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/25 to-transparent backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-white max-w-3xl drop-shadow-xl">
           <span className="inline-block mb-5 px-6 py-2 font-semibold rounded-full bg-white/20 backdrop-blur-sm border border-white/20 text-green-300 text-sm tracking-wider shadow-lg">
             Contact Oak7
