@@ -123,12 +123,12 @@ export const gaumukh = {
     "With 7 Oaks Trek and Travels, explore the legendary Gaumukh Tapovan trek with experienced guides, safe glacier navigation, and well-planned camping arrangements. This expedition offers trekkers an unforgettable journey to the sacred source of the Ganga and the stunning high-altitude meadows of Tapovan.",
 
   images: [
+    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/gaumukh_tapovan_gallery_9-optimized_hozvto.webp",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157323/9Trekyaari-Gaumukh-Tapovan_9_9eKJeIsGcy_oblre7.webp",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157323/672dab75a03b5_k8er8g.webp",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157323/66432568_10157943580956874_3675994652458090496_n_tdafb2.jpg",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157326/Gaumukh-Tapovan-1-min_svaxuu.jpg",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/Gaumukh-Tapovan-9_jwuf2e.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/gaumukh_tapovan_gallery_9-optimized_hozvto.webp",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/images_fhspom.jpg",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/tapovan_mbhwbr.webp",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/gaumukh-trek-1024x1022_drvi2h.webp",
