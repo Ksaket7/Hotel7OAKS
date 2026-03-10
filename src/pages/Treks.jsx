@@ -21,6 +21,28 @@ const Treks = () => {
 
   return (
     <section className="bg-white overflow-hidden">
+      {/* === HERO === */}
+      <div
+        className="relative w-full h-[80vh] flex items-center justify-center text-center bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1920')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="relative z-10 px-6 max-w-3xl">
+          <span className="inline-block px-5 py-1.5 mb-4 rounded-full text-sm text-white bg-white/10 border border-white/20 backdrop-blur-sm">
+            Adventure Awaits
+          </span>
+          <h1 className="text-5xl md:text-7xl font-ssBD text-white mb-4 leading-tight">
+            Treks of Uttarakhand
+          </h1>
+          <p className="text-white/85 font-ssLB text-base md:text-lg max-w-xl mx-auto leading-relaxed">
+            From snow peaks to spiritual trails — experience handpicked
+            Himalayan treks designed for every adventurer.
+          </p>
+        </div>
+      </div>
 
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 py-20">
 
