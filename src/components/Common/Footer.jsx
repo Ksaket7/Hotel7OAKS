@@ -3,22 +3,53 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-        {/* Brand */}
+    <footer className="relative bg-gradient-to-b from-gray-900 to-black text-gray-300 pt-20 pb-10 overflow-hidden">
+
+      {/* subtle background glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-green/10 blur-[120px] pointer-events-none"></div>
+
+      <div className="relative max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+
+        {/* BRAND */}
         <div>
-          <h3 className="text-3xl font-extrabold text-white mb-4 select-none">
+          <h3 className="text-4xl font-extrabold text-white mb-5 tracking-tight">
             OAK<span className="text-green">7</span>
           </h3>
-          <p className="text-gray-400 leading-relaxed text-lg max-w-sm">
-            Travel, Trek, and Explore the unexplored — with safety and trust.
+
+          <p className="text-gray-400 leading-relaxed text-lg max-w-sm font-ssLB">
+            Discover hidden trails, conquer mountains, and explore the wild
+            with trusted adventure experiences.
           </p>
+
+          {/* SOCIALS */}
+          <div className="flex items-center gap-5 mt-6 font-ssLB">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-green hover:text-white transition-all duration-300"
+            >
+              <Facebook size={18} />
+            </a>
+
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-green hover:text-white transition-all duration-300"
+            >
+              <Instagram size={18} />
+            </a>
+          </div>
         </div>
 
-        {/* Quick Links */}
+        {/* QUICK LINKS */}
         <div>
-          <h4 className="text-xl font-semibold text-white mb-5">Quick Links</h4>
-          <ul className="space-y-3 text-lg">
+          <h4 className="text-xl font-semibold text-white mb-6 font-ssBD">
+            Explore
+          </h4>
+
+          <ul className="space-y-3 font-ssLB">
             <li>
               <Link
                 to="/"
@@ -27,14 +58,16 @@ const Footer = () => {
                 Home
               </Link>
             </li>
+
             <li>
               <Link
                 to="/tours"
                 className="hover:text-green transition-colors duration-300"
               >
-                Packages
+                Tour Packages
               </Link>
             </li>
+
             <li>
               <Link
                 to="/treks"
@@ -43,60 +76,75 @@ const Footer = () => {
                 Treks
               </Link>
             </li>
+
             <li>
               <Link
                 to="/contact"
                 className="hover:text-green transition-colors duration-300"
               >
-                Contact
+                Contact Us
               </Link>
             </li>
           </ul>
         </div>
 
-        {/* Contact */}
+        {/* CONTACT */}
         <div>
-          <h4 className="text-xl font-semibold text-white mb-5">Get in Touch</h4>
-          <ul className="space-y-4 text-lg">
-            <li className="flex items-center gap-3">
-              <Phone size={18} />
-              <a href="tel:+919876543210" className="hover:text-green transition-colors duration-300">
+          <h4 className="text-xl font-semibold text-white mb-6 font-ssBD">
+            Contact
+          </h4>
+
+          <ul className="space-y-4 font-ssLB">
+
+            <li className="flex items-center gap-3 text-gray-400">
+              <Phone size={18} className="text-green" />
+              <a
+                href="tel:+919876543210"
+                className="hover:text-green transition-colors"
+              >
                 +91 98765 43210
               </a>
             </li>
-            <li className="flex items-center gap-3">
-              <Mail size={18} />
-              <a href="mailto:info@oak7.com" className="hover:text-green transition-colors duration-300">
+
+            <li className="flex items-center gap-3 text-gray-400">
+              <Mail size={18} className="text-green" />
+              <a
+                href="mailto:info@oak7.com"
+                className="hover:text-green transition-colors"
+              >
                 info@oak7.com
               </a>
             </li>
+
           </ul>
 
-          <div className="flex items-center gap-6 mt-6">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="text-gray-400 hover:text-green transition-colors duration-300"
-            >
-              <Facebook size={24} />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="text-gray-400 hover:text-green transition-colors duration-300"
-            >
-              <Instagram size={24} />
-            </a>
-          </div>
+          {/* CTA */}
+          <Link
+            to="/contact"
+            className="inline-block mt-6 bg-green hover:bg-greenH text-white px-6 py-3 rounded-full transition shadow-lg"
+          >
+            Plan Your Trip
+          </Link>
         </div>
+
       </div>
 
-      <div className="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm select-none">
-        © {new Date().getFullYear()} Oak7 Tours & Travels. All Rights Reserved.
+      {/* BOTTOM BAR */}
+      <div className="relative max-w-7xl mx-auto px-6 mt-16 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
+
+        <p>
+          © {new Date().getFullYear()} Oak7 Tours & Travels
+        </p>
+
+        <div className="flex gap-6 mt-3 md:mt-0">
+          <Link to="/privacy" className="hover:text-green transition">
+            Privacy Policy
+          </Link>
+          <Link to="/terms" className="hover:text-green transition">
+            Terms
+          </Link>
+        </div>
+
       </div>
     </footer>
   );

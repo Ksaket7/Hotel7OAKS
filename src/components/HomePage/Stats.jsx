@@ -33,7 +33,7 @@ const Stats = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-12">
+    <section className="w-full bg-white py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-16 items-center">
         {/* Left Content: Heading + Stats */}
         <div className="md:col-span-2">

@@ -22,27 +22,27 @@ const CTA = () => {
           trigger: sectionRef.current,
           start: "top 85%",
         },
-      }
+      },
     );
   }, []);
 
   return (
-    <section className="py-8 bg-white overflow-hidden">
+    <section className="py-12 bg-white overflow-hidden">
       <div
         ref={sectionRef}
         className="max-w-4xl mx-auto px-6 flex flex-col items-center text-center"
       >
         {/* === Heading === */}
-        <div className="relative text-center mb-10">
+        <div className="relative text-center mb-6">
           <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900 whitespace-normal lg:whitespace-nowrap inline-block">
             Ready to embark on your next adventure
           </h2>
         </div>
 
         {/* === Subtext === */}
-        <p className="text-gray-700 font-ssLB text-sm sm:text-base md:text-lg mb-10 text-center whitespace-normal lg:whitespace-nowrap lg:w-max">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
+        <p className="text-gray-700 font-ssLB text-sm sm:text-base md:text-lg mb-6 text-center whitespace-normal lg:whitespace-nowrap lg:w-max">
+          From hidden trails to breathtaking peaks, we help you experience the
+          wild in the most unforgettable way.
         </p>
 
         {/* === CTA Button === */}

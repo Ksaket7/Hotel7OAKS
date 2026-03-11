@@ -50,7 +50,7 @@ const WhyUs = () => {
   ];
 
   return (
-    <section className="py-12 bg-white overflow-hidden">
+    <section className="py-12 bg-white overflow-hidden md:py-16">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
         <div className="relative inline-block mb-4">
           <p className="text-lg tracking-wider lg:text-2xl font-dsB text-green mb-3">

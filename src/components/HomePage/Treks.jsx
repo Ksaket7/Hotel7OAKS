@@ -29,7 +29,7 @@ const Treks = () => {
   }, []);
 
   return (
-    <section className="w-full bg-white py-8">
+    <section className="w-full bg-white py-8 md:py-16">
       <div
         ref={sectionRef}
         className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 px-6 items-center"

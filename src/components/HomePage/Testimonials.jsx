@@ -42,7 +42,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-8 bg-white overflow-hidden">
+    <section className="py-8 bg-white overflow-hidden md:py-16">
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 text-center">
         
         <p className="text-green text-xl lg:text-2xl tracking-wide font-dsB mb-3">

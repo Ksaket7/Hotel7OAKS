@@ -28,7 +28,7 @@ const Packages = () => {
   }, []);
 
   return (
-    <section className="py-8 bg-gray-200 overflow-hidden">
+    <section className="py-8 bg-gray-200 overflow-hidden md:py-16">
       <div
         ref={sectionRef}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col justify-center items-center text-center"
@@ -62,10 +62,10 @@ const Packages = () => {
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="p-4 bg-white text-center">
-                <h3 className="text-gray-900 font-ssBookD text-lg mb-1">
+                <h3 className="text-gray-900 font-ssSBH text-lg mb-1">
                   {pkg.title}
                 </h3>
-                <div className="flex justify-center space-x-6 text-ssLB text-gray-800 mb-3">
+                <div className="flex justify-center space-x-2 font-ssLB text-gray-800 mb-3">
                   <span>{pkg.location}</span>
                   <span>{pkg.duration}</span>
                 </div>

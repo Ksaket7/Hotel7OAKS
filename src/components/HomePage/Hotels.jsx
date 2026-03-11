@@ -29,7 +29,7 @@ const HotelPreview = () => {
   }, []);
 
   return (
-    <section className="py-8 bg-gray-200 overflow-hidden">
+    <section className="py-8 bg-gray-200 overflow-hidden md:py-16">
       {/* === Section Heading === */}
       <div className="text-center max-w-3xl mx-auto px-6 mb-12">
         <p className="text-green text-xl lg:text-2xl tracking-wide font-dsB mb-3">
