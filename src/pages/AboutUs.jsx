@@ -22,7 +22,7 @@ const AboutUs = () => {
           trigger: sectionRef.current,
           start: "top 85%",
         },
-      }
+      },
     );
   }, []);
 
@@ -45,7 +45,8 @@ const AboutUs = () => {
             About <span className="text-green-400">Oak7</span>
           </h1>
           <p className="text-lg font-ssLB text-gray-100 mb-4">
-            Your trusted partner for unforgettable journeys across the Himalayas, Char Dham, and beyond.
+            Your trusted partner for unforgettable journeys across the
+            Himalayas, Char Dham, and beyond.
           </p>
           <div className="flex justify-center mt-4 gap-4">
             <Link
@@ -69,18 +70,45 @@ const AboutUs = () => {
         ref={sectionRef}
         className="py-12 max-w-7xl mx-auto px-6 text-center md:text-left"
       >
-        <div className="grid md:grid-cols-2 gap-16 rounded-2xl p-4">
+        <div className="grid md:grid-cols-2 gap-16 rounded-2xl p-4 justify-center items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-ssBD text-green-700 mb-7">
               Who We Are
             </h2>
+
             <p className="text-gray-700 font-ssLB text-base leading-relaxed mb-6">
-              At <span className="font-ssBD text-green-600">Oak7</span>, we believe travel is more than sightseeing—it's a journey of discovery, connection, and peace.
-              <br />
-              We are based in the heart of Uttarakhand, curating authentic journeys across the Char Dham, treks, and hidden trails.
+              <span className="font-ssBD text-green-600">
+                7 Oaks Trek and Travels
+              </span>{" "}
+              is a trusted travel and trekking service provider operating since
+              2012, dedicated to delivering memorable travel experiences in the
+              Himalayan region. Over the years, we have proudly hosted{" "}
+              <span className="font-ssBD text-green-600">
+                15,000+ satisfied travelers
+              </span>
+              , building a strong reputation for reliability, local expertise,
+              and personalized service.
             </p>
+
+            <p className="text-gray-700 font-ssLB text-base leading-relaxed mb-6">
+              Our company specializes in organizing{" "}
+              <span className="font-ssBD text-green-600">
+                Char Dham Yatra tours
+              </span>
+              , trekking expeditions, adventure travel, and customized holiday
+              packages across Uttarakhand, Himachal, and other destinations.
+              With deep knowledge of mountain routes, weather conditions, and
+              local culture, our team ensures every journey is carefully planned
+              for comfort, safety, and spiritual fulfillment.
+            </p>
+
             <p className="text-gray-700 font-ssLB text-base leading-relaxed">
-              We blend deep local knowledge with adventure spirit so every traveler experiences the mountains responsibly, safely, and soulfully.
+              At 7 Oaks Trek and Travels, we believe travel is not just about
+              reaching a destination but about experiencing the beauty, culture,
+              and serenity of the Himalayas. Whether it is a sacred pilgrimage
+              like the Char Dham Yatra or an adventurous trek through
+              breathtaking landscapes, we are committed to making every trip
+              smooth, memorable, and enjoyable for our guests.
             </p>
           </div>
           <div>
@@ -102,7 +130,9 @@ const AboutUs = () => {
             Our Vision
           </h2>
           <p className="text-gray-800 font-ssLB text-lg leading-relaxed">
-            To be the most trusted travel brand in Uttarakhand, connecting people to nature, culture, and spirituality through mindful adventures and curated experiences.
+            To be the most trusted travel brand in Uttarakhand, connecting
+            people to nature, culture, and spirituality through mindful
+            adventures and curated experiences.
           </p>
         </div>
       </section>
@@ -117,17 +147,17 @@ const AboutUs = () => {
             {
               title: "Sustainable Travel",
               desc: "Eco-conscious practices that protect Himalayan beauty.",
-              emoji: "🌿"
+              emoji: "🌿",
             },
             {
               title: "Authentic Experiences",
               desc: "Every journey reflects Uttarakhand’s culture and spirit.",
-              emoji: "🌄"
+              emoji: "🌄",
             },
             {
               title: "Trust & Safety",
               desc: "Your safety is our top priority—trained guides and quality stays.",
-              emoji: "🛡️"
+              emoji: "🛡️",
             },
           ].map((item, i) => (
             <div
@@ -135,8 +165,12 @@ const AboutUs = () => {
               className="p-8 bg-gradient-to-br from-white via-green-50 to-gray-100 rounded-2xl shadow hover:shadow-xl transition-all border border-green-100 flex flex-col items-center"
             >
               <div className="text-4xl mb-4">{item.emoji}</div>
-              <h3 className="text-xl font-ssSBH text-green-700 mb-2">{item.title}</h3>
-              <p className="text-gray-700 font-ssLB text-base leading-relaxed">{item.desc}</p>
+              <h3 className="text-xl font-ssSBH text-green-700 mb-2">
+                {item.title}
+              </h3>
+              <p className="text-gray-700 font-ssLB text-base leading-relaxed">
+                {item.desc}
+              </p>
             </div>
           ))}
         </div>
