@@ -1,12 +1,15 @@
 import { useEffect, useRef } from "react";
 
 const images = [
-  "https://images.unsplash.com/photo-1508261305435-5b19bfc84b58?&auto=format&fit=crop&w=900&q=60",
-  "https://images.unsplash.com/photo-1603126857599-5719f2434efb?&auto=format&fit=crop&w=900&q=60",
-  "https://images.unsplash.com/photo-1549887534-3db1bd59dcca?&auto=format&fit=crop&w=900&q=60",
-  "https://images.unsplash.com/photo-1633265486064-e59b8f0fba99?&auto=format&fit=crop&w=900&q=60",
-  "https://images.unsplash.com/photo-1469474968028-56623f02e42e?&auto=format&fit=crop&w=900&q=60",
-  "https://images.unsplash.com/photo-1526481280695-3c720685208b?&auto=format&fit=crop&w=900&q=60",
+  "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157767/1000065666_imnsfj.jpg",
+  "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157762/1000065688_avago5.jpg",
+  "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157744/vasuki-Tal-1_ajo0y2.jpg",
+  "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157538/sdasdadsa_ffjylv.jpg",
+  "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157319/Sunrise-at-the-Kedarkantha-Summit-820x1024_hra1hx.webp",
+  "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157320/1000065673_i7q8v0.jpg",
+  "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157765/1000065691_ux96o6.jpg",
+  "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157237/d2bb48da-81fe-48e7-9d14-1ca0f9d06575_Dayara_Bugyal_DB_Sudheer_Hegde-Frozen_Gui_Lake_-_Sunlight_-_EArly_morning_-_trekkers_-_indiahikes_u7jphj.webp",
+  "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157209/photo-1522506209496-4536d9020ec4_d2ndq5.jpg",
 ];
 
 const variableHeights = [
@@ -35,16 +38,17 @@ const ImageMarquee = () => {
   return (
     <section className="py-12 bg-white overflow-hidden">
       <div className="w-full overflow-hidden">
-        <div ref={marqueeRef} className="flex gap-6 w-max" style={{ willChange: "transform" }}>
+        <div
+          ref={marqueeRef}
+          className="flex gap-6 w-max"
+          style={{ willChange: "transform" }}
+        >
           {[...images, ...images].map((img, i) => (
             <div
               key={i}
               className={`rounded-xl overflow-hidden shadow-sm w-44 sm:w-52 md:w-60 flex-shrink-0 ${variableHeights[i % variableHeights.length]}`}
             >
-              <img
-                src={img}
-                className="w-full h-full object-cover"
-              />
+              <img src={img} className="w-full h-full object-cover" />
             </div>
           ))}
         </div>
