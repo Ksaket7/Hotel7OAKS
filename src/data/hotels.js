@@ -6,8 +6,15 @@ export const hotelsData = [
     location: "Barkot, Kanseru, Uttarakhand",
     rating: 4.9,
     price: "₹ 4,000",
-    image:
+    images: [
       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/678561551.jpg?k=efacdb42c3718082a506c27c87448b9db10d68fbb054eadeb4403b9da6c10629&o=",
+      "https://lh3.googleusercontent.com/gps-cs-s/AHVAweoX2PglemjoKboAqIWBsfgDWNruydmBxm3PD6152-T8spz4Ph4NO1ARP35oaRbVri1tlRqXXAZyhBbIbUL_ftz2hlkjvjX0OKMr9yLOKLFWP58V12Itc4hW91j-HmXqezQDNDz4GyR3hxT5=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AHVAwertgQr6XEF94hGe9BGAHeLUq_wYVTT3y9wOfme5x-7AhCuvoyXCIyQK5igTBkFRUG_VOf7sexOVZNdGB7rgi6SBBDH8b8nIfjNhJtGjwpxJ1NNhtXP_HDk6vPfnBFobHlbvUaHPgJej9Zm0=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqTn64KCwBiHTtJOjXadr5mT_DQVrd-m38nu2840rV7a4TKqux2SOtRHl6UHrQRKFE7LWgZn5UpGU7RhkSCU8f_ZUE-OEPXLgddpISFE4odqUwpQc2ZTO1Nk1z3l42aG8TP7tQfkIoGAFgd=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqaybw8_SyvVPxNf4BKkfMAJq-zuc7_2bw-XRNHW1VfkBsgEvnOFI5Q3mUwGmg0ry4Ffb2Dtia_Jgm4kaYVYH9Gr5EGISaMlZMICmwouyUPH740SPCP_MnZxsPVIUmW13lU1TTMnU_I0dY=s1360-w1360-h1020-rw",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/678561477.jpg?k=362cd3def135d3c634798da31712153f14f3266fd344788834fa08d07223533f&o=",
+      "https://r1imghtlak.mmtcdn.com/5756ef9a-c69a-492f-9065-f5136f27b053.png",
+    ],
     description:
       "Hotel 7 Oaks Barkot By StayApart is a highly recommended stay for travellers visiting Barkot. Located on the Yamunotri route, the hotel offers comfortable rooms, beautiful Himalayan views, and a peaceful atmosphere. Known for its friendly hosts and smooth check-in/check-out experience, the hotel is popular among tourists seeking a cozy and welcoming stay during their journey to Yamunotri and nearby attractions.",
     reviews: [
@@ -32,8 +39,16 @@ export const hotelsData = [
     location: "Barkot, Molda Beet, Uttarakhand",
     rating: 4.8,
     price: "₹ 3,800",
-    image:
+    images: [
+      "https://lh3.googleusercontent.com/p/AF1QipO2HtkIRYcMMipZEErmNVtg1279Wz-NsIQLFqyO=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipOMELhyjgyeP_QOa6rz9iRCsJliYpgQaVM3uSYe=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipOvZlUWniFpf_Kj8wxZO8QrvUWzM3Af0qAyjn95=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipMKtwL1qo_WFyzm7xyEaNjN9KgS3dGnON-xc15k=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipNnpWn1u5BXPXnjDutBm5PVJpLPxvzpcVHUBjqx=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipNTCzs8Mld4dPBtKt-DwHyCchqwRfEAQmde3Kby=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipMs4wBdtvdpFxF7r2zYHchduD6zXRFUQd7y80RR=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipMPajmi5oJEpx0nKX2ETAM7b7LJLK7DUAojQhP1=s1360-w1360-h1020-rw",
+    ],
     description:
       "Nestled in the scenic hills of Barkot, Pine Hills Resort and Restaurant offers a luxurious and peaceful retreat for travelers visiting Uttarakhand. The resort features elegant rooms with mountain views, modern amenities, and warm hospitality. Guests can enjoy comfortable accommodation, delicious dining options, and breathtaking surroundings that make it an ideal destination for families, couples, and adventure seekers exploring the Himalayan region.",
     reviews: [
@@ -58,8 +73,13 @@ export const hotelsData = [
     location: "Barkot, Uttarakhand",
     rating: 4.5,
     price: "Price on Request",
-    image:
+    images: [
+      "https://lh3.googleusercontent.com/p/AF1QipMcDCVQZVm3vO-YXFpaWFF4lYvP9Jd1rPSCLgXt=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipNQgDdE70fPGR6XdxEPAHjykxxsj3k1RkI3dFI4=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipOJDZcke_1zEbbudF1qUxhRWCTkK8ZfuDRah6Mm=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipM6blrOwmN9MJkufWZpLjc7CLhJw4eOc31ZCZp7=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipNukDuJ0J9YbJwAY5j8ex7otMdTS0UeFT5svYsB=s1360-w1360-h1020-rw",
+    ],
     description:
       "Hotel Shiva Barkot is located on the Mussoorie–Yamunotri road and offers beautiful views of the Himalayan ranges and the Yamuna river. The hotel provides comfortable rooms with attached bathrooms, 24-hour hot and cold water, restaurant services on request, room service, and parking facilities. Additional amenities include taxi service, laundry, conference hall, and easy access to ATM and medical facilities, making it a convenient stop for travelers on the Char Dham route.",
     reviews: [
@@ -74,27 +94,6 @@ export const hotelsData = [
         comment:
           "Comfortable stay with good food and peaceful surroundings. A convenient stop while travelling towards Yamunotri.",
         rating: 4.4,
-      },
-    ],
-  },
-
-  {
-    id: "lakeside-lodge",
-    name: "Lakeside Lodge",
-    location: "Nainital, Uttarakhand",
-    rating: 4.7,
-    price: "₹ 6,500",
-    images: [
-      "https://images.pexels.com/photos/221457/pexels-photo-221457.jpeg?auto=compress&fit=crop&w=800&q=80",
-    ],
-    description:
-      "Wake up to misty mornings by the lake. Lakeside Lodge offers cozy rooms, traditional food, and serene walks along Nainital Lake.",
-    reviews: [
-      {
-        name: "Karan Joshi",
-        comment:
-          "Loved the peaceful location! Great hospitality and delicious local food.",
-        rating: 4.8,
       },
     ],
   },
