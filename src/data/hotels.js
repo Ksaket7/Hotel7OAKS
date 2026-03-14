@@ -74,23 +74,4 @@ export const hotelsData = [
       },
     ],
   },
-
-  {
-    id: "lakeside-lodge",
-    name: "Lakeside Lodge",
-    location: "Nainital, Uttarakhand",
-    rating: 4.7,
-    price: "₹ 6,500",
-    image: "https://images.pexels.com/photos/221457/pexels-photo-221457.jpeg?auto=compress&fit=crop&w=800&q=80",
-    description:
-      "Wake up to misty mornings by the lake. Lakeside Lodge offers cozy rooms, traditional food, and serene walks along Nainital Lake.",
-    reviews: [
-      {
-        name: "Karan Joshi",
-        comment:
-          "Loved the peaceful location! Great hospitality and delicious local food.",
-        rating: 4.8,
-      },
-    ],
-  },
 ];

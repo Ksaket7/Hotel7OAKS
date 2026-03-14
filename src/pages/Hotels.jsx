@@ -7,7 +7,6 @@ import {
   ArrowRight,
   Search,
   X,
-  SlidersHorizontal,
   ChevronDown,
   ChevronUp,
 } from "lucide-react";
@@ -18,22 +17,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Hotel = () => {
   const sectionRef = useRef(null);
+  const mobileFilterRef = useRef(null);
 
-  // === STATES ===
   const [inputText, setInputText] = useState("");
   const [searchText, setSearchText] = useState("");
   const [sortBy, setSortBy] = useState("");
   const [priceRange, setPriceRange] = useState("any");
   const [ratingMin, setRatingMin] = useState("any");
   const [locationsSelected, setLocationsSelected] = useState(["All"]);
-
-  // Mobile filters toggle
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
-
-  // Loading state (simulate for local data)
   const [loading, setLoading] = useState(true);
 
-  // === Normalize price ===
+  /* normalize price */
   const hotelsWithRawPrice = useMemo(() => {
     return hotelsData.map((hotel) => {
       let raw = hotel.rawPrice;
@@ -45,19 +40,18 @@ const Hotel = () => {
     });
   }, []);
 
-  // === Unique locations ===
+  /* locations */
   const allLocations = useMemo(
     () => ["All", ...new Set(hotelsWithRawPrice.map((h) => h.location))],
     [hotelsWithRawPrice]
   );
 
-  // === Simulate loading for local data (600ms) ===
   useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 600); // change delay if you want
+    const t = setTimeout(() => setLoading(false), 600);
     return () => clearTimeout(t);
   }, []);
 
-  // === Filtering ===
+  /* filtering */
   const filteredHotels = useMemo(() => {
     let filtered = hotelsWithRawPrice;
 
@@ -78,6 +72,7 @@ const Hotel = () => {
 
     filtered = filtered.filter((h) => {
       const price = h.rawPrice ?? 0;
+
       switch (priceRange) {
         case "lt2k":
           return price < 2000;
@@ -99,9 +94,10 @@ const Hotel = () => {
     return filtered;
   }, [searchText, locationsSelected, priceRange, ratingMin, hotelsWithRawPrice]);
 
-  // === Sorting ===
+  /* sorting */
   const sortedHotels = useMemo(() => {
     const sorted = [...filteredHotels];
+
     switch (sortBy) {
       case "price_low":
         sorted.sort((a, b) => (a.rawPrice ?? 0) - (b.rawPrice ?? 0));
@@ -115,45 +111,36 @@ const Hotel = () => {
       default:
         break;
     }
+
     return sorted;
   }, [filteredHotels, sortBy]);
 
-  // === Animations for cards ===
+  /* animations */
   useEffect(() => {
     if (loading) return;
+
     const cards = sectionRef.current?.children || [];
+
     gsap.fromTo(
       cards,
       { y: 24, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.07, duration: 0.45, ease: "power3.out" }
+      { y: 0, opacity: 1, stagger: 0.08, duration: 0.45 }
     );
+
     ScrollTrigger.refresh();
   }, [sortedHotels, loading]);
 
-  // === Mobile filter dropdown animation ===
-  const mobileFilterRef = useRef(null);
-
+  /* mobile filters */
   useEffect(() => {
     if (!mobileFilterRef.current) return;
 
-    if (mobileFiltersOpen) {
-      gsap.to(mobileFilterRef.current, {
-        height: "auto",
-        opacity: 1,
-        duration: 0.32,
-        ease: "power2.out",
-      });
-    } else {
-      gsap.to(mobileFilterRef.current, {
-        height: 0,
-        opacity: 0,
-        duration: 0.28,
-        ease: "power2.inOut",
-      });
-    }
+    gsap.to(mobileFilterRef.current, {
+      height: mobileFiltersOpen ? "auto" : 0,
+      opacity: mobileFiltersOpen ? 1 : 0,
+      duration: 0.3,
+    });
   }, [mobileFiltersOpen]);
 
-  // === Handlers ===
   const applySearch = () => setSearchText(inputText);
 
   const resetFilters = () => {
@@ -165,32 +152,6 @@ const Hotel = () => {
     setLocationsSelected(["All"]);
   };
 
-  const removeFilter = (type, value) => {
-    switch (type) {
-      case "search":
-        setSearchText("");
-        setInputText("");
-        break;
-      case "location":
-        setLocationsSelected((prev) => {
-          const next = prev.filter((l) => l !== value);
-          return next.length ? next : ["All"];
-        });
-        break;
-      case "price":
-        setPriceRange("any");
-        break;
-      case "rating":
-        setRatingMin("any");
-        break;
-      case "sort":
-        setSortBy("");
-        break;
-      default:
-        break;
-    }
-  };
-
   const anyFilterActive =
     searchText ||
     !(locationsSelected.length === 1 && locationsSelected[0] === "All") ||
@@ -198,16 +159,8 @@ const Hotel = () => {
     ratingMin !== "any" ||
     sortBy;
 
-  const priceLabels = {
-    lt2k: "Below ₹2,000",
-    "2to5": "₹2,000 – ₹5,000",
-    "5to10": "₹5,000 – ₹10,000",
-    gt10: "Above ₹10,000",
-  };
-  const ratingLabels = { 4: "⭐ 4.0+", 4.5: "⭐ 4.5+" };
-
   return (
-    <section className="min-h-screen bg-white">
+    <section className="min-h-screen bg-white font-ss">
 
       {/* HERO */}
       <div className="relative w-full h-[70vh] flex items-center justify-center text-center bg-black">
@@ -233,302 +186,183 @@ const Hotel = () => {
         </div>
       </div>
 
-      {/* FILTERS - centered and BELOW hero, sticky on scroll */}
-      <div className="w-full max-w-6xl mx-auto px-4 md:px-6 mt-8">
+      {/* SEARCH & FILTERS */}
+      <div className="max-w-6xl mx-auto px-4 md:px-6 mt-10 font-ssBookD">
 
-        {/* Sticky wrapper: becomes sticky when scrolled */}
-        <div className="sticky top-4 z-40">
-          <div
-            className="bg-white rounded-2xl p-3 md:p-4 shadow-sm border border-gray-200 transition-shadow duration-200"
-            // Add extra shadow when page is scrolled — via sticky state using CSS : not easily detectable here,
-            // but we still rely on natural sticky appearance. If you'd like, you can toggle a class on scroll to increase shadow.
-          >
-            {/* TOP ROW: mobile search + toggle OR desktop search + buttons */}
-            <div className="flex items-center gap-3">
+        <div className="sticky top-4 z-40 bg-white rounded-2xl border shadow-sm p-4">
 
-              {/* Input (shared) */}
-              <div className="relative flex-1">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
-                <input
-                  type="text"
-                  placeholder="Search hotels or locations..."
-                  value={inputText}
-                  onChange={(e) => setInputText(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter") {
-                      applySearch();
-                      setMobileFiltersOpen(false);
-                    }
-                  }}
-                  className="w-full pl-10 pr-12 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green"
-                />
-              </div>
+          {/* search */}
+          <div className="flex gap-3 items-center">
 
-              {/* MOBILE: Filters toggle */}
-              <button
-                onClick={() => setMobileFiltersOpen((s) => !s)}
-                className="md:hidden flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-200 bg-green shadow-sm"
-                aria-expanded={mobileFiltersOpen}
-              >
-                <span className="text-md font-ssLB">Filters</span>
-                {mobileFiltersOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-              </button>
+            <div className="relative flex-1">
+              <Search
+                className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                size={18}
+              />
 
-              {/* DESKTOP: Search & Clear */}
-              <div className="hidden md:flex items-center gap-3">
-                <button
-                  onClick={applySearch}
-                  className="px-5 py-2.5 bg-green text-white rounded-xl font-ssLB"
-                >
-                  Search
-                </button>
-                {anyFilterActive && (
-                  <button
-                    onClick={resetFilters}
-                    className="px-4 py-2 bg-gray-200 text-gray-900 rounded-xl font-ssLB flex items-center gap-2"
-                  >
-                    <X size={16} /> Clear
-                  </button>
-                )}
-              </div>
+              <input
+                value={inputText}
+                onChange={(e) => setInputText(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && applySearch()}
+                placeholder="Search hotels or locations..."
+                className="w-full pl-10 pr-4 py-3 border rounded-xl focus:ring-2 focus:ring-green"
+              />
             </div>
 
-            {/* MOBILE COLLAPSIBLE FILTERS */}
-            <div
-              ref={mobileFilterRef}
-              className="md:hidden overflow-hidden mt-3"
-              style={{ height: 0, opacity: 0 }}
+            <button
+              onClick={applySearch}
+              className="px-5 py-3 bg-green text-white rounded-xl font-semibold"
             >
-              <div className="p-3 bg-white rounded-xl border border-gray-100 space-y-3 shadow-sm">
+              Search
+            </button>
 
-                <select
-                  value={locationsSelected.length === 1 ? locationsSelected[0] : ""}
-                  onChange={(e) =>
-                    e.target.value === "All"
-                      ? setLocationsSelected(["All"])
-                      : setLocationsSelected([e.target.value])
-                  }
-                  className="w-full px-3 py-2 rounded-xl border border-gray-500"
-                >
-                  {allLocations.map((loc) => (
-                    <option key={loc} value={loc}>{loc}</option>
-                  ))}
-                </select>
+            <button
+              onClick={() => setMobileFiltersOpen((s) => !s)}
+              className="md:hidden px-4 py-3 border rounded-xl flex items-center gap-2"
+            >
+              Filters
+              {mobileFiltersOpen ? <ChevronUp size={16} /> : <ChevronDown />}
+            </button>
 
-                <select
-                  value={priceRange}
-                  onChange={(e) => setPriceRange(e.target.value)}
-                  className="w-full px-3 py-2 rounded-xl border border-gray-500"
-                >
-                  <option value="any">Any Price</option>
-                  <option value="lt2k">Below ₹2,000</option>
-                  <option value="2to5">₹2,000 – ₹5,000</option>
-                  <option value="5to10">₹5,000 – ₹10,000</option>
-                  <option value="gt10">Above ₹10,000</option>
-                </select>
+            {anyFilterActive && (
+              <button
+                onClick={resetFilters}
+                className="hidden md:flex px-4 py-3 bg-gray-200 rounded-xl items-center gap-2"
+              >
+                <X size={16} />
+                Clear
+              </button>
+            )}
+          </div>
 
-                <select
-                  value={ratingMin}
-                  onChange={(e) => setRatingMin(e.target.value)}
-                  className="w-full px-3 py-2 rounded-xl border border-gray-500"
-                >
-                  <option value="any">Any Rating</option>
-                  <option value="4">⭐ 4.0+</option>
-                  <option value="4.5">⭐ 4.5+</option>
-                </select>
+          {/* desktop filters */}
+          <div className="hidden md:grid grid-cols-4 gap-3 mt-4">
 
-                <select
-                  value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value)}
-                  className="w-full px-3 py-2 rounded-xl border border-gray-500"
-                >
-                  <option value="">Recommended</option>
-                  <option value="price_low">Price: Low → High</option>
-                  <option value="price_high">Price: High → Low</option>
-                  <option value="rating">Rating: High → Low</option>
-                </select>
+            <select
+              value={locationsSelected[0]}
+              onChange={(e) =>
+                e.target.value === "All"
+                  ? setLocationsSelected(["All"])
+                  : setLocationsSelected([e.target.value])
+              }
+              className="border rounded-xl px-3 py-2"
+            >
+              {allLocations.map((loc) => (
+                <option key={loc}>{loc}</option>
+              ))}
+            </select>
 
-                <div className="flex gap-2">
-                  <button
-                    onClick={() => {
-                      applySearch();
-                      setMobileFiltersOpen(false);
-                    }}
-                    className="flex-1 px-3 py-2 bg-green text-white rounded-xl font-ssLB"
-                  >
-                    Apply
-                  </button>
-                  <button
-                    onClick={resetFilters}
-                    className="px-3 py-2 bg-green rounded-xl font-ssLB"
-                  >
-                    Clear
-                  </button>
-                </div>
-              </div>
-            </div>
+            <select
+              value={priceRange}
+              onChange={(e) => setPriceRange(e.target.value)}
+              className="border rounded-xl px-3 py-2"
+            >
+              <option value="any">Any Price</option>
+              <option value="lt2k">Below ₹2k</option>
+              <option value="2to5">₹2k–₹5k</option>
+              <option value="5to10">₹5k–₹10k</option>
+              <option value="gt10">Above ₹10k</option>
+            </select>
 
-            {/* DESKTOP FILTER ROW */}
-            <div className="hidden md:block mt-4">
-              <div className="grid grid-cols-4 gap-3 items-center">
-                <select
-                  value={locationsSelected.length === 1 ? locationsSelected[0] : ""}
-                  onChange={(e) =>
-                    e.target.value === "All"
-                      ? setLocationsSelected(["All"])
-                      : setLocationsSelected([e.target.value])
-                  }
-                  className="px-3 py-2 rounded-xl border border-gray-300"
-                >
-                  {allLocations.map((loc) => (
-                    <option key={loc} value={loc}>{loc}</option>
-                  ))}
-                </select>
+            <select
+              value={ratingMin}
+              onChange={(e) => setRatingMin(e.target.value)}
+              className="border rounded-xl px-3 py-2"
+            >
+              <option value="any">Any Rating</option>
+              <option value="4">⭐ 4+</option>
+              <option value="4.5">⭐ 4.5+</option>
+            </select>
 
-                <select
-                  value={priceRange}
-                  onChange={(e) => setPriceRange(e.target.value)}
-                  className="px-3 py-2 rounded-xl border border-gray-300"
-                >
-                  <option value="any">Any Price</option>
-                  <option value="lt2k">Below ₹2,000</option>
-                  <option value="2to5">₹2,000 – ₹5,000</option>
-                  <option value="5to10">₹5,000 – ₹10,000</option>
-                  <option value="gt10">Above ₹10,000</option>
-                </select>
-
-                <select
-                  value={ratingMin}
-                  onChange={(e) => setRatingMin(e.target.value)}
-                  className="px-3 py-2 rounded-xl border border-gray-300"
-                >
-                  <option value="any">Any Rating</option>
-                  <option value="4">⭐ 4.0+</option>
-                  <option value="4.5">⭐ 4.5+</option>
-                </select>
-
-                <select
-                  value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value)}
-                  className="px-3 py-2 rounded-xl border border-gray-300"
-                >
-                  <option value="">Recommended</option>
-                  <option value="price_low">Price: Low → High</option>
-                  <option value="price_high">Price: High → Low</option>
-                  <option value="rating">Rating: High → Low</option>
-                </select>
-              </div>
-            </div>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="border rounded-xl px-3 py-2"
+            >
+              <option value="">Recommended</option>
+              <option value="price_low">Price Low → High</option>
+              <option value="price_high">Price High → Low</option>
+              <option value="rating">Rating High → Low</option>
+            </select>
           </div>
         </div>
-
-        {/* ACTIVE FILTER CHIPS */}
-        {anyFilterActive && (
-          <div className="flex flex-wrap items-center gap-2 mt-4 px-1 md:px-0">
-            {searchText && (
-              <Chip text={searchText} onRemove={() => removeFilter("search")} />
-            )}
-
-            {locationsSelected
-              .filter((l) => l !== "All")
-              .map((loc) => (
-                <Chip
-                  key={loc}
-                  text={loc}
-                  icon={<MapPin size={14} />}
-                  onRemove={() => removeFilter("location", loc)}
-                />
-              ))}
-
-            {priceRange !== "any" && (
-              <Chip text={priceLabels[priceRange]} onRemove={() => removeFilter("price")} />
-            )}
-
-            {ratingMin !== "any" && (
-              <Chip text={ratingLabels[ratingMin]} onRemove={() => removeFilter("rating")} />
-            )}
-
-            {sortBy && (
-              <Chip
-                text={
-                  sortBy === "price_low"
-                    ? "Price: Low → High"
-                    : sortBy === "price_high"
-                    ? "Price: High → Low"
-                    : "Rating: High → Low"
-                }
-                onRemove={() => removeFilter("sort")}
-              />
-            )}
-          </div>
-        )}
       </div>
 
-      {/* RESULTS */}
-      <div className="max-w-7xl mx-auto px-4 md:px-6 pt-8 pb-16">
-        {/* Grid */}
+      {/* HOTEL CARDS */}
+      <div className="max-w-7xl mx-auto px-4 md:px-6 pt-10 pb-16 font-ssBD">
+
         <div
           ref={sectionRef}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {loading
-            ? // Skeleton placeholders (3 columns worth)
-              Array.from({ length: 6 }).map((_, i) => (
-                <div key={i} className="space-y-3 animate-pulse">
-                  <div className="h-44 rounded-2xl bg-gray-200" />
-                  <div className="h-4 rounded bg-gray-200 w-3/4" />
-                  <div className="h-3 rounded bg-gray-200 w-1/2" />
-                  <div className="h-10 rounded-md bg-gray-200" />
+            ? Array.from({ length: 6 }).map((_, i) => (
+                <div key={i} className="animate-pulse space-y-3">
+                  <div className="h-60 bg-gray-200 rounded-3xl"></div>
+                  <div className="h-4 bg-gray-200 rounded w-3/4"></div>
                 </div>
               ))
-            : // Actual hotel cards
-              sortedHotels.map((hotel) => (
-                <Link key={hotel.id} to={`/hotels/${hotel.id}`} className="group">
-                  <div className="bg-white rounded-3xl border shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div className="relative h-56 w-full rounded-t-3xl overflow-hidden">
+            : sortedHotels.map((hotel) => (
+                <Link
+                  key={hotel.id}
+                  to={`/hotels/${hotel.id}`}
+                  className="group block"
+                >
+                  <div className="bg-white rounded-3xl border overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+
+                    {/* IMAGE */}
+                    <div className="relative h-60 overflow-hidden">
+
                       <img
                         src={hotel.image}
                         alt={hotel.name}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
-                      <span className="absolute top-3 left-3 px-3 py-1 bg-white rounded-full text-xs font-semibold shadow">
-                        Top Rated
-                      </span>
+
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+                      <div className="absolute top-3 right-3 bg-white px-3 py-1 rounded-full text-sm flex items-center gap-1 shadow">
+                        <Star size={14} className="text-yellow-400" />
+                        {hotel.rating}
+                      </div>
+
+                      <div className="absolute bottom-3 left-3 bg-white px-3 py-1 rounded-full text-xs flex items-center gap-1 shadow">
+                        <MapPin size={12} />
+                        {hotel.location}
+                      </div>
                     </div>
 
-                    <div className="p-4 md:p-5">
-                      <div className="flex items-center justify-between">
-                        <h3 className="text-lg font-semibold text-gray-900">
-                          {hotel.name}
-                        </h3>
-                        <div className="text-right">
-                          <p className="text-xs text-gray-500">Start From</p>
-                          <p className="text-green font-bold text-xl">
-                            {hotel.price}
-                            <span className="text-xs text-gray-500"> /Night</span>
-                          </p>
-                        </div>
-                      </div>
+                    {/* CONTENT */}
+                    <div className="p-5">
 
-                      <div className="flex items-center justify-between mt-1 mb-3 text-sm text-gray-600">
-                        <span className="flex items-center gap-1">
-                          <MapPin size={14} /> {hotel.location}
-                        </span>
-                        <span className="flex items-center gap-1">
-                          <Star size={14} className="text-yellow-400" /> {hotel.rating}
-                        </span>
-                      </div>
+                      <h3 className="text-xl font-semibold mb-1 group-hover:text-green transition">
+                        {hotel.name}
+                      </h3>
 
-                      <p className="text-gray-600 text-sm leading-relaxed line-clamp-2 mb-4">
+                      <p className="text-gray-500 text-sm line-clamp-2 mb-4 font-ssBookD">
                         {hotel.shortDesc ||
-                          "Comfortable rooms • Scenic views • Verified hospitality • Calm environment"}
+                          "Comfortable rooms • Scenic views • Calm environment"}
                       </p>
 
-                      <Link to={`${hotel.id}`}>
-                        <button className="w-full py-3 bg-green text-white rounded-full font-semibold hover:bg-greenH transition-all flex items-center justify-center gap-2">
-                          Book Now <ArrowRight size={18} />
+                      <div className="flex items-center justify-between">
+
+                        <div>
+                          <p className="text-xs text-gray-500 font-ssBookD">Start from</p>
+                          <p className="text-green text-2xl font-bold">
+                            {hotel.price}
+                            <span className="text-xs text-gray-400">
+                              {" "}
+                              /night
+                            </span>
+                          </p>
+                        </div>
+
+                        <button className="flex items-center gap-2 px-4 py-2 bg-green text-white rounded-full text-sm font-semibold hover:bg-greenH transition font-ssBookD">
+                          View Stay
+                          <ArrowRight size={16} />
                         </button>
-                      </Link>
+
+                      </div>
                     </div>
                   </div>
                 </Link>
@@ -538,17 +372,5 @@ const Hotel = () => {
     </section>
   );
 };
-
-/* Small reusable Chip component */
-const Chip = ({ text, icon, onRemove }) => (
-  <button
-    onClick={onRemove}
-    className="bg-green/10 text-green font-medium px-3 py-1.5 rounded-full flex items-center gap-2 text-sm"
-  >
-    {icon}
-    <span className="truncate max-w-[10rem]">{text}</span>
-    <X size={14} />
-  </button>
-);
 
 export default Hotel;
