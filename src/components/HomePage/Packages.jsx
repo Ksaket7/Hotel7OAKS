@@ -1,97 +1,114 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { MapPin, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { toursData } from "../../data/toursnpackages";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Packages = () => {
-  const sectionRef = useRef(null);
+  const gridRef = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(
-      sectionRef.current.children,
-      { y: 50, opacity: 0 },
+      gridRef.current.children,
+      { y: 40, opacity: 0 },
       {
         y: 0,
         opacity: 1,
-        stagger: 0.2,
-        duration: 1,
+        stagger: 0.12,
+        duration: 0.8,
         ease: "power3.out",
         scrollTrigger: {
-          trigger: sectionRef.current,
+          trigger: gridRef.current,
           start: "top 85%",
         },
-      },
+      }
     );
   }, []);
 
   return (
-    <section className="py-8 bg-gray-200 overflow-hidden md:py-16">
-      <div
-        ref={sectionRef}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col justify-center items-center text-center"
-      >
-        {/* Label & Heading */}
-        <div className="relative text-center mb-4">
-          <p className="text-green text-xl lg:text-2xl tracking-wide font-dsB mb-3">
-            Popular
-          </p>
-          <h2 className="text-4xl md:text-5xl font-ssBD text-gray-800 inline-block">
-            Handpicked Tour Packages
-          </h2>
-        </div>
+    <section className="py-12 md:py-20 bg-gray-100 overflow-hidden">
+      {/* HEADER */}
+      <div className="text-center max-w-3xl mx-auto px-6 mb-14">
+        <p className="text-green text-xl lg:text-2xl tracking-wide font-dsB mb-3">
+          Popular
+        </p>
 
-        {/* Subtext */}
-        <p className="text-gray-900 text-sm sm:text-base md:text-md font-ssLB lg:w-max mx-auto px-4 mb-5">
+        <h2 className="text-4xl md:text-5xl font-ssBD text-gray-900 mb-4">
+          Handpicked Tour Packages
+        </h2>
+
+        <p className="text-gray-700 text-lg font-ssLB">
           From serene getaways to adventurous treks and spiritual journeys —
           choose a tour package that fits your dream escape.
         </p>
+      </div>
 
-        {/* Package Grid */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
-          {toursData.map((pkg) => (
-            <div
-              key={pkg.id}
-              className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md hover:scale-[1.03] transition-transform duration-300"
-            >
+      {/* GRID */}
+      <div
+        ref={gridRef}
+        className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+      >
+        {toursData.map((pkg) => (
+          <Link
+            to={`/tours/${pkg.id}`}
+            key={pkg.id}
+            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group flex flex-col"
+          >
+            {/* IMAGE */}
+            <div className="relative">
               <img
                 src={pkg.image}
                 alt={pkg.title}
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-56 object-cover transition duration-500 group-hover:scale-105"
               />
-              <div className="p-4 bg-white text-center">
-                <h3 className="text-gray-900 font-ssSBH text-lg mb-1">
+            </div>
+
+            {/* CONTENT */}
+            <div className="p-5 flex flex-col flex-grow font-ssSBH">
+              
+              {/* TITLE */}
+              <div className="min-h-[48px]">
+                <h3 className="font-semibold text-gray-900 text-md leading-snug line-clamp-2">
                   {pkg.title}
                 </h3>
-                <div className="flex justify-center space-x-2 font-ssLB text-gray-800 mb-3">
-                  <span>{pkg.location}</span>
-                  <span>{pkg.duration}</span>
-                </div>
               </div>
 
-              {/* Hover overlay with price and button in single column */}
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-center items-center space-y-4 rounded-xl text-white px-6">
-                <span className="text-xl font-semibold">{pkg.price}</span>
-                <Link
-                  to={`/tours/${pkg.id}`}
-                  className="bg-green hover:bg-greenH text-white font-ssBookD px-6 py-2 rounded-full text-sm transition-all"
-                >
-                  View Details
-                </Link>
+              {/* LOCATION + DURATION */}
+              <div className="flex flex-col gap-2 text-gray-500 text-sm mt-2 mb-4 font-ssBookD">
+                <p className="flex items-center gap-2">
+                  <MapPin size={14} />
+                  {pkg.location}
+                </p>
+
+                <p className="flex items-center gap-2">
+                  <Clock size={14} />
+                  {pkg.duration}
+                </p>
               </div>
+
+              {/* PRICE */}
+              <p className="text-lg font-semibold text-gray-900 mt-auto">
+                {pkg.price}
+                <span className="text-sm text-gray-500 font-normal font-ssBookD">
+                  {" "}
+                  / person
+                </span>
+              </p>
             </div>
-          ))}
-        </div>
+          </Link>
+        ))}
       </div>
 
-      <div className="text-center mt-12">
+      {/* CTA */}
+      <div className="text-center mt-14">
         <Link
           to="/tours"
-          className="bg-green hover:bg-greenH text-white px-8 py-3 rounded-full font-ssLB transition-all"
+          className="bg-green hover:bg-greenH text-white px-10 py-3 rounded-full font-ssLB transition-all shadow-md hover:shadow-lg"
         >
-          View All
+          View All Packages
         </Link>
       </div>
     </section>

@@ -6,6 +6,15 @@ export const hotelsData = [
     location: "Barkot, Kanseru, Uttarakhand",
     rating: 4.9,
     price: "₹ 4,000",
+    facilities: [
+      "Mountain View",
+      "Free Parking",
+      "Restaurant",
+      "Room Service",
+      "Family Rooms",
+      "24 Hour Front Desk",
+      "Breakfast Available",
+    ],
     images: [
       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/678561551.jpg?k=efacdb42c3718082a506c27c87448b9db10d68fbb054eadeb4403b9da6c10629&o=",
       "https://lh3.googleusercontent.com/gps-cs-s/AHVAweoX2PglemjoKboAqIWBsfgDWNruydmBxm3PD6152-T8spz4Ph4NO1ARP35oaRbVri1tlRqXXAZyhBbIbUL_ftz2hlkjvjX0OKMr9yLOKLFWP58V12Itc4hW91j-HmXqezQDNDz4GyR3hxT5=s1360-w1360-h1020-rw",
@@ -16,18 +25,18 @@ export const hotelsData = [
       "https://r1imghtlak.mmtcdn.com/5756ef9a-c69a-492f-9065-f5136f27b053.png",
     ],
     description:
-      "Hotel 7 Oaks Barkot By StayApart is a highly recommended stay for travellers visiting Barkot. Located on the Yamunotri route, the hotel offers comfortable rooms, beautiful Himalayan views, and a peaceful atmosphere. Known for its friendly hosts and smooth check-in/check-out experience, the hotel is popular among tourists seeking a cozy and welcoming stay during their journey to Yamunotri and nearby attractions.",
+      "Hotel 7 Oaks Barkot By StayApart is a highly recommended stay for travellers visiting Barkot. Located on the Yamunotri route, the hotel offers comfortable rooms, beautiful Himalayan views, and a peaceful atmosphere.",
     reviews: [
       {
         name: "Somya",
         comment:
-          "My stay at Hotel Seven Oaks was absolutely amazing. The place was comfortable and welcoming, and the hosts were very friendly. The food and breakfast were fantastic, especially with the beautiful mountain view. They also helped us explore local temples, trekking routes and Gangnani ghat. It truly felt like home and I can't wait to visit again.",
+          "My stay at Hotel Seven Oaks was absolutely amazing. The place was comfortable and welcoming and the hosts were very friendly.",
         rating: 5,
       },
       {
         name: "Daksh Choudhary",
         comment:
-          "One of the best trips I ever had with such a beautiful stay. The people of Barkot and the hospitality of Hotel 7 Oaks made the trip even more special. Leaving with amazing memories and can't wait to come back again.",
+          "One of the best trips I ever had with such a beautiful stay and amazing hospitality.",
         rating: 5,
       },
     ],
@@ -39,9 +48,20 @@ export const hotelsData = [
     location: "Barkot, Molda Beet, Uttarakhand",
     rating: 4.8,
     price: "₹ 3,800",
+    facilities: [
+      "Mountain View",
+      "Free parking",
+      "Restaurant",
+      "Room service",
+      "Free Wifi",
+      "Non-smoking rooms",
+      "Airport shuttle",
+      "Family rooms",
+      "Breakfast",
+    ],
     images: [
-      "https://lh3.googleusercontent.com/p/AF1QipO2HtkIRYcMMipZEErmNVtg1279Wz-NsIQLFqyO=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipOMELhyjgyeP_QOa6rz9iRCsJliYpgQaVM3uSYe=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipO2HtkIRYcMMipZEErmNVtg1279Wz-NsIQLFqyO=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipOvZlUWniFpf_Kj8wxZO8QrvUWzM3Af0qAyjn95=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipMKtwL1qo_WFyzm7xyEaNjN9KgS3dGnON-xc15k=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipNnpWn1u5BXPXnjDutBm5PVJpLPxvzpcVHUBjqx=s1360-w1360-h1020-rw",
@@ -50,18 +70,18 @@ export const hotelsData = [
       "https://lh3.googleusercontent.com/p/AF1QipMPajmi5oJEpx0nKX2ETAM7b7LJLK7DUAojQhP1=s1360-w1360-h1020-rw",
     ],
     description:
-      "Nestled in the scenic hills of Barkot, Pine Hills Resort and Restaurant offers a luxurious and peaceful retreat for travelers visiting Uttarakhand. The resort features elegant rooms with mountain views, modern amenities, and warm hospitality. Guests can enjoy comfortable accommodation, delicious dining options, and breathtaking surroundings that make it an ideal destination for families, couples, and adventure seekers exploring the Himalayan region.",
+      "Nestled in the scenic hills of Barkot, Pine Hills Resort and Restaurant offers a luxurious and peaceful retreat for travelers visiting Uttarakhand.",
     reviews: [
       {
         name: "Rohan Verma",
         comment:
-          "Beautiful property with amazing mountain views. The rooms were comfortable and the food at the restaurant was delicious. Perfect place to relax after a long travel day.",
+          "Beautiful property with amazing mountain views and delicious food.",
         rating: 4.8,
       },
       {
         name: "Neha Sharma",
         comment:
-          "Great hospitality and peaceful environment. The location is stunning and the staff were very helpful throughout our stay.",
+          "Great hospitality and peaceful environment.",
         rating: 4.7,
       },
     ],
@@ -72,27 +92,36 @@ export const hotelsData = [
     name: "Hotel Shiva Barkot",
     location: "Barkot, Uttarakhand",
     rating: 4.5,
-    price: "Price on Request",
+    price: "₹ 2,800",
+    facilities: [
+      "24hr Room Service",
+      "Restaurant",
+      "Taxi Service",
+      "Laundry",
+      "Conference Hall",
+      "Free Parking",
+      "Hot & Cold Water",
+    ],
     images: [
-      "https://lh3.googleusercontent.com/p/AF1QipMcDCVQZVm3vO-YXFpaWFF4lYvP9Jd1rPSCLgXt=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipNQgDdE70fPGR6XdxEPAHjykxxsj3k1RkI3dFI4=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipMcDCVQZVm3vO-YXFpaWFF4lYvP9Jd1rPSCLgXt=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipOJDZcke_1zEbbudF1qUxhRWCTkK8ZfuDRah6Mm=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipM6blrOwmN9MJkufWZpLjc7CLhJw4eOc31ZCZp7=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipNukDuJ0J9YbJwAY5j8ex7otMdTS0UeFT5svYsB=s1360-w1360-h1020-rw",
     ],
     description:
-      "Hotel Shiva Barkot is located on the Mussoorie–Yamunotri road and offers beautiful views of the Himalayan ranges and the Yamuna river. The hotel provides comfortable rooms with attached bathrooms, 24-hour hot and cold water, restaurant services on request, room service, and parking facilities. Additional amenities include taxi service, laundry, conference hall, and easy access to ATM and medical facilities, making it a convenient stop for travelers on the Char Dham route.",
+      "Hotel Shiva Barkot is located on the Mussoorie–Yamunotri road and offers beautiful views of the Himalayan ranges and the Yamuna river.",
     reviews: [
       {
         name: "Ankit Rawat",
         comment:
-          "Nice hotel on the Yamunotri route with great river and mountain views. Rooms were clean and the staff was helpful during our stay.",
+          "Nice hotel on the Yamunotri route with great river and mountain views.",
         rating: 4.6,
       },
       {
         name: "Priya Kapoor",
         comment:
-          "Comfortable stay with good food and peaceful surroundings. A convenient stop while travelling towards Yamunotri.",
+          "Comfortable stay with good food and peaceful surroundings.",
         rating: 4.4,
       },
     ],

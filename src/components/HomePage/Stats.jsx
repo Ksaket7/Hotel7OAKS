@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Stats = () => {
   const statsRef = useRef(null);
+  const imageRef = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(
@@ -23,6 +24,21 @@ const Stats = () => {
         },
       }
     );
+
+    gsap.fromTo(
+      imageRef.current,
+      { y: 40, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: imageRef.current,
+          start: "top 85%",
+        },
+      }
+    );
   }, []);
 
   const stats = [
@@ -33,26 +49,31 @@ const Stats = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-12 md:py-16">
-      <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-16 items-center">
-        {/* Left Content: Heading + Stats */}
-        <div className="md:col-span-2">
+    <section className="w-full bg-white py-12 md:py-20">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+        
+        {/* LEFT CONTENT */}
+        <div>
           <p className="text-green text-lg lg:text-2xl font-dsB tracking-wide mb-3">
             Our Impact
           </p>
 
-          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-800 leading-tight mb-8 max-w-xl">
+          <h2 className="text-3xl md:text-5xl font-ssBD text-gray-800 leading-tight mb-10 max-w-xl">
             Trusted Adventures Across the Himalayas
           </h2>
 
-          {/* Stats Grid */}
-          <div ref={statsRef} className="grid grid-cols-2 gap-x-12  gap-y-12 max-w-xl">
+          {/* STATS GRID */}
+          <div
+            ref={statsRef}
+            className="grid grid-cols-2 gap-x-12 gap-y-12 max-w-lg"
+          >
             {stats.map((stat, index) => (
-              <div key={index} className="p-4 pl-0 ">
+              <div key={index}>
                 <h3 className="text-4xl md:text-5xl font-ssBD text-gray-800">
                   {stat.value}
                 </h3>
-                <p className="mt-2 text-gray-800 font-ssLB text-sm tracking-wide">
+
+                <p className="mt-2 text-gray-700 font-ssLB text-sm tracking-wide">
                   {stat.label}
                 </p>
               </div>
@@ -60,13 +81,19 @@ const Stats = () => {
           </div>
         </div>
 
-        {/* Right Side Image */}
-        <div className="flex justify-center items-center">
+        {/* RIGHT IMAGE */}
+        <div
+          ref={imageRef}
+          className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] lg:h-[460px] rounded-2xl overflow-hidden shadow-xl"
+        >
           <img
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+            src="https://images.pexels.com/photos/19877298/pexels-photo-19877298.jpeg"
             alt="Himalayas adventure"
-            className="rounded-lg shadow-xl object-cover max-w-full h-[320px]"
+            className="w-full h-full object-cover"
           />
+
+          {/* subtle gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
         </div>
       </div>
     </section>

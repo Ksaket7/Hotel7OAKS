@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MapPin, Star } from "lucide-react";
+import { MapPin, Star, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
-import { hotelsData } from "../../data/hotels"; // ✅ adjust path if needed
+import { hotelsData } from "../../data/hotels";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,12 +13,12 @@ const HotelPreview = () => {
   useEffect(() => {
     gsap.fromTo(
       gridRef.current.children,
-      { y: 50, opacity: 0 },
+      { y: 40, opacity: 0 },
       {
         y: 0,
         opacity: 1,
-        stagger: 0.15,
-        duration: 0.9,
+        stagger: 0.12,
+        duration: 0.8,
         ease: "power3.out",
         scrollTrigger: {
           trigger: gridRef.current,
@@ -29,75 +29,87 @@ const HotelPreview = () => {
   }, []);
 
   return (
-    <section className="py-8 bg-gray-200 overflow-hidden md:py-16">
-      {/* === Section Heading === */}
-      <div className="text-center max-w-3xl mx-auto px-6 mb-12">
+    <section className="py-12 md:py-20 bg-gray-100 overflow-hidden">
+      {/* HEADER */}
+      <div className="text-center max-w-3xl mx-auto px-6 mb-14">
         <p className="text-green text-xl lg:text-2xl tracking-wide font-dsB mb-3">
           Hotels
         </p>
+
         <h2 className="text-4xl md:text-5xl font-ssBD text-gray-900 mb-4">
           The Best Stays in Your Budget
         </h2>
-        <p className="text-gray-800 text-lg font-ssLB">
-          Experience the best of Uttarakhand’s hospitality — from cozy lakeside
-          lodges to mountain-view resorts curated just for you.
+
+        <p className="text-gray-700 text-lg font-ssLB">
+          Experience the best of Uttarakhand’s hospitality — from cozy
+          mountain lodges to scenic resorts.
         </p>
       </div>
 
-      {/* === Hotels Grid === */}
+      {/* GRID */}
       <div
         ref={gridRef}
         className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
       >
         {hotelsData.slice(0, 4).map((hotel) => (
-          <div
+          <Link
+            to={`/hotels/${hotel.id}`}
             key={hotel.id}
-            className="relative group overflow-hidden rounded-xl bg-white shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-[1.03]"
+            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group flex flex-col"
           >
-            {/* Image */}
-            <img
-              src={hotel.image}
-              alt={hotel.name}
-              className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+            {/* IMAGE */}
+            <div className="relative">
+              <img
+                src={hotel.images?.[0]}
+                alt={hotel.name}
+                className="w-full h-56 object-cover transition duration-500 group-hover:scale-105"
+              />
 
-            {/* Hotel Info */}
-            <div className="absolute bottom-0 left-0 w-full p-4 text-left z-10">
-              <h3 className="text-white font-semibold text-lg mb-1">
-                {hotel.name}
-              </h3>
-              <p className="text-white/90 text-sm flex items-center gap-2 mb-1">
+              {/* FAVORITE */}
+              {/* <div className="absolute top-3 right-3 bg-white p-2 rounded-full shadow">
+                <Heart size={16} className="text-gray-600" />
+              </div> */}
+            </div>
+
+            {/* CONTENT */}
+            <div className="p-5 flex flex-col flex-grow  font-ssSBH">
+              
+              {/* TITLE + RATING */}
+              <div className="flex justify-between items-start gap-3 min-h-[48px]">
+                <h3 className="font-semibold text-gray-900 text-md leading-snug line-clamp-2">
+                  {hotel.name}
+                </h3>
+
+                <div className="flex items-center gap-1 text-sm shrink-0">
+                  <Star size={14} className="text-yellow-400" />
+                  <span className="text-gray-800">{hotel.rating}</span>
+                </div>
+              </div>
+
+              {/* LOCATION */}
+              <p className="flex items-center gap-2 text-gray-500 text-sm mt-2 mb-4 line-clamp-1 font-ssBookD">
                 <MapPin size={14} />
                 {hotel.location}
               </p>
-              <div className="flex items-center gap-2">
-                <Star className="text-yellow-400 w-4 h-4" />
-                <p className="text-white text-sm">{hotel.rating}</p>
-              </div>
-            </div>
 
-            {/* Hover Overlay */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500">
-              <p className="text-white font-semibold text-lg mb-3">
+              {/* PRICE */}
+              <p className="text-lg font-semibold text-gray-900 mt-auto">
                 {hotel.price}
+                <span className="text-sm text-gray-500 font-normal font-ssBookD">
+                  {" "}
+                  / night
+                </span>
               </p>
-              <Link
-                to={`/hotels/${hotel.id}`}
-                className="bg-green hover:bg-greenH text-white text-sm px-6 py-2 rounded-full transition-all"
-              >
-                View Details
-              </Link>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
-      {/* === CTA Button === */}
-      <div className="text-center mt-12">
+      {/* CTA */}
+      <div className="text-center mt-14">
         <Link
           to="/hotels"
-          className="bg-green hover:bg-greenH text-white px-8 py-3 rounded-full font-ssLB transition-all"
+          className="bg-green hover:bg-greenH text-white px-10 py-3 rounded-full font-ssLB transition-all shadow-md hover:shadow-lg"
         >
           View All Hotels
         </Link>
