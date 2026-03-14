@@ -1,8 +1,17 @@
-import { useParams } from "react-router-dom";
-import { MapPin, Star, MessageCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+import {
+  MapPin,
+  Star,
+  MessageCircle,
+  X,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
+
+import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import { hotelsData } from "../data/hotels";
 import Form from "../components/Common/Form";
 
@@ -12,121 +21,250 @@ const HotelDetail = () => {
   const { id } = useParams();
   const hotel = hotelsData.find((h) => h.id === id);
 
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const openGallery = (index) => {
+    setCurrentImageIndex(index);
+    setIsGalleryOpen(true);
+  };
+
+  const closeGallery = () => setIsGalleryOpen(false);
+
+  const goNext = () => {
+    setCurrentImageIndex((prev) =>
+      prev === hotel.images.length - 1 ? 0 : prev + 1,
+    );
+  };
+
+  const goPrev = () => {
+    setCurrentImageIndex((prev) =>
+      prev === 0 ? hotel.images.length - 1 : prev - 1,
+    );
+  };
+
   const handleWhatsAppClick = () => {
-    // Replace with your WhatsApp number and pre-filled message
-    const phoneNumber = "919876543210"; // Your WhatsApp number (with country code)
-    const message = encodeURIComponent(`Hi! I'm interested in ${hotel?.name || 'this hotel'}. Can you share more details?`);
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+    const phoneNumber = "919876543210";
+    const message = encodeURIComponent(
+      `Hi! I'm interested in ${hotel?.name}. Can you share details?`,
+    );
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
 
   useEffect(() => {
     gsap.fromTo(
       ".detail-block",
       { y: 40, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        stagger: 0.2,
-        ease: "power3.out",
-      }
+      { y: 0, opacity: 1, duration: 1, stagger: 0.15 },
     );
   }, []);
 
   if (!hotel) {
     return (
-      <div className="h-screen flex flex-col justify-center items-center text-center">
-        <h2 className="text-2xl font-bold mb-4">Hotel Not Found</h2>
-        <a href="/hotels" className="text-green hover:text-greenH underline font-medium">
-          Back to Hotels
-        </a>
-      </div>
+      <section className="min-h-screen flex items-center justify-center">
+        <h2>Hotel Not Found</h2>
+      </section>
     );
   }
 
   return (
-    <section className="bg-white overflow-hidden pb-20">
-      {/* === Hero Banner === */}
-      <div
-        className="relative w-full h-[60vh] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${hotel.image})` }}
-      >
-        <div className="absolute inset-0 bg-black/50"></div>
-        <h1 className="relative z-10 text-white text-4xl md:text-6xl font-ssBD text-center px-4">
-          {hotel.name}
-        </h1>
-      </div>
+    <>
+      <section className="bg-white pb-20 overflow-hidden">
+        {/* HERO */}
 
-      {/* === TAG + WHATSAPP ROW === */}
-      <div className="max-w-6xl mx-auto px-6 mt-14 detail-block">
-        <div className="flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
-          {/* Left: Location tag */}
-          <p className="text-green text-sm font-ssBookD bg-green/10 px-3 py-1 rounded-full tracking-wide w-fit">
-            {hotel.location}
-          </p>
-          
-          {/* Right: WhatsApp Button */}
-          <div className="flex justify-start sm:justify-end">
+        <div
+          className="relative w-full h-[70vh] bg-cover bg-center flex items-center justify-center"
+          style={{
+            backgroundImage: `linear-gradient(to bottom,rgba(0,0,0,0.1),rgba(0,0,0,0.4)),url(${hotel.images[0]})`,
+          }}
+        >
+          <h1 className="text-white text-5xl font-ssBD z-10 text-center px-4">
+            {hotel.name}
+          </h1>
+        </div>
+
+        {/* TAG + WHATSAPP */}
+
+        <div className="max-w-6xl mx-auto px-6 mt-14 detail-block">
+          <div className="flex flex-col sm:flex-row justify-between gap-4">
+            <p className="text-green text-sm bg-green/10 px-3 py-1 rounded-full w-fit font-ssBookD">
+              {hotel.tag}
+            </p>
+
             <button
               onClick={handleWhatsAppClick}
-              className="group flex items-center gap-2 bg-green hover:bg-greenH text-white font-ssBookD px-5 py-2.5 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.02] whitespace-nowrap text-sm"
+              className="flex items-center gap-2 bg-green text-white px-5 py-2.5 rounded-full"
             >
-              <MessageCircle size={16} className="group-hover:scale-110 transition-transform" />
+              <MessageCircle size={16} />
               Chat with us
             </button>
           </div>
         </div>
-      </div>
 
-      {/* === Details Section === */}
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="flex items-center gap-6 my-6 text-gray-900 font-ssSBH text-sm detail-block">
-          <div className="flex items-center gap-2">
-            <MapPin size={16} className="text-green" />
-            <span>{hotel.location}</span>
+        {/* BASIC INFO */}
+
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex items-center gap-6 my-6 text-sm detail-block">
+            <div className="flex items-center gap-2">
+              <MapPin size={16} className="text-green" />
+              <span>{hotel.location}</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Star size={16} className="text-yellow-400" />
+              <span>{hotel.rating}/5</span>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <Star size={16} className="text-yellow-400" />
-            <span>{hotel.rating} / 5</span>
-          </div>
-        </div>
 
-        <p className="text-gray-900 font-ssLB text-base leading-relaxed max-w-3xl detail-block">
-          {hotel.description}
-        </p>
-
-        {/* Price and Book Button */}
-        <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-6 detail-block">
-          <p className="text-gray-900 text-3xl font-ssBD">
-            {hotel.price}
+          <p className="text-gray-900 leading-relaxed detail-block">
+            {hotel.description}
           </p>
-          {/* <button className="bg-green hover:bg-greenH text-white font-ssBookD text-base px-6 py-3 rounded-full transition-all shadow-lg hover:shadow-xl">
-            Book Now
-          </button> */}
+
+          <p className="mt-10 text-green text-3xl font-bold detail-block">
+            Starting From {hotel.price} / night
+          </p>
         </div>
 
-        {/* Reviews */}
-        <div className="mt-16 detail-block">
-          <h3 className="text-2xl font-ssBD text-gray-900 mb-6">
-            Guest Reviews
-          </h3>
-          {hotel.reviews.map((review, index) => (
-            <div
-              key={index}
-              className="border-l-4 border-green/60 pl-4 mb-6 detail-block"
-            >
-              <p className="text-gray-900 font-ssLB italic mb-2">
-                "{review.comment}"
-              </p>
-              <p className="text-sm text-gray-600 font-ssLB">
-                — {review.name}, ⭐ {review.rating}
+        {/* HOTEL OVERVIEW */}
+
+        <div className="max-w-6xl mx-auto px-6 mt-16 detail-block">
+          <h2 className="text-2xl font-ssBD text-center mb-8">
+            Hotel Amenities
+          </h2>
+
+          <div className="grid md:grid-cols-4 gap-6 text-center">
+            {hotel.amenities?.map((item, i) => (
+              <div key={i} className="bg-gray-50 p-6 rounded-xl">
+                <p className="font-semibold">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* GALLERY */}
+
+        <div className="max-w-6xl mx-auto px-6 mt-16 detail-block">
+          <h2 className="text-3xl font-ssBD text-center mb-10">
+            Hotel Gallery
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {hotel.images.map((img, i) => (
+              <div
+                key={i}
+                onClick={() => openGallery(i)}
+                className="cursor-pointer overflow-hidden rounded-xl"
+              >
+                <img
+                  src={img}
+                  className="w-full h-[200px] object-cover hover:scale-110 transition"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* HIGHLIGHTS */}
+
+        {hotel.highlights && (
+          <div className="max-w-5xl mx-auto px-6 mt-20 detail-block">
+            <h2 className="text-3xl text-center font-ssBD mb-8">
+              Hotel Highlights
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {hotel.highlights.map((h, i) => (
+                <div key={i} className="bg-green/5 p-6 rounded-xl">
+                  <p>{h}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* REVIEWS */}
+
+        <div className="max-w-5xl mx-auto px-6 mt-20 detail-block">
+          <h2 className="text-3xl text-center font-ssBD mb-8">Guest Reviews</h2>
+
+          {hotel.reviews.map((r, i) => (
+            <div key={i} className="border-l-4 border-green/60 pl-4 mb-6">
+              <p className="italic">"{r.comment}"</p>
+
+              <p className="text-sm text-gray-500">
+                — {r.name} ⭐ {r.rating}
               </p>
             </div>
           ))}
         </div>
-      </div>
-      <Form itemName={hotel.name} itemType="Hotel" />
-    </section>
+
+        <Form itemName={hotel.name} itemType="Hotel" />
+
+       {/* === CTA SECTION === */}
+        <div className="max-w-6xl mx-auto px-6 mt-20 mb-16 detail-block">
+          <div className="bg-gradient-to-r from-green to-greenH p-12 rounded-3xl text-white text-center shadow-2xl">
+            <h2 className="text-4xl font-ssBD mb-6">
+              Ready for Your Stay?
+            </h2>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
+              <Link
+                to="/treks"
+                className="flex-1 inline-block bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-ssBookD px-8 py-4 rounded-full transition-all shadow-xl hover:shadow-2xl hover:scale-[1.02] border-2 border-white/30 font-semibold text-lg"
+              >
+                ← Explore More Hotels
+              </Link>
+              <button
+                onClick={handleWhatsAppClick}
+                className="flex-1 flex items-center justify-center gap-3 bg-white text-green font-ssBD px-8 py-4 rounded-full shadow-2xl hover:shadow-3xl hover:scale-[1.02] transition-all duration-300 font-semibold text-lg border-2 border-white/20"
+              >
+                <MessageCircle size={24} />
+                Book This Hotel Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FULLSCREEN GALLERY */}
+
+      {isGalleryOpen && (
+        <div
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+          onClick={closeGallery}
+        >
+          <div
+            className="relative max-w-5xl w-full"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={closeGallery}
+              className="absolute top-6 right-6 text-white"
+            >
+              <X />
+            </button>
+
+            <button
+              onClick={goPrev}
+              className="absolute left-6 top-1/2 text-white"
+            >
+              <ChevronLeft />
+            </button>
+
+            <button
+              onClick={goNext}
+              className="absolute right-6 top-1/2 text-white"
+            >
+              <ChevronRight />
+            </button>
+
+            <img
+              src={hotel.images[currentImageIndex]}
+              className="w-full max-h-[80vh] object-contain"
+            />
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
