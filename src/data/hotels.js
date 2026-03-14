@@ -80,8 +80,7 @@ export const hotelsData = [
       },
       {
         name: "Neha Sharma",
-        comment:
-          "Great hospitality and peaceful environment.",
+        comment: "Great hospitality and peaceful environment.",
         rating: 4.7,
       },
     ],
@@ -103,8 +102,8 @@ export const hotelsData = [
       "Hot & Cold Water",
     ],
     images: [
-      "https://lh3.googleusercontent.com/p/AF1QipNQgDdE70fPGR6XdxEPAHjykxxsj3k1RkI3dFI4=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipMcDCVQZVm3vO-YXFpaWFF4lYvP9Jd1rPSCLgXt=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipNQgDdE70fPGR6XdxEPAHjykxxsj3k1RkI3dFI4=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipOJDZcke_1zEbbudF1qUxhRWCTkK8ZfuDRah6Mm=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipM6blrOwmN9MJkufWZpLjc7CLhJw4eOc31ZCZp7=s1360-w1360-h1020-rw",
       "https://lh3.googleusercontent.com/p/AF1QipNukDuJ0J9YbJwAY5j8ex7otMdTS0UeFT5svYsB=s1360-w1360-h1020-rw",
@@ -120,8 +119,7 @@ export const hotelsData = [
       },
       {
         name: "Priya Kapoor",
-        comment:
-          "Comfortable stay with good food and peaceful surroundings.",
+        comment: "Comfortable stay with good food and peaceful surroundings.",
         rating: 4.4,
       },
     ],
