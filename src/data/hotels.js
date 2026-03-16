@@ -124,5 +124,129 @@ export const hotelsData = [
       },
     ],
   },
-  
+
+  {
+    id: "sukoon-dk",
+    name: "Sukoon DK",
+    location: "Jhirmoli, Rudraprayag, Uttarakhand",
+    rating: 4.6,
+    price: "₹ 5,500",
+    facilities: [
+      "Outdoor Swimming Pool",
+      "Gym",
+      "EV Charging Station",
+      "24-hour Front Desk",
+      "Restaurant",
+      "Taxi Service",
+      "Conference Room",
+      "Free WiFi",
+      "Free Parking",
+    ],
+    images: [
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/52a41d171c150c75177a5bed6b97dc5d998b3e10.jpg",
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/28f4682206d27a4fc81eccb0c2f5e43bedc4a7fa.jpg",
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f48617f590b47dbad3554b6a16f5da93a626a158.jpg",
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/3f27742f47552b3b6c6e8b2c23ca303e769ab4b5.jpg",
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ab7ab2ccbff7504537e28ba6b1743b881d4f2a23.jpg",
+    ],
+    description:
+      "Sukoon DK is a resort in Jhirmoli near Rudraprayag, offering modern amenities like an outdoor pool and gym, with scenic surroundings near local attractions and a rivulet.",
+    reviews: [
+      {
+        name: "Richa Puranesh",
+        comment:
+          "Well made comfortable Sukoon DK. With excellent food. And set on a pretty rivulet with wonderful bird life.",
+        rating: 4.8,
+      },
+      {
+        name: "Rajat Kumar",
+        comment:
+          "Best location best service best food best staff nice behaviour hygiene rooms.",
+        rating: 4.7,
+      },
+    ],
+  },
+
+  {
+    id: "chopta-resort",
+    name: "Chopta Resort",
+    location: "Chopta, Rudraprayag District, Uttarakhand",
+    rating: 4.0,
+    price: "₹ 7,100",
+    facilities: [
+      "Free WiFi",
+      "Daily Housekeeping",
+      "Balcony",
+      "Fireplace",
+      "Outdoor Play Area",
+      "Restaurant",
+      "Free Parking",
+      "24hr Front Desk",
+      "Hiking Trails Nearby",
+    ],
+    images: [
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ebc1cbb26a19ebbb0078b2512e593002ae0ad726.jpg",
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f15c28321542da629871a1a0a9b6a5ce81130e34.jpg",
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/1195bfdb77575fc34180d568457b92c991fb2186.jpg",
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ed3acd30e7f4b8c2b936d5939e1d0ae1d610ea9c.jpg",
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d98783e9568dc9ad65e7a3a7f268e2bcf2a0309d.jpg",
+    ],
+    description:
+      "Chopta Resort is a luxury Siberian pine wood resort at 2600 meters altitude in a large alpine meadow beside a small stream, offering stunning views and proximity to Tungnath-Chandrashila trek.",
+    reviews: [
+      {
+        name: "Cruiser08488138590",
+        comment: "Stay was very comfortable.",
+        rating: 4.5,
+      },
+      {
+        name: "Anonymous Traveler",
+        comment:
+          "The service was very fast and the food was superb. WiFi worked great for watching cricket.",
+        rating: 4.8,
+      },
+    ],
+  },
+
+  {
+    id: "himrab-chopta-resort",
+    name: "Himrab Chopta Resort",
+    location: "Chopta, Rudraprayag District, Uttarakhand",
+    rating: 4.8,
+    price: "₹ 4,300",
+    facilities: [
+      "Free WiFi",
+      "Free Parking",
+      "24-hour Front Desk",
+      "Restaurant",
+      "Room Service",
+      "Daily Housekeeping",
+      "Garden",
+      "Luggage Storage",
+      "Trekking Arrangements",
+    ],
+    images: [
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/1a63cc24eb27fa143032c9421896a2718a7c10c3.jpg",
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/37fb44202fa0c40c6a207c1e729abaa86503ac3f.jpg",
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ed3acd30e7f4b8c2b936d5939e1d0ae1d610ea9c.jpg",
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/402794ebbc0ea7ae2a6f2d5df534bac97a460036.jpg",
+      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/59033efcffd596ce86fddb1262368ccca6a4bb92.jpg",
+    ],
+    description:
+      "Himrab Chopta Resort offers luxurious rooms and cottages with stunning Himalayan views, located near Baniyakund in Chopta, ideal for trekkers visiting Tungnath Temple and Deoria Tal Lake.",
+    reviews: [
+      {
+        name: "Traveler Review",
+        comment:
+          "Best property in Chopta with peaceful haven amid Himalayan mountains, spacious clean rooms, spectacular views, and excellent staff service.",
+        rating: 5.0,
+      },
+      {
+        name: "Guest Feedback",
+        comment:
+          "Excellent food at affordable rates, helpful owner, delicious tasty food, great location near trekking points.",
+        rating: 4.9,
+      },
+    ],
+  },
 ];

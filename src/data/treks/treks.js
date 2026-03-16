@@ -1588,11 +1588,11 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize professionally guided Kuari Pass trekking experiences with experienced local guides, comfortable stays, and carefully planned itineraries to ensure a safe and memorable Himalayan adventure.",
 
     images: [
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1717834931/kuari-pass-trek1.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1717834931/kuari-pass-trek2.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1717834931/kuari-pass-trek3.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1717834931/kuari-pass-trek4.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1717834931/kuari-pass-trek5.jpg",
+      "https://images.unsplash.com/photo-1641669600410-1c43f32ae6b8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1716573249423-f2ade6ce0098?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1729185207145-e46a8c45b35a?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1716573263049-bb901a972ce1?q=80&w=1358&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1716573252390-3cf229264e90?q=80&w=1346&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ],
   },
 
