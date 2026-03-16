@@ -148,7 +148,9 @@ const TrekDetails = () => {
 
             {trek.startingPoint && (
               <div className="bg-gray-50 p-6 rounded-xl">
-                <p className="text-gray-500 text-sm font-ssSBH">Starting Point</p>
+                <p className="text-gray-500 text-sm font-ssSBH">
+                  Starting Point
+                </p>
                 <p className="font-semibold">{trek.startingPoint}</p>
               </div>
             )}
@@ -168,6 +170,28 @@ const TrekDetails = () => {
             )}
           </div>
         </div>
+
+        {/* === GOOGLE MAP LOCATION === */}
+        {trek.map && (
+          <div className="max-w-6xl mx-auto px-6 mt-20 detail-block">
+            <h2 className="text-3xl font-ssBD text-center mb-10">
+              Trek Location
+            </h2>
+
+            <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
+              <iframe
+                src={trek.map}
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-[450px]"
+              ></iframe>
+            </div>
+          </div>
+        )}
 
         {/* GALLERY GRID */}
         <div className="max-w-6xl mx-auto px-6 mt-16 detail-block">
@@ -340,7 +364,6 @@ const TrekDetails = () => {
           </div>
         </div>
       </section>
-
       {/* MODERN FULLSCREEN GALLERY */}{" "}
       {isGalleryOpen && (
         <div

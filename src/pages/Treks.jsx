@@ -35,7 +35,7 @@ const Treks = () => {
             Adventure Awaits
           </span>
           <h1 className="text-5xl md:text-7xl font-ssBD text-white mb-4 leading-tight">
-            Treks of Uttarakhand
+            Treks of Himalayas
           </h1>
           <p className="text-white/85 font-ssLB text-base md:text-lg max-w-xl mx-auto leading-relaxed">
             From snow peaks to spiritual trails — experience handpicked
