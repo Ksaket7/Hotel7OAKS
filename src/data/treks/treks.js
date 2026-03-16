@@ -1579,11 +1579,11 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize professionally guided Kuari Pass trekking experiences with experienced local guides, comfortable stays, and carefully planned itineraries to ensure a safe and memorable Himalayan adventure.",
 
     images: [
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1717834931/kuari-pass-trek1.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1717834931/kuari-pass-trek2.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1717834931/kuari-pass-trek3.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1717834931/kuari-pass-trek4.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1717834931/kuari-pass-trek5.jpg",
+      "https://images.unsplash.com/photo-1641669600410-1c43f32ae6b8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1716573249423-f2ade6ce0098?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1729185207145-e46a8c45b35a?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1716573263049-bb901a972ce1?q=80&w=1358&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1716573252390-3cf229264e90?q=80&w=1346&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ],
   },
 
@@ -1703,11 +1703,11 @@ export const treksData = [
     "At 7 Oaks Trek and Travels, we organize professionally guided Ali Bedni Bugyal trekking experiences with experienced local guides, comfortable stays, and well-planned itineraries to ensure a safe and memorable Himalayan adventure. This trek is perfect for nature lovers looking to explore the magnificent bugyals of Uttarakhand.",
 
   images: [
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-    "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-    "https://images.unsplash.com/photo-1500534623283-312aade485b7",
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+    "https://trekthehimalayas.com/images/AliBedinBugyalTrek/GalleryDesktop/8/bd25bc54-30be-4745-ae9c-750ec76e2989_Ali-Bedni-Bugyal-5.webp",
+    "https://trekthehimalayas.com/images/AliBedniBugyalTrek/GalleryDesktop/Summer/1f62e2b2-4701-4b8e-9df7-cfcee0d4a40e_ali%20bedni%20bugyal%20gallery%20desk%20(6).webp",
+    "https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/93990af7-dfdb-4b12-9cd4-830b20f768e9_Ali+bedni+Bugyal_Dhaval+Jajal_Ali+bugyal+Top_April_meadows_trekker_+%282%29.JPG?w=4266&h=2400&q=50&org_if_sml=1",
+    "https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/93990af7-dfdb-4b12-9cd4-830b20f768e9_Ali+bedni+Bugyal_Dhaval+Jajal_Ali+bugyal+Top_April_meadows_trekker_+%282%29.JPG?w=4266&h=2400&q=50&org_if_sml=1",
+    "https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/93990af7-dfdb-4b12-9cd4-830b20f768e9_Ali+bedni+Bugyal_Dhaval+Jajal_Ali+bugyal+Top_April_meadows_trekker_+%282%29.JPG?w=4266&h=2400&q=50&org_if_sml=1"
   ]
 },
 
