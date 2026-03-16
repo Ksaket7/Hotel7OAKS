@@ -249,4 +249,278 @@ export const hotelsData = [
       },
     ],
   },
+
+  {
+    id: "hotel-vikram-palace-barkot",
+    name: "Hotel Vikram Palace",
+    location: "Tunalka, Sapeta, Uttarakhand 249171",
+    rating: 4.6,
+    price: "₹ 3,200", 
+    facilities: [
+      "24-hour Front Desk",
+      "Khushi Restaurant",
+      "Room Service",
+      "Free WiFi",
+      "Free Parking",
+      "Family Rooms",
+      "Hot & Cold Water",
+      "CCTV Security",
+    ],
+    images: [
+      "https://ak-d.tripcdn.com/target/0ww2z12000cmf47ia86C2_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2t12000cmf4lka0831_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww5h12000cmf4p6uC4D9_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2o12000cmf3vei5391_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2112000cmf4ay0C6F5_W_1080_810_R5_D.jpg"
+    ],
+    description:
+      "Hotel Vikram Palace is a well-regarded 3-star property on the Yamunotri Road. It features an on-site restaurant and comfortable rooms that offer beautiful vistas of the Himalayan landscape.",
+    reviews: [
+      {
+        name: "Manoj Kumar Sharma",
+        comment: "Very good hospitality and food quality. The service was excellent during our stay!",
+        rating: 5.0,
+      },
+      {
+        name: "Anurag Sahu",
+        comment: "The location is great for sightseeing, though room maintenance could be improved.",
+        rating: 3.5,
+      },
+    ],
+  },
+
+  {
+    id: "chopta-resort-uttarakhand",
+    name: "Chopta Resort",
+    location: "Chopta-Baniyakund, Rudraprayag, Uttarakhand 246419",
+    rating: 4.4,
+    price: "₹ 7,000", // Starting rates for Deluxe rooms
+    facilities: [
+      "Mountain View Rooms",
+      "Shivoham Multi-Cuisine Restaurant",
+      "Free WiFi (50+ Mbps)",
+      "Fireplace in Room (on request)",
+      "Attached Balcony",
+      "Guided Treks",
+      "Adventure Activities (Archery, Ropes Course)",
+      "Conference Room",
+    ],
+    images: [
+      "https://ak-d.tripcdn.com/target/0ww6r12000cmm0zjt7F0B_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2q12000cmm0eje68B4_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2i12000cmm063e6B09_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww5h12000cmm0xle64B8_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww6712000cmm0z5iE3E5_W_1080_810_R5_D.jpg"
+    ],
+    description:
+      "Perched in a large alpine meadow at 2600 meters, Chopta Resort is a luxury Siberian pine wood property. It offers unmatched tranquility and 360-degree Himalayan views, just 3km from the Tungnath-Chandrashila trekking point.",
+    reviews: [
+      {
+        name: "Vijay Singh",
+        comment: "Excellent cleanliness and staff service. The room comfort was top-notch with great views. ✨",
+        rating: 5.0,
+      },
+      {
+        name: "Bhavana",
+        comment: "A wonderful stay amidst nature. The property conditions are well-maintained. 🌲",
+        rating: 4.0,
+      },
+    ],
+  }, 
+
+  {
+    id: "hotel-ankit-palace-uttarkashi",
+    name: "Hotel Ankit Palace",
+    location: "By passroad, near tekhla pul, opposite NH34, Uttarkashi, Uttarakhand 249193",
+    rating: 4.7,
+    price: "₹ 3,500", // Standard seasonal starting rate
+    facilities: [
+      "Mountain & River View Rooms",
+      "In-house Restaurant",
+      "24-hour Front Desk",
+      "Free Parking",
+      "Room Service",
+      "CCTV Security",
+      "Hot & Cold Water",
+      "Laundry Service"
+    ],
+    images: [
+      "https://ak-d.tripcdn.com/target/0ww1312000cndh2q98381_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2o12000cndgzoiF8C1_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww3012000cndhd9i63D9_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww1012000cndh1t08F00_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2o12000cndgx3e4304_W_1080_810_R5_D.jpg"
+    ],
+    description:
+      "Hotel Ankit Palace is a highly-rated property located near the Bhagirathi River in Uttarkashi. Known for its excellent hospitality and clean environment, it provides a peaceful atmosphere with stunning views of the lush green mountains.",
+    reviews: [
+      {
+        name: "Sanjay Nautiyal",
+        comment: "The location is perfect with a great river view. The rooms are clean and the staff is very humble. 🙏",
+        rating: 5.0,
+      },
+      {
+        name: "Deepak Rawat",
+        comment: "Excellent service and food quality. One of the best hotels to stay at while visiting Uttarkashi. 🏔️🍴",
+        rating: 5.0,
+      },
+    ],
+  }, 
+
+  {
+    id: "hotel-devbhoomi-uttarkashi",
+    name: "Hotel Devbhoomi",
+    location: "Barethi, Uttarkashi, Uttarakhand 249193",
+    rating: 4.8,
+    price: "₹ 2,200", // Standard seasonal starting rate
+    facilities: [
+      "Mountain View Rooms",
+      "In-house Restaurant",
+      "24-hour Front Desk",
+      "Free Parking",
+      "Room Service",
+      "Hot & Cold Water",
+      "CCTV Security"
+    ],
+    images: [
+      "https://ak-d.tripcdn.com/target/0ww2m12000cnlvp01F48C_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww3v12000cnlvi8t917E_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww6f12000cnlvlj94F9A_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww5412000cnlvq6t7E58_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww1g12000cnlvn6uB2B5_W_1080_810_R5_D.jpg"
+    ],
+    description:
+      "Hotel Devbhoomi is a top-rated stay in Uttarkashi, known for its clean rooms and peaceful environment. It is a preferred choice for pilgrims and travelers looking for a comfortable halt on the way to Gangotri, offering beautiful views of the surrounding hills.",
+    reviews: [
+      {
+        name: "Ravi Rawat",
+        comment: "Excellent hospitality and the location is very peaceful. The food was delicious! 🍲✨",
+        rating: 5.0,
+      },
+      {
+        name: "Pooja Sharma",
+        comment: "Very clean rooms and the staff is incredibly helpful. Highly recommended for families. 🏔️🙏",
+        rating: 4.5,
+      },
+    ],
+  }, 
+
+  {
+    id: "kedarayath-resort-guptkashi",
+    name: "Kedarayath Resort",
+    location: "Guptkashi-Gaurikund Highway, near Phata, Uttarakhand 246439",
+    rating: 4.5,
+    price: "₹ 4,500", // Yatra season ke hisaab se average price
+    facilities: [
+      "Luxury Swiss Tents & Cottages",
+      "Mountain View Balcony",
+      "Multi-Cuisine Restaurant",
+      "24-hour Front Desk",
+      "Power Backup",
+      "Free Parking",
+      "Hot & Cold Water",
+      "Helipad Access (nearby)"
+    ],
+    images: [
+      "https://ak-d.tripcdn.com/target/0ww5h12000c2z6q8t7B2A_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2o12000c2z6i0lC6B4_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww1312000c2z6xle9D83_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww6412000c2z6v7iE6A8_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2t12000c2z6o8t0F9C_W_1080_810_R5_D.jpg"
+    ],
+    description:
+      "Kedarayath Resort ek premium luxury camping experience deta hai Kedarnath Yatra par jaane waale pilgrims ko. Yeh resort lush green valleys aur majestic Himalayan peaks ke beech basa hua hai, jo aapko ek peaceful aur spiritual environment provide karta hai.",
+    reviews: [
+      {
+        name: "Abhishek Negi",
+        comment: "Excellent hospitality and very clean tents. The view of the peaks is just magical! ✨🏔️",
+        rating: 5.0,
+      },
+      {
+        name: "Meera Iyer",
+        comment: "Great location if you are taking a heli from Phata. Good food and very supportive staff. 🙏🍲",
+        rating: 4.5,
+      },
+    ],
+  }, 
+
+  {
+    id: "kedar-avnita-resort-guptkashi",
+    name: "Kedar Avnita Resort",
+    location: "Gram Bansu, Near Jawahar Navodaya Vidyalaya, Guptkashi, Uttarakhand 246439",
+    rating: 4.6,
+    price: "₹ 1,714", // Current average price including taxes
+    facilities: [
+      "Mountain View Deluxe Rooms",
+      "On-site Restaurant",
+      "24-hour Front Desk",
+      "Free WiFi",
+      "Free Parking",
+      "Daily Housekeeping",
+      "Indoor Games",
+      "Bonfire & Outdoor Furniture",
+      "Kitchenette Facility"
+    ],
+    images: [
+      "https://ak-d.tripcdn.com/target/0ww2m12000cmf47ia86C2_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2t12000cmf4lka0831_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww5h12000cmf4p6uC4D9_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2o12000cmf3vei5391_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2112000cmf4ay0C6F5_W_1080_810_R5_D.jpg"
+    ],
+    description:
+      "Kedar Avnita Resort Guptkashi mein ek serene mountain retreat hai jo sacred attractions jaise Kedarnath aur Tungnath Temple ke paas hai. Yeh property apne clean rooms, tasty food aur bohot hi helpful staff ke liye jaani jaati hai.",
+    reviews: [
+      {
+        name: "Anil Kumar Sharma",
+        comment: "Clean and spacious rooms with tasty food. The staff is very helpful and the service is excellent! ✨",
+        rating: 5.0,
+      },
+      {
+        name: "Rahul Sharma",
+        comment: "Bohot hi friendly environment hai. Feels like home amidst the mountains. 🏔️🏠",
+        rating: 5.0,
+      },
+    ],
+  },
+
+  {
+    id: "hotel-exploring-himalayas-joshimath",
+    name: "Hotel Exploring Himalayas",
+    location: "Main Badrinath Road, near Police Chowki, Hailang, Joshimath, Uttarakhand 246443",
+    rating: 4.8,
+    price: "₹ 2,800", // Standard seasonal starting rate
+    facilities: [
+      "Mountain View Rooms",
+      "In-house Restaurant",
+      "24-hour Front Desk",
+      "Free WiFi",
+      "Free Parking",
+      "Room Service",
+      "Hot & Cold Water",
+      "Travel Desk for Trekking"
+    ],
+    images: [
+      "https://ak-d.tripcdn.com/target/0ww2m12000cmf47ia86C2_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2t12000cmf4lka0831_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww5h12000cmf4p6uC4D9_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2o12000cmf3vei5391_W_1080_810_R5_D.jpg",
+      "https://ak-d.tripcdn.com/target/0ww2112000cmf4ay0C6F5_W_1080_810_R5_D.jpg"
+    ],
+    description:
+      "Hotel Exploring Himalayas is a fantastic choice for travelers looking to experience the raw beauty of the Himalayas. Located conveniently on the Badrinath Highway, it offers cozy accommodations with a focus on hospitality and making your mountain journey comfortable.",
+    reviews: [
+      {
+        name: "Amit Semwal",
+        comment: "Excellent service and very polite staff. The rooms have a great view of the valley. 🏔️✨",
+        rating: 5.0,
+      },
+      {
+        name: "Ritu Bhandari",
+        comment: "One of the best places to stay while traveling to Badrinath. Clean and very peaceful. 🙏🍲",
+        rating: 4.5,
+      },
+    ],
+  }
+
 ];
