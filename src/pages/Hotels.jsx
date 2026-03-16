@@ -197,6 +197,7 @@ const Hotel = () => {
       {/* SEARCH + FILTERS */}
       <div className="max-w-6xl mx-auto px-4 md:px-6 mt-10 font-ssSBH">
         <div className="sticky top-4 z-40 bg-white rounded-2xl border shadow-sm p-4">
+          {/* SEARCH BAR */}
           <div className="flex gap-3 items-center">
             <div className="relative flex-1">
               <Search
@@ -208,22 +209,28 @@ const Hotel = () => {
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
                 placeholder="Search hotels or locations..."
-                className="w-full pl-10 pr-4 py-3 border rounded-xl focus:ring-2 focus:ring-green"
+                className="w-full pl-10 pr-4 py-3 border rounded-xl focus:ring-2 focus:ring-green outline-none"
               />
             </div>
 
+            {/* MOBILE FILTER BUTTON */}
             <button
               onClick={() => setMobileFiltersOpen((s) => !s)}
               className="md:hidden px-4 py-3 border rounded-xl flex items-center gap-2"
             >
               Filters
-              {mobileFiltersOpen ? <ChevronUp size={16} /> : <ChevronDown />}
+              {mobileFiltersOpen ? (
+                <ChevronUp size={16} />
+              ) : (
+                <ChevronDown size={16} />
+              )}
             </button>
 
+            {/* CLEAR FILTERS DESKTOP */}
             {anyFilterActive && (
               <button
                 onClick={resetFilters}
-                className="hidden md:flex px-4 py-3 bg-gray-200 rounded-xl items-center gap-2"
+                className="hidden md:flex px-4 py-3 bg-green hover:bg-greenH  rounded-xl items-center gap-2"
               >
                 <X size={16} />
                 Clear
@@ -231,8 +238,21 @@ const Hotel = () => {
             )}
           </div>
 
-          {/* DESKTOP FILTERS */}
-          <div className="hidden md:grid grid-cols-4 gap-3 mt-4">
+          {/* FILTERS */}
+          <div
+            className={`
+        ${mobileFiltersOpen ? "grid" : "hidden"}
+        md:grid
+        grid-cols-1
+        sm:grid-cols-2
+        md:grid-cols-4
+        gap-3
+        mt-4
+        pt-4
+        border-t
+      `}
+          >
+            {/* LOCATION FILTER */}
             <select
               value={locationsSelected[0]}
               onChange={(e) =>
@@ -240,17 +260,18 @@ const Hotel = () => {
                   ? setLocationsSelected(["All"])
                   : setLocationsSelected([e.target.value])
               }
-              className="border rounded-xl px-3 py-2"
+              className="border rounded-xl px-3 py-3 bg-white"
             >
               {allLocations.map((loc) => (
                 <option key={loc}>{loc}</option>
               ))}
             </select>
 
+            {/* PRICE FILTER */}
             <select
               value={priceRange}
               onChange={(e) => setPriceRange(e.target.value)}
-              className="border rounded-xl px-3 py-2"
+              className="border rounded-xl px-3 py-3 bg-white"
             >
               <option value="any">Any Price</option>
               <option value="lt2k">Below ₹2k</option>
@@ -259,26 +280,39 @@ const Hotel = () => {
               <option value="gt10">Above ₹10k</option>
             </select>
 
+            {/* RATING FILTER */}
             <select
               value={ratingMin}
               onChange={(e) => setRatingMin(e.target.value)}
-              className="border rounded-xl px-3 py-2"
+              className="border rounded-xl px-3 py-3 bg-white"
             >
               <option value="any">Any Rating</option>
               <option value="4">⭐ 4+</option>
               <option value="4.5">⭐ 4.5+</option>
             </select>
 
+            {/* SORT FILTER */}
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="border rounded-xl px-3 py-2"
+              className="border rounded-xl px-3 py-3 bg-white"
             >
               <option value="">Recommended</option>
               <option value="price_low">Price Low → High</option>
               <option value="price_high">Price High → Low</option>
               <option value="rating">Rating High → Low</option>
             </select>
+
+            {/* CLEAR FILTERS MOBILE */}
+            {anyFilterActive && (
+              <button
+                onClick={resetFilters}
+                className="md:hidden col-span-full flex justify-center items-center gap-2 px-4 py-3 bg-green hover:bg-greenH  rounded-xl"
+              >
+                <X size={16} />
+                Clear Filters
+              </button>
+            )}
           </div>
         </div>
       </div>

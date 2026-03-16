@@ -44,7 +44,7 @@ const ToursAndPackages = () => {
   /* locations */
   const allLocations = useMemo(
     () => ["All", ...new Set(toursWithRawPrice.map((t) => t.location))],
-    [toursWithRawPrice]
+    [toursWithRawPrice],
   );
 
   useEffect(() => {
@@ -62,14 +62,12 @@ const ToursAndPackages = () => {
       filtered = filtered.filter(
         (t) =>
           t.title.toLowerCase().includes(s) ||
-          t.location.toLowerCase().includes(s)
+          t.location.toLowerCase().includes(s),
       );
     }
 
     if (!(locationsSelected.length === 1 && locationsSelected[0] === "All")) {
-      filtered = filtered.filter((t) =>
-        locationsSelected.includes(t.location)
-      );
+      filtered = filtered.filter((t) => locationsSelected.includes(t.location));
     }
 
     filtered = filtered.filter((t) => {
@@ -133,7 +131,7 @@ const ToursAndPackages = () => {
     gsap.fromTo(
       cards,
       { y: 24, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.08, duration: 0.45 }
+      { y: 0, opacity: 1, stagger: 0.08, duration: 0.45 },
     );
 
     ScrollTrigger.refresh();
@@ -178,8 +176,8 @@ const ToursAndPackages = () => {
           </h1>
 
           <p className="text-white/90 text-base md:text-lg font-ssBookD">
-            Handpicked tours crafted for explorers, spiritual seekers,
-            and adventure lovers.
+            Handpicked tours crafted for explorers, spiritual seekers, and
+            adventure lovers.
           </p>
         </div>
       </div>
@@ -213,7 +211,7 @@ const ToursAndPackages = () => {
             {anyFilterActive && (
               <button
                 onClick={resetFilters}
-                className="hidden md:flex px-4 py-3 bg-gray-200 rounded-xl items-center gap-2"
+                className="hidden md:flex px-4 py-3 bg-green hover:bg-greenH  rounded-xl items-center gap-2"
               >
                 <X size={16} />
                 Clear
@@ -221,8 +219,13 @@ const ToursAndPackages = () => {
             )}
           </div>
 
-          {/* DESKTOP FILTERS */}
-          <div className="hidden md:grid grid-cols-4 gap-3 mt-4">
+          {/* FILTERS */}
+          <div
+            className={`
+        ${mobileFiltersOpen ? "grid" : "hidden"}
+        md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 mt-4
+      `}
+          >
             <select
               value={locationsSelected[0]}
               onChange={(e) =>
@@ -269,6 +272,16 @@ const ToursAndPackages = () => {
               <option value="price_high">Price High → Low</option>
               <option value="rating">Rating High → Low</option>
             </select>
+            {/* CLEAR FILTERS MOBILE */}
+            {anyFilterActive && (
+              <button
+                onClick={resetFilters}
+                className="md:hidden col-span-full flex justify-center items-center gap-2 px-4 py-3 bg-green hover:bg-greenH rounded-xl"
+              >
+                <X size={16} />
+                Clear Filters
+              </button>
+            )}
           </div>
         </div>
       </div>
