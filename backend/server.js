@@ -10,9 +10,9 @@ const app = express();
 // ✅ CORS FIX
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: process.env.ORIGIN,
     methods: ["GET", "POST"],
-  })
+  }),
 );
 
 app.use(express.json());
