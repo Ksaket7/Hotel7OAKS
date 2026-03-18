@@ -1,12 +1,13 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutUs = () => {
   const sectionRef = useRef(null);
+  const Navigate = useNavigate();
 
   useEffect(() => {
     gsap.fromTo(
@@ -159,7 +160,10 @@ const AboutUs = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* HOTELS */}
-            <div className="bg-gradient-to-br from-white via-green-50 to-gray-100 p-8 rounded-2xl shadow hover:shadow-xl transition-all border border-green-100">
+            <div
+              onClick={() => Navigate("/hotels")}
+              className="bg-gradient-to-br from-white via-green-50 to-gray-100 p-8 rounded-2xl shadow hover:shadow-xl transition-all border border-green-100 hover:cursor-pointer tracking-wider"
+            >
               <div className="text-4xl mb-4">🏨</div>
 
               <h3 className="text-xl font-ssSBH text-green-700 mb-4">
@@ -183,7 +187,10 @@ const AboutUs = () => {
             </div>
 
             {/* TREKS */}
-            <div className="bg-gradient-to-br from-white via-green-50 to-gray-100 p-8 rounded-2xl shadow hover:shadow-xl transition-all border border-green-100">
+            <div
+              onClick={() => Navigate("/treks")}
+              className="bg-gradient-to-br from-white via-green-50 to-gray-100 p-8 rounded-2xl shadow hover:shadow-xl transition-all border border-green-100 hover:cursor-pointer tracking-wider"
+            >
               <div className="text-4xl mb-4">🥾</div>
 
               <h3 className="text-xl font-ssSBH text-green-700 mb-4">
@@ -206,7 +213,7 @@ const AboutUs = () => {
             </div>
 
             {/* TOUR PACKAGES */}
-            <div className="bg-gradient-to-br from-white via-green-50 to-gray-100 p-8 rounded-2xl shadow hover:shadow-xl transition-all border border-green-100">
+            <div onClick={() => Navigate("/tours")} className="bg-gradient-to-br from-white via-green-50 to-gray-100 p-8 rounded-2xl shadow hover:shadow-xl transition-all border border-green-100 hover:cursor-pointer tracking-wider">
               <div className="text-4xl mb-4">🌍</div>
 
               <h3 className="text-xl font-ssSBH text-green-700 mb-4">
@@ -231,13 +238,13 @@ const AboutUs = () => {
       </section>
 
       {/* SPIRITUAL YATRAS */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 tracking-wider">
         <div className="max-w-6xl mx-auto text-center px-6">
           <h2 className="text-3xl md:text-4xl font-ssBD text-green-700 mb-6">
             Special Spiritual Yatras
           </h2>
 
-          <p className="text-gray-700 max-w-3xl mx-auto mb-10">
+          <p className="text-gray-700 max-w-3xl mx-auto mb-10 ">
             We specialize in well-organized pilgrimage tours with trusted
             accommodations, experienced drivers, route planning and VIP darshan
             assistance where available.
