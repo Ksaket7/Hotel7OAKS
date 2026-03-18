@@ -101,7 +101,6 @@ export const treksData = [
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1762792588/photo-1547452377-b2ac40e02ed6_qn5clg.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1762792583/Chandrashila_Trek_wew_vxlrsk.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1762792583/photo-1522506209496-4536d9020ec4_rtynfd.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1762792578/CHOPTA-CHANDRASHILA_MAP_zl6uaj.webp",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1762792576/Chandrashila_Trek_azhfa6.jpg",
     ],
   },
@@ -328,7 +327,6 @@ export const treksData = [
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157221/dodital-darwa-top-trek-1_vy23wl.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157220/dodital-darwa-top-trek-4_qcb2rf.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157220/dodital-snow-trek1_yktwtc.webp",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157219/dodital_map_aecea9.gif",
     ],
   },
 
@@ -580,7 +578,6 @@ export const treksData = [
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/Gaumukh-Tapovan-9_jwuf2e.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/images_fhspom.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/tapovan_mbhwbr.webp",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/gaumukh-trek-1024x1022_drvi2h.webp",
     ],
   },
 
@@ -694,7 +691,6 @@ export const treksData = [
     images: [
       "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/aec0558e-d9d3-44b8-a07c-b522c7ef9d53_gulabi%20kantha%20slider%20desk-2.webp",
       "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/c049b55c-0e11-40f2-bb15-6205ace6d585_gulabi%20kantha%20slider%20desk%20%20(2).webp",
-
       "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/2f5d2f8b-0a3c-474a-bc1c-42bd6143fe46_gulabi%20kantha%20slider%20desk%20%20(1).webp",
     ],
   },
@@ -818,7 +814,6 @@ export const treksData = [
 
     images: [
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157747/har-ki-dun-valley_mmkicv.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157225/har-ki-dun-map_l2fpji.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157225/harikidun_1440x700_ay3irr.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157225/harkidoon_lsjy3h.webp",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157224/Har-ki-dun-view_yuvo0y.jpg",
@@ -945,7 +940,6 @@ export const treksData = [
     images: [
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157317/46350706971_f5f0c6b569_k_dcgvds.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157318/Kedarkantha-Trek-Details-and-Best-time-to-Visit-Kedarkantha-Trek-4-1024x922_a72qb1.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157318/kedarkantha-trek-map_i5qz2m.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157318/kedarkantha_at8fjr.webp",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157319/photo-1585986217770-f25e4fd55ed9_zekn7b.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157319/Sunrise-at-the-Kedarkantha-Summit-820x1024_hra1hx.webp",
@@ -1191,7 +1185,6 @@ export const treksData = [
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157333/RoopKoond_Trek4_viohb8.webp",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157333/22_A_mysterious_lake-2048x1536_s5cgeu.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157334/BlogspotImageUrl40686_vw8smw.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157352/roopkund-trek-map-1024x1024_tsyv8k.webp",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157352/Roopkundskeletons1-660x440_huzyfd.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157353/yhqt4zuzhpng5votft9oe1m9e6uu_dsc_0444-scaled_bgisu6.webp",
     ],
@@ -1323,7 +1316,6 @@ export const treksData = [
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157537/20250424051745_2_jaemuh.avif",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157538/uttrakhand-valley-of-flowers-trek_u3ljal.webp",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157743/zjh9smyb4jwm1g4u19kyyqz402v5_shutterstock_2327763641_b22wob.webp",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157743/Valley-of-Flowers-Trek-Map_z6gehk.webp",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157537/3fd3454c96b3fc4ad66595456319765f_qmquvn.jpg",
     ],
   },
@@ -1470,7 +1462,6 @@ export const treksData = [
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157744/vasuki-tal-trek_duxx50.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157744/vasuki-Tal-1_ajo0y2.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157744/d55186cf-d60d-420a-a3cb-d1c4d72fcf91_n6t07m.jpg",
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157743/batch_gaumukh-tapovan-trek-34-scaled_xmpo8d.jpg",
     ],
   },
 
