@@ -6,15 +6,24 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://hotel7-oaks.vercel.app",
+];
 
-// ✅ CORS FIX
 app.use(
   cors({
-    origin: process.env.ORIGIN,
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     methods: ["GET", "POST"],
-  })
+    credentials: true,
+  }),
 );
-
 app.use(express.json());
 
 // ✅ TEST ROUTE

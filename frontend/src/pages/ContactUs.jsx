@@ -24,7 +24,7 @@ const Contact = () => {
           trigger: sectionRef.current,
           start: "top 85%",
         },
-      }
+      },
     );
   }, []);
 
@@ -45,12 +45,14 @@ const Contact = () => {
     const toastId = toast.loading("Sending message...");
 
     try {
-      const res = await fetch("http://localhost:5000/send-email", {
+      const API_URL = import.meta.env.VITE_API_URL;
+
+      const res = await fetch(`${API_URL}/send-email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ name, email, message }),
       });
 
       const result = await res.json();
