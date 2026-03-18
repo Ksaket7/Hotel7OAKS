@@ -1711,11 +1711,11 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize professionally guided Ali Bedni Bugyal trekking experiences with experienced local guides, comfortable stays, and well-planned itineraries to ensure a safe and memorable Himalayan adventure. This trek is perfect for nature lovers looking to explore the magnificent bugyals of Uttarakhand.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+      "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyalmedow.webp",
+      "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyaltrekmedow.webp",
+      "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyaltrek.webp",
+      "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyaltrekpeake.webp",
+      "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyalkund.webp",
     ],
   },
 
@@ -1835,10 +1835,10 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize professionally guided Brahmatal trekking experiences with experienced local guides and comfortable camping arrangements. This winter trek is perfect for those who want to experience snow-covered Himalayan landscapes and breathtaking summit views.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://adventurebreaks.in/wp-content/uploads/2022/03/Brahmatal-1_-768x580.jpg",
+      "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-brahmatal-trek2071-Bikat-Adventures.jpg",
+      "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-brahmatal-trek2080-Bikat-Adventures.jpg",
+      "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl42521-Bikat-Adventures.JPG",
     ],
   },
 
@@ -1955,10 +1955,10 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize professionally guided Pangarchulla Peak trekking experiences with trained mountain guides and safe climbing support. This trek offers the perfect mix of adventure, snow trekking, and breathtaking Himalayan summit views.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/76a1ec62-b834-4b62-b645-3c2d7a37f7f6_15.webp",
+      "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/85a2a064-0a4a-4a96-9078-601049508656_13.webp",
+      "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/a77d50ea-90e2-491d-ae1b-187d3c8c63fa_14.webp",
+      "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/501eda3a-e408-41ff-b88f-0c0925cf8d71_17.webp",
     ],
   },
 
@@ -2076,10 +2076,9 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize professionally guided Satopanth Lake trekking experiences with experienced Himalayan guides and safe high-altitude trekking arrangements. This trek offers a perfect combination of adventure, spirituality, and breathtaking Himalayan scenery.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/satopanth-tal.jpg",
+      "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/way-to-vasudhara-fall.jpg",
+      "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/bheem-pul.jpg",    
     ],
   },
 
@@ -2211,10 +2210,10 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize professionally guided Rupin Pass trekking expeditions with experienced Himalayan guides, quality camping equipment, and carefully planned itineraries. This trek offers one of the most diverse and dramatic trekking experiences in the Indian Himalayas.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://nohradhar.com/wp-content/uploads/2025/06/Rupin_pass_1-1536x862.png",
+      "https://nohradhar.com/wp-content/uploads/2025/06/rupin_pass_3-1536x1024.jpg",
+      "https://nohradhar.com/wp-content/uploads/2025/06/rupin_pass_4.jpg",
+      "https://images.ctfassets.net/ir2dv14cagbr/6609B6bqm8zO22BkoK1khJ/94b752913ba6263890b57e2cd266a55c/rupin-banner.jpg",
     ],
   },
 
@@ -2346,10 +2345,10 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize professionally guided Bali Pass trekking expeditions with experienced mountain guides and high-altitude trekking support. This challenging trek offers one of the most thrilling Himalayan adventures for experienced trekkers.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://thinairexpedition.com/static/images/20260127_125018_balipasstrek.jpg",
+      "https://trekthehimalayas.com/images/HomePageImages/Desktop/a24a5202-3e1d-4250-a2e8-7bd47c455edf_The-Challenging-Pass-Crossing.webp",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEcWvsgOZWrKpaA7Js1EqLfXK8FArtR_KghA&s",
+      "https://trekonindia.com/wp-content/uploads/2023/08/trekonindia-bali-pass-terk-5.jpg",
     ],
   },
 
@@ -2429,10 +2428,9 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize guided Deoria Tal trekking experiences with comfortable camping arrangements and experienced local guides. This trek is perfect for those looking for a short Himalayan escape surrounded by stunning mountain views and peaceful nature.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://himtrek.co.in/wp-content/uploads/2025/10/Deoria-Tal-Trek-2.webp",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/76/a6/72/photo0jpg.jpg?w=800&h=-1&s=14",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/75/d5/1a/white-hills-adventure.jpg?w=1400&h=-1&s=1",
     ],
   },
 
@@ -2550,10 +2548,10 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize professionally guided Pindari Glacier trekking experiences with experienced local guides and comfortable trekking arrangements. This trek offers an incredible opportunity to witness the beauty of Himalayan glaciers and pristine mountain landscapes.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/2265f2c4-2297-452f-8c79-a0ca98ebb7e6.webp",
+      "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/5c28f07b-5a04-460d-85b9-db2687ec2464.webp",
+      "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/8171928a-4273-4dfb-9fa7-b3b474f17eeb.webp",
+      "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/31b260d5-aded-4b66-8ab2-ccfa94b7e3f5.webp",
     ],
   },
 
@@ -2671,10 +2669,10 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize professionally guided Kafni Glacier trekking experiences with experienced local guides and comfortable trekking arrangements. This trek is perfect for those who want to explore the pristine glaciers and remote valleys of the Kumaon Himalayas.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://www.peakadventuretour.com/assets/images/kafni-glacier-trek2.webp",
+      "https://www.tourmyindia.com/treks/wp-content/uploads/2020/08/kafni-glacier-trek1.jpg",
+      "https://www.tourmyindia.com/treks/wp-content/uploads/2020/08/kafni-glacier-trek6.jpg",
+      "https://www.tourmyindia.com/treks/wp-content/uploads/2020/08/kafni-glacier-trek1.jpg",
     ],
   },
 
@@ -2813,10 +2811,10 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize professionally guided Milam Glacier trekking expeditions with experienced Himalayan guides and well-planned trekking support. This trek offers a rare opportunity to explore one of the most remote and historically significant glacier regions of the Indian Himalayas.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://danuadventure.in/wp-content/uploads/2024/04/milam-glacier-trek.jpg",
+      "https://i0.wp.com/travelshoebum.com/wp-content/uploads/2016/01/dsc0913.jpg?resize=1200%2C797&ssl=1",
+      "https://i0.wp.com/travelshoebum.com/wp-content/uploads/2016/01/img_9607.jpg?resize=1200%2C900&ssl=1",
+      "https://i0.wp.com/travelshoebum.com/wp-content/uploads/2016/01/dsc0430.jpg?resize=1200%2C797&ssl=1",
     ],
   },
 
@@ -2924,10 +2922,10 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize professionally guided Hampta Pass trekking experiences with experienced mountain guides and well-planned itineraries. This trek offers one of the most dramatic landscape transitions in the Himalayas, making it a must-do adventure for trekking enthusiasts.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://himalayandaredevils.com/storage/uploads/67e2a588dadee.jpg",
+      "https://blogs.tripzygo.in/wp-content/uploads/2025/06/hampta-pass-trek-1-1536x737.jpg",
+      "https://blogs.tripzygo.in/wp-content/uploads/2025/06/Post-Monsoon-Season-mid-September-to-October-1536x737.jpg",
+      "https://blogs.tripzygo.in/wp-content/uploads/2025/06/Monsoon-Season-mid-July-to-mid-September-1536x737.jpg",
     ],
   },
 
@@ -3007,10 +3005,11 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize guided Triund trekking experiences with experienced local guides and comfortable camping arrangements. This short Himalayan trek is perfect for travelers seeking a quick mountain escape with breathtaking views of the Dhauladhar range.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://hillhikers.com/wp-content/uploads/2024/01/triund-960x480-2.jpg",
+      "https://hillhikers.com/wp-content/uploads/2025/06/Best-Time-to-Visit-Triund-Trek-%E2%80%93-A-Complete-Seasonal-Guide-by-Hill-Hikers.jpeg",
+      "https://trywanderingmore.com/wp-content/uploads/2023/06/Triund-Cover.jpg",
+      "https://www.dpolohotels.com/wp-content/uploads/2025/04/Triund-Trek_-The-Ultimate-Guide-to-Dharamshalas-Most-Popular-Hike.jpg",
+      "https://www.dpolohotels.com/wp-content/uploads/2025/04/Eco-Friendly-Trekking-Tips.jpg"
     ],
   },
 
@@ -3105,10 +3104,10 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize guided Bhrigu Lake trekking experiences with experienced mountain guides and comfortable camping arrangements. This trek offers a unique opportunity to explore the spectacular alpine meadows and sacred lake of the Himachal Himalayas.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://backpackersunited.in/_next/image?url=https%3A%2F%2Fbpu-images-v1.s3.eu-north-1.amazonaws.com%2Fuploads%2Ftestimage-bhrigu%20ci.webp&w=1920&q=75",
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_800/v1728649161/banbanjara/vrem6xcnzlcbamil4bxn.webp",
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_800/v1728649890/banbanjara/di4dn6urvrcv7nlrketv.webp",
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_800/v1728649214/banbanjara/duih10qphjkqgwqdhud5.webp",
     ],
   },
 
@@ -3198,10 +3197,11 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize guided Beas Kund trekking experiences with experienced mountain guides and comfortable camping arrangements. This trek is perfect for beginners and nature lovers who want to witness the origin of the Beas River and enjoy stunning Himalayan landscapes.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/v1700289195/bbj/fiytvtsirqsomej1b2j8.jpg",
+      "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl48503-Bikat-Adventures.JPG",
+      "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl48511-Bikat-Adventures.JPG",
+      "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl48513-Bikat-Adventures.JPG",
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/v1700289194/bbj/jlcopkkh2zxpooaizbqb.jpg",
     ],
   },
 
@@ -3282,10 +3282,11 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize guided Kheerganga trekking experiences with experienced local guides and comfortable camping arrangements. This trek offers a perfect mix of adventure, natural hot springs, and the scenic beauty of the Parvati Valley.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://media.moxtain.com/trekking/kheerganga-trek/1200/parvati-valley-kheerganga.webp",
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/v1713611421/bbj/easamfx9lall9fpojriv.jpg",
+      "https://himtrek.co.in/wp-content/uploads/2024/09/Kheerganga-Trek-2.webp",
+      "https://himtrek.co.in/wp-content/uploads/2023/09/529d4bf9-719c-467d-a5b3-1e8ea66b6f88.jpg",
+      "https://himtrek.co.in/wp-content/uploads/2023/09/KH8A1104_1_-1-e1700626999844.jpg",
     ],
   },
 
@@ -3384,10 +3385,10 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize guided Indrahar Pass trekking expeditions with experienced mountain guides and safe trekking support. This trek offers a thrilling adventure across the dramatic Dhauladhar mountain range.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://upload.wikimedia.org/wikipedia/commons/2/20/Looking_up_to_the_Indrahar_Pass_%2822356846090%29.jpg",
+      "https://d2qa7a8q0vuocm.cloudfront.net/images/26045220190611050156.png",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/b0/fd/ba/indrahar-pass.jpg?w=2000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/7f/81/8c/img-20181010-175903-largejpg.jpg?w=1200&h=-1&s=1",
     ],
   },
 
@@ -3481,10 +3482,11 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we organize guided Chandrakhani Pass trekking experiences with experienced local guides and comfortable camping arrangements. This trek combines scenic Himalayan landscapes with a unique cultural experience in the historic Malana region.",
 
     images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/v1702449311/bbj/zsvttfdlhemx5zfpghdi.jpg",
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/v1702449312/bbj/swqgiqdhaw4cujwlczxb.jpg",
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/v1702449312/bbj/y1hfmxe5vinjywzabhhl.jpg",
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/v1702449312/bbj/roei9sff7t7gvmzcn2dh.jpg",
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/v1702449312/bbj/mhqkuo73tnftyjxsy7ek.jpg"
     ],
   },
 ];
