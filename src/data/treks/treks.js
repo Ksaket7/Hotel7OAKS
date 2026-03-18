@@ -593,7 +593,7 @@ export const treksData = [
     difficulty: "Easy to Moderate",
     days: "5 Days",
     altitude: "13,200 ft / 4,000 m",
-    price: "8999",
+    price: "8999 ",
     tag: "Alpine Meadow Trek",
     rating: "",
     reviews: "",
