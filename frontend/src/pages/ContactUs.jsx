@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MapPin, Phone, Mail } from "lucide-react";
-import BrushStroke from "../components/HomePage/BrushStroke";
+import { toast } from "react-toastify"; // ✅ added
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,7 +28,7 @@ const Contact = () => {
     );
   }, []);
 
-  // ✅ FORM SUBMIT HANDLER
+  // ✅ FORM SUBMIT HANDLER (UPDATED)
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -40,6 +40,9 @@ const Contact = () => {
       email: form.email.value,
       message: form.message.value,
     };
+
+    // 🔥 loading toast
+    const toastId = toast.loading("Sending message...");
 
     try {
       const res = await fetch("http://localhost:5000/send-email", {
@@ -53,14 +56,29 @@ const Contact = () => {
       const result = await res.json();
 
       if (result.success) {
-        alert("Message sent successfully!");
+        toast.update(toastId, {
+          render: "Message sent successfully 🚀",
+          type: "success",
+          isLoading: false,
+          autoClose: 3000,
+        });
         form.reset();
       } else {
-        alert("Failed to send message.");
+        toast.update(toastId, {
+          render: "Failed to send message ❌",
+          type: "error",
+          isLoading: false,
+          autoClose: 3000,
+        });
       }
     } catch (error) {
       console.error(error);
-      alert("Server error.");
+      toast.update(toastId, {
+        render: "Server error ⚠️",
+        type: "error",
+        isLoading: false,
+        autoClose: 3000,
+      });
     } finally {
       setLoading(false);
     }
@@ -79,10 +97,12 @@ const Contact = () => {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-white max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-ssBD mb-5">
-            Let’s Plan Your <span className="text-green-400">Next Adventure</span>
+            Let’s Plan Your{" "}
+            <span className="text-green-400">Next Adventure</span>
           </h1>
           <p className="text-lg text-gray-100">
-            We’d love to hear from you — let’s craft your perfect Himalayan journey.
+            We’d love to hear from you — let’s craft your perfect Himalayan
+            journey.
           </p>
         </div>
       </section>
@@ -94,7 +114,9 @@ const Contact = () => {
       >
         {/* INFO */}
         <div className="bg-white p-8 rounded-2xl shadow">
-          <h2 className="text-3xl font-bold text-green-700 mb-4">Get in Touch</h2>
+          <h2 className="text-3xl font-bold text-green-700 mb-4">
+            Get in Touch
+          </h2>
           <p className="text-gray-600 mb-6">
             Have questions? Reach out to us anytime.
           </p>
@@ -146,7 +168,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-green-600 text-white py-3 rounded-full"
+              className="w-full bg-green-600 text-white py-3 rounded-full transition-all"
             >
               {loading ? "Sending..." : "Send Message ✈️"}
             </button>

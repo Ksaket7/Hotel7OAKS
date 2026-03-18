@@ -7,19 +7,28 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
+// ✅ CORS FIX
 app.use(
   cors({
     origin: "http://localhost:5173",
     methods: ["GET", "POST"],
-    credentials: true,
-  }),
+  })
 );
+
 app.use(express.json());
 
-// Route
+// ✅ TEST ROUTE
+app.get("/", (req, res) => {
+  res.send("Oak7 Backend Running 🚀");
+});
+
+// ✅ EMAIL ROUTE
 app.post("/send-email", async (req, res) => {
   const { name, email, message } = req.body;
+
+  if (!name || !email || !message) {
+    return res.status(400).json({ success: false });
+  }
 
   try {
     const transporter = nodemailer.createTransport({
@@ -31,7 +40,7 @@ app.post("/send-email", async (req, res) => {
     });
 
     const mailOptions = {
-      from: `"Oak7 Contact" <${process.env.EMAIL_USER}>`,
+      from: `"Oak7 Website" <${process.env.EMAIL_USER}>`,
       replyTo: email,
       to: process.env.EMAIL_USER,
       subject: `New Inquiry from ${name}`,
@@ -39,8 +48,7 @@ app.post("/send-email", async (req, res) => {
         <h2>New Contact Form Submission</h2>
         <p><b>Name:</b> ${name}</p>
         <p><b>Email:</b> ${email}</p>
-        <p><b>Message:</b></p>
-        <p>${message}</p>
+        <p><b>Message:</b> ${message}</p>
       `,
     };
 
@@ -48,16 +56,11 @@ app.post("/send-email", async (req, res) => {
 
     res.status(200).json({ success: true });
   } catch (error) {
-    console.error(error);
+    console.error("MAIL ERROR:", error);
     res.status(500).json({ success: false });
   }
 });
 
-app.get("/", (req, res) => {
-  res.send("Oak7 Backend is running 🚀");
-});
-
-// Server start
 app.listen(5000, () => {
-  console.log("🚀 Server running on http://localhost:5000");
+  console.log("🚀 Backend running on http://localhost:5000");
 });

@@ -7,10 +7,12 @@ import {
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
+// 🔥 Toastify
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+// Pages
 import HomePage from "./pages/HomePage";
-import Navbar from "./components/Common/Navbar.jsx";
-import Footer from "./components/Common/Footer.jsx";
-import "./index.css";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/ContactUs.jsx";
 import Hotel from "./pages/Hotels.jsx";
@@ -19,11 +21,17 @@ import Treks from "./pages/Treks.jsx";
 import TrekDetails from "./pages/TrekDetails.jsx";
 import TourPackageDetails from "./pages/ToursPackagesDetails.jsx";
 import HotelDetail from "./pages/HotelDetails.jsx";
-import Loader from "./components/Common/Loader.jsx"; // 👈 Import your loader
 import Error404 from "./pages/Error.jsx";
+
+// Components
+import Navbar from "./components/Common/Navbar.jsx";
+import Footer from "./components/Common/Footer.jsx";
+import Loader from "./components/Common/Loader.jsx";
 import ScrollToTop from "./components/HomePage/ScrollTop.jsx";
 
-// --- RouteTransitionWrapper for smooth fade-ins on navigation ---
+import "./index.css";
+
+// 🔄 Page transition wrapper
 const RouteTransitionWrapper = ({ children }) => (
   <motion.div
     initial={{ opacity: 0 }}
@@ -40,19 +48,32 @@ function AppContent() {
   const location = useLocation();
 
   useEffect(() => {
-    // Simulated loading time (you can tie this to actual API/image loading)
     const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return <Loader />; // ✅ Show loader during initial load
+  // ✅ Loader on initial load
+  if (loading) return <Loader />;
 
   return (
     <>
+      {/* 🔥 TOAST CONTAINER (GLOBAL) */}
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="colored"
+      />
+
       <Navbar />
       <ScrollToTop />
+
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
+          
           <Route
             path="/"
             element={
@@ -61,6 +82,7 @@ function AppContent() {
               </RouteTransitionWrapper>
             }
           />
+
           <Route
             path="/about"
             element={
@@ -69,6 +91,7 @@ function AppContent() {
               </RouteTransitionWrapper>
             }
           />
+
           <Route
             path="/hotels"
             element={
@@ -77,6 +100,7 @@ function AppContent() {
               </RouteTransitionWrapper>
             }
           />
+
           <Route
             path="/hotels/:id"
             element={
@@ -85,6 +109,7 @@ function AppContent() {
               </RouteTransitionWrapper>
             }
           />
+
           <Route
             path="/tours"
             element={
@@ -93,6 +118,7 @@ function AppContent() {
               </RouteTransitionWrapper>
             }
           />
+
           <Route
             path="/tours/:id"
             element={
@@ -101,6 +127,7 @@ function AppContent() {
               </RouteTransitionWrapper>
             }
           />
+
           <Route
             path="/treks"
             element={
@@ -109,6 +136,7 @@ function AppContent() {
               </RouteTransitionWrapper>
             }
           />
+
           <Route
             path="/treks/:id"
             element={
@@ -117,6 +145,7 @@ function AppContent() {
               </RouteTransitionWrapper>
             }
           />
+
           <Route
             path="/contact"
             element={
@@ -136,6 +165,7 @@ function AppContent() {
           />
         </Routes>
       </AnimatePresence>
+
       <Footer />
     </>
   );
