@@ -172,7 +172,7 @@ export const hotelsData = [
     name: "Chopta Resort",
     location: "Chopta, Rudraprayag District, Uttarakhand",
     rating: 4.0,
-    price: "₹ 7,100",
+    price: "₹ 7,000",
     facilities: [
       "Free WiFi",
       "Daily Housekeeping",
@@ -185,10 +185,11 @@ export const hotelsData = [
       "Hiking Trails Nearby",
     ],
     images: [
+      "https://choptaresort.com/wp-content/uploads/2022/11/Chopta-Resort-Fron-View-scaled.jpg",
       "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ebc1cbb26a19ebbb0078b2512e593002ae0ad726.jpg",
       "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f15c28321542da629871a1a0a9b6a5ce81130e34.jpg",
-      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/1195bfdb77575fc34180d568457b92c991fb2186.jpg",
-      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ed3acd30e7f4b8c2b936d5939e1d0ae1d610ea9c.jpg",
+      "https://choptaresort.com/wp-content/uploads/2026/03/Guests-enjoying-bonfire-evening-at-Chopta-Resort-with-scenic-Himalayan-surroundings-and-beautiful-resort-lighting.jpeg",
+      "https://choptaresort.com/wp-content/uploads/2026/03/Snow-covered-winter-view-of-Chopta-Resort-surrounded-by-fresh-Himalayan-snow-in-Chopta-Uttarakhand.jpeg",
       "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d98783e9568dc9ad65e7a3a7f268e2bcf2a0309d.jpg",
     ],
     description:
@@ -228,7 +229,7 @@ export const hotelsData = [
     images: [
       "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/1a63cc24eb27fa143032c9421896a2718a7c10c3.jpg",
       "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/37fb44202fa0c40c6a207c1e729abaa86503ac3f.jpg",
-      "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ed3acd30e7f4b8c2b936d5939e1d0ae1d610ea9c.jpg",
+      "https://pix8.agoda.net/property/57486829/0/cea9e92ee8fca9ff49557224e72c7c23.jpeg?ce=3&s=1024x",
       "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/402794ebbc0ea7ae2a6f2d5df534bac97a460036.jpg",
       "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/59033efcffd596ce86fddb1262368ccca6a4bb92.jpg",
     ],
@@ -255,7 +256,7 @@ export const hotelsData = [
     name: "Hotel Vikram Palace",
     location: "Tunalka, Sapeta, Uttarakhand 249171",
     rating: 4.6,
-    price: "₹ 3,200", 
+    price: "₹ 3,200",
     facilities: [
       "24-hour Front Desk",
       "Khushi Restaurant",
@@ -267,71 +268,36 @@ export const hotelsData = [
       "CCTV Security",
     ],
     images: [
-      "https://ak-d.tripcdn.com/target/0ww2z12000cmf47ia86C2_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2t12000cmf4lka0831_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww5h12000cmf4p6uC4D9_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2o12000cmf3vei5391_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2112000cmf4ay0C6F5_W_1080_810_R5_D.jpg"
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/2c/b5/47/caption.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/2c/b4/ca/caption.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/2c/b4/c8/caption.jpg?w=1000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/2c/b4/c2/caption.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/2c/b5/4b/caption.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/2c/b5/4d/caption.jpg?w=1400&h=-1&s=1",
     ],
     description:
       "Hotel Vikram Palace is a well-regarded 3-star property on the Yamunotri Road. It features an on-site restaurant and comfortable rooms that offer beautiful vistas of the Himalayan landscape.",
     reviews: [
       {
         name: "Manoj Kumar Sharma",
-        comment: "Very good hospitality and food quality. The service was excellent during our stay!",
+        comment:
+          "Very good hospitality and food quality. The service was excellent during our stay!",
         rating: 5.0,
       },
       {
         name: "Anurag Sahu",
-        comment: "The location is great for sightseeing, though room maintenance could be improved.",
+        comment:
+          "The location is great for sightseeing, though room maintenance could be improved.",
         rating: 3.5,
       },
     ],
   },
 
   {
-    id: "chopta-resort-uttarakhand",
-    name: "Chopta Resort",
-    location: "Chopta-Baniyakund, Rudraprayag, Uttarakhand 246419",
-    rating: 4.4,
-    price: "₹ 7,000", // Starting rates for Deluxe rooms
-    facilities: [
-      "Mountain View Rooms",
-      "Shivoham Multi-Cuisine Restaurant",
-      "Free WiFi (50+ Mbps)",
-      "Fireplace in Room (on request)",
-      "Attached Balcony",
-      "Guided Treks",
-      "Adventure Activities (Archery, Ropes Course)",
-      "Conference Room",
-    ],
-    images: [
-      "https://ak-d.tripcdn.com/target/0ww6r12000cmm0zjt7F0B_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2q12000cmm0eje68B4_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2i12000cmm063e6B09_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww5h12000cmm0xle64B8_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww6712000cmm0z5iE3E5_W_1080_810_R5_D.jpg"
-    ],
-    description:
-      "Perched in a large alpine meadow at 2600 meters, Chopta Resort is a luxury Siberian pine wood property. It offers unmatched tranquility and 360-degree Himalayan views, just 3km from the Tungnath-Chandrashila trekking point.",
-    reviews: [
-      {
-        name: "Vijay Singh",
-        comment: "Excellent cleanliness and staff service. The room comfort was top-notch with great views. ✨",
-        rating: 5.0,
-      },
-      {
-        name: "Bhavana",
-        comment: "A wonderful stay amidst nature. The property conditions are well-maintained. 🌲",
-        rating: 4.0,
-      },
-    ],
-  }, 
-
-  {
     id: "hotel-ankit-palace-uttarkashi",
     name: "Hotel Ankit Palace",
-    location: "By passroad, near tekhla pul, opposite NH34, Uttarkashi, Uttarakhand 249193",
+    location:
+      "By passroad, near tekhla pul, opposite NH34, Uttarkashi, Uttarakhand 249193",
     rating: 4.7,
     price: "₹ 3,500", // Standard seasonal starting rate
     facilities: [
@@ -342,30 +308,32 @@ export const hotelsData = [
       "Room Service",
       "CCTV Security",
       "Hot & Cold Water",
-      "Laundry Service"
+      "Laundry Service",
     ],
     images: [
-      "https://ak-d.tripcdn.com/target/0ww1312000cndh2q98381_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2o12000cndgzoiF8C1_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww3012000cndhd9i63D9_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww1012000cndh1t08F00_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2o12000cndgx3e4304_W_1080_810_R5_D.jpg"
+      "https://content.jdmagicbox.com/v2/comp/uttarkashi/v5/9999p1374.1374.240222212521.r9v5/catalogue/hotel-ankit-palace-uttarkashi-hotels-1COnnl3Rqd.jpg?imwidth=463.3333333333333",
+      "https://content.jdmagicbox.com/v2/comp/uttarkashi/v5/9999p1374.1374.240222212521.r9v5/catalogue/hotel-ankit-palace-uttarkashi-hotels-7P4HKBqWZy.jpg?imwidth=463.3333333333333",
+      "https://content.jdmagicbox.com/v2/comp/uttarkashi/v5/9999p1374.1374.240222212521.r9v5/catalogue/hotel-ankit-palace-uttarkashi-hotels-mNdY0tbd23.jpg?imwidth=463.3333333333333",
+      "https://content.jdmagicbox.com/v2/comp/uttarkashi/v5/9999p1374.1374.240222212521.r9v5/catalogue/hotel-ankit-palace-uttarkashi-hotels-CbyjakOtLv.jpg?imwidth=463.3333333333333",
+      "https://content.jdmagicbox.com/v2/comp/uttarkashi/v5/9999p1374.1374.240222212521.r9v5/catalogue/hotel-ankit-palace-uttarkashi-hotels-zM7cUHqyV8.jpg?imwidth=463.3333333333333",
     ],
     description:
       "Hotel Ankit Palace is a highly-rated property located near the Bhagirathi River in Uttarkashi. Known for its excellent hospitality and clean environment, it provides a peaceful atmosphere with stunning views of the lush green mountains.",
     reviews: [
       {
         name: "Sanjay Nautiyal",
-        comment: "The location is perfect with a great river view. The rooms are clean and the staff is very humble. 🙏",
+        comment:
+          "The location is perfect with a great river view. The rooms are clean and the staff is very humble. 🙏",
         rating: 5.0,
       },
       {
         name: "Deepak Rawat",
-        comment: "Excellent service and food quality. One of the best hotels to stay at while visiting Uttarkashi. 🏔️🍴",
+        comment:
+          "Excellent service and food quality. One of the best hotels to stay at while visiting Uttarkashi. 🏔️🍴",
         rating: 5.0,
       },
     ],
-  }, 
+  },
 
   {
     id: "hotel-devbhoomi-uttarkashi",
@@ -380,30 +348,34 @@ export const hotelsData = [
       "Free Parking",
       "Room Service",
       "Hot & Cold Water",
-      "CCTV Security"
+      "CCTV Security",
     ],
     images: [
-      "https://ak-d.tripcdn.com/target/0ww2m12000cnlvp01F48C_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww3v12000cnlvi8t917E_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww6f12000cnlvlj94F9A_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww5412000cnlvq6t7E58_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww1g12000cnlvn6uB2B5_W_1080_810_R5_D.jpg"
+      "https://scontent.fded3-1.fna.fbcdn.net/v/t39.30808-6/476595938_1311061663373767_4620928383305732866_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=dd6889&_nc_ohc=rgHZ0maKaX4Q7kNvwGXpQtZ&_nc_oc=AdrRyZxXPpSuShKngJQMLUOvxgn9eTqI3oKa1_N2arqrnHMvDPV3GfppjNFqOlZEre4rqObLiKikBSxBuKrMkK0_&_nc_zt=23&_nc_ht=scontent.fded3-1.fna&_nc_gid=pSSvevJD3biBTpoQL77T0Q&_nc_ss=8&oh=00_AfxITYu_nq3awFrfi4I8dmMjXKYLyksbU0tQ6bh3BJmTOA&oe=69C0BFC5",
+      "https://scontent.fded3-1.fna.fbcdn.net/v/t39.30808-6/476815517_1311061573373776_5038803710150621213_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=dd6889&_nc_ohc=efSHOetNsScQ7kNvwE9jyWh&_nc_oc=Adpb9Ohiyu6uFVpYcGWdnGL65NPrMftB1VFpudO_ksWT7-Q8ASjlqGoAd1htIc8A5P0Z1KeXTi3kjnBlxNpxP0YF&_nc_zt=23&_nc_ht=scontent.fded3-1.fna&_nc_gid=TgdAgAuqI_5NufQdAaaHmA&_nc_ss=8&oh=00_Afxfzt7OfELbLxA11fimMU1TCjZfS5A0pecZvl3btEItuw&oe=69C0CD9C",
+
+      "https://scontent.fded3-1.fna.fbcdn.net/v/t39.30808-6/476848667_1311061606707106_203106913058048321_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=dd6889&_nc_ohc=sTzPREungigQ7kNvwGQr9_C&_nc_oc=AdrWvqM3Iuo9oVsCTwqWUNDc5kNvuGCd9hL_t67oxOGiAym0IGw0mGOXlYsP7tZCftUin_w57hJdRtuoKT_QPcBR&_nc_zt=23&_nc_ht=scontent.fded3-1.fna&_nc_gid=Yb1mro6GVY19qH3dkOsUDg&_nc_ss=8&oh=00_AfwGkS5DfnI2vHc4Hl9gdWkv7Chib0vCtL3cydlYmYydFA&oe=69C0BCFF",
+      "https://scontent.fded3-1.fna.fbcdn.net/v/t39.30808-6/476845869_1311061560040444_5879467083404191780_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd6889&_nc_ohc=4GEOsQN6agMQ7kNvwHkP3RQ&_nc_oc=Adr2nXYvFcEmmBOGQ6ulDGZThwVTI8RZJ9yHyFKoJRw4gG2ueJMj8cGI3NV1VWIvyQyXM6Ui6jfCncP214kTs5tJ&_nc_zt=23&_nc_ht=scontent.fded3-1.fna&_nc_gid=nvO3eadgqzQsSTxxWo7a-A&_nc_ss=8&oh=00_AfztpevjhdpSCBb9h2aeNyFSOvhK12RJoFQj7-_VC2yp3Q&oe=69C0CCA9",
+      "https://scontent.fded3-1.fna.fbcdn.net/v/t39.30808-6/476902191_1311061706707096_7407390284953264982_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd6889&_nc_ohc=vKp1mUdTKWAQ7kNvwEpcL1p&_nc_oc=AdrkjPjq8skQUqxBs0RxKIa5LuRjyxpGe0rESn04-f9WyAxcB6Imakw1MK9jrNQEvaexWbjwS-bLhgePviLqkaf0&_nc_zt=23&_nc_ht=scontent.fded3-1.fna&_nc_gid=r25_7cGB2p6ERzEEpu2btg&_nc_ss=8&oh=00_Afw4eYxOjZtGVK8b90b0Q-vYfE31i4BDLcqMoj6mgDpVHQ&oe=69C0D33B",
+      "https://scontent.fded3-1.fna.fbcdn.net/v/t39.30808-6/476888942_1311061590040441_763089308310963294_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=dd6889&_nc_ohc=uXqYlwUod6wQ7kNvwFHl4Uz&_nc_oc=AdpJMKi2F98H0NuSQUSecHfZ8pXT7zCZQFhUw1aFrGxso3mBxyhAnL-mjzahIqvIwFhG0STXyqobc_qGKawS-2i8&_nc_zt=23&_nc_ht=scontent.fded3-1.fna&_nc_gid=yko_FE9zLRJjXtHmZhVbDQ&_nc_ss=8&oh=00_Afweox4jIGHQr2s1uYHDDoL5IJTA_rv0le8UNy1ZBhBvyA&oe=69C0AA77",
     ],
     description:
       "Hotel Devbhoomi is a top-rated stay in Uttarkashi, known for its clean rooms and peaceful environment. It is a preferred choice for pilgrims and travelers looking for a comfortable halt on the way to Gangotri, offering beautiful views of the surrounding hills.",
     reviews: [
       {
         name: "Ravi Rawat",
-        comment: "Excellent hospitality and the location is very peaceful. The food was delicious! 🍲✨",
+        comment:
+          "Excellent hospitality and the location is very peaceful. The food was delicious! 🍲✨",
         rating: 5.0,
       },
       {
         name: "Pooja Sharma",
-        comment: "Very clean rooms and the staff is incredibly helpful. Highly recommended for families. 🏔️🙏",
+        comment:
+          "Very clean rooms and the staff is incredibly helpful. Highly recommended for families. 🏔️🙏",
         rating: 4.5,
       },
     ],
-  }, 
+  },
 
   {
     id: "kedarayath-resort-guptkashi",
@@ -419,35 +391,38 @@ export const hotelsData = [
       "Power Backup",
       "Free Parking",
       "Hot & Cold Water",
-      "Helipad Access (nearby)"
+      "Helipad Access (nearby)",
     ],
     images: [
-      "https://ak-d.tripcdn.com/target/0ww5h12000c2z6q8t7B2A_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2o12000c2z6i0lC6B4_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww1312000c2z6xle9D83_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww6412000c2z6v7iE6A8_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2t12000c2z6o8t0F9C_W_1080_810_R5_D.jpg"
+      "https://kedarayatihresorts.com/wp-content/uploads/2015/09/6-Ext-1.jpeg",
+      "https://kedarayatihresorts.com/wp-content/uploads/2025/03/D-Dinning-Restaurant-2-1024x768.jpeg",
+      "https://kedarayatihresorts.com/wp-content/uploads/2015/09/2-Triple-Room-Interior-1-1024x768.jpeg",
+      "https://kedarayatihresorts.com/wp-content/uploads/2015/09/6-Ext-1.jpeg",
+      "https://kedarayatihresorts.com/wp-content/uploads/2015/09/1_2-IMG_1632-1024x768.jpg",
     ],
     description:
       "Kedarayath Resort ek premium luxury camping experience deta hai Kedarnath Yatra par jaane waale pilgrims ko. Yeh resort lush green valleys aur majestic Himalayan peaks ke beech basa hua hai, jo aapko ek peaceful aur spiritual environment provide karta hai.",
     reviews: [
       {
         name: "Abhishek Negi",
-        comment: "Excellent hospitality and very clean tents. The view of the peaks is just magical! ✨🏔️",
+        comment:
+          "Excellent hospitality and very clean tents. The view of the peaks is just magical! ✨🏔️",
         rating: 5.0,
       },
       {
         name: "Meera Iyer",
-        comment: "Great location if you are taking a heli from Phata. Good food and very supportive staff. 🙏🍲",
+        comment:
+          "Great location if you are taking a heli from Phata. Good food and very supportive staff. 🙏🍲",
         rating: 4.5,
       },
     ],
-  }, 
+  },
 
   {
     id: "kedar-avnita-resort-guptkashi",
     name: "Kedar Avnita Resort",
-    location: "Gram Bansu, Near Jawahar Navodaya Vidyalaya, Guptkashi, Uttarakhand 246439",
+    location:
+      "Gram Bansu, Near Jawahar Navodaya Vidyalaya, Guptkashi, Uttarakhand 246439",
     rating: 4.6,
     price: "₹ 1,714", // Current average price including taxes
     facilities: [
@@ -459,26 +434,29 @@ export const hotelsData = [
       "Daily Housekeeping",
       "Indoor Games",
       "Bonfire & Outdoor Furniture",
-      "Kitchenette Facility"
+      "Kitchenette Facility",
     ],
     images: [
-      "https://ak-d.tripcdn.com/target/0ww2m12000cmf47ia86C2_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2t12000cmf4lka0831_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww5h12000cmf4p6uC4D9_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2o12000cmf3vei5391_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2112000cmf4ay0C6F5_W_1080_810_R5_D.jpg"
+      "https://r1imghtlak.ibcdn.com/0d55f5f3-66f8-4d16-bdb1-6f30ddb5720f.png",
+      "https://r1imghtlak.mmtcdn.com/fdcc6d51-ae15-4a51-af10-5cc9c35a9b0a.jpeg?downsize=540:*",
+      "https://r1imghtlak.ibcdn.com/8b8c0d0e-da2b-4edf-bb99-79505e52efdb.jpg",
+      "https://r1imghtlak.ibcdn.com/d6507ebc-aa70-42b3-ac7a-71303eb5853e.png",
+      "https://r1imghtlak.ibcdn.com/8f4bc4df-37de-4948-957b-960e3ef6218b.jpg",
+      "https://r1imghtlak.ibcdn.com/9dbe2a67-2f51-4789-8b3f-f2f68047cc49.jpg",
     ],
     description:
       "Kedar Avnita Resort Guptkashi mein ek serene mountain retreat hai jo sacred attractions jaise Kedarnath aur Tungnath Temple ke paas hai. Yeh property apne clean rooms, tasty food aur bohot hi helpful staff ke liye jaani jaati hai.",
     reviews: [
       {
         name: "Anil Kumar Sharma",
-        comment: "Clean and spacious rooms with tasty food. The staff is very helpful and the service is excellent! ✨",
+        comment:
+          "Clean and spacious rooms with tasty food. The staff is very helpful and the service is excellent! ✨",
         rating: 5.0,
       },
       {
         name: "Rahul Sharma",
-        comment: "Bohot hi friendly environment hai. Feels like home amidst the mountains. 🏔️🏠",
+        comment:
+          "Bohot hi friendly environment hai. Feels like home amidst the mountains. 🏔️🏠",
         rating: 5.0,
       },
     ],
@@ -487,7 +465,8 @@ export const hotelsData = [
   {
     id: "hotel-exploring-himalayas-joshimath",
     name: "Hotel Exploring Himalayas",
-    location: "Main Badrinath Road, near Police Chowki, Hailang, Joshimath, Uttarakhand 246443",
+    location:
+      "Main Badrinath Road, near Police Chowki, Hailang, Joshimath, Uttarakhand 246443",
     rating: 4.8,
     price: "₹ 2,800", // Standard seasonal starting rate
     facilities: [
@@ -498,29 +477,30 @@ export const hotelsData = [
       "Free Parking",
       "Room Service",
       "Hot & Cold Water",
-      "Travel Desk for Trekking"
+      "Travel Desk for Trekking",
     ],
     images: [
-      "https://ak-d.tripcdn.com/target/0ww2m12000cmf47ia86C2_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2t12000cmf4lka0831_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww5h12000cmf4p6uC4D9_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2o12000cmf3vei5391_W_1080_810_R5_D.jpg",
-      "https://ak-d.tripcdn.com/target/0ww2112000cmf4ay0C6F5_W_1080_810_R5_D.jpg"
+      "https://content.jdmagicbox.com/v2/comp/joshimath/x2/9999p1372.1372.250129075528.i4x2/catalogue/hotel-exploring-himalayas-paini-joshimath-hotels-ez7kn6jlrh.jpg?imwidth=463.3333333333333",
+      "https://content.jdmagicbox.com/v2/comp/joshimath/x2/9999p1372.1372.250129075528.i4x2/catalogue/hotel-exploring-himalayas-paini-joshimath-hotels-czu0dcxmqm.jpg?imwidth=297.3333333333333",
+      "https://content.jdmagicbox.com/v2/comp/joshimath/x2/9999p1372.1372.250129075528.i4x2/catalogue/hotel-exploring-himalayas-paini-joshimath-hotels-qbup8cijlz.jpg?imwidth=297.3333333333333",
+      "https://content.jdmagicbox.com/v2/comp/joshimath/x2/9999p1372.1372.250129075528.i4x2/catalogue/hotel-exploring-himalayas-paini-joshimath-hotels-c4cqlnkwwz.jpg?imwidth=463.3333333333333",
+      "https://content.jdmagicbox.com/v2/comp/joshimath/x2/9999p1372.1372.250129075528.i4x2/catalogue/hotel-exploring-himalayas-paini-joshimath-hotels-vehcdzbqjl.jpg?imwidth=297.3333333333333",
     ],
     description:
       "Hotel Exploring Himalayas is a fantastic choice for travelers looking to experience the raw beauty of the Himalayas. Located conveniently on the Badrinath Highway, it offers cozy accommodations with a focus on hospitality and making your mountain journey comfortable.",
     reviews: [
       {
         name: "Amit Semwal",
-        comment: "Excellent service and very polite staff. The rooms have a great view of the valley. 🏔️✨",
+        comment:
+          "Excellent service and very polite staff. The rooms have a great view of the valley. 🏔️✨",
         rating: 5.0,
       },
       {
         name: "Ritu Bhandari",
-        comment: "One of the best places to stay while traveling to Badrinath. Clean and very peaceful. 🙏🍲",
+        comment:
+          "One of the best places to stay while traveling to Badrinath. Clean and very peaceful. 🙏🍲",
         rating: 4.5,
       },
     ],
-  }
-
+  },
 ];
