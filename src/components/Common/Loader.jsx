@@ -50,7 +50,7 @@ const Loader = ({ onDone }) => {
 
       {/* Tagline */}
       <p className="mt-2 text-gray-500 font-medium text-base tracking-widest">
-        Discover Uttarakhand with us...
+        Discover Himalayas with us...
       </p>
     </div>
   );

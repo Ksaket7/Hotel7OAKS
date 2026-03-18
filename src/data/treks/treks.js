@@ -2420,8 +2420,9 @@ export const treksData = [
 
     images: [
       "https://himtrek.co.in/wp-content/uploads/2025/10/Deoria-Tal-Trek-2.webp",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/76/a6/72/photo0jpg.jpg?w=800&h=-1&s=14",
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/75/d5/1a/white-hills-adventure.jpg?w=1400&h=-1&s=1",
+      "https://travellingslacker.com/wp-content/uploads/2018/12/13936301868_4bb3434a77_o-1024x680.jpg", 
+      "https://choptaresort.com/wp-content/uploads/2018/04/Deoriatal-Lake-1920x800.png"
     ],
   },
 
@@ -2998,7 +2999,6 @@ export const treksData = [
     images: [
       "https://hillhikers.com/wp-content/uploads/2024/01/triund-960x480-2.jpg",
       "https://hillhikers.com/wp-content/uploads/2025/06/Best-Time-to-Visit-Triund-Trek-%E2%80%93-A-Complete-Seasonal-Guide-by-Hill-Hikers.jpeg",
-      "https://trywanderingmore.com/wp-content/uploads/2023/06/Triund-Cover.jpg",
       "https://www.dpolohotels.com/wp-content/uploads/2025/04/Triund-Trek_-The-Ultimate-Guide-to-Dharamshalas-Most-Popular-Hike.jpg",
       "https://www.dpolohotels.com/wp-content/uploads/2025/04/Eco-Friendly-Trekking-Tips.jpg"
     ],
