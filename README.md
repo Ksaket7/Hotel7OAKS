@@ -1,16 +1,131 @@
-# React + Vite
+🌄 Oak7 – Journeys of Adventure & Faith
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Oak7 is a modern travel and hospitality platform designed to help users explore treks, tours, and spiritual journeys across Uttarakhand and the Himalayas. From high-altitude adventures to the sacred Char Dham Yatra, Oak7 offers curated experiences for every traveler.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🏔️ Treks Explorer
 
-## React Compiler
+Browse famous Himalayan treks
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Difficulty levels, duration, and pricing
 
-## Expanding the ESLint configuration
+Detailed trek pages with itinerary
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧳 Tours & Packages
+
+Handpicked travel packages
+
+Spiritual, adventure, and leisure trips
+
+Easy inquiry system
+
+🔍 Search & Filters
+
+Find treks and tours quickly
+
+Filter by difficulty, location, and price
+
+📩 Inquiry / Contact Form
+
+Integrated form for lead generation
+
+Smooth user interaction with loading states
+
+🎨 Modern UI/UX
+
+GSAP animations with ScrollTrigger
+
+Responsive design
+
+Clean and aesthetic layout
+
+🛠️ Tech Stack
+
+Frontend: React.js (Vite)
+
+Styling: Tailwind CSS
+
+Animations: GSAP + ScrollTrigger
+
+Icons: Lucide React
+
+Routing: React Router
+
+📁 Project Structure
+src/
+│
+├── components/
+│   ├── HomePage/
+│   ├── Common/
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── Treks.jsx
+│   ├── Tours.jsx
+│   ├── Contact.jsx
+│
+├── data/
+│   ├── treks/
+│   ├── toursnpackages.js
+│
+├── assets/
+│
+└── main.jsx
+🚀 Getting Started
+1. Clone the repository
+git clone https://github.com/your-username/oak7.git
+cd oak7
+2. Install dependencies
+npm install
+3. Run the development server
+npm run dev
+4. Build for production
+npm run build
+🌍 Pages Overview
+
+Home – Overview of services, featured treks & packages
+
+Treks – Explore trekking adventures
+
+Tours & Packages – Travel packages for all types of यात्राएँ
+
+About – Brand story and mission
+
+Contact – Inquiry form and contact details
+
+📊 Highlights
+
+⭐ 10K+ Happy Customers
+
+📍 50+ Destinations
+
+🧭 5+ Years Experience
+
+⭐ 4.9 Average Rating
+
+🎯 Vision
+
+To become a trusted travel partner for:
+
+Adventure seekers 🧗
+
+Nature lovers 🌿
+
+Spiritual यात्रियों 🙏
+
+📌 Future Improvements
+
+Backend integration (Node.js / Firebase)
+
+Booking system with payments
+
+Admin dashboard for managing treks/packages
+
+Dynamic CMS instead of static data
+
+SEO optimization & performance enhancements
+
+📄 License
+
+© 2025 7 Oaks Hotel. All rights reserved.

@@ -57,15 +57,24 @@ function AppContent() {
 
   return (
     <>
-      {/* 🔥 TOAST CONTAINER (GLOBAL) */}
+      {/* 🔥 GLOBAL TOAST */}
       <ToastContainer
         position="top-right"
-        autoClose={3000}
+        autoClose={3500}
+        hideProgressBar={false}
         newestOnTop
         closeOnClick
         pauseOnHover
         draggable
+        pauseOnFocusLoss
         theme="colored"
+        toastStyle={{
+          borderRadius: "12px",
+          fontFamily: "inherit",
+        }}
+        progressStyle={{
+          background: "#16a34a", // your green theme
+        }}
       />
 
       <Navbar />
@@ -73,7 +82,6 @@ function AppContent() {
 
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          
           <Route
             path="/"
             element={
