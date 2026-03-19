@@ -7,32 +7,24 @@ dotenv.config();
 
 const app = express();
 
-// ✅ Allowed origins
 const allowedOrigins = [
   "http://localhost:5173",
   "https://hotel7-oaks.vercel.app",
 ];
 
-// ✅ FIXED CORS CONFIG
 app.use(
   cors({
     origin: function (origin, callback) {
-      // allow requests with no origin (like Postman)
-      if (!origin) return callback(null, true);
-
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
       } else {
-        return callback(new Error("CORS not allowed"));
+        callback(new Error("Not allowed by CORS"));
       }
     },
     methods: ["GET", "POST"],
     credentials: true,
   })
 );
-
-// ✅ VERY IMPORTANT (handles preflight requests)
-app.options("*", cors());
 
 app.use(express.json());
 
@@ -86,7 +78,6 @@ app.post("/send-email", async (req, res) => {
   }
 });
 
-// ✅ START SERVER
 app.listen(5000, () => {
   console.log("🚀 Backend running on http://localhost:5000");
 });
