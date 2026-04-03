@@ -51,7 +51,7 @@ const Packages = () => {
         ref={gridRef}
         className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
       >
-        {toursData.map((pkg) => (
+        {toursData.slice(0, 4).map((pkg) => (
           <Link
             to={`/tours/${pkg.id}`}
             key={pkg.id}
@@ -60,7 +60,7 @@ const Packages = () => {
             {/* IMAGE */}
             <div className="relative">
               <img
-                src={pkg.image}
+                src={pkg.images[0]}
                 alt={pkg.title}
                 className="w-full h-56 object-cover transition duration-500 group-hover:scale-105"
               />
