@@ -220,23 +220,39 @@ const TrekDetails = () => {
           </div>
         </div>
 
-        {/* === HIGHLIGHTS === */}
+        {/* === HIGHLIGHTS (IMAGE STYLE) === */}
         {trek.highlights && (
-          <div className="max-w-5xl mx-auto px-6 mt-20 detail-block">
-            <h2 className="text-3xl font-ssBD text-gray-900 mb-6 text-center">
+          <div className="max-w-6xl mx-auto px-6 mt-24 detail-block">
+            <h2 className="text-3xl md:text-4xl font-ssBD text-center mb-12">
               Trek Highlights
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {trek.highlights.map((item, i) => (
                 <div
                   key={i}
-                  className="bg-gradient-to-r from-green/5 to-emerald-50 p-6 rounded-2xl shadow-sm hover:shadow-xl border border-green/20 hover:border-green/40 transition-all duration-300"
+                  className="highlight-card group relative rounded-3xl overflow-hidden shadow-lg cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
                 >
-                  <div className="w-2 h-2 bg-green rounded-full mb-4"></div>
-                  <p className="text-gray-900 font-ssLB leading-relaxed">
-                    {item}
-                  </p>
+                  {/* IMAGE */}
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-[280px] object-cover transition duration-700 group-hover:scale-110"
+                  />
+
+                  {/* DARK OVERLAY */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+
+                  {/* CONTENT */}
+                  <div className="absolute bottom-0 p-5 text-white">
+                    <h3 className="text-lg font-ssBD mb-1">{item.title}</h3>
+                    <p className="text-sm opacity-90 font-ssLB leading-snug">
+                      {item.desc}
+                    </p>
+                  </div>
+
+                  {/* BORDER GLOW */}
+                  <div className="absolute inset-0 border-2 border-transparent group-hover:border-green-400 rounded-3xl transition duration-300"></div>
                 </div>
               ))}
             </div>
