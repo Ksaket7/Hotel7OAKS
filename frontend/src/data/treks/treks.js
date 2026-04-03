@@ -33,7 +33,7 @@ export const treksData = [
 
     // 🆕 NEW: HIGHLIGHT IMAGES (pick best 6 from above or add new later)
     highlightImages: [
-      "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1762792579/22080340796_b754fb7263_h_nji1rn.jpg",
+      "https://images.pexels.com/photos/16660010/pexels-photo-16660010.jpeg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1762792588/photo-1547452377-b2ac40e02ed6_qn5clg.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1762792583/Chandrashila_Trek_wew_vxlrsk.jpg",
       "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1762792583/photo-1522506209496-4536d9020ec4_rtynfd.jpg",
@@ -46,26 +46,32 @@ export const treksData = [
       {
         title: "Tungnath Temple Visit",
         desc: "Visit the highest Shiva temple in the world, rich in spiritual significance.",
+        image: "https://images.pexels.com/photos/16660010/pexels-photo-16660010.jpeg"
       },
       {
         title: "Chandrashila Summit",
         desc: "Experience breathtaking 360° Himalayan views from the summit.",
+        image: "https://images.pexels.com/photos/14712672/pexels-photo-14712672.jpeg"
       },
       {
         title: "Himalayan Peaks View",
         desc: "Witness Nanda Devi, Trishul, Chaukhamba, Kedarnath & Bandarpunch.",
+        image: "https://images.pexels.com/photos/5791927/pexels-photo-5791927.jpeg"
       },
       {
         title: "Chopta Meadows",
         desc: "Walk through lush alpine meadows often called Mini Switzerland.",
+        image: "https://images.pexels.com/photos/1315638/pexels-photo-1315638.jpeg"
       },
       {
         title: "Beginner Friendly Trek",
         desc: "Perfect for first-time trekkers looking for a Himalayan experience.",
+        image: "https://images.pexels.com/photos/14114690/pexels-photo-14114690.jpeg"
       },
       {
         title: "Snow Trek Experience",
         desc: "Enjoy magical snow-covered trails during winter months.",
+        image: "https://images.pexels.com/photos/15707935/pexels-photo-15707935.jpeg"
       },
     ],
 
@@ -166,42 +172,35 @@ export const treksData = [
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157230/deoban-6967720_wjqwlh.webp",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES (6 required → reuse + repeat best one)
-  highlightImages: [
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157230/deoban-trek_lkgkeh.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157230/deoban_7_fileUrl_file_20221011192740-copy_yanhs9.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157230/81570-Deoban-Weekend-Trek-Afreen-Jaffar-Oct-19th-3_l6etdr.avif",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157230/deoban-6967720_wjqwlh.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157231/Kedarkantha-Trek-2_wfadkv.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157230/deoban-trek_lkgkeh.webp",
-  ],
 
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Dense Forest Trails",
-      desc: "Walk through thick deodar and pine forests with fresh mountain air."
+      desc: "Walk through thick deodar and pine forests with fresh mountain air.",
+      image: "https://indiahikes.com/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Findiahike%2F278b619d-4e8e-4a75-98d9-b26d35bab7ca_Deoban_Banner_Mrinal.jpg%3Fauto%3Dcompress%2Cformat&w=1920&q=70"
     },
     {
       title: "Himalayan Peak Views",
-      desc: "Enjoy stunning views of Bandarpoonch and Swargarohini ranges."
+      desc: "Enjoy stunning views of Bandarpoonch and Swargarohini ranges.",
+      image: "https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/0e95770f-ca88-4627-b46f-7e34a3d59341_Deoban_Mountain+views_Indiahikes.jpg?w=2400&h=1350&q=50&org_if_sml=1"
     },
     {
       title: "Peaceful Nature Escape",
-      desc: "Experience calm and less-crowded Himalayan forest trails."
+      desc: "Experience calm and less-crowded Himalayan forest trails.",
+      image: "https://www.alltrails.com/mugen/image/trail-app-router?url=https%3A%2F%2Fimages.alltrails.com%2FeyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtlI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMzQzNzk3MTcvYzY4OGZkNzAzZWU0MDhhN2EzM2ViNWJiNTUxZmY4YjEuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoiMTA4MCIsImhlaWdodCI6IjcwMCIsImZpdCI6ImNvdmVyIn0sInJvdGF0ZSI6bnVsbCwianBlZyI6eyJ0cmVsbGlzUXVhbnRpc2F0aW9uIjp0cnVlLCJvdmVyc2hvb3REZXJpbmdpbmciOnRydWUsIm9wdGltaXNlU2NhbnMiOnRydWUsInF1YW50aXNhdGlvblRhYmxlIjozfX19&w=3840&q=75"
     },
     {
       title: "Budher Caves Exploration",
-      desc: "Visit the mysterious and ancient Budher caves nearby."
+      desc: "Visit the mysterious and ancient Budher caves nearby.",
+      image: "https://hblimg.mmtcdn.com/content/hubble/img/ChakrataImage/mmt/activities/m_budher_caves_chakrata_1_l_480_640.jpg"
     },
     {
       title: "Perfect Weekend Trek",
-      desc: "Ideal short getaway from Delhi for a refreshing break."
+      desc: "Ideal short getaway from Delhi for a refreshing break.",
+      image: "https://thecrazymountaineers.com/images/packages/21/gallery/deoban-trek3.jpg"
     },
-    {
-      title: "Beginner Friendly",
-      desc: "Easy trail suitable for first-time trekkers and nature lovers."
-    }
+   
   ],
 
   included: [
@@ -290,42 +289,35 @@ export const treksData = [
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157220/dodital-snow-trek1_yktwtc.webp",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157222/doditallll_lk5fgg.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157221/dodital-darwa-top-trek-1_vy23wl.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157220/dodital-darwa-top-trek-4_qcb2rf.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157222/fabrizio-conti-568771-unsplash_obruim.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157220/dodital-snow-trek1_yktwtc.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157222/doditallll_lk5fgg.jpg",
-  ],
 
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Dodital Lake",
-      desc: "A pristine freshwater lake surrounded by dense oak and pine forests."
+      desc: "A pristine freshwater lake surrounded by dense oak and pine forests.",
+      image: "https://hblimg.mmtcdn.com/content/hubble/img/ttd_img/mmt/activities/m_Uttarkashi_Dodital_Lake_3_l_600_800.jpg"   
     },
     {
       title: "Spiritual Significance",
-      desc: "Believed to be the mythological birthplace of Lord Ganesha."
+      desc: "Believed to be the mythological birthplace of Lord Ganesha.",
+      image: "https://vl-prod-static.b-cdn.net/system/images/000/237/975/75b3c3fae5bff8df1db8e15cdb02a531/original/Dodital.jpg"
     },
     {
       title: "Darwa Pass Extension",
-      desc: "Optional trek offering panoramic Himalayan summit views."
+      desc: "Optional trek offering panoramic Himalayan summit views.",
+      image: "https://www.trekkaro.com/treks/62/6538197whatsapp-image-2022-09-17-at-03.11.10.jpeg"
     },
     {
       title: "Himalayan Peak Views",
-      desc: "Witness Bandarpunch and Swargarohini peaks up close."
+      desc: "Witness Bandarpunch and Swargarohini peaks up close.",
+      image: "https://www.feeltourism.com/assets/images/tour_68616f018a12f.webp"
     },
     {
       title: "Forest Trails",
-      desc: "Walk through peaceful rhododendron, oak, and pine forests."
+      desc: "Walk through peaceful rhododendron, oak, and pine forests.",
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/1b/e6/11/dodital-lake.jpg?w=1200&h=1200&s=1"
     },
-    {
-      title: "Beginner Friendly",
-      desc: "Perfect for first-time trekkers and nature lovers."
-    }
+    
   ],
 
   included: [
@@ -443,49 +435,43 @@ export const treksData = [
 
   // ✅ HERO + GALLERY
   images: [
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157231/072c82d3-58d4-4c87-a50e-ea7acf05627d_Dayara_Bugyal_-_Sanal_K_M-_View_of_the_Gangotri_Range_zzpniq.avif",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157232/a5c78251-21ae-4ff9-be29-d0cc1ffd72e0_Dayara-Bugyal-7_dnl2pc.webp",
+    "https://storage.googleapis.com/stateless-www-justwravel-com/2024/01/2b2c4242-golden-hour-dayara.jpg",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157237/d2bb48da-81fe-48e7-9d14-1ca0f9d06575_Dayara_Bugyal_DB_Sudheer_Hegde-Frozen_Gui_Lake_-_Sunlight_-_EArly_morning_-_trekkers_-_indiahikes_u7jphj.webp",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157260/Dayara-bugyal-scaled_ovqxq1.jpg",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157281/Dayara_Bugyal_cohe8m.jpg",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157317/hpqs1msm2xm2onxkbxjyerdnzoxy_shutterstock_1340520197_yr1vrm.webp",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157260/Dayara-bugyal-scaled_ovqxq1.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157281/Dayara_Bugyal_cohe8m.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157237/d2bb48da-81fe-48e7-9d14-1ca0f9d06575_Dayara_Bugyal_DB_Sudheer_Hegde-Frozen_Gui_Lake_-_Sunlight_-_EArly_morning_-_trekkers_-_indiahikes_u7jphj.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157232/a5c78251-21ae-4ff9-be29-d0cc1ffd72e0_Dayara-Bugyal-7_dnl2pc.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157317/hpqs1msm2xm2onxkbxjyerdnzoxy_shutterstock_1340520197_yr1vrm.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157231/072c82d3-58d4-4c87-a50e-ea7acf05627d_Dayara_Bugyal_-_Sanal_K_M-_View_of_the_Gangotri_Range_zzpniq.avif",
-  ],
 
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Alpine Meadows",
-      desc: "One of the most beautiful high-altitude bugyals in India."
+      desc: "One of the most beautiful high-altitude bugyals in India.",
+      image: "https://himalayandaredevils.com/storage/uploads/69393fc933256.jpg"
+
     },
     {
       title: "Himalayan Views",
-      desc: "Panoramic views of Bandarpoonch, Srikanth, and Kala Nag peaks."
+      desc: "Panoramic views of Bandarpoonch, Srikanth, and Kala Nag peaks.",
+      image: "https://upload.wikimedia.org/wikipedia/commons/3/39/Dayara_Bugyal.jpg"
     },
     {
       title: "Forest Trails",
-      desc: "Walk through oak, maple, and rhododendron forests."
+      desc: "Walk through oak, maple, and rhododendron forests.",
+      image: "https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/87c9cee7-1898-477a-bdd1-d3ff576a5308_Dayara+Bugyal-Indiahikes-Venkat-meadows.jpg?auto=format,compress&&func=crop&q=70&org_if_sml=1"
     },
     {
       title: "Sunrise & Sunset",
-      desc: "Experience magical golden-hour views from Dayara top."
+      desc: "Experience magical golden-hour views from Dayara top.",
+      image: "https://storage.googleapis.com/stateless-www-justwravel-com/2024/01/2b2c4242-golden-hour-dayara.jpg"
     },
-    {
-      title: "Beginner Friendly",
-      desc: "Gentle trails perfect for first-time trekkers."
-    },
+  
     {
       title: "Snow Trek Experience",
-      desc: "Transforms into a winter wonderland during snowfall."
+      desc: "Transforms into a winter wonderland during snowfall.",
+      image: "https://himalayandreamtreks.in/wp-content/uploads/Dayara/Gangotri-ranges-visible-from-Dayara-Bugyal.jpg"
     }
   ],
 
@@ -590,42 +576,34 @@ export const treksData = [
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/tapovan_mbhwbr.webp",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES (top 6 curated)
-  highlightImages: [
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/gaumukh_tapovan_gallery_9-optimized_hozvto.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157326/Gaumukh-Tapovan-1-min_svaxuu.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/tapovan_mbhwbr.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157323/9Trekyaari-Gaumukh-Tapovan_9_9eKJeIsGcy_oblre7.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157327/Gaumukh-Tapovan-9_jwuf2e.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157323/672dab75a03b5_k8er8g.webp",
-  ],
-
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Gaumukh Glacier",
-      desc: "Visit the sacred source of the Ganga River."
+      desc: "Visit the sacred source of the Ganga River.",
+      image: "https://indiahikes.com/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Findiahike%2Fd50921e6-039a-4251-9190-221239a46d8a_Gaumukh%2BTapovan_Sooraj%2BKumar_View%2Bof%2BMount%2BShivling%2Bat%2BTapovan.jpg%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C97%2C1600%2C767%26w%3D1600%26h%3D767&w=3840&q=70"      
     },
     {
       title: "Mt. Shivling Views",
-      desc: "Witness the iconic Shivling peak up close."
+      desc: "Witness the iconic Shivling peak up close.",
+      image: "https://himalayandreamtreks.in/wp-content/uploads/2023/10/Shivling-Parvat-min.jpg"
     },
     {
       title: "Tapovan Meadows",
-      desc: "High-altitude alpine meadows with surreal landscapes."
+      desc: "High-altitude alpine meadows with surreal landscapes.",
+      image: "https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1350x300/Blog_20250417-473949939-1744891415.png"
     },
     {
       title: "Glacier Walk",
-      desc: "Thrilling walk across rugged Himalayan glacier terrain."
+      desc: "Thrilling walk across rugged Himalayan glacier terrain.",
+      image: "https://www.brahmandtour.com/img/slider/gaumukh-tapovan-trek-2.webp"
     },
     {
       title: "Himalayan Peaks",
-      desc: "Views of Bhagirathi peaks and Mt. Meru."
+      desc: "Views of Bhagirathi peaks and Mt. Meru.",
+      image: "https://raftingcampingrishikesh.com/images/vasukitaal-trek-himalaya.jpg"
     },
-    {
-      title: "Spiritual Journey",
-      desc: "A perfect blend of adventure and sacred experience."
-    }
+    
   ],
 
   included: [
@@ -735,42 +713,33 @@ export const treksData = [
     "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/2f5d2f8b-0a3c-474a-bc1c-42bd6143fe46_gulabi%20kantha%20slider%20desk%20%20(1).webp",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES (reused smartly)
-  highlightImages: [
-    "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/aec0558e-d9d3-44b8-a07c-b522c7ef9d53_gulabi%20kantha%20slider%20desk-2.webp",
-    "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/c049b55c-0e11-40f2-bb15-6205ace6d585_gulabi%20kantha%20slider%20desk%20%20(2).webp",
-    "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/2f5d2f8b-0a3c-474a-bc1c-42bd6143fe46_gulabi%20kantha%20slider%20desk%20%20(1).webp",
-    "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/aec0558e-d9d3-44b8-a07c-b522c7ef9d53_gulabi%20kantha%20slider%20desk-2.webp",
-    "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/c049b55c-0e11-40f2-bb15-6205ace6d585_gulabi%20kantha%20slider%20desk%20%20(2).webp",
-    "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/2f5d2f8b-0a3c-474a-bc1c-42bd6143fe46_gulabi%20kantha%20slider%20desk%20%20(1).webp",
-  ],
-
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Himalayan Peak Views",
-      desc: "Panoramic views of Bandarpoonch, Black Peak, Chaukhambha and Swargarohini."
+      desc: "Panoramic views of Bandarpoonch, Black Peak, Chaukhambha and Swargarohini.",
+      image: "https://www.trekkaro.com/treks/62/6538197whatsapp-image-2022-09-17-at-03.11.10.jpeg"
     },
     {
       title: "Alpine Meadows",
-      desc: "Beautiful high-altitude meadows and scenic forest trails."
+      desc: "Beautiful high-altitude meadows and scenic forest trails.",
+      image: "https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/87c9cee7-1898-477a-bdd1-d3ff576a5308_Dayara+Bugyal-Indiahikes-Venkat-meadows.jpg?auto=format,compress&&func=crop&q=70&org_if_sml=1"
     },
     {
       title: "Campsite Experience",
-      desc: "Stay at stunning camps like Kandola and Seema Thatch."
+      desc: "Stay at stunning camps like Kandola and Seema Thatch.",
+      image: "https://www.trekkaro.com/treks/62/6538197whatsapp-image-2022-09-17-at-03.11.10.jpeg"
     },
     {
       title: "Wildflower Trails",
-      desc: "Spot rare Himalayan flowers like Blue Poppy and Rain Lily."
+      desc: "Spot rare Himalayan flowers like Blue Poppy and Rain Lily.",
+      image: "https://www.trekkaro.com/treks/62/6538197whatsapp-image-2022-09-17-at-03.11.10.jpeg"
     },
     {
       title: "Offbeat Trail",
-      desc: "Peaceful and less crowded trekking experience."
+      desc: "Peaceful and less crowded trekking experience.",
+      image: "https://www.trekkaro.com/treks/62/6538197whatsapp-image-2022-09-17-at-03.11.10.jpeg"
     },
-    {
-      title: "Balanced Adventure",
-      desc: "Perfect mix of forest trekking and summit climb."
-    }
   ],
 
   included: [
