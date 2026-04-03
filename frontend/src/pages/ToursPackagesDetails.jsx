@@ -1,13 +1,6 @@
-import { useParams, Link } from "react-router-dom";
-import {
-  MapPin,
-  Clock,
-  MessageCircle,
-  X,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
-import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { MapPin, Clock, MessageCircle } from "lucide-react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { toursData } from "../data/toursnpackages";
@@ -18,28 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 const TourPackageDetails = () => {
   const { id } = useParams();
   const tour = toursData.find((t) => t.id === id);
-
-  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const openGallery = (index) => {
-    setCurrentImageIndex(index);
-    setIsGalleryOpen(true);
-  };
-
-  const closeGallery = () => setIsGalleryOpen(false);
-
-  const goToNext = () => {
-    setCurrentImageIndex((prev) =>
-      prev === tour.images.length - 1 ? 0 : prev + 1
-    );
-  };
-
-  const goToPrevious = () => {
-    setCurrentImageIndex((prev) =>
-      prev === 0 ? tour.images.length - 1 : prev - 1
-    );
-  };
 
   const handleWhatsAppClick = () => {
     const phoneNumber = "919876543210";
@@ -53,97 +24,147 @@ const TourPackageDetails = () => {
     gsap.fromTo(
       ".detail-block",
       { y: 40, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, stagger: 0.15 }
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.15,
+        ease: "power3.out",
+      }
     );
   }, []);
 
   if (!tour) {
     return (
-      <section className="min-h-screen flex flex-col justify-center items-center">
-        <h2 className="text-2xl font-semibold">Package Not Found</h2>
-        <Link to="/tours" className="text-green underline mt-2">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          Package not found
+        </h2>
+        <a
+          href="/tours"
+          className="text-green hover:text-greenH underline font-medium"
+        >
           Back to Tours
-        </Link>
+        </a>
       </section>
     );
   }
 
   return (
-    <>
-      <section className="bg-white pb-20">
+    <section className="bg-white overflow-hidden pb-20">
+      {/* HERO */}
+      <div
+        className="relative w-full h-[60vh] bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${tour.image})` }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <h1 className="relative z-10 text-white text-4xl md:text-6xl font-ssBD text-center px-4">
+          {tour.title}
+        </h1>
+      </div>
 
-        {/* HERO */}
-        <div
-          className="relative h-[70vh] flex items-center justify-center bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${tour.images[0]})`,
-          }}
-        >
-          <div className="absolute inset-0 bg-black/50"></div>
-          <h1 className="text-white text-5xl font-bold z-10 text-center px-4">
-            {tour.title}
-          </h1>
-        </div>
-
-        {/* TAG + CTA */}
-        <div className="max-w-6xl mx-auto px-6 mt-14 detail-block flex justify-between">
-          <p className="text-green bg-green/10 px-3 py-1 rounded-full text-sm">
+      {/* TAG + WHATSAPP */}
+      <div className="max-w-6xl mx-auto px-6 mt-14 detail-block">
+        <div className="flex sm:items-center gap-4 justify-between flex-wrap">
+          <p className="text-green text-sm font-ssBookD bg-green/10 px-3 py-1 rounded-full">
             {tour.location}
           </p>
 
           <button
             onClick={handleWhatsAppClick}
-            className="bg-green text-white px-5 py-2.5 rounded-full flex gap-2"
+            className="group flex items-center gap-2 bg-green hover:bg-greenH text-white px-5 py-2.5 rounded-full transition-all shadow-lg hover:scale-[1.02] text-sm"
           >
             <MessageCircle size={16} />
             Chat with us
           </button>
         </div>
+      </div>
 
-        {/* BASIC INFO */}
-        <div className="max-w-6xl mx-auto px-6 detail-block">
-          <div className="flex gap-6 my-6 text-sm">
-            <div className="flex gap-2 items-center">
-              <MapPin size={16} />
-              {tour.duration}
-            </div>
-            <div className="flex gap-2 items-center">
-              <Clock size={16} />
-              Available Year-Round
-            </div>
+      {/* CONTENT */}
+      <div className="max-w-6xl mx-auto px-6">
+        {/* META */}
+        <div className="flex items-center gap-6 my-6 text-gray-900 text-sm detail-block">
+          <div className="flex items-center gap-2">
+            <MapPin size={16} className="text-green" />
+            <span>{tour.duration}</span>
           </div>
-
-          <p>{tour.description}</p>
-
-          <h2 className="text-3xl mt-6 font-bold">
-            ₹ {tour.price}
-          </h2>
+          <div className="flex items-center gap-2">
+            <Clock size={16} className="text-green" />
+            <span>Available Year-Round</span>
+          </div>
         </div>
 
-        {/* 🔥 HIGHLIGHTS WITH IMAGES (YOUR REQUIREMENT) */}
-        {tour.experience && (
-          <div className="max-w-6xl mx-auto px-6 mt-20 detail-block">
-            <h2 className="text-3xl text-center mb-10 font-bold">
-              Experience Highlights
+        {/* DESCRIPTION */}
+        {tour.description && (
+          <p className="text-gray-900 text-base leading-relaxed max-w-3xl detail-block">
+            {tour.description}
+          </p>
+        )}
+
+        {/* INTRO */}
+        {tour.intro && (
+          <div className="max-w-4xl mt-10 detail-block">
+            <h2 className="text-2xl font-ssBD text-gray-900 mb-4">
+              About This Package
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-6">
-              {tour.experience.map((item, i) => (
+            <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-2xl shadow border">
+              <p className="text-gray-900 font-ssLB leading-relaxed">
+                {tour.intro}
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* FEATURES */}
+        {tour.features && (
+          <div className="mt-16 detail-block">
+            <h2 className="text-3xl font-ssBD text-center mb-10">
+              What Makes This Special
+            </h2>
+
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {tour.features.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition"
+                >
+                  ✨ {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* ITINERARY */}
+        {tour.itinerary && (
+          <div className="max-w-5xl mx-auto mt-20 detail-block">
+            <h2 className="text-3xl font-ssBD mb-10 text-center text-gray-900">
+              Tour Itinerary
+            </h2>
+
+            <div className="relative border-l-4 border-green/60 pl-8">
+              {tour.itinerary.map((item, i) => (
                 <div
                   key={i}
-                  className="rounded-xl overflow-hidden shadow-lg"
+                  className="relative mb-12 pl-4 before:content-[''] before:absolute before:w-5 before:h-5 before:bg-gradient-to-r before:from-green before:to-greenH before:rounded-full before:-left-[0.875rem] before:top-2"
                 >
-                  <img
-                    src={item.image}
-                    className="h-48 w-full object-cover"
-                  />
-                  <div className="p-4">
-                    <h3 className="font-semibold text-lg">
-                      {item.title}
+                  <div className="bg-white border rounded-2xl shadow-lg hover:shadow-xl transition">
+                    <h3 className="text-xl font-ssBD text-green mb-2 pt-4 pl-4">
+                      {item.day}
                     </h3>
-                    <p className="text-sm mt-2 text-gray-600">
-                      {item.desc}
-                    </p>
+
+                    <div className="p-6">
+                      <h4 className="text-lg font-ssSBH text-gray-900 mb-3">
+                        {item.title}
+                      </h4>
+
+                      <ul className="list-disc pl-6 text-sm space-y-2 font-ssLB">
+                        {item.details.map((d, idx) => (
+                          <li key={idx}>{d}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -151,69 +172,70 @@ const TourPackageDetails = () => {
           </div>
         )}
 
-        {/* GALLERY */}
-        <div className="max-w-6xl mx-auto px-6 mt-20 detail-block">
-          <h2 className="text-3xl text-center mb-10 font-bold">
-            Tour Gallery
-          </h2>
+        {/* INCLUSIONS / EXCLUSIONS */}
+        {(tour.inclusions || tour.exclusions) && (
+          <div className="mt-20 grid md:grid-cols-2 gap-10 detail-block">
+            {tour.inclusions && (
+              <div className="bg-gradient-to-br from-green/5 to-emerald-50 p-8 rounded-3xl shadow border border-green/20">
+                <h3 className="text-2xl font-ssBD text-green mb-6">
+                  Inclusions
+                </h3>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {tour.images.map((img, idx) => (
-              <img
-                key={idx}
-                src={img}
-                onClick={() => openGallery(idx)}
-                className="rounded-xl cursor-pointer hover:scale-105 transition"
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* ITINERARY */}
-        {tour.itinerary && (
-          <div className="max-w-5xl mx-auto px-6 mt-20 detail-block">
-            <h2 className="text-3xl text-center mb-10 font-bold">
-              Itinerary
-            </h2>
-
-            {tour.itinerary.map((day, i) => (
-              <div key={i} className="mb-6">
-                <h3 className="font-semibold text-lg">{day.day}</h3>
-                <ul className="list-disc pl-5">
-                  {day.details.map((d, idx) => (
-                    <li key={idx}>{d}</li>
-                  ))}
-                </ul>
+                {tour.inclusions.map((item, i) => (
+                  <div key={i} className="flex gap-3 mb-3">
+                    <span>✔️</span>
+                    <span className="font-ssLB">{item}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+            )}
+
+            {tour.exclusions && (
+              <div className="bg-gradient-to-br from-red/5 to-rose-50 p-8 rounded-3xl shadow border border-red/20">
+                <h3 className="text-2xl font-ssBD text-red-500 mb-6">
+                  Exclusions
+                </h3>
+
+                {tour.exclusions.map((item, i) => (
+                  <div key={i} className="flex gap-3 mb-3">
+                    <span>✖️</span>
+                    <span className="font-ssLB">{item}</span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         )}
 
-        <Form itemName={tour.title} itemType="Tour Package" />
-      </section>
+        {/* ADD-ONS */}
+        {tour.addons && (
+          <div className="mt-20 detail-block">
+            <h2 className="text-3xl font-ssBD text-center mb-10">
+              Optional Add-ons
+            </h2>
 
-      {/* FULLSCREEN GALLERY */}
-      {isGalleryOpen && (
-        <div className="fixed inset-0 bg-black/90 flex items-center justify-center">
-          <button onClick={closeGallery} className="absolute top-6 right-6">
-            <X color="white" />
-          </button>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {tour.addons.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="bg-gray-100 p-4 rounded-xl shadow-sm"
+                >
+                  ➕ {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
-          <button onClick={goToPrevious} className="absolute left-6">
-            <ChevronLeft color="white" />
-          </button>
+        {/* PRICE */}
+        <p className="mt-14 text-gray-900 text-3xl font-bold detail-block">
+          Package Price: {tour.price}
+        </p>
+      </div>
 
-          <img
-            src={tour.images[currentImageIndex]}
-            className="max-h-[80vh]"
-          />
-
-          <button onClick={goToNext} className="absolute right-6">
-            <ChevronRight color="white" />
-          </button>
-        </div>
-      )}
-    </>
+      {/* FORM */}
+      <Form itemName={tour.title} itemType="Package" />
+    </section>
   );
 };
 
