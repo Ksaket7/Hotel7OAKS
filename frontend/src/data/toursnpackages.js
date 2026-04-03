@@ -24,7 +24,8 @@ export const toursData = [
     ],
 
     images: [
-      "https://www.allinharidwar.com/wp-content/uploads/2018/04/Rishikesh-to-Chardham-Yatra.jpg",
+      "https://www.peakadventuretour.com/assets/imgs/chardham-yatra-himalayas.webp",
+      "https://i.pinimg.com/originals/3a/e2/d0/3ae2d025791cbd758498f0a7d94e7927.jpg",
       "https://images.pexels.com/photos/19019326/pexels-photo-19019326.jpeg",
       "https://images.pexels.com/photos/15031440/pexels-photo-15031440.jpeg",
       "https://www.shivkhori.in/wp-content/uploads/2025/09/Yamunotri-Temple-img-1024x683.webp",
@@ -177,10 +178,12 @@ export const toursData = [
     ],
 
     images: [
+      "https://thedreamtreks.com/wp-content/uploads/2025/03/do-dham.webp",
       "https://images.pexels.com/photos/15031440/pexels-photo-15031440.jpeg",
       "https://images.pexels.com/photos/18439979/pexels-photo-18439979.jpeg",
       "https://images.pexels.com/photos/18342812/pexels-photo-18342812.jpeg",
-      "https://images.pexels.com/photos/14177054/pexels-photo-14177054.jpeg",
+      "https://i.pinimg.com/originals/3a/e2/d0/3ae2d025791cbd758498f0a7d94e7927.jpg",
+      "https://www.templestiming.in/wp-content/uploads/2025/08/Badrinath-Temple-Timings-and-Aarti-Schedule.webp",
     ],
 
     itinerary: [
@@ -299,11 +302,10 @@ export const toursData = [
     ],
 
     images: [
-      "/images/tours/adi-kailash.jpg",
-      "/images/tours/adi-kailash-1.jpg",
-      "",
-      "/images/tours/adi-kailash-3.jpg",
+      "https://i.pinimg.com/originals/3a/e2/d0/3ae2d025791cbd758498f0a7d94e7927.jpg",
       "https://images.pexels.com/photos/15017640/pexels-photo-15017640.jpeg",
+      "https://www.templestiming.in/wp-content/uploads/2025/08/Badrinath-Temple-Timings-and-Aarti-Schedule.webp",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWz7DBpLGgg87e_DrNpkiPl-baIoqeqV5wrk6dOKUJfOwrVrYhxqA59ElpkZwE5fxkl2m0Vk3nahLOjXldSUP-2wfovu4ky9hufCSVLwZX8q9BnseDg9e-r0BmOSVbqiIrjXtTV5hevx_F/s1600/Badrinath-temple-image-www.templetravel+%25284%2529.jpg",
     ],
 
     itinerary: [
@@ -393,11 +395,11 @@ export const toursData = [
     ],
 
     images: [
-      "/images/tours/adi-kailash.jpg",
-      "/images/tours/adi-kailash-1.jpg",
-      "/images/tours/adi-kailash-2.jpg",
-      "/images/tours/adi-kailash-3.jpg",
-      "/images/tours/adi-kailash-4.jpg",
+      "https://currentaffairs.adda247.com/wp-content/uploads/multisite/sites/5/2023/06/16111548/Kedarnath.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCaSIQ4dgMgd2yguuO3igQYpnESDPSSubXdh2ffkJA7crHcnGlBWHbpC5YvCeDjGSLiHFTIA2ae9vhPG3VbMo-hq3jtkxUQVV8L3y-Bdkwd21V5ri8tdOCmjOzQFfCYg55JoHouFinMABqtCJdnfOb4ifTWTmWyfpC7xHVxwHxnpjSViG5ZeVYol_uXg/s1079/902a2ad041e4294579806984d0a8d37b.jpg",
+      "https://static2.tripoto.com/media/filter/nl/img/731901/TripDocument/1626405807_pxl_20200930_100301868_pano_01.jpg",
+      "https://wallpapercave.com/wp/wp6965570.jpg",
+      "https://static2.tripoto.com/media/filter/nl/img/2018663/TripDocument/1598520674_photo10.jpg",
     ],
 
     itinerary: [
@@ -501,11 +503,12 @@ export const toursData = [
     ],
 
     images: [
-      "/images/tours/adi-kailash.jpg",
-      "/images/tours/adi-kailash-1.jpg",
-      "/images/tours/adi-kailash-2.jpg",
-      "/images/tours/adi-kailash-3.jpg",
-      "/images/tours/adi-kailash-4.jpg",
+      "https://aatmchintan.org/wp-content/uploads/HolyPlacesYatra/ShriKailashParvat/Shri-Mahadev-Parvat.jpg",
+      "https://tse2.mm.bing.net/th/id/OIP.SBW5F-q40ndJhlceY-w0dQAAAA?w=400&h=400&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://i.pinimg.com/736x/28/2d/a5/282da542490b3f3220cee17426a5b213.jpg",
+      "https://www.shrineyatra.com/wp-content/uploads/2019/08/Om-Parvat.jpg",
+      "https://media1.thrillophilia.com/filestore/neowxz350szy9oz2vrd95irj61w9_Trekking_in_Om_Parvat_Trek_3202151cfc.jpg?w=1080&dpr=2",
+      "https://tse2.mm.bing.net/th/id/OIP.RQctbOltWNWqStZ2WImbdAHaJQ?rs=1&pid=ImgDetMain&o=7&rm=3",
     ],
 
     itinerary: [

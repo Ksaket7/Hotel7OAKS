@@ -304,7 +304,7 @@ const ToursAndPackages = () => {
                   <div className="bg-white rounded-3xl border overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 font-ssSBH">
                     <div className="relative h-60 overflow-hidden">
                       <img
-                        src={tour.image}
+                        src={tour.images[0]}
                         alt={tour.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />

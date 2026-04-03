@@ -84,7 +84,7 @@ const TourPackageDetails = () => {
         {/* HERO */}
         <div
           className="relative w-full h-[60vh] bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: `url(${tour.image})` }}
+          style={{ backgroundImage: `url(${tour.images[0]})` }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
           <h1 className="relative z-10 text-white text-4xl md:text-6xl font-ssBD text-center px-4">
