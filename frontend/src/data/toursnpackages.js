@@ -24,11 +24,11 @@ export const toursData = [
     ],
 
     images: [
-      "/images/tours/adi-kailash.jpg",
-      "/images/tours/adi-kailash-1.jpg",
-      "/images/tours/adi-kailash-2.jpg",
-      "/images/tours/adi-kailash-3.jpg",
-      "/images/tours/adi-kailash-4.jpg",
+      "https://www.allinharidwar.com/wp-content/uploads/2018/04/Rishikesh-to-Chardham-Yatra.jpg",
+      "https://images.pexels.com/photos/19019326/pexels-photo-19019326.jpeg",
+      "https://images.pexels.com/photos/15031440/pexels-photo-15031440.jpeg",
+      "https://www.shivkhori.in/wp-content/uploads/2025/09/Yamunotri-Temple-img-1024x683.webp",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/45/3b/da/the-main-temple.jpg?w=2000&h=-1&s=1",
     ],
 
     itinerary: [
@@ -177,11 +177,10 @@ export const toursData = [
     ],
 
     images: [
-      "/images/tours/adi-kailash.jpg",
-      "/images/tours/adi-kailash-1.jpg",
-      "/images/tours/adi-kailash-2.jpg",
-      "/images/tours/adi-kailash-3.jpg",
-      "/images/tours/adi-kailash-4.jpg",
+      "https://images.pexels.com/photos/15031440/pexels-photo-15031440.jpeg",
+      "https://images.pexels.com/photos/18439979/pexels-photo-18439979.jpeg",
+      "https://images.pexels.com/photos/18342812/pexels-photo-18342812.jpeg",
+      "https://images.pexels.com/photos/14177054/pexels-photo-14177054.jpeg",
     ],
 
     itinerary: [
@@ -278,8 +277,7 @@ export const toursData = [
     ],
   },
 
-
-    {
+  {
     id: "badrinath-yatra-3d",
     title: "Badrinath Yatra (3 Days / 2 Nights)",
     location: "Ex-Haridwar, Uttarakhand",
@@ -303,9 +301,9 @@ export const toursData = [
     images: [
       "/images/tours/adi-kailash.jpg",
       "/images/tours/adi-kailash-1.jpg",
-      "/images/tours/adi-kailash-2.jpg",
+      "",
       "/images/tours/adi-kailash-3.jpg",
-      "/images/tours/adi-kailash-4.jpg",
+      "https://images.pexels.com/photos/15017640/pexels-photo-15017640.jpeg",
     ],
 
     itinerary: [
