@@ -301,7 +301,7 @@ const ToursAndPackages = () => {
               ))
             : sortedTours.map((tour) => (
                 <Link key={tour.id} to={`/tours/${tour.id}`} className="group">
-                  <div className="bg-white rounded-3xl border overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 font-ssSBH">
+                  <div className="bg-white rounded-3xl border overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 font-ssSBH h-full">
                     <div className="relative h-60 overflow-hidden">
                       <img
                         src={tour.images[0]}
@@ -340,7 +340,6 @@ const ToursAndPackages = () => {
                             {tour.price}
                             <span className="text-xs text-gray-400">
                               {" "}
-                              /person
                             </span>
                           </p>
                         </div>

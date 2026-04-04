@@ -36,20 +36,20 @@ const TourPackageDetails = () => {
 
   const goToNext = () => {
     setCurrentImageIndex((prev) =>
-      prev === tour.images.length - 1 ? 0 : prev + 1
+      prev === tour.images.length - 1 ? 0 : prev + 1,
     );
   };
 
   const goToPrevious = () => {
     setCurrentImageIndex((prev) =>
-      prev === 0 ? tour.images.length - 1 : prev - 1
+      prev === 0 ? tour.images.length - 1 : prev - 1,
     );
   };
 
   const handleWhatsAppClick = () => {
     const phoneNumber = "919876543210";
     const message = encodeURIComponent(
-      `Hi! I'm interested in ${tour?.title || "this package"}`
+      `Hi! I'm interested in ${tour?.title || "this package"}`,
     );
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
@@ -64,7 +64,7 @@ const TourPackageDetails = () => {
         duration: 1,
         stagger: 0.15,
         ease: "power3.out",
-      }
+      },
     );
   }, []);
 
@@ -162,6 +162,45 @@ const TourPackageDetails = () => {
                     </div>
                   );
                 })}
+              </div>
+            </div>
+          )}
+
+          {/* === HIGHLIGHTS (IMAGE STYLE) === */}
+          {tour.highlights && (
+            <div className="max-w-6xl mx-auto px-6 mt-24 detail-block">
+              <h2 className="text-3xl md:text-4xl font-ssBD text-center mb-12">
+                Tour Highlights
+              </h2>
+
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {tour.highlights.map((item, i) => (
+                  <div
+                    key={i}
+                    className="highlight-card group relative rounded-3xl overflow-hidden shadow-lg cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+                  >
+                    {/* IMAGE */}
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-[280px] object-cover transition duration-700 group-hover:scale-110"
+                    />
+
+                    {/* DARK OVERLAY */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+
+                    {/* CONTENT */}
+                    <div className="absolute bottom-0 p-5 text-white">
+                      <h3 className="text-lg font-ssBD mb-1">{item.title}</h3>
+                      <p className="text-sm opacity-90 font-ssLB leading-snug">
+                        {item.desc}
+                      </p>
+                    </div>
+
+                    {/* BORDER GLOW */}
+                    <div className="absolute inset-0 border-2 border-transparent group-hover:border-green-400 rounded-3xl transition duration-300"></div>
+                  </div>
+                ))}
               </div>
             </div>
           )}
@@ -310,51 +349,64 @@ const TourPackageDetails = () => {
           className="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl flex items-center justify-center p-6"
           onClick={closeGallery}
         >
+          {" "}
           <div
             className="relative w-full max-w-7xl flex flex-col items-center"
             onClick={(e) => e.stopPropagation()}
           >
+            {" "}
+            {/* CLOSE BUTTON */}{" "}
             <button
               onClick={closeGallery}
-              className="absolute top-6 right-6 text-white"
+              className="absolute top-6 right-6 z-20 p-3 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 transition backdrop-blur-lg"
             >
-              <X size={22} />
-            </button>
-
+              {" "}
+              <X size={22} />{" "}
+            </button>{" "}
+            {/* IMAGE COUNTER */}{" "}
+            <div className="absolute top-6 left-6 z-20 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm backdrop-blur-lg">
+              {" "}
+              {currentImageIndex + 1} / {tour.images.length}{" "}
+            </div>{" "}
+            {/* PREV BUTTON */}{" "}
             <button
               onClick={goToPrevious}
-              className="absolute left-6 top-1/2 text-white"
+              className="absolute left-6 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 transition backdrop-blur-lg"
             >
-              <ChevronLeft size={28} />
-            </button>
-
+              {" "}
+              <ChevronLeft size={28} />{" "}
+            </button>{" "}
+            {/* NEXT BUTTON */}{" "}
             <button
               onClick={goToNext}
-              className="absolute right-6 top-1/2 text-white"
+              className="absolute right-6 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 transition backdrop-blur-lg"
             >
-              <ChevronRight size={28} />
-            </button>
-
-            <img
-              src={tour.images[currentImageIndex]}
-              className="max-h-[75vh] object-contain"
-            />
-
-            <div className="mt-6 flex gap-3 overflow-x-auto">
+              {" "}
+              <ChevronRight size={28} />{" "}
+            </button>{" "}
+            {/* MAIN IMAGE */}{" "}
+            <div className="flex items-center justify-center w-full max-h-[75vh]">
+              {" "}
+              <img
+                src={tour.images[currentImageIndex]}
+                alt=""
+                className="max-w-full max-h-[75vh] object-contain rounded-2xl shadow-[0_40px_120px_rgba(0,0,0,0.9)] transition duration-500"
+              />{" "}
+            </div>{" "}
+            {/* THUMBNAILS */}{" "}
+            <div className="mt-8 flex gap-3 overflow-x-auto px-4 py-3 bg-white/5 backdrop-blur-md rounded-xl border border-white/10">
+              {" "}
               {tour.images.map((img, idx) => (
                 <img
                   key={idx}
                   src={img}
+                  alt=""
                   onClick={() => setCurrentImageIndex(idx)}
-                  className={`w-20 h-20 object-cover cursor-pointer ${
-                    currentImageIndex === idx
-                      ? "ring-2 ring-green"
-                      : "opacity-60"
-                  }`}
+                  className={`w-20 h-20 object-cover rounded-lg cursor-pointer transition ${currentImageIndex === idx ? "ring-2 ring-green-400 scale-110 opacity-100" : "opacity-60 hover:opacity-100 hover:scale-105"}`}
                 />
-              ))}
-            </div>
-          </div>
+              ))}{" "}
+            </div>{" "}
+          </div>{" "}
         </div>
       )}
     </>
