@@ -207,7 +207,7 @@ const TourPackageDetails = () => {
 
           {/* INTRO */}
           {tour.intro && (
-            <div className="max-w-4xl mt-10 detail-block">
+            <div className="max-w-vw mt-10 detail-block">
               <h2 className="text-2xl font-ssBD text-gray-900 mb-4">
                 About This Package
               </h2>
