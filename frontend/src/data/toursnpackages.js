@@ -36,25 +36,25 @@ export const toursData = [
         title: "Luxury Hotels & Premium Camps",
         desc: "Stay in handpicked luxury hotels and premium camps throughout the journey.",
         image:
-          "https://images.pexels.com/photos/15031440/pexels-photo-15031440.jpeg",
+          "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/52a41d171c150c75177a5bed6b97dc5d998b3e10.jpg",
       },
       {
         title: "Helicopter Options for Kedarnath",
         desc: "Optional helicopter services for a comfortable Kedarnath visit.",
         image:
-          "https://images.pexels.com/photos/358229/pexels-photo-358229.jpeg",
+          "https://www.indiantempletour.com/blogs/wp-content/uploads/2023/03/Kedarnath-Yatra-by-Helicopter-768x527.jpg",
       },
       {
         title: "VIP Darshan Assistance",
         desc: "Priority darshan support for a smooth spiritual experience.",
         image:
-          "https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg",
+          "https://tse3.mm.bing.net/th/id/OIP.rnyZLuRTJE0HFMkKyW_1sAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
       },
       {
         title: "Scenic Routes with Comfort Stops",
         desc: "Enjoy breathtaking Himalayan drives with planned comfort breaks.",
         image:
-          "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg",
+          "https://tse4.mm.bing.net/th/id/OIP.xhvEInqTjWmgF-nivSLJowHaFS?rs=1&pid=ImgDetMain&o=7&rm=3",
       },
     ],
 
@@ -222,19 +222,19 @@ export const toursData = [
         title: "Scenic Himalayan Drives",
         desc: "Drive through stunning mountain landscapes and river valleys.",
         image:
-          "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg",
+          "https://chardhamtrip.in/images/kedarnath-yatra-package-from-chandigarh.jpg",
       },
       {
         title: "Helicopter Option for Kedarnath",
         desc: "Optional helicopter ride for easier access to Kedarnath.",
         image:
-          "https://images.pexels.com/photos/358229/pexels-photo-358229.jpeg",
+          "https://www.indiantempletour.com/blogs/wp-content/uploads/2023/03/Kedarnath-Yatra-by-Helicopter-768x527.jpg",
       },
       {
         title: "Comfortable Travel & Verified Stays",
         desc: "Enjoy smooth travel with comfortable and verified accommodations.",
         image:
-          "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+          "https://kedarayatihresorts.com/wp-content/uploads/2015/09/6-Ext-1.jpeg",
       },
     ],
 
@@ -370,19 +370,19 @@ export const toursData = [
         title: "Scenic Himalayan Drive via Panch Prayag",
         desc: "Experience beautiful drives through the famous river confluences.",
         image:
-          "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg",
+          "https://himalayandreamtreks.in/wp-content/uploads/2026/01/Bandarpunch-and-Black-Peak.webp",
       },
       {
         title: "Holy River Confluences",
         desc: "Witness sacred sangams along the journey.",
         image:
-          "https://images.pexels.com/photos/19019326/pexels-photo-19019326.jpeg",
+          "https://tse3.mm.bing.net/th/id/OIP.CfY0-Ks1x9Hz9DdQNgpHywHaF1?rs=1&pid=ImgDetMain&o=7&rm=3",
       },
       {
         title: "Comfortable & Well-Planned Journey",
         desc: "Enjoy a smooth and organized spiritual trip.",
         image:
-          "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+          "https://kedarayatihresorts.com/wp-content/uploads/2015/09/6-Ext-1.jpeg",
       },
     ],
 
@@ -484,25 +484,25 @@ export const toursData = [
         title: "Kedarnath Temple Darshan",
         desc: "Visit the sacred Kedarnath Jyotirlinga temple.",
         image:
-          "https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg",
+          "https://tse3.mm.bing.net/th/id/OIP.rnyZLuRTJE0HFMkKyW_1sAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
       },
       {
         title: "Himalayan Trek Experience",
         desc: "Experience a scenic trek through the Garhwal Himalayas.",
         image:
-          "https://images.pexels.com/photos/14114690/pexels-photo-14114690.jpeg",
+          "https://tse3.mm.bing.net/th/id/OIP.MRo6UjSxzSGBzqPTQCyvogHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
       },
       {
         title: "Helicopter Option Available",
         desc: "Optional helicopter service for convenient travel.",
         image:
-          "https://images.pexels.com/photos/358229/pexels-photo-358229.jpeg",
+          "https://www.indiantempletour.com/blogs/wp-content/uploads/2023/03/Kedarnath-Yatra-by-Helicopter-768x527.jpg",
       },
       {
         title: "Comfortable Travel & Verified Stays",
         desc: "Enjoy reliable stays and smooth travel arrangements.",
         image:
-          "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+          "https://kedarayatihresorts.com/wp-content/uploads/2015/09/6-Ext-1.jpeg",
       },
     ],
 
@@ -619,25 +619,25 @@ export const toursData = [
         title: "Adi Kailash Darshan",
         desc: "Visit the sacred Adi Kailash peak and nearby holy sites.",
         image:
-          "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg",
+          "https://i.pinimg.com/736x/28/2d/a5/282da542490b3f3220cee17426a5b213.jpg",
       },
       {
         title: "Om Parvat View",
         desc: "Witness the natural Om formation on the mountain.",
         image:
-          "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg",
+          "https://www.shrineyatra.com/wp-content/uploads/2019/08/Om-Parvat.jpg",
       },
       {
         title: "Parvati Sarovar Visit",
         desc: "Explore the sacred high-altitude lake near Adi Kailash.",
         image:
-          "https://images.pexels.com/photos/19019326/pexels-photo-19019326.jpeg",
+          "https://tse2.mm.bing.net/th/id/OIP.ZMhwTF1Ds_3eHCLx1hGrwQHaE-?rs=1&pid=ImgDetMain&o=7&rm=3",
       },
       {
         title: "Remote Himalayan Expedition",
         desc: "Travel through untouched high-altitude regions near the border.",
         image:
-          "https://images.pexels.com/photos/14114690/pexels-photo-14114690.jpeg",
+          "https://www.ghumakkar.com/wp-content/uploads/2022/11/IMG_2748-scaled.jpg",
       },
     ],
 
