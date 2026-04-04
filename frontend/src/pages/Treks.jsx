@@ -260,7 +260,7 @@ const Treks = () => {
 
                   <Link
                     to={`/treks/${trek.id}`}
-                    className="px-5 py-2 bg-green hover:bg-green/90 text-white rounded-full text-sm"
+                    className="px-5 py-2 bg-green hover:bg-green/90 text-white rounded-full text-sm font-ssBD"
                   >
                     View Details →
                   </Link>

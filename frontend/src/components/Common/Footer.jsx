@@ -114,17 +114,17 @@ const Footer = () => {
                   href="tel:+919876543210"
                   className="transition-colors hover:text-emerald-400"
                 >
-                  +91 98765 43210
+                  +91 9259600261
                 </a>
               </li>
 
               <li className="flex items-start gap-3 text-gray-400">
                 <Mail size={18} className="mt-1 text-emerald-400 shrink-0" />
                 <a
-                  href="mailto:info@oak7.com"
+                  href="mailto:hotel7oaks7@gmail.com"
                   className="transition-colors hover:text-emerald-400"
                 >
-                  info@oak7.com
+                  hotel7oaks7@gmail.com
                 </a>
               </li>
 
@@ -154,7 +154,7 @@ const Footer = () => {
 
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 mt-6 text-emerald-400 font-medium transition-all duration-300 hover:text-emerald-300"
+              className="inline-flex items-center gap-2 mt-6  font-medium transition-all duration-300 hover:text-emerald-300"
             >
               Start planning
               <ArrowRight size={16} />
