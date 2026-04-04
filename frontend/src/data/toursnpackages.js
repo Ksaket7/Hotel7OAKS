@@ -31,6 +31,32 @@ export const toursData = [
       "https://www.shivkhori.in/wp-content/uploads/2025/09/Yamunotri-Temple-img-1024x683.webp",
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/45/3b/da/the-main-temple.jpg?w=2000&h=-1&s=1",
     ],
+    highlights: [
+      {
+        title: "Luxury Hotels & Premium Camps",
+        desc: "Stay in handpicked luxury hotels and premium camps throughout the journey.",
+        image:
+          "https://images.pexels.com/photos/15031440/pexels-photo-15031440.jpeg",
+      },
+      {
+        title: "Helicopter Options for Kedarnath",
+        desc: "Optional helicopter services for a comfortable Kedarnath visit.",
+        image:
+          "https://images.pexels.com/photos/358229/pexels-photo-358229.jpeg",
+      },
+      {
+        title: "VIP Darshan Assistance",
+        desc: "Priority darshan support for a smooth spiritual experience.",
+        image:
+          "https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg",
+      },
+      {
+        title: "Scenic Routes with Comfort Stops",
+        desc: "Enjoy breathtaking Himalayan drives with planned comfort breaks.",
+        image:
+          "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg",
+      },
+    ],
 
     itinerary: [
       {
@@ -185,6 +211,32 @@ export const toursData = [
       "https://i.pinimg.com/originals/3a/e2/d0/3ae2d025791cbd758498f0a7d94e7927.jpg",
       "https://www.templestiming.in/wp-content/uploads/2025/08/Badrinath-Temple-Timings-and-Aarti-Schedule.webp",
     ],
+    highlights: [
+      {
+        title: "Kedarnath & Badrinath Darshan",
+        desc: "Visit two of the most sacred temples in the Himalayas.",
+        image:
+          "https://images.pexels.com/photos/18439979/pexels-photo-18439979.jpeg",
+      },
+      {
+        title: "Scenic Himalayan Drives",
+        desc: "Drive through stunning mountain landscapes and river valleys.",
+        image:
+          "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg",
+      },
+      {
+        title: "Helicopter Option for Kedarnath",
+        desc: "Optional helicopter ride for easier access to Kedarnath.",
+        image:
+          "https://images.pexels.com/photos/358229/pexels-photo-358229.jpeg",
+      },
+      {
+        title: "Comfortable Travel & Verified Stays",
+        desc: "Enjoy smooth travel with comfortable and verified accommodations.",
+        image:
+          "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+      },
+    ],
 
     itinerary: [
       {
@@ -307,6 +359,32 @@ export const toursData = [
       "https://www.templestiming.in/wp-content/uploads/2025/08/Badrinath-Temple-Timings-and-Aarti-Schedule.webp",
       "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWz7DBpLGgg87e_DrNpkiPl-baIoqeqV5wrk6dOKUJfOwrVrYhxqA59ElpkZwE5fxkl2m0Vk3nahLOjXldSUP-2wfovu4ky9hufCSVLwZX8q9BnseDg9e-r0BmOSVbqiIrjXtTV5hevx_F/s1600/Badrinath-temple-image-www.templetravel+%25284%2529.jpg",
     ],
+    highlights: [
+      {
+        title: "Badrinath Temple Darshan",
+        desc: "Seek blessings at one of the most sacred Char Dham temples.",
+        image:
+          "https://images.pexels.com/photos/15017640/pexels-photo-15017640.jpeg",
+      },
+      {
+        title: "Scenic Himalayan Drive via Panch Prayag",
+        desc: "Experience beautiful drives through the famous river confluences.",
+        image:
+          "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg",
+      },
+      {
+        title: "Holy River Confluences",
+        desc: "Witness sacred sangams along the journey.",
+        image:
+          "https://images.pexels.com/photos/19019326/pexels-photo-19019326.jpeg",
+      },
+      {
+        title: "Comfortable & Well-Planned Journey",
+        desc: "Enjoy a smooth and organized spiritual trip.",
+        image:
+          "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+      },
+    ],
 
     itinerary: [
       {
@@ -400,6 +478,32 @@ export const toursData = [
       "https://static2.tripoto.com/media/filter/nl/img/731901/TripDocument/1626405807_pxl_20200930_100301868_pano_01.jpg",
       "https://wallpapercave.com/wp/wp6965570.jpg",
       "https://static2.tripoto.com/media/filter/nl/img/2018663/TripDocument/1598520674_photo10.jpg",
+    ],
+    highlights: [
+      {
+        title: "Kedarnath Temple Darshan",
+        desc: "Visit the sacred Kedarnath Jyotirlinga temple.",
+        image:
+          "https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg",
+      },
+      {
+        title: "Himalayan Trek Experience",
+        desc: "Experience a scenic trek through the Garhwal Himalayas.",
+        image:
+          "https://images.pexels.com/photos/14114690/pexels-photo-14114690.jpeg",
+      },
+      {
+        title: "Helicopter Option Available",
+        desc: "Optional helicopter service for convenient travel.",
+        image:
+          "https://images.pexels.com/photos/358229/pexels-photo-358229.jpeg",
+      },
+      {
+        title: "Comfortable Travel & Verified Stays",
+        desc: "Enjoy reliable stays and smooth travel arrangements.",
+        image:
+          "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+      },
     ],
 
     itinerary: [
@@ -509,6 +613,32 @@ export const toursData = [
       "https://www.shrineyatra.com/wp-content/uploads/2019/08/Om-Parvat.jpg",
       "https://media1.thrillophilia.com/filestore/neowxz350szy9oz2vrd95irj61w9_Trekking_in_Om_Parvat_Trek_3202151cfc.jpg?w=1080&dpr=2",
       "https://tse2.mm.bing.net/th/id/OIP.RQctbOltWNWqStZ2WImbdAHaJQ?rs=1&pid=ImgDetMain&o=7&rm=3",
+    ],
+    highlights: [
+      {
+        title: "Adi Kailash Darshan",
+        desc: "Visit the sacred Adi Kailash peak and nearby holy sites.",
+        image:
+          "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg",
+      },
+      {
+        title: "Om Parvat View",
+        desc: "Witness the natural Om formation on the mountain.",
+        image:
+          "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg",
+      },
+      {
+        title: "Parvati Sarovar Visit",
+        desc: "Explore the sacred high-altitude lake near Adi Kailash.",
+        image:
+          "https://images.pexels.com/photos/19019326/pexels-photo-19019326.jpeg",
+      },
+      {
+        title: "Remote Himalayan Expedition",
+        desc: "Travel through untouched high-altitude regions near the border.",
+        image:
+          "https://images.pexels.com/photos/14114690/pexels-photo-14114690.jpeg",
+      },
     ],
 
     itinerary: [
