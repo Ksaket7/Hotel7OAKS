@@ -708,9 +708,9 @@ export const treksData = [
 
   // ✅ HERO + GALLERY
   images: [
-    "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/aec0558e-d9d3-44b8-a07c-b522c7ef9d53_gulabi%20kantha%20slider%20desk-2.webp",
-    "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/c049b55c-0e11-40f2-bb15-6205ace6d585_gulabi%20kantha%20slider%20desk%20%20(2).webp",
-    "https://trekthehimalayas.com/images/GulabiKanthaTrek/Slider/2f5d2f8b-0a3c-474a-bc1c-42bd6143fe46_gulabi%20kantha%20slider%20desk%20%20(1).webp",
+    "https://t.eucdn.in/tourism/lg/gulabikantha-trek-2265614.webp",
+    "https://t.eucdn.in/tourism/lg-jpg/gulabikantha-trek-6872428.jpg",
+    "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/66f74117-4241-4a2e-935c-9ad1379c9655.webp",
   ],
 
   // ✅ STRUCTURED HIGHLIGHTS
@@ -718,12 +718,12 @@ export const treksData = [
     {
       title: "Himalayan Peak Views",
       desc: "Panoramic views of Bandarpoonch, Black Peak, Chaukhambha and Swargarohini.",
-      image: "https://www.trekkaro.com/treks/62/6538197whatsapp-image-2022-09-17-at-03.11.10.jpeg"
+      image: "https://montaxe.com/wp-content/uploads/2024/07/Best-time-to-visit-Gulabi-kantha-trek.webp"
     },
     {
       title: "Alpine Meadows",
       desc: "Beautiful high-altitude meadows and scenic forest trails.",
-      image: "https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/87c9cee7-1898-477a-bdd1-d3ff576a5308_Dayara+Bugyal-Indiahikes-Venkat-meadows.jpg?auto=format,compress&&func=crop&q=70&org_if_sml=1"
+      image: "https://t.eucdn.in/tourism/lg-jpg/gulabikantha-trek-6872428.jpg"
     },
     {
       title: "Campsite Experience",
@@ -733,12 +733,12 @@ export const treksData = [
     {
       title: "Wildflower Trails",
       desc: "Spot rare Himalayan flowers like Blue Poppy and Rain Lily.",
-      image: "https://www.trekkaro.com/treks/62/6538197whatsapp-image-2022-09-17-at-03.11.10.jpeg"
+      image: "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/66f74117-4241-4a2e-935c-9ad1379c9655.webp"
     },
     {
       title: "Offbeat Trail",
       desc: "Peaceful and less crowded trekking experience.",
-      image: "https://www.trekkaro.com/treks/62/6538197whatsapp-image-2022-09-17-at-03.11.10.jpeg"
+      image: "https://travelchardham.com/sites/default/files/2025-09/Gulabi%20Kantha%20Trek%20route.jpg"
     },
   ],
 
@@ -837,42 +837,34 @@ export const treksData = [
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157224/Har-ki-dun-view_yuvo0y.jpg",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES (mapped + reused)
-  highlightImages: [
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157747/har-ki-dun-valley_mmkicv.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157224/Har-ki-dun-view_yuvo0y.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157225/harkidoon_lsjy3h.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157225/harikidun_1440x700_ay3irr.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157747/har-ki-dun-valley_mmkicv.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157224/Har-ki-dun-view_yuvo0y.jpg",
-  ],
 
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Valley of Gods",
-      desc: "Explore the legendary Har Ki Dun valley surrounded by majestic peaks."
+      desc: "Explore the legendary Har Ki Dun valley surrounded by majestic peaks.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157225/harikidun_1440x700_ay3irr.jpg"
     },
     {
       title: "Himalayan Views",
-      desc: "Witness Swargarohini, Black Peak, and Hata Peak."
+      desc: "Witness Swargarohini, Black Peak, and Hata Peak.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157225/harkidoon_lsjy3h.webp"
     },
     {
       title: "Ancient Villages",
-      desc: "Experience traditional life in villages like Osla."
+      desc: "Experience traditional life in villages like Osla.",
+      image: "https://himalayandreamtreks.in/wp-content/uploads/2025/08/Har_ki_Dun_Valley_in_Summer.webp"
     },
     {
       title: "Forest Trails",
-      desc: "Walk through pine, deodar, and rhododendron forests."
+      desc: "Walk through pine, deodar, and rhododendron forests.",
+      image: "https://discoveryhike.in/wp-content/uploads/2024/12/438CBF9B-33B8-44B0-9B23-A77A031E5D97-1024x683.jpeg"
     },
     {
       title: "Cultural Experience",
-      desc: "Discover wooden architecture and Himalayan heritage."
+      desc: "Discover wooden architecture and Himalayan heritage.",
+      image: "https://himtrek.co.in/wp-content/uploads/2025/09/Swargarohini-Peak-from-Har-Ki-Dun.webp"
     },
-    {
-      title: "Balanced Trek",
-      desc: "Perfect mix of nature, culture, and adventure."
-    }
   ],
 
   included: [
@@ -982,42 +974,34 @@ export const treksData = [
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157319/pexels-arefin-shamsul-5121327-mi_cbjmv3.jpg",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES (best curated)
-  highlightImages: [
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157319/Sunrise-at-the-Kedarkantha-Summit-820x1024_hra1hx.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157318/kedarkantha_at8fjr.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157317/46350706971_f5f0c6b569_k_dcgvds.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157319/photo-1585986217770-f25e4fd55ed9_zekn7b.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157318/Kedarkantha-Trek-Details-and-Best-time-to-Visit-Kedarkantha-Trek-4-1024x922_a72qb1.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157319/pexels-arefin-shamsul-5121327-mi_cbjmv3.jpg",
-  ],
 
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Winter Snow Trek",
-      desc: "One of the most famous snow treks in India."
+      desc: "One of the most famous snow treks in India.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157318/kedarkantha_at8fjr.webp"
     },
     {
       title: "Snow Forest Trails",
-      desc: "Walk through dense pine and deodar forests covered in snow."
+      desc: "Walk through dense pine and deodar forests covered in snow.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157319/pexels-arefin-shamsul-5121327-mi_cbjmv3.jpg"
     },
     {
       title: "Juda Ka Talab",
-      desc: "Frozen alpine lake surrounded by forests."
+      desc: "Frozen alpine lake surrounded by forests.",
+      image: "https://montaxe.com/wp-content/uploads/2024/09/Kedarkantha-Winter-Trek-Montaxe-22.webp"
     },
     {
       title: "Summit Sunrise",
-      desc: "Experience breathtaking sunrise from Kedarkantha peak."
+      desc: "Experience breathtaking sunrise from Kedarkantha peak.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157319/Sunrise-at-the-Kedarkantha-Summit-820x1024_hra1hx.webp"
     },
     {
       title: "Himalayan Views",
-      desc: "Panoramic views of Swargarohini, Bandarpoonch, and Black Peak."
+      desc: "Panoramic views of Swargarohini, Bandarpoonch, and Black Peak.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157317/46350706971_f5f0c6b569_k_dcgvds.jpg"
     },
-    {
-      title: "Beginner Friendly",
-      desc: "Perfect introduction to Himalayan snow trekking."
-    }
   ],
 
   included: [
@@ -1121,41 +1105,33 @@ export const treksData = [
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157746/20241014_070421_lg86sd.jpg",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157226/nag-tibba-trek-2_eeyztg.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157226/nag-tibba-range_rkspyn.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157228/nagtibba_rpzjwe.avif",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157227/nag-tibba-trek-route_ryivik.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157226/nag-tibba-trek-3_iwoaos.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157746/20241014_070421_lg86sd.jpg",
-  ],
 
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Weekend Trek",
-      desc: "Perfect short Himalayan escape near Delhi."
+      desc: "Perfect short Himalayan escape near Delhi.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157226/nag-tibba-trek-2_eeyztg.jpg"
     },
     {
       title: "Himalayan Views",
-      desc: "Views of Bandarpoonch, Swargarohini, Kala Nag, and Gangotri peaks."
+      desc: "Views of Bandarpoonch, Swargarohini, Kala Nag, and Gangotri peaks.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157226/nag-tibba-range_rkspyn.jpg"
     },
     {
       title: "Nag Tibba Temple",
-      desc: "Visit the ancient temple dedicated to Nag Devta."
+      desc: "Visit the ancient temple dedicated to Nag Devta.",
+      image: "https://www.shikhar.com/images/gallery/tours/180/2031696398.jpg"
     },
     {
       title: "Forest Trails",
-      desc: "Walk through oak and rhododendron forests."
-    },
-    {
-      title: "Beginner Friendly",
-      desc: "Ideal trek for first-time trekkers and families."
+      desc: "Walk through oak and rhododendron forests.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157226/nag-tibba-trek-3_iwoaos.jpg"
     },
     {
       title: "Winter Snow Trek",
-      desc: "Experience snow-covered trails during winter."
+      desc: "Experience snow-covered trails during winter.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157227/nag-tibba-trek-route_ryivik.jpg"
     }
   ],
 
@@ -1236,41 +1212,37 @@ export const treksData = [
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157353/yhqt4zuzhpng5votft9oe1m9e6uu_dsc_0444-scaled_bgisu6.webp",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157333/22_A_mysterious_lake-2048x1536_s5cgeu.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157352/Roopkundskeletons1-660x440_huzyfd.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157334/BlogspotImageUrl40686_vw8smw.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157333/RoopKoond_Trek4_viohb8.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157353/yhqt4zuzhpng5votft9oe1m9e6uu_dsc_0444-scaled_bgisu6.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157333/RoopKoond_Trek4_viohb8.webp",
-  ],
-
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Skeleton Lake",
-      desc: "Visit the mysterious Roopkund Lake with ancient human remains."
+      desc: "Visit the mysterious Roopkund Lake with ancient human remains.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157352/Roopkundskeletons1-660x440_huzyfd.jpg"
     },
     {
       title: "Ali & Bedni Bugyal",
-      desc: "Walk across some of the most beautiful alpine meadows in India."
+      desc: "Walk across some of the most beautiful alpine meadows in India.",
+      image: "https://discoveryhike.in/wp-content/uploads/2021/06/Bedini_Bugyal_Uttarakhand_India.jpg"
     },
     {
       title: "Himalayan Views",
-      desc: "Views of Trishul, Nanda Ghunti, and surrounding peaks."
+      desc: "Views of Trishul, Nanda Ghunti, and surrounding peaks.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157333/RoopKoond_Trek4_viohb8.webp"
     },
     {
       title: "High Altitude Trek",
-      desc: "Experience glacier terrain and extreme Himalayan landscapes."
+      desc: "Experience glacier terrain and extreme Himalayan landscapes.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157353/yhqt4zuzhpng5votft9oe1m9e6uu_dsc_0444-scaled_bgisu6.webp"
     },
     {
       title: "Summit Challenge",
-      desc: "Challenging climb to Roopkund at 15,755 ft."
+      desc: "Challenging climb to Roopkund at 15,755 ft.",
+      image: "https://i0.wp.com/chalotravellers.com/wp-content/uploads/2024/07/Roop-Kund-Trek-View.jpg?resize=636%2C426&ssl=1"
     },
     {
       title: "Iconic Expedition",
-      desc: "One of the most legendary treks in the Indian Himalayas."
+      desc: "One of the most legendary treks in the Indian Himalayas.",
+      image: "https://altitudeadventureindia.com/wp-content/uploads/2019/01/Roopkund_Trekking.jpg"
     }
   ],
 
@@ -1385,44 +1357,40 @@ export const treksData = [
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157537/20250424051745_2_jaemuh.avif",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157538/uttrakhand-valley-of-flowers-trek_u3ljal.webp",
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157743/zjh9smyb4jwm1g4u19kyyqz402v5_shutterstock_2327763641_b22wob.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157537/3fd3454c96b3fc4ad66595456319765f_qmquvn.jpg",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES (curated best visuals)
-  highlightImages: [
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157538/uttrakhand-valley-of-flowers-trek_u3ljal.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157537/images_1_uk0jic.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157538/images_pdbeoo.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157743/zjh9smyb4jwm1g4u19kyyqz402v5_shutterstock_2327763641_b22wob.webp",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157537/20250424051745_2_jaemuh.avif",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157537/3fd3454c96b3fc4ad66595456319765f_qmquvn.jpg",
-  ],
 
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "UNESCO Heritage Site",
-      desc: "Explore the world-famous Valley of Flowers."
+      desc: "Explore the world-famous Valley of Flowers.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157538/uttrakhand-valley-of-flowers-trek_u3ljal.webp"
     },
     {
       title: "Rare Himalayan Flowers",
-      desc: "See Blue Poppy, Himalayan Rose, and alpine flora."
+      desc: "See Blue Poppy, Himalayan Rose, and alpine flora.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157743/zjh9smyb4jwm1g4u19kyyqz402v5_shutterstock_2327763641_b22wob.webp"
     },
     {
       title: "Hemkund Sahib",
-      desc: "Visit one of the highest Sikh pilgrimage sites."
+      desc: "Visit one of the highest Sikh pilgrimage sites.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157537/20250424051745_2_jaemuh.avif"
     },
     {
       title: "Scenic Landscapes",
-      desc: "Glaciers, waterfalls, and alpine meadows."
+      desc: "Glaciers, waterfalls, and alpine meadows.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157538/sdasdadsa_ffjylv.jpg"
     },
     {
       title: "Nature Photography",
-      desc: "Perfect for capturing vibrant Himalayan beauty."
+      desc: "Perfect for capturing vibrant Himalayan beauty.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157538/images_pdbeoo.jpg"
     },
     {
       title: "Easy Adventure",
-      desc: "Ideal trek for beginners and nature lovers."
+      desc: "Ideal trek for beginners and nature lovers.",
+      image: "https://hikerwolf.com/wp-content/uploads/2020/03/Valley-of-flowers-Route-e1584436278997.jpg"
     }
   ],
 
@@ -1522,41 +1490,34 @@ export const treksData = [
     "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157744/d55186cf-d60d-420a-a3cb-d1c4d72fcf91_n6t07m.jpg",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES (reused smartly)
-  highlightImages: [
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157744/vasuki-tal-trek_duxx50.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157744/vasuki-Tal-1_ajo0y2.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157744/d55186cf-d60d-420a-a3cb-d1c4d72fcf91_n6t07m.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157744/vasuki-tal-trek_duxx50.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157744/vasuki-Tal-1_ajo0y2.jpg",
-    "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157744/d55186cf-d60d-420a-a3cb-d1c4d72fcf91_n6t07m.jpg",
-  ],
 
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Vasuki Tal Lake",
-      desc: "Visit the sacred high-altitude glacial lake."
+      desc: "Visit the sacred high-altitude glacial lake.",
+      image: "https://www.trawell.in/admin/images/upload/387998386Kedarnath_Vasuki_Tal_Main.jpg"
     },
     {
       title: "Himalayan Peaks",
-      desc: "Views of Shivling, Bhagirathi, Meru, and Thalay Sagar."
+      desc: "Views of Shivling, Bhagirathi, Meru, and Thalay Sagar.",
+      image: "https://danuadventure.in/wp-content/uploads/2024/10/Vasuki-Tal-Trek.jpg"
     },
     {
       title: "Gaumukh Glacier",
-      desc: "Walk across the source of the Ganga River."
+      desc: "Walk across the source of the Ganga River.",
+      image: "https://www.nomadadventures.co.in/wp-content/uploads/2022/05/Vasuki-Tal-Trek-1.jpg"
     },
     {
       title: "Tapovan & Nandanvan",
-      desc: "High-altitude alpine meadows with surreal landscapes."
+      desc: "High-altitude alpine meadows with surreal landscapes.",
+      image: "https://res.cloudinary.com/dxg5vbsyy/image/upload/v1773157744/vasuki-tal-trek_duxx50.jpg"
     },
-    {
-      title: "Glacier Expedition",
-      desc: "Traverse moraines, glaciers, and rugged terrain."
-    },
+    
     {
       title: "Advanced Trek",
-      desc: "Perfect for experienced trekkers seeking adventure."
+      desc: "Perfect for experienced trekkers seeking adventure.",
+      image: "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/df91c81f-7b5a-44ec-9785-f03fca62c29b.webp"
     }
   ],
 
@@ -1679,42 +1640,33 @@ export const treksData = [
     "https://images.unsplash.com/photo-1716573252390-3cf229264e90?q=80&w=1346",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://images.unsplash.com/photo-1641669600410-1c43f32ae6b8?q=80&w=1170",
-    "https://images.unsplash.com/photo-1716573263049-bb901a972ce1?q=80&w=1358",
-    "https://images.unsplash.com/photo-1729185207145-e46a8c45b35a?q=80&w=1332",
-    "https://images.unsplash.com/photo-1716573249423-f2ade6ce0098?q=80&w=1074",
-    "https://images.unsplash.com/photo-1716573252390-3cf229264e90?q=80&w=1346",
-    "https://images.unsplash.com/photo-1641669600410-1c43f32ae6b8?q=80&w=1170",
-  ],
-
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Himalayan Views",
-      desc: "Views of Nanda Devi, Dronagiri, Kamet, and Trishul peaks."
+      desc: "Views of Nanda Devi, Dronagiri, Kamet, and Trishul peaks.",
+      image: "https://images.unsplash.com/photo-1641669600410-1c43f32ae6b8?q=80&w=1170"
     },
     {
       title: "Lord Curzon Trail",
-      desc: "Historic trekking route through Garhwal Himalayas."
+      desc: "Historic trekking route through Garhwal Himalayas.",
+      image: "https://images.unsplash.com/photo-1716573249423-f2ade6ce0098?q=80&w=1074"
     },
     {
       title: "Alpine Meadows",
-      desc: "Beautiful bugyals and scenic landscapes."
+      desc: "Beautiful bugyals and scenic landscapes.",
+      image: "https://images.unsplash.com/photo-1729185207145-e46a8c45b35a?q=80&w=1332"
     },
     {
       title: "Forest Trails",
-      desc: "Walk through oak and rhododendron forests."
+      desc: "Walk through oak and rhododendron forests.",
+      image: "https://images.unsplash.com/photo-1716573263049-bb901a972ce1?q=80&w=1358"
     },
     {
       title: "Winter Trek",
-      desc: "Experience snow trekking during winter months."
+      desc: "Experience snow trekking during winter months.",
+      image: "https://images.unsplash.com/photo-1716573252390-3cf229264e90?q=80&w=1346"
     },
-    {
-      title: "Beginner Friendly",
-      desc: "Perfect Himalayan trek for beginners."
-    }
   ],
 
   included: [
@@ -1814,42 +1766,33 @@ export const treksData = [
     "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyalkund.webp",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyalmedow.webp",
-    "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyaltrekmedow.webp",
-    "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyaltrek.webp",
-    "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyaltrekpeake.webp",
-    "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyalkund.webp",
-    "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyalmedow.webp",
-  ],
-
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Ali & Bedni Bugyal",
-      desc: "Vast rolling alpine meadows in the Himalayas."
+      desc: "Vast rolling alpine meadows in the Himalayas.",
+      image: "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyalmedow.webp"
     },
     {
       title: "Himalayan Views",
-      desc: "Stunning views of Mt. Trishul and Nanda Ghunti."
+      desc: "Stunning views of Mt. Trishul and Nanda Ghunti.",
+      image: "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyaltrekpeake.webp"
     },
     {
       title: "Forest Trails",
-      desc: "Walk through oak and rhododendron forests."
+      desc: "Walk through oak and rhododendron forests.",
+      image: "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyaltrekmedow.webp"
     },
     {
       title: "Camping Experience",
-      desc: "Beautiful high-altitude campsites in meadows."
+      desc: "Beautiful high-altitude campsites in meadows.",
+      image: "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyaltrek.webp"
     },
     {
       title: "Seasonal Beauty",
-      desc: "Golden meadows in autumn and snow in winter."
+      desc: "Golden meadows in autumn and snow in winter.",
+      image: "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_gallery/alibednibugyalkund.webp"
     },
-    {
-      title: "Classic Bugyal Trek",
-      desc: "One of the most scenic meadow treks in Uttarakhand."
-    }
   ],
 
   included: [
@@ -1948,42 +1891,33 @@ export const treksData = [
     "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl42521-Bikat-Adventures.JPG",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://adventurebreaks.in/wp-content/uploads/2022/03/Brahmatal-1_-768x580.jpg",
-    "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-brahmatal-trek2071-Bikat-Adventures.jpg",
-    "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-brahmatal-trek2080-Bikat-Adventures.jpg",
-    "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl42521-Bikat-Adventures.JPG",
-    "https://adventurebreaks.in/wp-content/uploads/2022/03/Brahmatal-1_-768x580.jpg",
-    "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-brahmatal-trek2071-Bikat-Adventures.jpg",
-  ],
-
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Frozen Brahmatal Lake",
-      desc: "Witness the beautiful frozen alpine lake in winter."
+      desc: "Witness the beautiful frozen alpine lake in winter.",
+      image: "https://adventurebreaks.in/wp-content/uploads/2022/03/Brahmatal-1_-768x580.jpg"
     },
     {
       title: "Himalayan Views",
-      desc: "Views of Mt. Trishul and Nanda Ghunti."
+      desc: "Views of Mt. Trishul and Nanda Ghunti.",
+      image: "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-brahmatal-trek2071-Bikat-Adventures.jpg"
     },
     {
       title: "Snow Landscapes",
-      desc: "Snow-covered forests and alpine meadows."
+      desc: "Snow-covered forests and alpine meadows.",
+      image: "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-brahmatal-trek2080-Bikat-Adventures.jpg"
     },
     {
       title: "Winter Trek Experience",
-      desc: "One of the best snow treks in India."
+      desc: "One of the best snow treks in India.",
+      image: "https://t.eucdn.in/tourism/lg-jpg/brahmatal-9542625.jpg"
     },
     {
       title: "Scenic Campsites",
-      desc: "Camp in peaceful Himalayan surroundings."
+      desc: "Camp in peaceful Himalayan surroundings.",
+      image: "https://captureatrip-cms-storage.s3.ap-south-1.amazonaws.com/Brahmatal_Trek_efa1802517.webp"
     },
-    {
-      title: "Beginner Friendly",
-      desc: "Perfect for first-time snow trekkers."
-    }
   ],
 
   included: [
@@ -2076,48 +2010,35 @@ export const treksData = [
 
   // ✅ HERO + GALLERY
   images: [
-    "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/76a1ec62-b834-4b62-b645-3c2d7a37f7f6_15.webp",
-    "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/85a2a064-0a4a-4a96-9078-601049508656_13.webp",
-    "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/a77d50ea-90e2-491d-ae1b-187d3c8c63fa_14.webp",
-    "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/501eda3a-e408-41ff-b88f-0c0925cf8d71_17.webp",
-  ],
-
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/76a1ec62-b834-4b62-b645-3c2d7a37f7f6_15.webp",
-    "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/a77d50ea-90e2-491d-ae1b-187d3c8c63fa_14.webp",
-    "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/85a2a064-0a4a-4a96-9078-601049508656_13.webp",
-    "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/501eda3a-e408-41ff-b88f-0c0925cf8d71_17.webp",
-    "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/76a1ec62-b834-4b62-b645-3c2d7a37f7f6_15.webp",
-    "https://trekthehimalayas.com/images/PangarchullaPeakTrek/GalleryDesktop/Latest/a77d50ea-90e2-491d-ae1b-187d3c8c63fa_14.webp",
+    "https://images.prismic.io/indiahike/d32b4e81-390f-48b4-a0da-6e0b254d3e8e_Pangarchulla_PC_Satyen+Dasgupta_trailwithtrekkers_winter_snow_routes_.jpg?auto=compress,format",
+    "https://danuadventure.in/wp-content/uploads/2024/10/Pangarchulla-Peak-Trek.jpg",
+    "https://madtrek.com/wp-content/uploads/2025/09/Snow-Draped-Himalayan-Ridge-Near-Pangarchulla-Peak-scaled.jpeg",
+    "https://trekupindia.com/_next/image?url=https%3A%2F%2Fcdn.trekupindia.com%2Fmedia%2F1769082277936-pangarchulla.webp&w=1920&q=65",
   ],
 
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Summit Climb",
-      desc: "Climb to the challenging Pangarchulla Peak."
+      desc: "Climb to the challenging Pangarchulla Peak.",
+      image: "https://trekupindia.com/_next/image?url=https%3A%2F%2Fcdn.trekupindia.com%2Fmedia%2F1769082277936-pangarchulla.webp&w=1920&q=65"
     },
     {
       title: "Himalayan Views",
-      desc: "Views of Nanda Devi, Dronagiri, Kamet, and Chaukhamba."
+      desc: "Views of Nanda Devi, Dronagiri, Kamet, and Chaukhamba.",
+      image: "https://www.bontravelindia.com/wp-content/uploads/2023/12/Pangarchulla-Peak-Trek-Uttarakhand.jpg"
     },
     {
       title: "Snow Trek Experience",
-      desc: "Exciting snow trekking during spring season."
+      desc: "Exciting snow trekking during spring season.",
+      image: "https://trekupindia.com/_next/image?url=https%3A%2F%2Fcdn.trekupindia.com%2Fmedia%2F1769082277936-pangarchulla.webp&w=1920&q=65"
     },
     {
       title: "Ridge Climb",
-      desc: "Adventure ridge walk with stunning exposure."
+      desc: "Adventure ridge walk with stunning exposure.",
+      image: "https://trekupindia.com/_next/image?url=https%3A%2F%2Fcdn.trekupindia.com%2Fmedia%2F1769082277936-pangarchulla.webp&w=1920&q=65"
     },
-    {
-      title: "Forest Trails",
-      desc: "Walk through oak and rhododendron forests."
-    },
-    {
-      title: "First Summit Trek",
-      desc: "Perfect for those attempting their first Himalayan summit."
-    }
+
   ],
 
   included: [
@@ -2213,43 +2134,42 @@ export const treksData = [
     "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/satopanth-tal.jpg",
     "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/way-to-vasudhara-fall.jpg",
     "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/bheem-pul.jpg",
+    "https://danuadventure.in/wp-content/uploads/2024/10/Satopanth-Lake-Trek-Itinerary.jpg",
+    "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-satopanth-lake-trek2130-Bikat-Adventures.JPG"
   ],
 
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/satopanth-tal.jpg",
-    "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/way-to-vasudhara-fall.jpg",
-    "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/bheem-pul.jpg",
-    "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/satopanth-tal.jpg",
-    "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/way-to-vasudhara-fall.jpg",
-    "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/bheem-pul.jpg",
-  ],
 
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Satopanth Lake",
-      desc: "Sacred triangular glacial lake in the Himalayas."
+      desc: "Sacred triangular glacial lake in the Himalayas.",
+      image: "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/satopanth-tal.jpg"
     },
     {
       title: "Himalayan Peaks",
-      desc: "Views of Chaukhamba, Neelkanth, and Balakun."
+      desc: "Views of Chaukhamba, Neelkanth, and Balakun.",
+      image: "https://www.merakitriangle.com/wp-content/uploads/2020/09/satopanth-lake.jpg"
     },
     {
       title: "Glacier Terrain",
-      desc: "Experience moraine and glacier trekking."
+      desc: "Experience moraine and glacier trekking.",
+      image: "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/way-to-vasudhara-fall.jpg"
     },
     {
       title: "Spiritual Significance",
-      desc: "Associated with Brahma, Vishnu, and Shiva."
+      desc: "Associated with Brahma, Vishnu, and Shiva.",
+      image: "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/SatopanthTalTrek/bheem-pul.jpg"
     },
     {
       title: "High Altitude Adventure",
-      desc: "Challenging trek in pristine Himalayan terrain."
+      desc: "Challenging trek in pristine Himalayan terrain.",
+      image: "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-satopanth-lake-trek2135-Bikat-Adventures.JPG"
     },
     {
       title: "Remote Wilderness",
-      desc: "Explore untouched and peaceful landscapes."
+      desc: "Explore untouched and peaceful landscapes.",
+      image: "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-satopanth-lake-trek2130-Bikat-Adventures.JPG"
     }
   ],
 
@@ -2354,43 +2274,41 @@ export const treksData = [
     "https://nohradhar.com/wp-content/uploads/2025/06/rupin_pass_3-1536x1024.jpg",
     "https://nohradhar.com/wp-content/uploads/2025/06/rupin_pass_4.jpg",
     "https://images.ctfassets.net/ir2dv14cagbr/6609B6bqm8zO22BkoK1khJ/94b752913ba6263890b57e2cd266a55c/rupin-banner.jpg",
+    "https://himtrek.co.in/wp-content/uploads/2025/11/Rupin-pass-trek-1200x700.webp"
   ],
 
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://nohradhar.com/wp-content/uploads/2025/06/Rupin_pass_1-1536x862.png",
-    "https://images.ctfassets.net/ir2dv14cagbr/6609B6bqm8zO22BkoK1khJ/94b752913ba6263890b57e2cd266a55c/rupin-banner.jpg",
-    "https://nohradhar.com/wp-content/uploads/2025/06/rupin_pass_3-1536x1024.jpg",
-    "https://nohradhar.com/wp-content/uploads/2025/06/rupin_pass_4.jpg",
-    "https://nohradhar.com/wp-content/uploads/2025/06/Rupin_pass_1-1536x862.png",
-    "https://images.ctfassets.net/ir2dv14cagbr/6609B6bqm8zO22BkoK1khJ/94b752913ba6263890b57e2cd266a55c/rupin-banner.jpg",
-  ],
 
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Cross-Over Trek",
-      desc: "Journey from Uttarakhand to Himachal Pradesh."
+      desc: "Journey from Uttarakhand to Himachal Pradesh.",
+      image: "https://nohradhar.com/wp-content/uploads/2025/06/Rupin_pass_1-1536x862.png"
     },
     {
       title: "Rupin Waterfall",
-      desc: "Climb beside the iconic multi-tier waterfall."
+      desc: "Climb beside the iconic multi-tier waterfall.",
+      image: "https://images.ctfassets.net/ir2dv14cagbr/6609B6bqm8zO22BkoK1khJ/94b752913ba6263890b57e2cd266a55c/rupin-banner.jpg"
     },
     {
       title: "Rupin Pass Summit",
-      desc: "Cross the high-altitude pass with panoramic views."
+      desc: "Cross the high-altitude pass with panoramic views.",
+      image: "https://nohradhar.com/wp-content/uploads/2025/06/rupin_pass_3-1536x1024.jpg"
     },
     {
       title: "Snow Bridges",
-      desc: "Walk across thrilling snow bridges and ridges."
+      desc: "Walk across thrilling snow bridges and ridges.",
+      image: "https://nohradhar.com/wp-content/uploads/2025/06/rupin_pass_4.jpg"
     },
     {
       title: "Himalayan Villages",
-      desc: "Experience remote mountain culture and settlements."
+      desc: "Experience remote mountain culture and settlements.",
+      image: "https://nohradhar.com/wp-content/uploads/2025/06/rupin_pass_3-1536x1024.jpg"
     },
     {
       title: "Diverse Landscapes",
-      desc: "Forests, meadows, glaciers, and waterfalls in one trek."
+      desc: "Forests, meadows, glaciers, and waterfalls in one trek.",
+      image: "https://images.ctfassets.net/ir2dv14cagbr/6609B6bqm8zO22BkoK1khJ/94b752913ba6263890b57e2cd266a55c/rupin-banner.jpg"
     }
   ],
 
@@ -2499,47 +2417,39 @@ export const treksData = [
   // ✅ HERO + GALLERY
   images: [
     "https://thinairexpedition.com/static/images/20260127_125018_balipasstrek.jpg",
-    "https://trekthehimalayas.com/images/HomePageImages/Desktop/a24a5202-3e1d-4250-a2e8-7bd47c455edf_The-Challenging-Pass-Crossing.webp",
+    "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/RupinPassBestSeason/rupin-waterfall.jpg",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEcWvsgOZWrKpaA7Js1EqLfXK8FArtR_KghA&s",
     "https://trekonindia.com/wp-content/uploads/2023/08/trekonindia-bali-pass-terk-5.jpg",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://thinairexpedition.com/static/images/20260127_125018_balipasstrek.jpg",
-    "https://trekthehimalayas.com/images/HomePageImages/Desktop/a24a5202-3e1d-4250-a2e8-7bd47c455edf_The-Challenging-Pass-Crossing.webp",
-    "https://trekonindia.com/wp-content/uploads/2023/08/trekonindia-bali-pass-terk-5.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEcWvsgOZWrKpaA7Js1EqLfXK8FArtR_KghA&s",
-    "https://thinairexpedition.com/static/images/20260127_125018_balipasstrek.jpg",
-    "https://trekthehimalayas.com/images/HomePageImages/Desktop/a24a5202-3e1d-4250-a2e8-7bd47c455edf_The-Challenging-Pass-Crossing.webp",
-  ],
 
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Bali Pass Summit",
-      desc: "Cross the high-altitude Bali Pass at nearly 5,000 meters."
+      desc: "Cross the high-altitude Bali Pass at nearly 5,000 meters.",
+      image: "https://thinairexpedition.com/static/images/20260127_125018_balipasstrek.jpg"
     },
     {
       title: "Himalayan Views",
-      desc: "Views of Swargarohini, Bandarpoonch, and Kala Nag."
+      desc: "Views of Swargarohini, Bandarpoonch, and Kala Nag.",
+      image: "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/RupinPassBestSeason/rupin-waterfall.jpg"
     },
     {
       title: "Har Ki Dun Valley",
-      desc: "Trek through one of the most beautiful Himalayan valleys."
+      desc: "Trek through one of the most beautiful Himalayan valleys.",
+      image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/10/3d/37/3c.jpg"
     },
     {
       title: "Glacier Crossings",
-      desc: "Experience glacier and moraine terrain."
+      desc: "Experience glacier and moraine terrain.",
+      image: "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_images/68d8ebf5b1b71.jpg"
     },
     {
       title: "Remote Villages",
-      desc: "Explore traditional Himalayan settlements."
+      desc: "Explore traditional Himalayan settlements.",
+      image: "https://www.potala-himalaya.com/uploads/potala_himalaya/gallery/main/5ce674cbc6a96d889f48dd6cd80ccdb6_har_ki_dun_2.jpg"
     },
-    {
-      title: "Yamunotri Finish",
-      desc: "End the trek at the sacred Yamunotri temple."
-    }
   ],
 
   included: [
@@ -2653,42 +2563,28 @@ export const treksData = [
     "https://choptaresort.com/wp-content/uploads/2018/04/Deoriatal-Lake-1920x800.png",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://himtrek.co.in/wp-content/uploads/2025/10/Deoria-Tal-Trek-2.webp",
-    "https://choptaresort.com/wp-content/uploads/2018/04/Deoriatal-Lake-1920x800.png",
-    "https://travellingslacker.com/wp-content/uploads/2018/12/13936301868_4bb3434a77_o-1024x680.jpg",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/75/d5/1a/white-hills-adventure.jpg?w=1400&h=-1&s=1",
-    "https://himtrek.co.in/wp-content/uploads/2025/10/Deoria-Tal-Trek-2.webp",
-    "https://choptaresort.com/wp-content/uploads/2018/04/Deoriatal-Lake-1920x800.png",
-  ],
-
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Deoria Tal Lake",
-      desc: "Crystal clear alpine lake in the Himalayas."
+      desc: "Crystal clear alpine lake in the Himalayas.",
+      image: "https://himtrek.co.in/wp-content/uploads/2025/10/Deoria-Tal-Trek-2.webp"
     },
     {
       title: "Chaukhamba Reflection",
-      desc: "Perfect reflection of Himalayan peaks on the lake."
+      desc: "Perfect reflection of Himalayan peaks on the lake.",
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/75/d5/1a/white-hills-adventure.jpg?w=1400&h=-1&s=1"
     },
     {
       title: "Forest Trails",
-      desc: "Walk through oak and rhododendron forests."
-    },
-    {
-      title: "Beginner Friendly",
-      desc: "Perfect trek for first-time trekkers."
+      desc: "Walk through oak and rhododendron forests.",
+      image: "https://travellingslacker.com/wp-content/uploads/2018/12/13936301868_4bb3434a77_o-1024x680.jpg"
     },
     {
       title: "Peaceful Campsite",
-      desc: "Camp beside a serene Himalayan lake."
+      desc: "Camp beside a serene Himalayan lake.",
+      image: "https://t.eucdn.in/tourism/lg/deoriyatal-4316102.webp"
     },
-    {
-      title: "Weekend Trek",
-      desc: "Ideal short escape into the mountains."
-    }
   ],
 
   included: [
@@ -2759,42 +2655,34 @@ export const treksData = [
     "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/31b260d5-aded-4b66-8ab2-ccfa94b7e3f5.webp",
   ],
 
-  // 🆕 HIGHLIGHT IMAGES
-  highlightImages: [
-    "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/2265f2c4-2297-452f-8c79-a0ca98ebb7e6.webp",
-    "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/5c28f07b-5a04-460d-85b9-db2687ec2464.webp",
-    "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/8171928a-4273-4dfb-9fa7-b3b474f17eeb.webp",
-    "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/31b260d5-aded-4b66-8ab2-ccfa94b7e3f5.webp",
-    "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/2265f2c4-2297-452f-8c79-a0ca98ebb7e6.webp",
-    "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/5c28f07b-5a04-460d-85b9-db2687ec2464.webp",
-  ],
-
   // ✅ STRUCTURED HIGHLIGHTS
   highlights: [
     {
       title: "Pindari Glacier",
-      desc: "Visit the stunning Himalayan glacier."
+      desc: "Visit the stunning Himalayan glacier.",
+      image: "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/2265f2c4-2297-452f-8c79-a0ca98ebb7e6.webp"
     },
     {
       title: "Himalayan Peaks",
-      desc: "Views of Nanda Devi and Nanda Kot."
+      desc: "Views of Nanda Devi and Nanda Kot.",
+      image: "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/5c28f07b-5a04-460d-85b9-db2687ec2464.webp"
     },
     {
       title: "River Valley Trails",
-      desc: "Trek along the scenic Pindar river."
+      desc: "Trek along the scenic Pindar river.",
+      image: "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/31b260d5-aded-4b66-8ab2-ccfa94b7e3f5.webp"
     },
     {
       title: "Mountain Villages",
-      desc: "Experience life in villages like Khati."
+      desc: "Experience life in villages like Khati.",
+      image: "https://footloosedev.com/wp-content/uploads/khati-village.jpg"
     },
     {
       title: "Forest Landscapes",
-      desc: "Walk through dense forests and alpine terrain."
+      desc: "Walk through dense forests and alpine terrain.",
+      image: "https://dq1q7qkthxkc0.cloudfront.net/UpdatedMedia/8171928a-4273-4dfb-9fa7-b3b474f17eeb.webp"
     },
-    {
-      title: "Classic Trek",
-      desc: "One of the most iconic glacier treks in Uttarakhand."
-    }
+    
   ],
 
   included: [
@@ -2896,24 +2784,18 @@ export const treksData = [
     "https://www.peakadventuretour.com/assets/images/kafni-glacier-trek2.webp",
     "https://www.tourmyindia.com/treks/wp-content/uploads/2020/08/kafni-glacier-trek1.jpg",
     "https://www.tourmyindia.com/treks/wp-content/uploads/2020/08/kafni-glacier-trek6.jpg",
+    "https://www.peakadventuretour.com/assets/images/kafni-glacier-trek1.webp",
+    "https://uttarakhandtriptrek.com/wp-content/uploads/2019/07/Pindari-2.jpg"
   ],
 
-  highlightImages: [
-    "https://www.peakadventuretour.com/assets/images/kafni-glacier-trek2.webp",
-    "https://www.tourmyindia.com/treks/wp-content/uploads/2020/08/kafni-glacier-trek6.jpg",
-    "https://www.tourmyindia.com/treks/wp-content/uploads/2020/08/kafni-glacier-trek1.jpg",
-    "https://www.peakadventuretour.com/assets/images/kafni-glacier-trek2.webp",
-    "https://www.tourmyindia.com/treks/wp-content/uploads/2020/08/kafni-glacier-trek6.jpg",
-    "https://www.tourmyindia.com/treks/wp-content/uploads/2020/08/kafni-glacier-trek1.jpg",
-  ],
 
   highlights: [
-    { title: "Kafni Glacier", desc: "Visit the pristine Himalayan glacier." },
-    { title: "Peak Views", desc: "Views of Nanda Kot and Nanda Devi East." },
-    { title: "River Valley", desc: "Trek along the scenic Kafni valley." },
-    { title: "Peaceful Trails", desc: "Less crowded Himalayan trekking route." },
-    { title: "Mountain Villages", desc: "Experience traditional Kumaon culture." },
-    { title: "Alpine Landscapes", desc: "Forests, meadows, and glacier terrain." }
+    { title: "Kafni Glacier", desc: "Visit the pristine Himalayan glacier.", image: "https://www.peakadventuretour.com/assets/images/kafni-glacier-trek2.webp" },
+    { title: "Peak Views", desc: "Views of Nanda Kot and Nanda Devi East.", image: "https://www.tourmyindia.com/treks/wp-content/uploads/2020/08/kafni-glacier-trek6.jpg" },
+    { title: "River Valley", desc: "Trek along the scenic Kafni valley.", image: "https://www.tourmyindia.com/treks/wp-content/uploads/2020/08/kafni-glacier-trek1.jpg" },
+    { title: "Peaceful Trails", desc: "Less crowded Himalayan trekking route.", image: "https://www.peakadventuretour.com/assets/images/kafni-glacier-trek1.webp" },
+    { title: "Mountain Villages", desc: "Experience traditional Kumaon culture.", image: "https://uttarakhandtriptrek.com/wp-content/uploads/2019/07/Pindari-2.jpg" },
+    { title: "Alpine Landscapes", desc: "Forests, meadows, and glacier terrain.", image: "https://www.peakadventuretour.com/assets/images/kafni-glacier-trek2.webp" }
   ],
 
   included: [
@@ -2953,7 +2835,8 @@ export const treksData = [
   intro:
     "A dramatic crossover trek connecting lush Kullu Valley to the stark Spiti landscapes.",
 
-  desc: "The Hampta Pass Trek offers a unique transition from green valleys to barren mountains. Starting near Manali, the trail crosses rivers, glaciers, and alpine meadows before descending into Spiti Valley.",
+  desc:
+    "The Hampta Pass Trek offers a unique transition from green valleys of Kullu to the barren mountains of Spiti. Starting near Manali, the trail crosses rivers, glaciers, and alpine meadows before reaching the high-altitude pass and descending into the cold desert of Spiti.",
 
   difficulty: "Moderate",
   days: "5 Days",
@@ -2964,7 +2847,7 @@ export const treksData = [
   reviews: "420",
 
   region: "Pir Panjal Range, Himachal Pradesh",
-  startingPoint: "Jobra",
+  startingPoint: "Jobra (Manali)",
   distance: "26 km",
   bestSeason: "June – September",
 
@@ -2972,27 +2855,105 @@ export const treksData = [
     "https://himalayandaredevils.com/storage/uploads/67e2a588dadee.jpg",
     "https://blogs.tripzygo.in/wp-content/uploads/2025/06/hampta-pass-trek-1-1536x737.jpg",
     "https://blogs.tripzygo.in/wp-content/uploads/2025/06/Post-Monsoon-Season-mid-September-to-October-1536x737.jpg",
-  ],
+    "https://himtrek.co.in/wp-content/uploads/2023/09/IMG_20210929_165034.jpg",
+    "https://miro.medium.com/1*9dXM83s3raW7jibaqxuz6w.jpeg"
 
-  highlightImages: [
-    "https://himalayandaredevils.com/storage/uploads/67e2a588dadee.jpg",
-    "https://blogs.tripzygo.in/wp-content/uploads/2025/06/hampta-pass-trek-1-1536x737.jpg",
-    "https://blogs.tripzygo.in/wp-content/uploads/2025/06/Post-Monsoon-Season-mid-September-to-October-1536x737.jpg",
-    "https://himalayandaredevils.com/storage/uploads/67e2a588dadee.jpg",
-    "https://blogs.tripzygo.in/wp-content/uploads/2025/06/hampta-pass-trek-1-1536x737.jpg",
-    "https://blogs.tripzygo.in/wp-content/uploads/2025/06/Post-Monsoon-Season-mid-September-to-October-1536x737.jpg",
   ],
 
   highlights: [
-    { title: "Crossover Trek", desc: "Kullu to Spiti transition." },
-    { title: "Mountain Views", desc: "Indrasan and Deo Tibba peaks." },
-    { title: "River Crossings", desc: "Exciting Himalayan streams." },
-    { title: "Alpine Meadows", desc: "Lush green landscapes." },
-    { title: "Chandratal Lake", desc: "Optional visit to lake." },
-    { title: "Popular Trek", desc: "One of India's top treks." }
+    {
+      title: "Crossover Trek",
+      desc: "Rare transition from green Kullu to barren Spiti.",
+      image: "https://miro.medium.com/1*9dXM83s3raW7jibaqxuz6w.jpeg"
+    },
+    {
+      title: "Hampta Pass",
+      desc: "High altitude pass with dramatic landscapes.",
+      image: "https://blogs.tripzygo.in/wp-content/uploads/2025/06/hampta-pass-trek-1-1536x737.jpg"
+    },
+    {
+      title: "River Crossings",
+      desc: "Thrilling crossings of Himalayan streams.",
+      image: "https://blogs.tripzygo.in/wp-content/uploads/2025/06/Post-Monsoon-Season-mid-September-to-October-1536x737.jpg"
+    },
+    {
+      title: "Alpine Meadows",
+      desc: "Beautiful green valleys and campsites.",
+      image: "https://himalayandaredevils.com/storage/uploads/67e2a588dadee.jpg"
+    },
+    {
+      title: "Chandratal Lake",
+      desc: "Optional visit to the stunning moon lake.",
+      image: "https://himtrek.co.in/wp-content/uploads/2023/09/IMG_20210929_165034.jpg"
+    }
   ],
-},
 
+  included: [
+    "Professional trek leader and guides",
+    "Accommodation (tents during trek)",
+    "All meals during trek",
+    "Camping equipment (tents, sleeping bags, mats)",
+    "Permits and forest fees",
+    "First aid and safety equipment"
+  ],
+
+  excluded: [
+    "Transport to/from Manali",
+    "Personal trekking gear",
+    "Travel insurance",
+    "Porter or mule charges",
+    "Personal expenses",
+    "Anything not mentioned in inclusions"
+  ],
+
+  itinerary: [
+    {
+      day: "Day 1",
+      title: "Manali to Jobra to Chika",
+      details: [
+        "Drive from Manali to Jobra",
+        "Trek through forests to Chika campsite"
+      ],
+    },
+    {
+      day: "Day 2",
+      title: "Chika to Balu Ka Ghera",
+      details: [
+        "Trek along river valley",
+        "Views of snow-clad peaks"
+      ],
+    },
+    {
+      day: "Day 3",
+      title: "Balu Ka Ghera to Hampta Pass to Shea Goru",
+      details: [
+        "Climb to Hampta Pass",
+        "Descend into Spiti valley"
+      ],
+    },
+    {
+      day: "Day 4",
+      title: "Shea Goru to Chatru",
+      details: [
+        "Descend through rocky terrain",
+        "Follow river trail"
+      ],
+    },
+    {
+      day: "Day 5",
+      title: "Chatru to Chandratal (optional) to Manali",
+      details: [
+        "Visit Chandratal Lake",
+        "Drive back to Manali"
+      ],
+    },
+  ],
+
+  map: "https://www.google.com/maps?q=Hampta+Pass&output=embed",
+
+  about:
+    "At 7 Oaks Trek and Travels, we offer expertly guided Hampta Pass treks with well-planned itineraries, experienced trek leaders, and safe camping arrangements. This trek is perfect for those looking to experience both lush Himalayan valleys and the stark beauty of Spiti in one journey.",
+},
 
 {
   id: "beas-kund-trek",
@@ -3001,7 +2962,8 @@ export const treksData = [
   intro:
     "A short glacier trek near Manali leading to the origin of the Beas River.",
 
-  desc: "Beas Kund Trek is a beginner-friendly Himalayan trek that takes you to a glacial lake surrounded by peaks like Hanuman Tibba and Friendship Peak.",
+  desc:
+    "The Beas Kund Trek is a beginner-friendly Himalayan trek that takes you to the glacial source of the Beas River. Surrounded by towering peaks like Hanuman Tibba and Friendship Peak, it offers a perfect mix of adventure and scenic beauty in a short duration.",
 
   difficulty: "Easy to Moderate",
   days: "3 Days",
@@ -3012,33 +2974,94 @@ export const treksData = [
   reviews: "290",
 
   region: "Pir Panjal Range, Himachal Pradesh",
-  startingPoint: "Solang Valley",
+  startingPoint: "Solang Valley (Manali)",
   distance: "16 km",
   bestSeason: "May – October",
 
   images: [
     "https://res.cloudinary.com/dyiffrkzh/image/upload/v1700289195/bbj/fiytvtsirqsomej1b2j8.jpg",
-    "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl48503-Bikat-Adventures.JPG",
+    "https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20240923-893941706-1727088830.jpg",
     "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl48511-Bikat-Adventures.JPG",
-  ],
-
-  highlightImages: [
-    "https://res.cloudinary.com/dyiffrkzh/image/upload/v1700289195/bbj/fiytvtsirqsomej1b2j8.jpg",
-    "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl48503-Bikat-Adventures.JPG",
-    "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl48511-Bikat-Adventures.JPG",
-    "https://res.cloudinary.com/dyiffrkzh/image/upload/v1700289195/bbj/fiytvtsirqsomej1b2j8.jpg",
-    "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl48503-Bikat-Adventures.JPG",
-    "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl48511-Bikat-Adventures.JPG",
+    "https://raftaaradventure.in/wp-content/uploads/2021/02/beas_kund_day3.jpeg"
   ],
 
   highlights: [
-    { title: "Beas Kund", desc: "Glacial source of Beas River." },
-    { title: "Peak Views", desc: "Hanuman Tibba & Friendship Peak." },
-    { title: "Alpine Meadows", desc: "Beautiful landscapes." },
-    { title: "Short Trek", desc: "Quick Himalayan experience." },
-    { title: "Beginner Friendly", desc: "Ideal for first-timers." },
-    { title: "Glacier Experience", desc: "Intro to glacier trekking." }
+    {
+      title: "Beas Kund Glacier",
+      desc: "Origin point of the Beas River.",
+      image: "https://static.india.com/wp-content/uploads/2019/01/Beas-Kund-Trek.jpg"
+    },
+    {
+      title: "Mountain Peaks",
+      desc: "Views of Hanuman Tibba & Friendship Peak.",
+      image: "https://raftaaradventure.in/wp-content/uploads/2021/02/beas_kund_day3.jpeg"
+    },
+    {
+      title: "Alpine Meadows",
+      desc: "Lush green landscapes and campsites.",
+      image: "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl48511-Bikat-Adventures.JPG"
+    },
+    {
+      title: "Short Duration",
+      desc: "Perfect quick Himalayan getaway.",
+      image: "https://res.cloudinary.com/dyiffrkzh/image/upload/v1700289195/bbj/fiytvtsirqsomej1b2j8.jpg"
+    },
+    {
+      title: "Beginner Friendly",
+      desc: "Ideal for first-time trekkers.",
+      image: "https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20240923-893941706-1727088830.jpg"
+    }
   ],
-},
+
+  included: [
+    "Professional trek leader and guides",
+    "Accommodation (tents)",
+    "All meals during trek",
+    "Camping equipment",
+    "Permits and forest fees",
+    "Basic first aid kit"
+  ],
+
+  excluded: [
+    "Transport to/from Manali",
+    "Personal trekking gear",
+    "Travel insurance",
+    "Porter charges",
+    "Personal expenses",
+    "Anything not mentioned in inclusions"
+  ],
+
+  itinerary: [
+    {
+      day: "Day 1",
+      title: "Manali to Solang Valley to Dhundi",
+      details: [
+        "Drive to Solang Valley",
+        "Trek to Dhundi campsite"
+      ],
+    },
+    {
+      day: "Day 2",
+      title: "Dhundi to Beas Kund and back",
+      details: [
+        "Trek to Beas Kund glacier",
+        "Return to campsite"
+      ],
+    },
+    {
+      day: "Day 3",
+      title: "Dhundi to Solang to Manali",
+      details: [
+        "Descend to Solang Valley",
+        "Drive back to Manali"
+      ],
+    },
+  ],
+
+  map: "https://www.google.com/maps?q=Beas+Kund&output=embed",
+
+  about:
+    "At 7 Oaks Trek and Travels, we provide safe and well-organized Beas Kund treks ideal for beginners and families. With experienced guides and comfortable camping, this trek offers a perfect introduction to the Himalayan trekking experience.",
+}
 
 ];
