@@ -16,7 +16,7 @@ const Destinations = () => {
 
   const allStates = useMemo(
     () => ["all", ...destinationsData.map((s) => s.id)],
-    []
+    [],
   );
 
   const anyFilterActive = searchText || selectedState !== "all";
@@ -34,13 +34,10 @@ const Destinations = () => {
       if (searchText.trim()) {
         const s = searchText.toLowerCase();
 
-        const matchState = state.title.toLowerCase().includes(s);
-
-        const matchPlaces = state.places.some((p) =>
-          p.title.toLowerCase().includes(s)
+        return (
+          state.title.toLowerCase().includes(s) ||
+          state.places.some((p) => p.title.toLowerCase().includes(s))
         );
-
-        return matchState || matchPlaces;
       }
 
       return true;
@@ -54,7 +51,7 @@ const Destinations = () => {
     gsap.fromTo(
       items,
       { y: 40, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.15, duration: 0.8 }
+      { y: 0, opacity: 1, stagger: 0.1, duration: 0.8 },
     );
   }, [filteredStates]);
 
@@ -80,12 +77,12 @@ const Destinations = () => {
           </h1>
 
           <p className="text-white/85 text-base md:text-lg max-w-xl mx-auto">
-            Discover breathtaking places across mountains, deserts, and coasts.
+            Discover breathtaking places across India.
           </p>
         </div>
       </div>
 
-      {/* SEARCH + FILTER */}
+      {/* SEARCH */}
       <div className="max-w-6xl mx-auto px-4 md:px-6 mt-10">
         <div className="sticky top-4 z-40 bg-white rounded-2xl border shadow-sm p-4">
           <div className="flex gap-3 items-center">
@@ -126,11 +123,11 @@ const Destinations = () => {
             )}
           </div>
 
-          {/* FILTERS */}
+          {/* FILTER */}
           <div
             className={`${
               mobileFiltersOpen ? "grid" : "hidden"
-            } md:grid grid-cols-1 md:grid-cols-2 gap-3 mt-4`}
+            } md:grid grid-cols-1 mt-4`}
           >
             <select
               value={selectedState}
@@ -145,64 +142,57 @@ const Destinations = () => {
                 </option>
               ))}
             </select>
-
-            {anyFilterActive && (
-              <button
-                onClick={resetFilters}
-                className="md:hidden col-span-full px-4 py-3 bg-green text-white rounded-xl"
-              >
-                Clear Filters
-              </button>
-            )}
           </div>
         </div>
       </div>
 
-      {/* STATE CARDS */}
-      <div ref={sectionRef} className="max-w-7xl mx-auto px-6 py-20">
-        <div className="flex flex-col gap-20">
-          {filteredStates.map((state, index) => (
+      {/* DESTINATION GRID */}
+      <div ref={sectionRef} className="max-w-7xl mx-auto px-4 md:px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {filteredStates.map((state) => (
             <div
               key={state.id}
-              className={`flex flex-col md:flex-row items-center gap-12 ${
-                index % 2 !== 0 ? "md:flex-row-reverse" : ""
-              }`}
+              className="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500"
             >
               {/* IMAGE */}
-              <div className="w-full md:w-1/2">
-                <div className="relative rounded-2xl overflow-hidden shadow-lg border group">
-                  <img
-                    src={state.image}
-                    alt={state.title}
-                    className="w-full h-72 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
-              </div>
+              <img
+                src={state.image}
+                alt={state.title}
+                className="w-full h-[320px] object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+
+              {/* OVERLAY */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
               {/* CONTENT */}
-              <div
-                className={`w-full md:w-1/2 space-y-4 ${
-                  index % 2 !== 0 ? "md:pr-10" : "md:pl-10"
-                }`}
-              >
-                <h3 className="text-3xl font-ssBD text-gray-900">
-                  {state.title}
-                </h3>
+              <div className="absolute inset-0 p-5 flex  justify-between items-end text-white">
+                {/* TEXT BLOCK */}
+                <div className="mb-4 space-y-2">
+                  <h3 className="text-2xl font-ssBD leading-tight">
+                    {state.title}
+                  </h3>
 
-                <p className="text-gray-600">
-                  {state.shortDesc}
-                </p>
+                  <p className="text-sm text-white/90 line-clamp-2 font-ssBookD">
+                    {state.shortDesc}
+                  </p>
 
-                <p className="text-sm text-gray-500">
-                  {state.places.length} destinations to explore
-                </p>
+                  {/* META BADGE */}
+                  <div className="flex items-center gap-2">
+                    <span className="px-3 py-1 text-xs rounded-full bg-white/20 backdrop-blur-sm border border-white/20">
+                      {state.places.length} Places
+                    </span>
+                  </div>
+                </div>
 
-                <Link
-                  to={`/destinations/${state.id}`}
-                  className="inline-block px-6 py-3 bg-green text-white rounded-full text-sm"
-                >
-                  Explore Places →
-                </Link>
+                {/* BUTTON */}
+                <div className="flex justify-end">
+                  <Link
+                    to={`/destinations/${state.id}`}
+                    className="px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-gray-200 transition"
+                  >
+                    Explore →
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

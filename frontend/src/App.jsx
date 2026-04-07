@@ -31,6 +31,7 @@ import ScrollToTop from "./components/HomePage/ScrollTop.jsx";
 
 import "./index.css";
 import Destinations from "./pages/Destinations.jsx";
+import DestinationDetail from "./pages/DestinationDetail.jsx";
 
 // 🔄 Page transition wrapper
 const RouteTransitionWrapper = ({ children }) => (
@@ -159,6 +160,14 @@ function AppContent() {
             element={
               <RouteTransitionWrapper>
                 <Destinations />
+              </RouteTransitionWrapper>
+            }
+          />
+          <Route
+            path="/destinations/:id"
+            element={
+              <RouteTransitionWrapper>
+                <DestinationDetail />
               </RouteTransitionWrapper>
             }
           />
