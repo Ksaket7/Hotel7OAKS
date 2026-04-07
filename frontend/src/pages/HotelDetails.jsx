@@ -100,7 +100,7 @@ const HotelDetails = () => {
               className="flex items-center gap-2 bg-green hover:bg-greenH text-white px-5 py-2.5 rounded-full transition font-ssBookD"
             >
               <MessageCircle size={16} />
-              Chat with us
+              Book Now
             </button>
           </div>
         </div>

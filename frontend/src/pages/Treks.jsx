@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Clock, Search, X, ChevronDown, ChevronUp } from "lucide-react";
+import { Search, X, ChevronDown, ChevronUp, Mountain } from "lucide-react";
 import { treksData } from "../data/treks/treks";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -32,12 +32,14 @@ const Treks = () => {
 
     if (searchText.trim()) {
       const s = searchText.toLowerCase();
-      filtered = filtered.filter((t) => t.title.toLowerCase().includes(s));
+      filtered = filtered.filter((t) =>
+        t.title.toLowerCase().includes(s)
+      );
     }
 
     if (difficulty !== "any") {
       filtered = filtered.filter((t) =>
-        t.difficulty.toLowerCase().includes(difficulty.toLowerCase()),
+        t.difficulty.toLowerCase().includes(difficulty.toLowerCase())
       );
     }
 
@@ -75,12 +77,13 @@ const Treks = () => {
     gsap.fromTo(
       items,
       { y: 40, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.15, duration: 0.8, ease: "power3.out" },
+      { y: 0, opacity: 1, stagger: 0.1, duration: 0.8, ease: "power3.out" }
     );
   }, [filteredTreks]);
 
   return (
     <section className="bg-white overflow-hidden">
+
       {/* HERO */}
       <div
         className="relative w-full h-[70vh] flex items-center justify-center text-center bg-cover bg-center"
@@ -101,21 +104,18 @@ const Treks = () => {
           </h1>
 
           <p className="text-white/85 font-ssLB text-base md:text-lg max-w-xl mx-auto">
-            From snow peaks to spiritual trails — experience handpicked
-            Himalayan treks designed for every adventurer.
+            From snow peaks to spiritual trails — experience handpicked Himalayan treks designed for every adventurer.
           </p>
         </div>
       </div>
+
       {/* SEARCH + FILTERS */}
       <div className="max-w-6xl mx-auto px-4 md:px-6 mt-10 font-ssSBH">
         <div className="sticky top-4 z-40 bg-white rounded-2xl border shadow-sm p-4">
+
           <div className="flex gap-3 items-center">
             <div className="relative flex-1">
-              <Search
-                className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
-                size={18}
-              />
-
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
               <input
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
@@ -129,11 +129,7 @@ const Treks = () => {
               className="md:hidden px-4 py-3 border rounded-xl flex items-center gap-2"
             >
               Filters
-              {mobileFiltersOpen ? (
-                <ChevronUp size={16} />
-              ) : (
-                <ChevronDown size={16} />
-              )}
+              {mobileFiltersOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
             </button>
 
             {anyFilterActive && (
@@ -148,126 +144,102 @@ const Treks = () => {
           </div>
 
           {/* FILTERS */}
-          <div
-            className={`
-          ${mobileFiltersOpen ? "grid" : "hidden"}
-          md:grid
-          grid-cols-1
-          sm:grid-cols-2
-          md:grid-cols-3
-          gap-3
-          mt-4
-          pt-4
-          border-t
-        `}
-          >
-            <select
-              value={difficulty}
-              onChange={(e) => setDifficulty(e.target.value)}
-              className="border rounded-xl px-3 py-3 bg-white"
-            >
+          <div className={`${mobileFiltersOpen ? "grid" : "hidden"} md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4 pt-4 border-t`}>
+            <select value={difficulty} onChange={(e) => setDifficulty(e.target.value)} className="border rounded-xl px-3 py-3">
               <option value="any">Any Difficulty</option>
               <option value="Easy">Easy</option>
               <option value="Moderate">Moderate</option>
               <option value="Difficult">Difficult</option>
             </select>
 
-            <select
-              value={duration}
-              onChange={(e) => setDuration(e.target.value)}
-              className="border rounded-xl px-3 py-3 bg-white"
-            >
+            <select value={duration} onChange={(e) => setDuration(e.target.value)} className="border rounded-xl px-3 py-3">
               <option value="any">Any Duration</option>
               <option value="short">1–4 Days</option>
               <option value="medium">5–8 Days</option>
               <option value="long">9+ Days</option>
             </select>
 
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-              className="border rounded-xl px-3 py-3 bg-white"
-            >
+            <select value={sortBy} onChange={(e) => setSortBy(e.target.value)} className="border rounded-xl px-3 py-3">
               <option value="">Recommended</option>
               <option value="price_low">Price Low → High</option>
               <option value="price_high">Price High → Low</option>
             </select>
-
-            {anyFilterActive && (
-              <button
-                onClick={resetFilters}
-                className="md:hidden col-span-full flex justify-center items-center gap-2 px-4 py-3 bg-green hover:bg-greenH rounded-xl"
-              >
-                <X size={16} />
-                Clear Filters
-              </button>
-            )}
           </div>
         </div>
       </div>
-      {/* TREK CARDS */}
+
+      {/* TREK GRID */}
       <div ref={sectionRef} className="max-w-7xl mx-auto px-6 py-20">
-        <div className="flex flex-col gap-20">
-          {filteredTreks.map((trek, index) => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {filteredTreks.map((trek) => (
             <div
               key={trek.id}
-              className={`flex flex-col md:flex-row items-center gap-12 ${
-                index % 2 !== 0 ? "md:flex-row-reverse" : ""
-              }`}
+              className="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500"
             >
-              <div className="w-full md:w-1/2">
-                <div className="relative rounded-2xl overflow-hidden shadow-lg border group">
-                  <img
-                    src={trek.images[0]}
-                    alt={trek.title}
-                    className="w-full h-72 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  {/* Difficulty */}
-                  <span
-                    className={`absolute bottom-4 left-4 px-3 py-1 text-xs font-semibold tracking-wide text-white rounded-full shadow-lg opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ${
-                      trek.difficulty.includes("Easy")
-                        ? "bg-green"
-                        : trek.difficulty.includes("Moderate")
-                          ? "bg-yellow-500"
-                          : "bg-red-500"
-                    }`}
-                  >
-                    {trek.difficulty}
-                  </span>
-                </div>
+              {/* IMAGE */}
+              <img
+                src={trek.images[0]}
+                alt={trek.title}
+                className="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+
+              {/* OVERLAY */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+
+              {/* LEFT TAGS */}
+              <div className="absolute top-4 left-4 flex gap-2">
+                <span className="px-3 py-1 text-xs rounded-full bg-white/90 text-black font-semibold">
+                  {trek.days}
+                </span>
+
+                <span
+                  className={`px-3 py-1 text-xs rounded-full text-white font-semibold ${
+                    trek.difficulty.includes("Easy")
+                      ? "bg-green"
+                      : trek.difficulty.includes("Moderate")
+                      ? "bg-yellow-500"
+                      : "bg-red-500"
+                  }`}
+                >
+                  {trek.difficulty}
+                </span>
               </div>
 
-              <div
-                className={`w-full md:w-1/2 space-y-4 ${
-                  index % 2 !== 0 ? "md:pr-10" : "md:pl-10"
-                }`}
-              >
-                <h3 className="text-2xl font-ssBD text-gray-900">
-                  {trek.title}
-                </h3>
+              {/* RIGHT ALTITUDE */}
+              {trek.altitude && (
+                <div className="absolute top-4 right-4">
+                  <span className="px-3 py-1 text-xs rounded-full bg-black/70 backdrop-blur text-white font-semibold flex items-center gap-1">
+                    <Mountain size={12} />
+                    {trek.altitude}
+                  </span>
+                </div>
+              )}
 
-                <p className="text-gray-600 font-ssLB">
+              {/* CONTENT */}
+              <div className="absolute bottom-0 p-5 w-full text-white">
+                <h3 className="text-xl font-ssBD mb-2">{trek.title}</h3>
+
+                <p className="text-sm text-white/80 line-clamp-2 mb-3">
                   {trek.intro || trek.desc}
                 </p>
 
-                <div className="flex items-center gap-2 text-gray-700">
-                  <Clock size={16} className="text-green" />
-                  <span>{trek.days}</span>
-                </div>
-
-                <div className="flex justify-between items-center pt-3">
-                  <p className="text-green font-ssBD text-lg">{trek.price}</p>
+                <div className="flex justify-between items-center opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+                  <span className="text-lg font-ssBD text-green">
+                    {trek.price}
+                  </span>
 
                   <Link
                     to={`/treks/${trek.id}`}
-                    className="px-5 py-2 bg-green hover:bg-green/90 text-white rounded-full text-sm font-ssBD"
+                    className="px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-gray-200"
                   >
-                    View Details →
+                    Explore →
                   </Link>
                 </div>
               </div>
             </div>
           ))}
+
         </div>
       </div>
     </section>

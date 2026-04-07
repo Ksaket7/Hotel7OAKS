@@ -137,17 +137,35 @@ const AboutUs = () => {
       </section>
 
       {/* VISION */}
-      <section className="py-12 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center px-6">
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-5xl mx-auto text-center px-6">
           <h2 className="text-3xl md:text-4xl font-ssBD text-green-700 mb-6">
             Our Vision
           </h2>
 
-          <p className="text-gray-800 font-ssLB text-lg leading-relaxed">
+          <p className="text-gray-800 font-ssLB text-lg leading-relaxed max-w-3xl mx-auto">
             To be the most trusted travel brand in Uttarakhand, connecting
             people to nature, culture, and spirituality through mindful
             adventures and curated experiences.
           </p>
+
+          {/* ✨ PILLARS */}
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
+            {[
+              "Local Employment",
+              "Remote Area Skill Development",
+              "Sustainable Tourism",
+              "Eco Friendly Tourism",
+              "Cultural Tourism",
+            ].map((item, i) => (
+              <span
+                key={i}
+                className="px-4 py-2 rounded-full bg-white border border-green/20 text-green-700 text-sm font-ssSBH shadow-sm hover:shadow-md hover:bg-green/5 transition-all"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -213,7 +231,10 @@ const AboutUs = () => {
             </div>
 
             {/* TOUR PACKAGES */}
-            <div onClick={() => Navigate("/tours")} className="bg-gradient-to-br from-white via-green-50 to-gray-100 p-8 rounded-2xl shadow hover:shadow-xl transition-all border border-green-100 hover:cursor-pointer tracking-wider">
+            <div
+              onClick={() => Navigate("/tours")}
+              className="bg-gradient-to-br from-white via-green-50 to-gray-100 p-8 rounded-2xl shadow hover:shadow-xl transition-all border border-green-100 hover:cursor-pointer tracking-wider"
+            >
               <div className="text-4xl mb-4">🌍</div>
 
               <h3 className="text-xl font-ssSBH text-green-700 mb-4">

@@ -4,8 +4,9 @@ export const toursData = [
     title: "Char Dham Yatra (Luxury & Premium)",
     location: "Uttarakhand",
     duration: "10 Days",
-    price: "₹ 85,000 / person",
+    price: "₹ 25,999 / person",
     image: "/images/tours/char-dham.jpg",
+    rating: 4.9,
 
     description:
       "Embark on a spiritually enriching journey across the sacred Char Dham destinations—Yamunotri, Gangotri, Kedarnath, and Badrinath—crafted with comfort and luxury in mind.",
@@ -187,8 +188,9 @@ export const toursData = [
     title: "Do Dham Yatra (Kedarnath + Badrinath)",
     location: "Ex-Haridwar / Rishikesh, Uttarakhand",
     duration: "6 Days / 5 Nights",
-    price: "₹ 28,999 / person",
+    price: "₹ 15,999 / person",
     image: "/images/tours/do-dham.jpg",
+    rating: 4.9,
 
     description:
       "A sacred journey covering Kedarnath and Badrinath, combining spiritual fulfillment with breathtaking Himalayan landscapes.",
@@ -337,8 +339,9 @@ export const toursData = [
     title: "Badrinath Yatra (3 Days / 2 Nights)",
     location: "Ex-Haridwar, Uttarakhand",
     duration: "3 Days / 2 Nights",
-    price: "₹ 8,999 / person",
+    price: "₹ 9,999 / person",
     image: "/images/tours/badrinath.jpg",
+    rating: 4.8,
 
     description:
       "A short yet spiritually fulfilling journey to the sacred Badrinath Temple, covering scenic Himalayan routes and holy river confluences.",
@@ -456,8 +459,9 @@ export const toursData = [
     title: "Kedarnath Yatra (4 Days / 3 Nights)",
     location: "Ex-Haridwar / Rishikesh, Uttarakhand",
     duration: "4 Days / 3 Nights",
-    price: "₹ 9,999 / person",
+    price: "₹ 10,999 / person",
     image: "/images/tours/kedarnath.jpg",
+    rating: 4.8,
 
     description:
       "A spiritually enriching journey to Kedarnath, combining a scenic Himalayan drive with a sacred trekking experience to one of India's most revered temples.",
@@ -590,6 +594,7 @@ export const toursData = [
     duration: "6 Days / 5 Nights",
     price: "₹ 31,999 / person",
     image: "/images/tours/adi-kailash.jpg",
+    rating: 4.9,
 
     description:
       "A spiritually powerful and adventurous journey to Adi Kailash and Om Parvat, exploring remote Himalayan regions near the Indo-Tibetan border.",

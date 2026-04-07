@@ -189,7 +189,7 @@ const Hotel = () => {
 
           <p className="text-white/90 text-base md:text-lg font-ssBookD">
             Handpicked hotels offering comfort, luxury, and breathtaking
-            landscapes across Uttarakhand.
+            landscapes across Himalayas.
           </p>
         </div>
       </div>
