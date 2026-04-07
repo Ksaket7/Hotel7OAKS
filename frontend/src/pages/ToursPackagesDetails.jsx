@@ -92,6 +92,20 @@ const TourPackageDetails = () => {
           </h1>
         </div>
 
+        {/* ✨ CENTERED TAGLINE STRIP */}
+        <div className="max-w-6xl mx-auto px-6 -mt-10 relative z-20 flex justify-center detail-block">
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/40 shadow-xl">
+            
+            <span className="w-1 h-4 bg-green rounded-full"></span>
+
+            <span className="text-sm md:text-base font-ssBD bg-gradient-to-r from-green to-greenH bg-clip-text text-transparent text-center">
+              Fixed Departures & Custom Packages
+            </span>
+
+            <span className="w-1 h-4 bg-green rounded-full"></span>
+          </div>
+        </div>
+
         {/* TAG + WHATSAPP */}
         <div className="max-w-6xl mx-auto px-6 mt-14 detail-block">
           <div className="flex sm:items-center gap-4 justify-between flex-wrap">
@@ -104,7 +118,7 @@ const TourPackageDetails = () => {
               className="group flex items-center gap-2 bg-green hover:bg-greenH text-white px-5 py-2.5 rounded-full transition-all shadow-lg hover:scale-[1.02] text-sm font-ssBookD"
             >
               <MessageCircle size={16} />
-              Chat with us
+              Book Now
             </button>
           </div>
         </div>

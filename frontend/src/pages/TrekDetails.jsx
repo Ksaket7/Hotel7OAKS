@@ -7,6 +7,7 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
+  Check,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
@@ -103,7 +104,7 @@ const TrekDetails = () => {
               className="flex items-center gap-2 bg-green hover:bg-greenH text-white px-5 py-2.5 rounded-full transition font-ssBookD"
             >
               <MessageCircle size={16} />
-              Chat with us
+              Book Now
             </button>
           </div>
         </div>
@@ -293,11 +294,13 @@ const TrekDetails = () => {
         {/* === INCLUSIONS / EXCLUSIONS === */}
         {(trek.included || trek.excluded) && (
           <div className="max-w-6xl mx-auto px-6 mt-20 grid md:grid-cols-2 gap-10 detail-block">
+            {/* INCLUDED */}
             {trek.included && (
               <div className="bg-gradient-to-br from-green/5 via-white to-emerald-50 p-8 rounded-3xl shadow-xl border border-green/20">
                 <h3 className="text-2xl font-ssBD bg-gradient-to-r from-green to-greenH bg-clip-text text-transparent mb-6">
                   What's Included
                 </h3>
+
                 <div className="space-y-3">
                   {trek.included.map((item, i) => (
                     <div
@@ -305,8 +308,9 @@ const TrekDetails = () => {
                       className="flex items-start gap-3 p-3 bg-white/50 rounded-xl hover:bg-white hover:shadow-sm transition-all"
                     >
                       <div className="w-6 h-6 bg-green rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
-                        <span className="text-white font-bold text-sm">✔️</span>
+                        <Check size={14} className="text-white" />
                       </div>
+
                       <span className="font-ssLB text-gray-900 leading-relaxed">
                         {item}
                       </span>
@@ -316,11 +320,13 @@ const TrekDetails = () => {
               </div>
             )}
 
+            {/* EXCLUDED */}
             {trek.excluded && (
               <div className="bg-gradient-to-br from-red/5 via-white to-rose-50 p-8 rounded-3xl shadow-xl border border-red/20">
                 <h3 className="text-2xl font-ssBD bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent mb-6">
                   Not Included
                 </h3>
+
                 <div className="space-y-3">
                   {trek.excluded.map((item, i) => (
                     <div
@@ -328,8 +334,9 @@ const TrekDetails = () => {
                       className="flex items-start gap-3 p-3 bg-white/50 rounded-xl hover:bg-white hover:shadow-sm transition-all"
                     >
                       <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
-                        <span className="text-white font-bold text-sm">✖️</span>
+                        <X size={14} className="text-white" />
                       </div>
+
                       <span className="font-ssLB text-gray-900 leading-relaxed">
                         {item}
                       </span>
