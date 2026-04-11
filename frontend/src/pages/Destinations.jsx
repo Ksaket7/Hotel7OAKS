@@ -68,7 +68,7 @@ const Destinations = () => {
         <div className="absolute inset-0 bg-black/30"></div>
 
         <div className="relative z-10 px-6 max-w-3xl">
-          <span className="inline-block px-5 py-1.5 mb-4 rounded-full text-sm text-white bg-white/10 border border-white/20 backdrop-blur-sm">
+          <span className="inline-block px-5 py-1.5 mb-4 rounded-full text-sm text-white bg-white/10 border border-white/20 backdrop-blur-sm font-ssBookD">
             Explore India
           </span>
 
@@ -76,7 +76,7 @@ const Destinations = () => {
             Destinations
           </h1>
 
-          <p className="text-white/85 text-base md:text-lg max-w-xl mx-auto">
+          <p className="text-white/85 text-base md:text-lg max-w-xl mx-auto font-ssLB">
             Discover breathtaking places across India.
           </p>
         </div>

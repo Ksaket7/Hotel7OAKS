@@ -2948,4 +2948,1115 @@ export const treksData = [
     about:
       "At 7 Oaks Trek and Travels, we provide safe and well-organized Beas Kund treks ideal for beginners and families. With experienced guides and comfortable camping, this trek offers a perfect introduction to the Himalayan trekking experience.",
   },
+
+  {
+    id: "triund-trek",
+    title: "Triund Trek",
+
+    intro:
+      "A classic Himalayan trek perfect for beginners, offering breathtaking views of the Dhauladhar range and Kangra Valley. Triund is known for its easy trail, scenic beauty, and unforgettable sunrise and sunset views.",
+
+    desc: "The Triund Trek is one of the most popular and accessible treks in Himachal Pradesh, starting from McLeod Ganj near Dharamshala. This short yet rewarding trek takes you through dense forests of oak, deodar, and rhododendron, gradually opening up to expansive views of the snow-covered Dhauladhar mountains on one side and the lush Kangra Valley on the other. Triund is often called the 'crown jewel of Dharamshala' due to its stunning ridge-top location. The trek is ideal for beginners, families, and weekend adventurers looking for a quick Himalayan escape. Camping under the stars at Triund is a magical experience, making it one of the best short treks in India.",
+
+    difficulty: "Easy",
+    days: "2 Days",
+    altitude: "9,350 ft / 2,850 m",
+    price: "₹3,999",
+    tag: "Weekend & Scenic Trek",
+    rating: "4.7",
+    reviews: "540",
+
+    region: "Dharamshala, Himachal Pradesh",
+    startingPoint: "McLeod Ganj",
+    distance: "9–10 km",
+    bestSeason: "March–June & September–December",
+
+    // ✅ HERO + GALLERY
+    images: [
+      "https://www.dpolohotels.com/wp-content/uploads/2024/11/Tips-for-an-Unforgettable-Triund-Trek-Experience-1.jpg",
+      "https://himtrek.co.in/wp-content/uploads/2025/10/Premium-Triund-Trek.webp",
+      "https://imagedelivery.net/b5BaLsj4VQverR1B1BtSow/d5dffa8d-44cc-4b4a-6a30-adb789d52800/w=3840,q=auto",
+      "https://curlygirlytravely.in/wp-content/uploads/2024/05/img20240427133241.jpg",
+      "https://karerihikers.com/wp-content/uploads/2023/01/07.jpg",
+      "https://himtrek.co.in/wp-content/uploads/2023/09/Mcleodganj-Triund-Trek.webp"
+    ],
+
+    // ✅ HIGHLIGHTS
+    highlights: [
+      {
+        title: "Dhauladhar Range Views",
+        desc: "Get stunning close-up views of the snow-covered Dhauladhar mountains.",
+        image: "https://www.dpolohotels.com/wp-content/uploads/2024/11/Tips-for-an-Unforgettable-Triund-Trek-Experience-1.jpg",
+      },
+      {
+        title: "Kangra Valley Panorama",
+        desc: "Witness breathtaking views of the vast Kangra Valley below.",
+        image: "https://himtrek.co.in/wp-content/uploads/2025/10/Premium-Triund-Trek.webp",
+      },
+      {
+        title: "Forest Trail",
+        desc: "Walk through scenic oak, rhododendron, and deodar forests.",
+        image: "https://himtrek.co.in/wp-content/uploads/2023/09/Mcleodganj-Triund-Trek.webp",
+      },
+      {
+        title: "Sunrise & Sunset",
+        desc: "Experience magical golden hour views from the ridge.",
+        image: "https://karerihikers.com/wp-content/uploads/2023/01/07.jpg",
+      },
+      {
+        title: "Camping Experience",
+        desc: "Camp under a sky full of stars in the Himalayas.",
+        image: "https://himtrek.co.in/wp-content/uploads/2025/10/Premium-Triund-Trek.webp",
+      },
+    ],
+
+    included: [
+      "Professional trek leader and local guides",
+      "Accommodation (camps at Triund)",
+      "Meals during the trek",
+      "Camping equipment",
+      "Basic first aid and safety support",
+    ],
+
+    excluded: [
+      "Personal trekking gear",
+      "Transport to/from base location",
+      "Travel insurance",
+      "Personal expenses",
+      "Anything not mentioned in inclusions",
+    ],
+
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "McLeod Ganj to Triund Trek",
+        details: [
+          "Altitude: 9,350 ft",
+          "Trek Distance: 9–10 km | 4–5 hrs",
+          "Gradual ascent through forest trail",
+          "Scenic views of Kangra Valley",
+          "Arrival at Triund & campsite setup",
+          "Overnight stay in camps",
+        ],
+      },
+      {
+        day: "Day 2",
+        title: "Triund to McLeod Ganj",
+        details: [
+          "Early morning sunrise view",
+          "Breakfast at campsite",
+          "Descend back to McLeod Ganj",
+          "Trek Distance: 9–10 km | 3–4 hrs",
+          "Trip ends",
+        ],
+      },
+    ],
+
+    map: "https://www.google.com/maps?q=triund+trek&output=embed",
+
+    about:
+      "At 7 Oaks Trek and Travels, we offer professionally guided Triund trekking experiences with experienced local guides, comfortable camping arrangements, and well-planned itineraries to ensure a safe and memorable Himalayan adventure. Whether you're a beginner or a nature lover, Triund is the perfect introduction to trekking in the Himalayas.",
+  },
+
+  {
+  id: "kheerganga-trek",
+  title: "Kheerganga Trek",
+
+  intro:
+    "A scenic Himalayan trek in the Parvati Valley, famous for its natural hot water springs, riverside trails, and spiritual aura. Perfect for beginners seeking a blend of adventure and relaxation.",
+
+  desc: "The Kheerganga Trek is one of the most popular treks in Himachal Pradesh, located in the beautiful Parvati Valley. Starting from Barshaini, the trail winds through dense pine forests, wooden bridges, waterfalls, and alongside the Parvati River. The trek is known for its relaxing hot water springs at the summit, where trekkers can soak and unwind after the climb. Kheerganga also holds spiritual significance, believed to be associated with Lord Shiva’s meditation. With its easy-to-moderate difficulty, scenic landscapes, and unique experience of natural hot springs, Kheerganga is a must-do trek for both beginners and experienced trekkers.",
+
+  difficulty: "Easy to Moderate",
+  days: "2–3 Days",
+  altitude: "9,711 ft / 2,960 m",
+  price: "₹4,499",
+  tag: "Hot Spring & Valley Trek",
+  rating: "4.8",
+  reviews: "610",
+
+  region: "Parvati Valley, Himachal Pradesh",
+  startingPoint: "Barshaini",
+  distance: "12–13 km",
+  bestSeason: "March–June & September–November",
+
+  // ✅ HERO + GALLERY
+  images: [
+    "https://himtrek.co.in/wp-content/uploads/2024/09/Kheerganga-Trek-2.webp",
+    "https://i0.wp.com/travelshoebum.com/wp-content/uploads/2017/04/dsc_5767.jpg?fit=4928%2C3264&ssl=1",
+    "https://media.moxtain.com/trekking/kheerganga-trek/1200/parvati-valley-kheerganga.webp",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKjswbAMNUjY8JksHuPiDsnObYd3ksHd4mtQ&s",
+    "https://www.trailhikers.in/wp-content/uploads/2019/11/Kheerganga-Trek-001.jpg",
+  ],
+
+  // ✅ HIGHLIGHTS
+  highlights: [
+    {
+      title: "Natural Hot Springs",
+      desc: "Relax in the natural hot water pools at the top of Kheerganga.",
+      image:
+        "https://himtrek.co.in/wp-content/uploads/2026/01/kheerganga-trek-winter-5-1200x700.webp",
+    },
+    {
+      title: "Parvati River Trail",
+      desc: "Trek alongside the beautiful Parvati River with scenic views.",
+      image:
+        "https://media.moxtain.com/trekking/kheerganga-trek/1200/parvati-valley-kheerganga.webp",
+    },
+    {
+      title: "Waterfalls & Forests",
+      desc: "Pass through dense forests, waterfalls, and wooden bridges.",
+      image:
+        "https://d3gw4aml0lneeh.cloudfront.net/assets/locations/Nu3viEo47KKL.jpg",
+    },
+    {
+      title: "Spiritual Significance",
+      desc: "A sacred site associated with Lord Shiva's meditation.",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKjswbAMNUjY8JksHuPiDsnObYd3ksHd4mtQ&s",
+    },
+    {
+      title: "Camping Experience",
+      desc: "Stay overnight in camps surrounded by mountains.",
+      image:
+        "https://static.toiimg.com/photo/64354462.cms",
+    },
+  ],
+
+  included: [
+    "Professional trek leader and local guides",
+    "Accommodation (camps at Kheerganga)",
+    "Meals during the trek",
+    "Camping equipment",
+    "Basic first aid and safety support",
+  ],
+
+  excluded: [
+    "Personal trekking gear",
+    "Transport to/from base location",
+    "Travel insurance",
+    "Personal expenses",
+    "Anything not mentioned in inclusions",
+  ],
+
+  itinerary: [
+    {
+      day: "Day 1",
+      title: "Barshaini to Kheerganga Trek",
+      details: [
+        "Altitude: 9,711 ft",
+        "Trek Distance: 12–13 km | 5–6 hrs",
+        "Trail through forests and waterfalls",
+        "Walk along Parvati River",
+        "Arrival at Kheerganga campsite",
+        "Enjoy hot water springs",
+        "Overnight stay in camps",
+      ],
+    },
+    {
+      day: "Day 2",
+      title: "Kheerganga to Barshaini",
+      details: [
+        "Morning at campsite",
+        "Optional hot spring bath",
+        "Descend back to Barshaini",
+        "Trek Distance: 12–13 km | 4–5 hrs",
+        "Trip ends",
+      ],
+    },
+  ],
+
+  map: "https://www.google.com/maps?q=kheerganga+trek&output=embed",
+
+  about:
+    "At 7 Oaks Trek and Travels, we organize safe and memorable Kheerganga trekking experiences with experienced guides, comfortable camps, and well-planned itineraries. Whether you're seeking adventure, relaxation, or a spiritual escape, Kheerganga offers the perfect Himalayan getaway.",
+},
+
+{
+  id: "kareri-lake-trek",
+  title: "Kareri Lake Trek",
+
+  intro:
+    "A serene alpine lake trek in Himachal Pradesh, offering crystal-clear waters, lush forests, and breathtaking views of the Dhauladhar range.",
+
+  desc: "The Kareri Lake Trek is a beautiful and relatively lesser-known trek located in the Kangra district of Himachal Pradesh. Starting from Kareri Village near Dharamshala, the trail takes you through dense pine forests, charming villages, and scenic mountain streams. Kareri Lake, situated at a high altitude, is known for its crystal-clear glacial water and tranquil surroundings. The lake reflects the surrounding snow-covered peaks, creating a picture-perfect Himalayan landscape. This trek is ideal for beginners and nature lovers who want to experience an offbeat Himalayan trail with minimal crowds and stunning natural beauty.",
+
+  difficulty: "Easy to Moderate",
+  days: "3–4 Days",
+  altitude: "9,600 ft / 2,926 m",
+  price: "₹6,999",
+  tag: "Alpine Lake Trek",
+  rating: "4.7",
+  reviews: "320",
+
+  region: "Kangra District, Himachal Pradesh",
+  startingPoint: "Kareri Village",
+  distance: "26 km",
+  bestSeason: "April–June & September–November",
+
+  // ✅ HERO + GALLERY
+  images: [
+    "https://himtrek.co.in/wp-content/uploads/2025/10/Kareri-Lake-Trek-3-1200x700.webp",
+    "https://himalayanambition.in/wp-content/uploads/2022/10/kareri-lake-trek.jpg",
+    "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1728986046/banbanjara/tx4ci18tkj2dv2oekubz.webp",
+    "https://himalayashelter.com/static/images/20251206_105259_kareri_lake_trek.jpg",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/10/be/ef/kareri-lake-is-a-beautiful.jpg?w=1200&h=-1&s=1",
+  ],
+
+  // ✅ HIGHLIGHTS
+  highlights: [
+    {
+      title: "Kareri Lake",
+      desc: "A pristine high-altitude lake with crystal-clear glacial water.",
+      image:
+        "https://himtrek.co.in/wp-content/uploads/2025/10/Kareri-Lake-Trek-3-1200x700.webp",
+    },
+    {
+      title: "Dhauladhar Views",
+      desc: "Witness majestic views of the snow-covered Dhauladhar range.",
+      image:
+        "https://himalayanambition.in/wp-content/uploads/2022/10/kareri-lake-trek.jpg",
+    },
+    {
+      title: "Forest Trails",
+      desc: "Trek through dense pine, oak, and rhododendron forests.",
+      image:
+        "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1728986046/banbanjara/tx4ci18tkj2dv2oekubz.webp",
+    },
+    {
+      title: "Riverside Camps",
+      desc: "Camp near flowing streams and peaceful Himalayan landscapes.",
+      image:
+        "https://himalayashelter.com/static/images/20251206_105259_kareri_lake_trek.jpg",
+    },
+    {
+      title: "Offbeat Experience",
+      desc: "Enjoy a peaceful trek away from heavy tourist crowds.",
+      image:
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/10/be/ef/kareri-lake-is-a-beautiful.jpg?w=1200&h=-1&s=1",
+    },
+  ],
+
+  included: [
+    "Professional trek leader and local guides",
+    "Accommodation (camps during trek)",
+    "Meals during the trek",
+    "Camping equipment",
+    "Basic first aid and safety support",
+  ],
+
+  excluded: [
+    "Personal trekking gear",
+    "Transport to/from base location",
+    "Travel insurance",
+    "Personal expenses",
+    "Anything not mentioned in inclusions",
+  ],
+
+  itinerary: [
+    {
+      day: "Day 1",
+      title: "Arrival at Kareri Village",
+      details: [
+        "Drive from Dharamshala to Kareri Village",
+        "Explore local village surroundings",
+        "Briefing about trek",
+        "Overnight stay in homestay/camp",
+      ],
+    },
+    {
+      day: "Day 2",
+      title: "Kareri Village to Kareri Lake",
+      details: [
+        "Altitude: 9,600 ft",
+        "Trek Distance: 13 km | 5–6 hrs",
+        "Trail through forests and streams",
+        "Arrival at Kareri Lake campsite",
+        "Overnight stay near lake",
+      ],
+    },
+    {
+      day: "Day 3",
+      title: "Kareri Lake to Kareri Village",
+      details: [
+        "Morning exploration of lake",
+        "Descend back to Kareri Village",
+        "Trek Distance: 13 km | 4–5 hrs",
+        "Overnight stay / Departure",
+      ],
+    },
+  ],
+
+  map: "https://www.google.com/maps?q=kareri+lake+himachal&output=embed",
+
+  about:
+    "At 7 Oaks Trek and Travels, we organize guided Kareri Lake trekking experiences with experienced local guides, comfortable camping arrangements, and carefully planned itineraries to ensure a safe and peaceful Himalayan adventure. Perfect for those seeking an offbeat and scenic trek experience.",
+},
+
+{
+  id: "bhrigu-lake-trek",
+  title: "Bhrigu Lake Trek",
+
+  intro:
+    "A high-altitude alpine lake trek known for vast meadows, panoramic Himalayan views, and a sacred glacial lake near Manali.",
+
+  desc: "The Bhrigu Lake Trek is one of the most scenic high-altitude treks in Himachal Pradesh, located near Manali. Famous for its lush green alpine meadows that resemble the grasslands of Switzerland, this trek offers breathtaking views of prominent Himalayan peaks like Hanuman Tibba, Seven Sisters, and Deo Tibba. Bhrigu Lake, situated at a high altitude, is considered sacred and is believed to be associated with Maharishi Bhrigu. The trek is unique because you quickly gain altitude and reach high-altitude landscapes within a short duration. With expansive meadows, snow patches, and stunning mountain vistas, Bhrigu Lake Trek is perfect for those seeking a short yet rewarding Himalayan adventure.",
+
+  difficulty: "Moderate",
+  days: "4 Days",
+  altitude: "14,100 ft / 4,300 m",
+  price: "₹8,999",
+  tag: "Alpine Meadow & Lake Trek",
+  rating: "4.8",
+  reviews: "410",
+
+  region: "Manali, Himachal Pradesh",
+  startingPoint: "Gulaba",
+  distance: "25 km",
+  bestSeason: "May–October",
+
+  // ✅ HERO + GALLERY
+  images: [
+    "https://backpackersunited.in/_next/image?url=https%3A%2F%2Fbpu-images-v1.s3.eu-north-1.amazonaws.com%2Fuploads%2Ftestimage-bhrigu%20ci.webp&w=1920&q=75",
+    "https://mountainsojourns.com/wp-content/uploads/36_BhriguLakeTrek-Manali.jpg",
+    "https://himalayashelter.com/static/images/20251206_104710_bhrigu_lake_trek.jpg",
+    "https://vl-prod-static.b-cdn.net/system/images/000/586/399/f44444669532e4a8d4bef8754de44893/original/1568118448921-bhrigulakeBanBanjara.jpg",
+    "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
+  ],
+
+  // ✅ HIGHLIGHTS
+  highlights: [
+    {
+      title: "Bhrigu Lake",
+      desc: "A sacred high-altitude glacial lake with stunning reflections.",
+      image:
+        "https://backpackersunited.in/_next/image?url=https%3A%2F%2Fbpu-images-v1.s3.eu-north-1.amazonaws.com%2Fuploads%2Ftestimage-bhrigu%20ci.webp&w=1920&q=75",
+    },
+    {
+      title: "Alpine Meadows",
+      desc: "Walk through vast green meadows resembling European landscapes.",
+      image:
+        "https://mountainsojourns.com/wp-content/uploads/36_BhriguLakeTrek-Manali.jpg",
+    },
+    {
+      title: "Panoramic Himalayan Views",
+      desc: "Witness peaks like Hanuman Tibba and Deo Tibba.",
+      image:
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/10/be/ef/kareri-lake-is-a-beautiful.jpg?w=1200&h=-1&s=1",
+    },
+    {
+      title: "High Altitude Experience",
+      desc: "Reach over 14,000 ft within a short trek duration.",
+      image:
+        "https://himalayashelter.com/static/images/20251206_105259_kareri_lake_trek.jpg",
+    },
+    {
+      title: "Camping in Meadows",
+      desc: "Enjoy scenic campsites surrounded by mountains.",
+      image:
+        "https://trekveda.com/img/packageImage/bhrigu-lake-trek-4.jpg",
+    },
+  ],
+
+  included: [
+    "Professional trek leader and local guides",
+    "Accommodation (camps during trek)",
+    "Meals during the trek",
+    "Camping equipment",
+    "Basic first aid and safety support",
+  ],
+
+  excluded: [
+    "Personal trekking gear",
+    "Transport to/from base location",
+    "Travel insurance",
+    "Personal expenses",
+    "Anything not mentioned in inclusions",
+  ],
+
+  itinerary: [
+    {
+      day: "Day 1",
+      title: "Manali to Gulaba & Trek to Rola Kholi",
+      details: [
+        "Drive Distance: 22 km from Manali",
+        "Trek Distance: 6 km | 4–5 hrs",
+        "Gradual ascent through forests and meadows",
+        "Camp at Rola Kholi",
+      ],
+    },
+    {
+      day: "Day 2",
+      title: "Rola Kholi to Bhrigu Lake & Back",
+      details: [
+        "Altitude: 14,100 ft",
+        "Trek Distance: 10 km (round trip)",
+        "Steep climb to Bhrigu Lake",
+        "Explore lake and surroundings",
+        "Return to campsite",
+      ],
+    },
+    {
+      day: "Day 3",
+      title: "Rola Kholi to Gulaba",
+      details: [
+        "Trek Distance: 6 km | 3–4 hrs",
+        "Descend through meadows",
+        "Drive back to Manali",
+      ],
+    },
+    {
+      day: "Day 4",
+      title: "Departure from Manali",
+      details: [
+        "Trip ends",
+        "Optional sightseeing in Manali",
+      ],
+    },
+  ],
+
+  map: "https://www.google.com/maps?q=bhrigu+lake+manali&output=embed",
+
+  about:
+    "At 7 Oaks Trek and Travels, we offer professionally guided Bhrigu Lake trekking experiences with experienced local guides, quality camping arrangements, and carefully planned itineraries to ensure safety and comfort. This trek is perfect for those seeking a high-altitude Himalayan adventure within a short duration.",
+},
+
+{
+  id: "beas-kund-trek",
+  title: "Beas Kund Trek",
+
+  intro:
+    "A short yet rewarding Himalayan trek leading to the origin of the Beas River, surrounded by towering snow-clad peaks near Manali.",
+
+  desc: "The Beas Kund Trek is a beautiful high-altitude trek in Himachal Pradesh that takes you to the source of the Beas River. Starting from Solang Valley near Manali, the trail passes through lush green meadows, glacial streams, and rocky terrains, offering stunning views of prominent peaks like Hanuman Tibba, Friendship Peak, and Shitidhar. Beas Kund is a small alpine lake formed by glacial meltwater and holds mythological significance, believed to be the meditation site of Sage Vyas. The trek is ideal for beginners looking for a short Himalayan adventure with incredible mountain scenery and a touch of spirituality.",
+
+  difficulty: "Moderate",
+  days: "3 Days",
+  altitude: "12,772 ft / 3,894 m",
+  price: "₹7,499",
+  tag: "Glacial Source Trek",
+  rating: "4.7",
+  reviews: "380",
+
+  region: "Manali, Himachal Pradesh",
+  startingPoint: "Solang Valley",
+  distance: "16 km",
+  bestSeason: "May–October",
+
+  // ✅ HERO + GALLERY
+  images: [
+    "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1700289195/bbj/fiytvtsirqsomej1b2j8.jpg",
+    "https://www.treksandtrails.org/system/images/000/237/726/f1f9b59fd2d8e82957d81b9e494a365e/banner/Beas-Kund.jpg",
+    "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-Beas-kund-trek2233-Bikat-Adventures.jpg",
+    "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/BeasKundManali/beas-kund-campsite.jpeg",
+    "https://himtrek.co.in/wp-content/uploads/2023/09/Beas-Kund-Trek-Manali-1-1.webp",
+  ],
+
+  // ✅ HIGHLIGHTS
+  highlights: [
+    {
+      title: "Beas Kund",
+      desc: "A sacred glacial lake and the origin of the Beas River.",
+      image:
+        "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
+    },
+    {
+      title: "Hanuman Tibba Views",
+      desc: "Close views of towering peaks like Hanuman Tibba and Friendship Peak.",
+      image:
+        "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
+    },
+    {
+      title: "Alpine Meadows",
+      desc: "Walk through lush green meadows and open landscapes.",
+      image:
+        "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
+    },
+    {
+      title: "Glacial Streams",
+      desc: "Cross crystal-clear streams flowing from glaciers.",
+      image:
+        "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
+    },
+    {
+      title: "Camping Experience",
+      desc: "Camp in scenic high-altitude campsites under the stars.",
+      image:
+        "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
+    },
+  ],
+
+  included: [
+    "Professional trek leader and local guides",
+    "Accommodation (camps during trek)",
+    "Meals during the trek",
+    "Camping equipment",
+    "Basic first aid and safety support",
+  ],
+
+  excluded: [
+    "Personal trekking gear",
+    "Transport to/from base location",
+    "Travel insurance",
+    "Personal expenses",
+    "Anything not mentioned in inclusions",
+  ],
+
+  itinerary: [
+    {
+      day: "Day 1",
+      title: "Manali to Solang Valley & Trek to Dhundi/Bakarthach",
+      details: [
+        "Drive from Manali to Solang Valley",
+        "Trek Distance: 6–7 km | 4–5 hrs",
+        "Trail through meadows and river streams",
+        "Camp at Dhundi / Bakarthach",
+      ],
+    },
+    {
+      day: "Day 2",
+      title: "Dhundi to Beas Kund & Return",
+      details: [
+        "Altitude: 12,772 ft",
+        "Trek Distance: 6 km (round trip)",
+        "Gradual ascent to Beas Kund",
+        "Explore lake and surrounding peaks",
+        "Return to campsite",
+      ],
+    },
+    {
+      day: "Day 3",
+      title: "Descend to Solang & Drive to Manali",
+      details: [
+        "Trek Distance: 6–7 km | 3–4 hrs",
+        "Descend through same route",
+        "Drive back to Manali",
+        "Trip ends",
+      ],
+    },
+  ],
+
+  map: "https://www.google.com/maps?q=beas+kund+manali&output=embed",
+
+  about:
+    "At 7 Oaks Trek and Travels, we organize professionally guided Beas Kund trekking experiences with experienced local guides, comfortable camping arrangements, and well-planned itineraries. This trek is perfect for those seeking a short yet scenic Himalayan adventure with incredible mountain views.",
+},
+
+{
+  id: "prashar-lake-trek",
+  title: "Prashar Lake Trek",
+
+  intro:
+    "A scenic Himalayan trek leading to the mystical Prashar Lake, famous for its floating island and panoramic views of the Dhauladhar range.",
+
+  desc: "The Prashar Lake Trek is a beautiful and relatively easy trek located in the Mandi district of Himachal Pradesh. The trail takes you through dense forests, charming villages, and open meadows, offering stunning views of the Dhauladhar mountain range. Prashar Lake is known for its unique floating island that changes position over time, adding to the mystery of the place. The lake is also home to the ancient Prashar Rishi Temple, making it both a scenic and spiritual destination. This trek is ideal for beginners, weekend travelers, and those looking for a peaceful Himalayan escape.",
+
+  difficulty: "Easy to Moderate",
+  days: "2–3 Days",
+  altitude: "8,956 ft / 2,730 m",
+  price: "₹5,499",
+  tag: "Lake & Cultural Trek",
+  rating: "4.7",
+  reviews: "350",
+
+  region: "Mandi District, Himachal Pradesh",
+  startingPoint: "Baggi Village",
+  distance: "16 km",
+  bestSeason: "March–June & September–December",
+
+  // ✅ HERO + GALLERY
+  images: [
+    "https://himtrek.co.in/wp-content/uploads/2024/07/Prashar-Lake.webp",
+    "https://himtrek.co.in/wp-content/uploads/2025/12/frozen-Prashar-Lake-Trek.webp",
+    "https://himtrek.co.in/wp-content/uploads/2025/12/Prashar-Lake-Trek-1200x700.webp",
+    "https://happygotrips.com/wp-content/uploads/2019/09/Prashar-Lake-Trek-Tour-2.jpg",
+    "https://gokyo.in/cdn/shop/articles/Untitled_design_76_01a37e2f-a176-4638-afb4-d315bb6e87b5.jpg?v=1764672258&width=2048",
+    "https://imagedelivery.net/b5BaLsj4VQverR1B1BtSow/d697c205-b367-451b-883f-dc6296f2d000/w=640,q=80"
+  ],
+
+  // ✅ HIGHLIGHTS
+  highlights: [
+    {
+      title: "Prashar Lake",
+      desc: "A serene lake with a mysterious floating island.",
+      image:
+        "https://himtrek.co.in/wp-content/uploads/2024/07/Prashar-Lake.webp",
+    },
+    {
+      title: "Floating Island",
+      desc: "Witness the unique floating landmass that shifts within the lake.",
+      image:
+        "https://himtrek.co.in/wp-content/uploads/2025/12/Prashar-Lake-Trek-1200x700.webp",
+    },
+    {
+      title: "Prashar Rishi Temple",
+      desc: "Ancient temple showcasing Himachali architecture and spiritual heritage.",
+      image:
+        "https://imagedelivery.net/b5BaLsj4VQverR1B1BtSow/d697c205-b367-451b-883f-dc6296f2d000/w=640,q=80",
+    },
+    {
+      title: "Dhauladhar Views",
+      desc: "Panoramic views of the Dhauladhar mountain range.",
+      image:
+        "https://happygotrips.com/wp-content/uploads/2019/09/Prashar-Lake-Trek-Tour-2.jpg",
+    },
+    {
+      title: "Forest & Meadow Trails",
+      desc: "Trek through scenic forests and open Himalayan landscapes.",
+      image:
+        "https://madtrek.com/wp-content/uploads/2022/01/prashar_lake_madtrek-scaled-1.jpg",
+    },
+  ],
+
+  included: [
+    "Professional trek leader and local guides",
+    "Accommodation (camps / guesthouse)",
+    "Meals during the trek",
+    "Camping equipment",
+    "Basic first aid and safety support",
+  ],
+
+  excluded: [
+    "Personal trekking gear",
+    "Transport to/from base location",
+    "Travel insurance",
+    "Personal expenses",
+    "Anything not mentioned in inclusions",
+  ],
+
+  itinerary: [
+    {
+      day: "Day 1",
+      title: "Drive to Baggi & Trek to Prashar Lake",
+      details: [
+        "Drive from Mandi to Baggi Village",
+        "Trek Distance: 8 km | 4–5 hrs",
+        "Trail through forests and meadows",
+        "Arrival at Prashar Lake",
+        "Explore lake and temple",
+        "Overnight stay in camps / guesthouse",
+      ],
+    },
+    {
+      day: "Day 2",
+      title: "Explore & Descend to Baggi",
+      details: [
+        "Morning exploration of lake",
+        "Optional sunrise view",
+        "Descend back to Baggi Village",
+        "Trek Distance: 8 km | 3–4 hrs",
+        "Trip ends",
+      ],
+    },
+  ],
+
+  map: "https://www.google.com/maps?q=prashar+lake+himachal&output=embed",
+
+  about:
+    "At 7 Oaks Trek and Travels, we offer professionally guided Prashar Lake trekking experiences with experienced guides, comfortable accommodations, and well-planned itineraries. This trek is perfect for those seeking a short, scenic, and culturally rich Himalayan getaway.",
+},
+
+{
+  id: "indrahar-pass-trek",
+  title: "Indrahar Pass Trek",
+
+  intro:
+    "A challenging Himalayan trek that crosses the mighty Dhauladhar range, offering dramatic landscapes, rocky terrains, and breathtaking high-altitude views.",
+
+  desc: "The Indrahar Pass Trek is one of the most thrilling and adventurous treks in Himachal Pradesh, starting from McLeod Ganj near Dharamshala. This trek takes you through dense forests, alpine meadows, and rugged rocky terrains as you ascend towards the Indrahar Pass. The pass acts as a natural gateway between the Kangra and Chamba valleys, offering stunning panoramic views of both regions. As you gain altitude, the landscape transforms dramatically from lush greenery to barren high-altitude terrain. This trek is ideal for experienced trekkers seeking a challenging Himalayan adventure with rewarding summit views and diverse landscapes.",
+
+  difficulty: "Difficult",
+  days: "5–6 Days",
+  altitude: "14,245 ft / 4,342 m",
+  price: "₹10,999",
+  tag: "High Altitude Pass Trek",
+  rating: "4.8",
+  reviews: "290",
+
+  region: "Dharamshala, Himachal Pradesh",
+  startingPoint: "McLeod Ganj / Dharamkot",
+  distance: "35 km",
+  bestSeason: "May–June & September–October",
+
+  // ✅ HERO + GALLERY
+  images: [
+    "https://d2qa7a8q0vuocm.cloudfront.net/images/26045220190611050156.png",
+    "https://imgcld.yatra.com/ytimages/image/upload/v1517481009/AdvNation/ANN_TRP341/Indrahar_Pass_Trek_(3)_1437978661_qVE6HX.jpg",
+    "https://himalayanambition.in/wp-content/uploads/2023/09/1565067-1565066_trek-to-bharmour-over-indrahar-pass.jpg",
+    "https://pmlholidays.com/admin/production/images/packages/indrahar-pass_1.png",
+    "https://www.legendindiaholidays.com/images/trek5.webp",
+  ],
+
+  // ✅ HIGHLIGHTS
+  highlights: [
+    {
+      title: "Indrahar Pass Summit",
+      desc: "Reach the high-altitude pass connecting Kangra and Chamba valleys.",
+      image:
+        "https://d2qa7a8q0vuocm.cloudfront.net/images/26045220190611050156.png",
+    },
+    {
+      title: "Dhauladhar Range",
+      desc: "Experience dramatic landscapes of the rugged Dhauladhar mountains.",
+      image:
+        "https://imgcld.yatra.com/ytimages/image/upload/v1517481009/AdvNation/ANN_TRP341/Indrahar_Pass_Trek_(3)_1437978661_qVE6HX.jpg",
+    },
+    {
+      title: "Alpine Meadows",
+      desc: "Walk through scenic meadows before entering rocky terrain.",
+      image:
+        "https://www.legendindiaholidays.com/images/trek5.webp",
+    },
+    {
+      title: "Triund & Lahesh Caves",
+      desc: "Camp at famous spots like Triund and Lahesh Caves.",
+      image:
+        "https://pmlholidays.com/admin/production/images/packages/indrahar-pass_1.png",
+    },
+    {
+      title: "Panoramic Valley Views",
+      desc: "Witness stunning views of both Kangra and Chamba valleys.",
+      image:
+        "https://himalayanambition.in/wp-content/uploads/2023/09/1565067-1565066_trek-to-bharmour-over-indrahar-pass.jpg",
+    },
+  ],
+
+  included: [
+    "Professional trek leader and local guides",
+    "Accommodation (camps during trek)",
+    "Meals during the trek",
+    "Camping equipment",
+    "Basic first aid and safety support",
+  ],
+
+  excluded: [
+    "Personal trekking gear",
+    "Transport to/from base location",
+    "Travel insurance",
+    "Personal expenses",
+    "Anything not mentioned in inclusions",
+  ],
+
+  itinerary: [
+    {
+      day: "Day 1",
+      title: "McLeod Ganj to Triund",
+      details: [
+        "Trek Distance: 9–10 km | 4–5 hrs",
+        "Forest trail with gradual ascent",
+        "Arrival at Triund campsite",
+        "Overnight stay in camps",
+      ],
+    },
+    {
+      day: "Day 2",
+      title: "Triund to Lahesh Caves",
+      details: [
+        "Trek Distance: 6 km | 4–5 hrs",
+        "Steeper trail with rocky terrain",
+        "Camp near Lahesh Caves",
+      ],
+    },
+    {
+      day: "Day 3",
+      title: "Lahesh Caves to Indrahar Pass & Return",
+      details: [
+        "Altitude: 14,245 ft",
+        "Early morning summit push",
+        "Rocky climb to pass",
+        "Panoramic Himalayan views",
+        "Return to campsite",
+      ],
+    },
+    {
+      day: "Day 4",
+      title: "Descend to Triund",
+      details: [
+        "Trek back via same route",
+        "Overnight stay at Triund",
+      ],
+    },
+    {
+      day: "Day 5",
+      title: "Triund to McLeod Ganj",
+      details: [
+        "Descend to base",
+        "Trip ends",
+      ],
+    },
+  ],
+
+  map: "https://www.google.com/maps?q=indrahar+pass&output=embed",
+
+  about:
+    "At 7 Oaks Trek and Travels, we organize professionally guided Indrahar Pass trekking experiences with experienced guides, proper acclimatization planning, and safety-focused itineraries. This trek is ideal for experienced trekkers looking for a challenging and rewarding Himalayan expedition.",
+}, 
+
+{
+  id: "sar-pass-trek",
+  title: "Sar Pass Trek",
+
+  intro:
+    "A thrilling high-altitude trek in Parvati Valley known for snow trails, dense forests, and dramatic landscape transitions from green meadows to icy slopes.",
+
+  desc: "The Sar Pass Trek is one of the most exciting treks in Himachal Pradesh, located in the beautiful Parvati Valley near Kasol. This trek is famous for its constantly changing landscapes, starting from dense pine forests and charming villages, moving into lush meadows, and finally reaching snow-covered terrain near the Sar Pass. The highlight of the trek is crossing the Sar Pass itself, often covered in snow, followed by an exhilarating descent on snow slopes. With scenic campsites, river crossings, and panoramic Himalayan views, Sar Pass is a perfect blend of adventure and natural beauty, making it ideal for thrill-seekers and trekking enthusiasts.",
+
+  difficulty: "Moderate to Difficult",
+  days: "5 Days",
+  altitude: "13,800 ft / 4,200 m",
+  price: "₹9,999",
+  tag: "Snow & Adventure Trek",
+  rating: "4.8",
+  reviews: "460",
+
+  region: "Parvati Valley, Himachal Pradesh",
+  startingPoint: "Kasol",
+  distance: "48 km",
+  bestSeason: "April–June & September–October",
+
+  // ✅ HERO + GALLERY
+  images: [
+    "https://himalayandaredevils.com/storage/uploads/694d0971df128.jpg",
+    "https://www.kailashrath.com/_next/image?url=https%3A%2F%2Fkailash-rath-treks.s3.ap-south-1.amazonaws.com%2F60433a09-8572-4-H8n_gAWq.webp&w=3840&q=75",
+    "https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20250325-284658011-1742897732.png",
+    "https://kailash-rath-treks.s3.ap-south-1.amazonaws.com/353113f7-a3a6-4-jHV6deiM.webp",
+    "https://vl-prod-static.b-cdn.net/system/images/000/854/555/66b6395d671aa45ebed2c6095e55b4f1/original/Screenshot_2025-07-24_172752.png",
+  ],
+
+  // ✅ HIGHLIGHTS
+  highlights: [
+    {
+      title: "Sar Pass Crossing",
+      desc: "Experience crossing a high-altitude snow-covered pass.",
+      image:
+        "https://himalayandaredevils.com/storage/uploads/694d0971df128.jpg",
+    },
+    {
+      title: "Snow Slides",
+      desc: "Enjoy thrilling snow descents after crossing the pass.",
+      image:
+        "https://www.kailashrath.com/_next/image?url=https%3A%2F%2Fkailash-rath-treks.s3.ap-south-1.amazonaws.com%2F60433a09-8572-4-H8n_gAWq.webp&w=3840&q=75",
+    },
+    {
+      title: "Forest Trails",
+      desc: "Walk through dense pine and oak forests near Kasol.",
+      image:
+        "https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20250325-284658011-1742897732.png",
+    },
+    {
+      title: "Beautiful Campsites",
+      desc: "Camp at scenic locations like Grahan, Min Thach, and Nagaru.",
+      image:
+        "https://kailash-rath-treks.s3.ap-south-1.amazonaws.com/353113f7-a3a6-4-jHV6deiM.webp",
+    },
+    {
+      title: "Panoramic Views",
+      desc: "Witness breathtaking Himalayan landscapes throughout the trek.",
+      image:
+        "https://www.kailashrath.com/_next/image?url=https%3A%2F%2Fkailash-rath-treks.s3.ap-south-1.amazonaws.com%2F60433a09-8572-4-H8n_gAWq.webp&w=3840&q=75",
+    },
+  ],
+
+  included: [
+    "Professional trek leader and local guides",
+    "Accommodation (camps during trek)",
+    "Meals during the trek",
+    "Camping equipment",
+    "Basic first aid and safety support",
+  ],
+
+  excluded: [
+    "Personal trekking gear",
+    "Transport to/from base location",
+    "Travel insurance",
+    "Personal expenses",
+    "Anything not mentioned in inclusions",
+  ],
+
+  itinerary: [
+    {
+      day: "Day 1",
+      title: "Kasol to Grahan Village",
+      details: [
+        "Trek Distance: 9 km | 4–5 hrs",
+        "Trail through forest and riverside",
+        "Arrival at Grahan Village",
+        "Overnight stay in camps",
+      ],
+    },
+    {
+      day: "Day 2",
+      title: "Grahan to Min Thach",
+      details: [
+        "Trek Distance: 7 km | 5–6 hrs",
+        "Steeper climb through forests",
+        "Arrival at Min Thach campsite",
+      ],
+    },
+    {
+      day: "Day 3",
+      title: "Min Thach to Nagaru",
+      details: [
+        "Trek Distance: 6 km | 4–5 hrs",
+        "Transition to alpine terrain",
+        "Cold high-altitude campsite",
+      ],
+    },
+    {
+      day: "Day 4",
+      title: "Nagaru to Sar Pass & Descend to Biskeri Thach",
+      details: [
+        "Altitude: 13,800 ft",
+        "Early morning climb to Sar Pass",
+        "Snow-covered trail",
+        "Exciting snow descent",
+        "Camp at Biskeri Thach",
+      ],
+    },
+    {
+      day: "Day 5",
+      title: "Biskeri Thach to Barshaini & Departure",
+      details: [
+        "Trek Distance: 10 km | 4–5 hrs",
+        "Descend through forests and meadows",
+        "Drive back to Kasol",
+        "Trip ends",
+      ],
+    },
+  ],
+
+  map: "https://www.google.com/maps?q=sar+pass+trek&output=embed",
+
+  about:
+    "At 7 Oaks Trek and Travels, we organize professionally guided Sar Pass trekking experiences with experienced guides, proper acclimatization planning, and safe camping arrangements. This trek is perfect for adventure seekers looking for a thrilling Himalayan experience with snow, forests, and stunning views.",
+},
+
+{
+  id: "chandratal-lake-trek",
+  title: "Chandratal Lake Trek",
+
+  intro:
+    "A breathtaking high-altitude trek to the famous Chandratal Lake, known as the 'Moon Lake', set amidst the dramatic landscapes of Spiti Valley.",
+
+  desc: "The Chandratal Lake Trek is one of the most stunning high-altitude experiences in Himachal Pradesh, located in the remote and rugged Spiti Valley. Known as the 'Moon Lake' due to its crescent shape, Chandratal sits at an altitude of over 14,000 ft and is surrounded by barren mountains and vast open skies. The trek offers a unique contrast to lush Himalayan trails, featuring cold desert terrain, crystal-clear blue waters, and mesmerizing reflections of the surrounding peaks. The journey to Chandratal itself is an adventure, passing through iconic locations like Rohtang Pass and Kunzum Pass. This trek is ideal for those seeking a raw and surreal Himalayan experience far from crowded trails.",
+
+  difficulty: "Moderate",
+  days: "4–5 Days",
+  altitude: "14,100 ft / 4,300 m",
+  price: "₹11,999",
+  tag: "High Altitude Lake Trek",
+  rating: "4.9",
+  reviews: "280",
+
+  region: "Spiti Valley, Himachal Pradesh",
+  startingPoint: "Batal",
+  distance: "14 km",
+  bestSeason: "June–September",
+
+  // ✅ HERO + GALLERY
+  images: [
+    "https://thrilltourism.com/storage/2353/oP2FIJ0VtMbwOIZGTIg4DlK6ga6N3y8KhRaiSKm7.jpg",
+    "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_images/68c9c78020591.webp",
+    "https://www.peakadventuretour.com/assets/images/chandratal-trek2.webp",
+    "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/ChandratalLake/chandratal-lake.jpg",
+    "https://vl-prod-static.b-cdn.net/system/images/000/831/144/44488055a0fa7db971593c2dd681ba0f/original/8261a49b-0c0f-4556-8821-ac404ae6a9c3.JPG",
+    "https://www.adventurush.com/wp-content/uploads/2022/08/Copy-of-Copy-of-IMG-20220709-WA0126.jpg",
+  ],
+
+  // ✅ HIGHLIGHTS
+  highlights: [
+    {
+      title: "Chandratal Lake",
+      desc: "A crescent-shaped high-altitude lake with crystal-clear blue water.",
+      image:
+        "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_images/68c9c78020591.webp",
+    },
+    {
+      title: "Spiti Landscape",
+      desc: "Experience the dramatic cold desert terrain of Spiti Valley.",
+      image:
+        "https://storage.googleapis.com/stateless-www-justwravel-com/2019/03/Spiti-Road-Trip-JustWravel-7.jpg",
+    },
+    {
+      title: "Kunzum Pass Route",
+      desc: "Cross the iconic Kunzum Pass with breathtaking views.",
+      image:
+        "hhttps://i0.wp.com/theroadsandbeyond.com/wp-content/uploads/2017/08/kunzum-pass.jpg?resize=780%2C520&ssl=1",
+    },
+    {
+      title: "Night Sky Experience",
+      desc: "Witness one of the clearest starry skies in the Himalayas.",
+      image:
+        "https://thrilltourism.com/storage/2353/oP2FIJ0VtMbwOIZGTIg4DlK6ga6N3y8KhRaiSKm7.jpg",
+    },
+    {
+      title: "Remote Himalayan Beauty",
+      desc: "Explore untouched and less crowded high-altitude terrain.",
+      image:
+        "https://himalayashelter.com/static/images/08_feb_2025_11_46_26-chandratal-baralacha-trek.jpg",
+    },
+  ],
+
+  included: [
+    "Professional trek leader and local guides",
+    "Accommodation (camps during trek)",
+    "Meals during the trek",
+    "Camping equipment",
+    "Basic first aid and safety support",
+  ],
+
+  excluded: [
+    "Personal trekking gear",
+    "Transport to/from base location",
+    "Travel insurance",
+    "Personal expenses",
+    "Anything not mentioned in inclusions",
+  ],
+
+  itinerary: [
+    {
+      day: "Day 1",
+      title: "Manali to Batal",
+      details: [
+        "Drive via Rohtang Pass",
+        "Scenic journey through high-altitude terrain",
+        "Overnight stay at Batal",
+      ],
+    },
+    {
+      day: "Day 2",
+      title: "Batal to Chandratal Trek",
+      details: [
+        "Altitude: 14,100 ft",
+        "Trek Distance: 7 km | 3–4 hrs",
+        "Gradual ascent to Chandratal Lake",
+        "Explore lake surroundings",
+        "Camp near lake",
+      ],
+    },
+    {
+      day: "Day 3",
+      title: "Explore Chandratal & Return to Batal",
+      details: [
+        "Morning exploration of lake",
+        "Photography and relaxation",
+        "Return trek to Batal",
+      ],
+    },
+    {
+      day: "Day 4",
+      title: "Return to Manali",
+      details: [
+        "Drive back via Kunzum Pass",
+        "Trip ends",
+      ],
+    },
+  ],
+
+  map: "https://www.google.com/maps?q=chandratal+lake+spiti&output=embed",
+
+  about:
+    "At 7 Oaks Trek and Travels, we organize professionally guided Chandratal Lake trekking experiences with experienced guides, safe travel arrangements, and well-planned itineraries. This trek is perfect for those seeking a unique high-altitude Himalayan adventure in the stunning landscapes of Spiti Valley.",
+}
+
 ];
