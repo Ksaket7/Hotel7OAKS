@@ -152,6 +152,7 @@ const AboutUs = () => {
           {/* ✨ PILLARS */}
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             {[
+              "To be the most trusted travel brand",
               "Local Employment",
               "Remote Area Skill Development",
               "Sustainable Tourism",
