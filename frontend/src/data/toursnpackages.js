@@ -60,96 +60,111 @@ export const toursData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Haridwar - Barkot",
-        details: [
-          "Pickup from Haridwar/Rishikesh",
-          "Scenic drive via Mussoorie & Yamuna Valley",
-          "Arrival in Barkot & hotel check-in",
-          "Dinner & overnight stay in Barkot",
-        ],
-      },
-      {
-        day: "Day 2",
-        title: "Barkot - Yamunotri - Barkot",
-        details: [
-          "Drive to Janki Chatti",
-          "Trek to Yamunotri Temple",
-          "Darshan & holy dip at Surya Kund",
-          "Return to Barkot",
-        ],
-      },
-      {
-        day: "Day 3",
-        title: "Barkot - Uttarkashi",
-        details: [
-          "Drive to Uttarkashi",
-          "Visit Kashi Vishwanath Temple",
-          "Check-in & evening leisure",
-        ],
-      },
-      {
-        day: "Day 4",
-        title: "Uttarkashi - Gangotri - Uttarkashi",
-        details: [
-          "Early drive to Gangotri",
-          "Views of Harsil Valley",
-          "Temple darshan & rituals",
-          "Return to Uttarkashi",
-        ],
-      },
-      {
-        day: "Day 5",
-        title: "Uttarkashi - Guptkashi",
-        details: [
-          "Long scenic drive",
-          "Arrival & hotel check-in",
-          "Preparation for Kedarnath",
-        ],
-      },
-      {
-        day: "Day 6",
-        title: "Guptkashi - Kedarnath",
-        details: [
-          "Drive to Gaurikund",
-          "Trek to Kedarnath / helicopter option",
-          "Evening Aarti & darshan",
-        ],
-      },
-      {
-        day: "Day 7",
-        title: "Kedarnath - Guptkashi",
-        details: [
-          "Morning darshan",
-          "Trek back to Gaurikund",
-          "Drive to Guptkashi",
-        ],
-      },
-      {
-        day: "Day 8",
-        title: "Guptkashi - Badrinath",
-        details: ["Drive via Joshimath", "Temple visit & check-in"],
-      },
-      {
-        day: "Day 9",
-        title: "Badrinath - Rudraprayag",
-        details: [
-          "Morning darshan",
-          "Visit Mana Village (optional)",
-          "Drive to Rudraprayag",
-        ],
-      },
-      {
-        day: "Day 10",
-        title: "Rudraprayag - Haridwar/Rishikesh",
-        details: [
-          "Return journey",
-          "Scenic river confluences",
-          "Drop-off & tour conclusion",
-        ],
-      },
+  {
+    day: "Day 1",
+    title: "Haridwar - Barkot",
+    details: [
+      "Drive Distance: ~180–200 km | Duration: 7–8 hrs",
+      "Pickup from Haridwar/Rishikesh in the morning.",
+      "Drive via Mussoorie and Yamuna valley with hill views.",
+      "Reach Barkot by evening and check-in to hotel.",
+      "Dinner & overnight stay in Barkot.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Barkot - Yamunotri - Barkot",
+    details: [
+      "Drive Distance: ~40 km + trek | Duration: full day",
+      "Drive to Janki Chatti (road head).",
+      "Trek Distance: ~5–6 km one way to Yamunotri Temple.",
+      "Darshan and visit Surya Kund.",
+      "Return trek to Janki Chatti and drive back to Barkot.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Barkot - Uttarkashi",
+    details: [
+      "Drive Distance: ~100 km | Duration: 4–5 hrs",
+      "Drive to Uttarkashi along Bhagirathi river.",
+      "Visit Kashi Vishwanath Temple.",
+      "Hotel check-in and rest.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Uttarkashi - Gangotri - Uttarkashi",
+    details: [
+      "Drive Distance: ~200 km (round trip) | Duration: 8–10 hrs",
+      "Early morning drive to Gangotri.",
+      "Pass through Harsil valley and pine forests.",
+      "Temple darshan and short visit around river origin area.",
+      "Return to Uttarkashi by evening.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Uttarkashi - Guptkashi",
+    details: [
+      "Drive Distance: ~220–230 km | Duration: 9–10 hrs",
+      "Long scenic drive via Tehri and Rudraprayag.",
+      "Follow Mandakini river valley.",
+      "Reach Guptkashi and hotel check-in.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Guptkashi - Kedarnath",
+    details: [
+      "Drive to Gaurikund (~30 km).",
+      "Trek Distance: ~16–18 km to Kedarnath (or helicopter option).",
+      "Steady uphill trek along Mandakini river.",
+      "Reach Kedarnath by evening.",
+      "Attend evening aarti and temple darshan.",
+    ],
+  },
+  {
+    day: "Day 7",
+    title: "Kedarnath - Guptkashi",
+    details: [
+      "Morning darshan at Kedarnath Temple.",
+      "Descend trek back to Gaurikund (~16–18 km).",
+      "Drive back to Guptkashi.",
+      "Rest at hotel.",
+    ],
+  },
+  {
+    day: "Day 8",
+    title: "Guptkashi - Badrinath",
+    details: [
+      "Drive Distance: ~190 km | Duration: 7–8 hrs",
+      "Drive via Joshimath.",
+      "Reach Badrinath and check-in.",
+      "Evening temple visit and local exploration.",
+    ],
+  },
+  {
+    day: "Day 9",
+    title: "Badrinath - Rudraprayag",
+    details: [
+      "Morning darshan at Badrinath Temple.",
+      "Optional visit to Mana Village.",
+      "Drive via Joshimath and Karnaprayag.",
+      "Reach Rudraprayag by evening.",
+    ],
+  },
+  {
+    day: "Day 10",
+    title: "Rudraprayag - Haridwar/Rishikesh",
+    details: [
+      "Drive Distance: ~160 km | Duration: 6–7 hrs",
+      "Drive along Alaknanda river.",
+      "Pass Devprayag (confluence of rivers).",
+      "Reach Haridwar/Rishikesh by evening.",
+    ],
+  },
+],
 
     inclusions: [
       "Accommodation in Luxury Hotels / Premium Camps",
@@ -241,66 +256,74 @@ export const toursData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Haridwar / Rishikesh – Guptkashi",
-        details: [
-          "Pickup from Haridwar/Rishikesh",
-          "Drive along Ganga & Mandakini rivers",
-          "Arrival at Guptkashi/Sitapur",
-          "Hotel check-in & dinner",
-        ],
-      },
-      {
-        day: "Day 2",
-        title: "Guptkashi – Kedarnath",
-        details: [
-          "Drive to Gaurikund",
-          "Trek to Kedarnath (pony/palki/helicopter optional)",
-          "Arrival & camp/lodge check-in",
-          "Evening aarti & darshan",
-        ],
-      },
-      {
-        day: "Day 3",
-        title: "Kedarnath – Guptkashi",
-        details: [
-          "Morning darshan at Kedarnath Temple",
-          "Trek down to Gaurikund",
-          "Drive back to Guptkashi",
-          "Dinner & overnight stay",
-        ],
-      },
-      {
-        day: "Day 4",
-        title: "Guptkashi – Badrinath",
-        details: [
-          "Drive via Joshimath",
-          "Arrival & hotel check-in",
-          "Evening darshan at Badrinath Temple",
-        ],
-      },
-      {
-        day: "Day 5",
-        title: "Badrinath – Rudraprayag / Srinagar",
-        details: [
-          "Morning darshan",
-          "Visit Mana Village (optional)",
-          "Drive to Rudraprayag/Srinagar",
-          "Check-in & leisure",
-        ],
-      },
-      {
-        day: "Day 6",
-        title: "Rudraprayag / Srinagar – Haridwar",
-        details: [
-          "Breakfast & return journey",
-          "Scenic river confluences en route",
-          "Drop at Haridwar/Rishikesh",
-          "Tour concludes",
-        ],
-      },
+  {
+    day: "Day 1",
+    title: "Haridwar / Rishikesh – Guptkashi",
+    details: [
+      "Drive Distance: ~200–220 km | Duration: 8–9 hrs",
+      "Pickup from Haridwar/Rishikesh in the morning.",
+      "Drive via Devprayag, Srinagar, Rudraprayag.",
+      "Follow Ganga and Mandakini river valleys.",
+      "Reach Guptkashi/Sitapur by evening.",
+      "Hotel check-in & dinner.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Guptkashi – Kedarnath",
+    details: [
+      "Drive to Gaurikund (~30 km).",
+      "Trek Distance: ~16–18 km to Kedarnath.",
+      "Steady uphill trek along Mandakini river.",
+      "Optional: pony/palki/helicopter services.",
+      "Arrival at Kedarnath, check-in to camp/lodge.",
+      "Evening aarti & temple darshan.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Kedarnath – Guptkashi",
+    details: [
+      "Morning darshan at Kedarnath Temple.",
+      "Trek down to Gaurikund (~16–18 km).",
+      "Drive back to Guptkashi.",
+      "Dinner & overnight stay.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Guptkashi – Badrinath",
+    details: [
+      "Drive Distance: ~190 km | Duration: 7–8 hrs",
+      "Drive via Chopta/Joshimath route.",
+      "Scenic views of mountain valleys and rivers.",
+      "Arrival at Badrinath and hotel check-in.",
+      "Evening darshan at Badrinath Temple.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Badrinath – Rudraprayag / Srinagar",
+    details: [
+      "Morning darshan at Badrinath Temple.",
+      "Optional visit to Mana Village.",
+      "Drive via Joshimath and Karnaprayag.",
+      "Reach Rudraprayag/Srinagar by evening.",
+      "Check-in & leisure.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Rudraprayag / Srinagar – Haridwar",
+    details: [
+      "Drive Distance: ~150–170 km | Duration: 6–7 hrs",
+      "Breakfast and start return journey.",
+      "Drive via Devprayag (river confluence).",
+      "Reach Haridwar/Rishikesh by evening.",
+      "Trip ends.",
+    ],
+  },
+],
 
     inclusions: [
       "Accommodation in well-rated hotels / camps",
@@ -390,39 +413,43 @@ export const toursData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Haridwar – Badrinath",
-        details: [
-          "Early morning pickup from Haridwar",
-          "Drive via Devprayag, Rudraprayag & Joshimath",
-          "Witness sacred river confluences",
-          "Arrival in Badrinath & hotel check-in",
-          "Evening darshan at Badrinath Temple",
-          "Dinner & overnight stay",
-        ],
-      },
-      {
-        day: "Day 2",
-        title: "Badrinath – Local Darshan & Rudraprayag",
-        details: [
-          "Early morning darshan at Badrinath Temple",
-          "Visit Mana Village & Charan Paduka (optional)",
-          "Drive to Rudraprayag / Srinagar",
-          "Hotel check-in, dinner & overnight stay",
-        ],
-      },
-      {
-        day: "Day 3",
-        title: "Rudraprayag / Srinagar – Haridwar",
-        details: [
-          "Breakfast & return journey",
-          "Scenic views & river confluences en route",
-          "Drop at Haridwar",
-          "Tour concludes with blessings",
-        ],
-      },
+  {
+    day: "Day 1",
+    title: "Haridwar – Badrinath",
+    details: [
+      "Drive Distance: ~300 km | Duration: 10–12 hrs",
+      "Early morning pickup from Haridwar.",
+      "Drive via Devprayag, Rudraprayag, Karnaprayag, Joshimath.",
+      "Witness major river confluences along Alaknanda.",
+      "Reach Badrinath by evening and check-in to hotel.",
+      "Evening darshan at Badrinath Temple.",
+      "Dinner & overnight stay.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Badrinath – Local Darshan & Rudraprayag",
+    details: [
+      "Morning darshan at Badrinath Temple.",
+      "Optional visit to Mana Village & nearby spots.",
+      "Drive Distance: ~150–160 km | Duration: 6–7 hrs",
+      "Drive via Joshimath and Karnaprayag.",
+      "Reach Rudraprayag/Srinagar by evening.",
+      "Hotel check-in, dinner & overnight stay.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Rudraprayag / Srinagar – Haridwar",
+    details: [
+      "Drive Distance: ~150 km | Duration: 5–6 hrs",
+      "Breakfast and start return journey.",
+      "Drive via Devprayag with scenic river views.",
+      "Reach Haridwar by afternoon/evening.",
+      "Trip ends.",
+    ],
+  },
+],
 
     inclusions: [
       "Comfortable accommodation in selected hotels",
@@ -510,50 +537,55 @@ export const toursData = [
       },
     ],
 
-    itinerary: [
-      {
-        day: "Day 1",
-        title: "Haridwar – Guptkashi / Sitapur",
-        details: [
-          "Pickup from Haridwar/Rishikesh",
-          "Drive via Devprayag & Rudraprayag",
-          "Scenic river views & mountain landscapes",
-          "Arrival at Guptkashi/Sitapur",
-          "Hotel check-in, dinner & overnight stay",
-        ],
-      },
-      {
-        day: "Day 2",
-        title: "Guptkashi – Kedarnath",
-        details: [
-          "Early morning drive to Gaurikund",
-          "Trek to Kedarnath (pony/palki/helicopter optional)",
-          "Arrival & check-in at camp/lodge",
-          "Evening darshan & aarti at Kedarnath Temple",
-          "Overnight stay near temple",
-        ],
-      },
-      {
-        day: "Day 3",
-        title: "Kedarnath – Guptkashi / Sitapur",
-        details: [
-          "Early morning darshan at Kedarnath Temple",
-          "Trek down to Gaurikund",
-          "Drive back to Guptkashi/Sitapur",
-          "Dinner & overnight stay",
-        ],
-      },
-      {
-        day: "Day 4",
-        title: "Guptkashi – Haridwar",
-        details: [
-          "Breakfast & return journey",
-          "En route Devprayag & Rudraprayag confluences",
-          "Drop at Haridwar/Rishikesh",
-          "Tour concludes with blessings",
-        ],
-      },
+   itinerary: [
+  {
+    day: "Day 1",
+    title: "Haridwar – Guptkashi / Sitapur",
+    details: [
+      "Drive Distance: ~200–220 km | Duration: 8–9 hrs",
+      "Pickup from Haridwar/Rishikesh in the morning.",
+      "Drive via Devprayag, Srinagar, Rudraprayag.",
+      "Scenic views along Ganga and Mandakini rivers.",
+      "Reach Guptkashi/Sitapur by evening.",
+      "Hotel check-in, dinner & overnight stay.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Guptkashi – Kedarnath",
+    details: [
+      "Drive Distance: ~30 km to Gaurikund",
+      "Trek Distance: ~16–18 km | Duration: 7–9 hrs",
+      "Early morning drive to Gaurikund.",
+      "Start trek to Kedarnath (pony/palki/helicopter optional).",
+      "Steady ascent along Mandakini river route.",
+      "Arrival & check-in at camp/lodge.",
+      "Evening darshan & aarti at Kedarnath Temple.",
+      "Overnight stay near temple.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Kedarnath – Guptkashi / Sitapur",
+    details: [
+      "Morning darshan at Kedarnath Temple.",
+      "Trek down to Gaurikund (~16–18 km).",
+      "Drive back to Guptkashi/Sitapur.",
+      "Dinner & overnight stay.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Guptkashi – Haridwar",
+    details: [
+      "Drive Distance: ~200–220 km | Duration: 8–9 hrs",
+      "Breakfast and start return journey.",
+      "Drive via Rudraprayag and Devprayag.",
+      "Reach Haridwar/Rishikesh by evening.",
+      "Trip ends.",
+    ],
+  },
+],
 
     inclusions: [
       "Accommodation in well-rated hotels / camps",
@@ -647,69 +679,78 @@ export const toursData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Kathgodam – Pithoragarh",
-        details: [
-          "Pickup from Kathgodam",
-          "Scenic drive through Kumaon hills",
-          "Arrival at Pithoragarh (5,200 ft)",
-          "Hotel check-in & leisure",
-          "Overnight stay in Pithoragarh",
-        ],
-      },
-      {
-        day: "Day 2",
-        title: "Pithoragarh – Dharchula",
-        details: [
-          "Drive to Dharchula",
-          "Inner Line Permit formalities",
-          "Acclimatization & rest",
-          "Overnight stay in Dharchula",
-        ],
-      },
-      {
-        day: "Day 3",
-        title: "Dharchula – Napalchu",
-        details: [
-          "Drive along Kali River",
-          "Remote Himalayan terrain experience",
-          "Arrival at Napalchu (high altitude)",
-          "Rest & acclimatization",
-          "Overnight stay in camps/guesthouse",
-        ],
-      },
-      {
-        day: "Day 4",
-        title: "Napalchu – Adi Kailash – Napalchu",
-        details: [
-          "Excursion to Adi Kailash",
-          "Visit Parvati Sarovar & sacred sites",
-          "Return to Napalchu",
-          "Overnight stay in camps/guesthouse",
-        ],
-      },
-      {
-        day: "Day 5",
-        title: "Napalchu – Om Parvat – Dharchula",
-        details: [
-          "Early visit to Om Parvat",
-          "Drive via Kalapani region",
-          "Return to Dharchula",
-          "Overnight stay in Dharchula",
-        ],
-      },
-      {
-        day: "Day 6",
-        title: "Dharchula – Kathgodam",
-        details: [
-          "Early morning departure",
-          "Scenic return journey",
-          "Drop at Kathgodam",
-          "Tour concludes",
-        ],
-      },
+  {
+    day: "Day 1",
+    title: "Kathgodam – Pithoragarh",
+    details: [
+      "Drive Distance: ~200–220 km | Duration: 8–9 hrs",
+      "Pickup from Kathgodam in the morning.",
+      "Drive via Almora and scenic Kumaon hills.",
+      "Mountain roads with valley and forest views.",
+      "Arrival at Pithoragarh (~5,200 ft) by evening.",
+      "Hotel check-in & leisure.",
+      "Overnight stay in Pithoragarh.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Pithoragarh – Dharchula",
+    details: [
+      "Drive Distance: ~90–100 km | Duration: 4–5 hrs",
+      "Drive towards Dharchula along Kali river valley.",
+      "Complete Inner Line Permit formalities.",
+      "Rest and acclimatization.",
+      "Overnight stay in Dharchula.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Dharchula – Napalchu",
+    details: [
+      "Drive Distance: ~70–80 km | Duration: 5–6 hrs",
+      "Drive along Kali river through remote Himalayan terrain.",
+      "Narrow high-altitude roads and rugged landscapes.",
+      "Gradual gain in altitude.",
+      "Arrival at Napalchu.",
+      "Rest & acclimatization.",
+      "Overnight stay in camps/guesthouse.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Napalchu – Adi Kailash – Napalchu",
+    details: [
+      "Drive/Excursion Distance: ~40–50 km (round trip)",
+      "Early start for Adi Kailash darshan.",
+      "Visit Parvati Sarovar and nearby sacred sites.",
+      "Views of Adi Kailash peak.",
+      "Return to Napalchu by evening.",
+      "Overnight stay in camps/guesthouse.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Napalchu – Om Parvat – Dharchula",
+    details: [
+      "Drive Distance: ~80–100 km | Duration: 6–7 hrs",
+      "Early morning visit to Om Parvat viewpoint.",
+      "Drive via Kalapani region.",
+      "Return journey to Dharchula.",
+      "Overnight stay in Dharchula.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Dharchula – Kathgodam",
+    details: [
+      "Drive Distance: ~290–300 km | Duration: 10–12 hrs",
+      "Early morning departure.",
+      "Long scenic drive through Kumaon hills.",
+      "Reach Kathgodam by evening.",
+      "Trip ends.",
+    ],
+  },
+],
 
     inclusions: [
       "Accommodation in hotels (Pithoragarh, Dharchula)",
