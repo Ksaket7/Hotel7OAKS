@@ -188,7 +188,7 @@ const Destinations = () => {
                 <div className="flex justify-end">
                   <Link
                     to={`/destinations/${state.id}`}
-                    className="px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-gray-200 transition"
+                    className="px-4 py-2 bg-green text-white rounded-full text-sm font-semibold hover:bg-greenH transition"
                   >
                     Explore →
                   </Link>

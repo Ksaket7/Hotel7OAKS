@@ -231,7 +231,7 @@ const Treks = () => {
 
                   <Link
                     to={`/treks/${trek.id}`}
-                    className="px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-gray-200"
+                    className="px-4 py-2  text-white rounded-full text-sm font-semibold bg-green hover:bg-greenH"
                   >
                     Explore →
                   </Link>

@@ -102,42 +102,51 @@ export const treksData = [
         day: "Day 1",
         title: "Delhi to Ukhimath / Chopta",
         details: [
-          "Drive Distance: 450 km | 11–12 hrs",
-          "Overnight journey via Meerut – Haridwar – Devprayag – Rudraprayag",
-          "Arrival at Chopta by morning",
-          "Stay: Guesthouse / Campsite",
+          "Drive Distance: 450 km | 11-12 Hrs",
+          "Depart from Delhi (evening/night) in a comfortable tempo traveler or cab.",
+          "Overnight travel through Meerut – Haridwar – Devprayag – Rudraprayag route.",
+          "Arrive at Chopta by next morning.",
+          "Overnight stay - Chopta/ukhimath",
         ],
       },
       {
         day: "Day 2",
-        title: "Arrival and Acclimatization at Chopta",
+        title: "Arrival at Chopta",
         details: [
-          "Altitude: 2,700 m / 8,888 ft",
-          "Check-in to campsite or guesthouse",
-          "Local exploration and acclimatization",
-          "Evening walk across Chopta meadows with views of Chaukhamba, Trishul & Kedarnath peaks",
-          "Trek briefing by guides",
+          "Altitude: 2,700m (8,888 ft).",
+          "Check-in to your campsite or guesthouse.",
+          "Acclimatization & Local Exploration.",
+          "Evening walk around Chopta meadows — view Chaukhamba, Trishul, and Kedarnath peaks.",
+          "Trek briefing in evening.",
+          "Overnight Stay - Chopta",
         ],
       },
       {
         day: "Day 3",
         title: "Trek to Tungnath Temple & Chandrashila Summit",
         details: [
-          "Trek Distance: 9–10 km | 7–8 hrs",
-          "Visit Tungnath Temple (3.5 km)",
-          "Climb to Chandrashila Summit (4,000 m)",
-          "Enjoy panoramic Himalayan views",
-          "Return to Chopta",
-          "Bonfire and dinner",
+          "Altitude:",
+          "Tungnath: 3,500 m / 11,500 ft.",
+          "Chandrashila Top: 3,700 m / 12,000 ft.",
+          "Chopta: 2,700 m / 8,888 ft.",
+          "Trek Distance: 9-10 km | 7-8 hours (Both sides).",
+          "Start early morning for the Tungnath Temple (3.5 km one way)",
+          "Perform Rituals at World's Highest Shiva Temple.",
+          "And then Proceed 1.5 km ascent to Chandrashila Peak (4,000 m).",
+          "Enjoy the 360° Himalayan panorama of Nanda Devi, Trishul, Kedar Dome, Chaukhamba & Bandarpunch.",
+          "Descend to Chopta by late afternoon.",
+          "Evening bonfire and group dinner.",
+          "Overnight Stay - Chopta",
         ],
       },
       {
         day: "Day 4",
-        title: "Drive from Chopta to Delhi",
+        title: "Drive to Delhi",
         details: [
-          "Drive Distance: 450 km | 11–12 hrs",
-          "Breakfast at campsite",
-          "Return journey to Delhi",
+          "Drive Distance: 450 km | 11 - 12 hrs.",
+          "Breakfast at Campsite",
+          "Then head back to Rishikesh/Delhi.",
+          "Drop by evening/night in Delhi.",
         ],
       },
     ],
@@ -229,39 +238,48 @@ export const treksData = [
       "Anything not mentioned in inclusions",
     ],
 
-    itinerary: [
-      {
-        day: "Day 1",
-        title: "Drive from Delhi to Chakrata",
-        details: [
-          "Drive Distance: ~320 km",
-          "Travel Time: 8–9 hrs",
-          "Scenic drive via Dehradun to Chakrata hill station",
-          "Stay: Hotel / Guesthouse in Chakrata",
-        ],
-      },
-      {
-        day: "Day 2",
-        title: "Deoban Forest Trek",
-        details: [
-          "Trek Distance: 8–10 km",
-          "Trek Duration: 4–5 hrs",
-          "Altitude: 2,200 m / 7,200 ft",
-          "Trek through dense deodar and pine forests",
-          "Reach Deoban viewpoint with Himalayan panorama",
-          "Return to Chakrata",
-        ],
-      },
-      {
-        day: "Day 3",
-        title: "Drive from Chakrata to Delhi",
-        details: [
-          "Drive Distance: ~320 km",
-          "Travel Time: 8–9 hrs",
-          "Return journey",
-        ],
-      },
+   itinerary: [
+  {
+    day: "Day 1",
+    title: "Delhi → Chakrata",
+    details: [
+      "Distance: ~320 km",
+      "Travel Time: 8–9 hours",
+      "Departure from Delhi early morning.",
+      "Drive through Dehradun towards the scenic hill station of Chakrata.",
+      "Enjoy the winding mountain roads and beautiful forest landscapes on the way.",
+      "Check-in to hotel / guesthouse in Chakrata.",
+      "Evening free to explore nearby viewpoints and local market",
+      "Overnight stay: Chakrata.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Chakrata → Deoban Trek → Return",
+    details: [
+      "Trek Distance: ~8–10 km (round trip)",
+      "Trek Duration: 4–5 hours",
+      "Altitude: ~2,200 m",
+      "After breakfast, drive a short distance to the Deoban forest trail starting point.",
+      "Begin trekking through thick deodar and pine forests, one of the densest forests in Uttarakhand.",
+      "The trail gradually opens to the famous Deoban viewpoint, offering stunning views of Himalayan peaks like Bandarpoonch and Swargarohini on clear days.",
+      "Spend some time enjoying the panoramic mountain scenery and peaceful surroundings.",
+      "Trek back to the starting point and return to Chakrata by evening.",
+      "Overnight stay: Chakrata.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Chakrata → Delhi",
+    details: [
+      "Distance: ~320 km",
+      "Travel Time: 8–9 hours",
+      "After breakfast, start the return journey from Chakrata.",
+      "Enjoy scenic mountain views during the drive.",
+      "Reach Delhi by evening, marking the end of the trek.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.9988523171132!2d77.84728116122702!3d30.746533734859355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f4bbbe3ceb255%3A0xbd376c7c6ff6ad4f!2sDeoban%2C%20Uttarakhand%20248123!5e0!3m2!1sen!2sin!4v1773681860435!5m2!1sen!2sin",
 
@@ -351,67 +369,70 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Drive from Delhi to Uttarkashi",
-        details: [
-          "Drive Distance: 420 km | 10–11 hrs",
-          "Scenic drive through the Himalayan foothills",
-          "Stay: Hotel in Uttarkashi",
-        ],
-      },
-      {
-        day: "Day 2",
-        title: "Uttarkashi to Sangamchatti & Trek to Bebra",
-        details: [
-          "Altitude: 7,500 ft",
-          "Drive Distance: 12 km",
-          "Trek Distance: 7 km",
-          "Forest trail through villages",
-          "Stay: Bebra Campsite",
-        ],
-      },
-      {
-        day: "Day 3",
-        title: "Bebra to Manjhi",
-        details: [
-          "Altitude: 9,433 ft",
-          "Trek Distance: 9 km",
-          "Gradual ascent through forests",
-          "Stay: Manjhi Campsite",
-        ],
-      },
-      {
-        day: "Day 4",
-        title: "Manjhi to Dodital Lake",
-        details: [
-          "Altitude: 10,900 ft",
-          "Trek Distance: 6 km",
-          "Arrival at Dodital Lake",
-          "Stay: Lakeside campsite",
-        ],
-      },
-      {
-        day: "Day 5",
-        title: "Dodital to Darwa Pass & return",
-        details: [
-          "Altitude: 13,300 ft",
-          "Trek Distance: 5 km each side",
-          "Panoramic Himalayan views",
-          "Stay: Dodital Campsite",
-        ],
-      },
-      {
-        day: "Day 6",
-        title: "Descend to Sangamchatti & drive to Uttarkashi",
-        details: ["Trek Distance: 22 km", "Drive to Uttarkashi", "Stay: Hotel"],
-      },
-      {
-        day: "Day 7",
-        title: "Return to Delhi",
-        details: ["Drive Distance: 420 km", "Drop at Dehradun / Delhi"],
-      },
+  {
+    day: "Day 1",
+    title: "Drive from Delhi to Uttarkashi",
+    details: [
+      "Drive Distance: 420 km approx. | Duration: 10-11 hrs.",
+      "Stay: in the hotel.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Drive From Uttarkashi To Sangamchatti And Trek To Bebra via Agoda",
+    details: [
+      "Altitude: 7500 ft",
+      "Drive Distance: 12 km | Duration: 45 minutes to 1 hr",
+      "Trek Distance: 7 km | Duration: 4 to 5 hrs",
+      "Stay: Bebra Campsite.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Bebra To Manjhi",
+    details: [
+      "Altitude: 9,433 m",
+      "Trek Distance: 9 km | Duration: 4 to 5 hrs",
+      "Stay: Manjhi Campsite",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Trek From Manjhi To Dodital",
+    details: [
+      "Altitude: 10,900 ft.",
+      "Trek Distance: 6 km | Duration: 3 to 4 hrs.",
+      "Stay: Dodital Lake Campsite.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Trek From Dodital To Darwa Top and Back",
+    details: [
+      "Altitude: 13,300 ft",
+      "Trek Distance: 5 km (each side) | Duration: 7 to 8 hrs",
+      "Stay: Dodital campsite (twin-sharing)",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Descend from Dodital To Sangamchatti And Drive Back To Uttarkashi",
+    details: [
+      "Trek Distance: 22 km | Duration: 6 to 7 hrs.",
+      "Stay: Uttarkashi (Hotel)",
+    ],
+  },
+  {
+    day: "Day 7",
+    title: "Drive Back To Delhi",
+    details: [
+      "Drive Distance: 420 km approx. | Duration: 10-11 hrs",
+      "Leave Natin by 6:30 am",
+      "Breakfast and lunch excluded",
+      "You will be dropped at Dehradun Station in a Tata Sumo/ Tempo Traveller or a similar vehicle",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=dodital+Uttarakhand&output=embed",
 
@@ -502,42 +523,92 @@ export const treksData = [
       "Anything not mentioned in inclusions",
     ],
 
-    itinerary: [
-      {
-        day: "Day 1",
-        title: "Dehradun to Raithal",
-        details: [
-          "Altitude: 2,150 m",
-          "Drive Distance: 180 km",
-          "Stay: Guesthouse / Homestay",
-        ],
-      },
-      {
-        day: "Day 2",
-        title: "Raithal to Gui / Barnala",
-        details: ["Trek Distance: 4–5 km", "Forest trail", "Stay: Campsite"],
-      },
-      {
-        day: "Day 3",
-        title: "Dayara Bugyal Summit",
-        details: [
-          "Trek Distance: 8 km round trip",
-          "Open meadow trekking",
-          "Return to campsite",
-        ],
-      },
-      {
-        day: "Day 4",
-        title: "Descend to Raithal",
-        details: ["Trek Distance: 4–5 km", "Stay: Guesthouse"],
-      },
-      {
-        day: "Day 5",
-        title: "Return to Dehradun",
-        details: ["Drive Distance: 180 km", "Trip ends"],
-      },
+   itinerary: [
+  {
+    day: "Day 1",
+    title: "Dehradun → Raithal / Barsu (Base Village)",
+    details: [
+      "Altitude: 2,150 m / 7,050 ft",
+      "Drive Distance: 180 km | 6–7 hrs",
+      "OverStay: Raithal Guesthouse/Homestay",
+      "Early Pickup Dehradun (7:00 AM)",
+      "Check-in to homestay/guest house.",
+      "Freshen up & have lunch.",
+      "Attend trek briefing by trek leader.",
+      "Short acclimatization walk in the village.",
+      "Check your gear (shoes, jackets, rainwear).",
+      "Early dinner & sleep well.",
     ],
-
+  },
+  {
+    day: "Day 2",
+    title: "Raithal → Gui/Barnala Campsite",
+    details: [
+      "Altitude: 2,150 m to 2,950 m",
+      "Trek Distance: 4–5 km | 3–4 hrs",
+      "Stay: Barnala/Gui Campsite.",
+      "Wake up early & have breakfast.",
+      "Pack your backpack (water, snacks, warm layer).",
+      "Start trek from Raithal/Barnala trail.",
+      "Walk through forest—maintain slow steady pace.",
+      "Take 2–3 short breaks for water & photos.",
+      "Reach Gui/Barnala campsite by afternoon.",
+      "Check into tents, change clothes.",
+      "Have hot lunch/soup.",
+      "Explore nearby meadows (short acclimatization walk).",
+      "Evening snacks + sunset view.",
+      "Dinner and Sleep Tight.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Summit Day: Gui/Barnala → Dayara Top → Return to Camp",
+    details: [
+      "Altitude: 2,950 m to 3,650–3,750 m (Top)",
+      "Trek Distance: 8 km round trip | 5–6 hrs",
+      "OvernightStay - Gui/Barnala Camsite",
+      "Wake up early (5–6 AM).",
+      "Have light breakfast.",
+      "Start trek towards Dayara Bugyal.",
+      "Walk gradually through open meadows.",
+      "Take small breaks at viewpoints.",
+      "Reach Dayara Top (12,000+ ft) by late morning.",
+      "Spend time at summit: Photos",
+      "360° Himalayan view",
+      "Rest/snacks",
+      "Begin descend back to campsite.",
+      "Lunch at camp.",
+      "Rest for the afternoon.",
+      "Evening tea & group activities.",
+      "Dinner and sleep.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Gui/Barnala → Raithal/Barsu",
+    details: [
+      "Altitude: 2,950 → 2,150 m",
+      "Trek Distance: 4–5 km | 2–3 hrs",
+      "Overnight Stay - Raithal Guesthouse/Homestay",
+      "Wake up & have breakfast.",
+      "Pack your bag.",
+      "Start descending through the forest.",
+      "Reach Raithal/Barsu by late morning.",
+      "Freshen up at homestay.",
+      "Dinner & rest.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Raithal → Dehradun",
+    details: [
+      "Drive Distance: 180 km | 6–7 hrs",
+      "End Point:",
+      "Drop at Dehradun by late afternoon.",
+      "Trip ends here .",
+    ],
+  },
+],
     map: "https://www.google.com/maps?q=dayara+bugyal+Uttarakhand&output=embed",
 
     about:
@@ -630,42 +701,65 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Dehradun to Gangotri",
-        details: ["Drive Distance: 280 km", "Stay: Guesthouse"],
-      },
-      {
-        day: "Day 2",
-        title: "Gangotri to Chirbasa",
-        details: ["Trek Distance: 10 km", "Views of Bhagirathi peaks"],
-      },
-      {
-        day: "Day 3",
-        title: "Chirbasa to Bhojbasa",
-        details: ["Trek Distance: 5 km", "Glacial valley trail"],
-      },
-      {
-        day: "Day 4",
-        title: "Bhojbasa to Tapovan via Gaumukh",
-        details: ["Visit Gaumukh glacier", "Steep climb to Tapovan"],
-      },
-      {
-        day: "Day 5",
-        title: "Tapovan to Bhojbasa",
-        details: ["Descend glacier trail"],
-      },
-      {
-        day: "Day 6",
-        title: "Bhojbasa to Gangotri",
-        details: ["Long descent"],
-      },
-      {
-        day: "Day 7",
-        title: "Return to Dehradun",
-        details: ["Drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Reach Gangotri from Dehradun",
+    details: [
+      "Drive distance: 280 km | Drive Duration: 11 -12 hours",
+      "Pickup from Dehradun at 5.00 am.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Trek from Gangotri (10,050 ft) to Chirbasa (11,630 ft)",
+    details: [
+      "Trek Distance: 10 km | Trek Duration: 6 hours",
+      "Moderate.",
+      "Initial 300 m steep ascent followed by a very gradual ascent all the way.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Chirbasa (11,630 ft) to Bhojbasa (12,415 ft)",
+    details: [
+      "Trek Distance: 5 km | Trek Duration: 3 hours",
+      "Moderate.",
+      "Initial 100 m ascent to get back on the trail.",
+      "Very gradual ascent all the way to Bhojbasa.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Bhojbasa (12,415 ft) to Tapovan (14,203 ft)",
+    details: [
+      "Trek Distance: 6 km | Trek Duration: 9 hours",
+      "Difficult. Gradual ascent for 2.5 hours. 2 hours glacier walk followed by 1 hour of moderate ascent. Final 1.5 hours is a steep ascent.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Tapovan (14,203 ft) to Bhojbasa (12,415 ft)",
+    details: [
+      "Trek Distance: 6 km | Trek Duration: 5 hours",
+      "Moderate Difficult. Level trail to Chirbasa.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Bhojbasa (12,415 ft) to Gangotri (10,050 ft)",
+    details: [
+      "Trek Distance: 14 km | Trek Duration: 8 hours",
+      "Tricky descent over bouldery section",
+    ],
+  },
+  {
+    day: "Day 7",
+    title: "Drive from Gangotri to Dehradun",
+    details: [
+      "Drive distance: 242 km | Drive Duration: 8 hours",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=gaumukh+tapovan+trek+Uttarakhand&output=embed",
 
@@ -753,40 +847,90 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Dehradun to Barkot",
-        details: [
-          "Drive Distance: 120–140 km",
-          "Route via Mussoorie and Nainbagh",
-          "Stay: Hotel",
-        ],
-      },
-      {
-        day: "Day 2",
-        title: "Barkot to Kandola Campsite",
-        details: [
-          "Drive to Hanuman Chatti",
-          "Trek Distance: 5 km",
-          "Forest trail via Nishni village",
-        ],
-      },
-      {
-        day: "Day 3",
-        title: "Kandola to Seema Thatch",
-        details: ["Trek Distance: 6–7 km", "Alpine meadow trail"],
-      },
-      {
-        day: "Day 4",
-        title: "Summit Day",
-        details: ["Climb to Gulabi Kantha summit", "Return to campsite"],
-      },
-      {
-        day: "Day 5",
-        title: "Return to Dehradun",
-        details: ["Descend and drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Dehradun → Barkot",
+    details: [
+      "Altitude: - 4,000 ft",
+      "Drive: 120 – 140 km | 5-6 hours",
+      "Route: Dehradun –> Mussoorie –> Nainbagh –> Barkot.",
+      "Start early from Dehradun/Delhi.",
+      "Enjoy the scenic drive through Forest and River Trails.",
+      "Reach Barkot by evening.",
+      "Evening Snacks at Hotel.",
+      "Take a Short Walk in evening and acclimatize.",
+      "Dinner and Sleep Early.",
+      "Overnight Stay - Hotel 7 Oaks",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Barkot → Hanumanchatti → Kandola Campsite",
+    details: [
+      "Altitude: - 8,800 ft",
+      "Drive Distance: 15 KMS | 1 Hr",
+      "Trek Distance: 5 kms",
+      "Trek Time: 5-6 hours",
+      "Drive from the hotel to Hanuman Chatti. (15Kms)",
+      "We’ll begin our trek along a water stream and through a market forest trail.",
+      "After a 3.5 km hike, we reach Nishni Village.",
+      "It takes approximately 3.5 km to reach Kandola from Nishni Village.",
+      "500m Hike After Nishni lays a Viewpoint.",
+      "Reach Campsite and Freshen up with Delicious Lunch.",
+      "Evening Tea And Snacks at campsite.",
+      "Evening at Leisure.",
+      "Dinner and Sleep Early",
+      "Overnight Stay - Kandola Campsite.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Kandola → Seema Thatch Campsite",
+    details: [
+      "Altitude: 11,800 ft",
+      "Trek Distance: 6-7 km",
+      "Trek Time: 5-6 hours",
+      "After breakfast, Start towards Seema Thatch.",
+      "Hike to Seema thatch is approximately 3.5 km.",
+      "Himalayan wild flowers like Blue Poppy, Rain Lily, Paper Cup Flower, and Himalayan Fleabane.",
+      "In winter, the meadows are covered in thick blanket of snow, making it perfect for skiing.",
+      "Reach Seema Thatch before Lunch.",
+      "Lunch Followed by Evening Tea and Snacks.",
+      "Dinner and Relax.",
+      "Overnight Stay - Seema Thatch (Campsite)",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Seema Thatch → Gulabi kantha Submit → Kandola Campsite",
+    details: [
+      "Altitude: 13,100 ft (Summit)",
+      "Trek Distance: 8–9 km (round trip)",
+      "Trek Time: 6–7 hours",
+      "Peaks from Summit:",
+      "Bandarpoonch",
+      "Black Peak",
+      "Gangotri Range",
+      "Chaukhambha",
+      "Swargarohini Peak.... etc",
+      "After Breakfast Hike towards summit.",
+      "Climb steeply for 1 km to the top.",
+      "Enjoy Summit and Decend Back (7 Kms) to Kandola Campsite.",
+      "Overnight Stay - Kandola Campsite.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Kandola Campsite → Hanuman Chatti → Dehradun",
+    details: [
+      "Drive: 140-160 km | 9–10 hours",
+      "After Breakfast decend to Hanuman chatti.",
+      "Drive To Dehradun.",
+      "Trip Ends with lifelong Happy Memories.",
+      "Drop at Dehradun by Evening.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=gulabi+kantha+Uttarakhand&output=embed",
 
@@ -874,43 +1018,67 @@ export const treksData = [
       "Anything not mentioned in inclusions",
     ],
 
-    itinerary: [
-      {
-        day: "Day 1",
-        title: "Dehradun to Sankri",
-        details: ["Drive Distance: 220 km", "Stay: Guesthouse"],
-      },
-      {
-        day: "Day 2",
-        title: "Sankri to Osla",
-        details: ["Drive + short trek", "Stay: Homestay / Campsite"],
-      },
-      {
-        day: "Day 3",
-        title: "Osla to Seematra",
-        details: ["Trek Distance: 7 km"],
-      },
-      {
-        day: "Day 4",
-        title: "Har Ki Dun Exploration",
-        details: ["Valley exploration"],
-      },
-      {
-        day: "Day 5",
-        title: "Seematra to Pauni Gharat",
-        details: ["Descent trek"],
-      },
-      {
-        day: "Day 6",
-        title: "Return to Sankri",
-        details: ["Drive back"],
-      },
-      {
-        day: "Day 7",
-        title: "Return to Dehradun",
-        details: ["Trip ends"],
-      },
+   itinerary: [
+  {
+    day: "Day 1",
+    title: "Dehradun to Sankri",
+    details: [
+      "Altitude Sankri: 1950 m/ 6400 ft",
+      "Drive Distance: 220 km | 10 hrs",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Sankri to Dharkot and trek to Osla Village",
+    details: [
+      "Altitude:",
+      "Osla: 2750 m/ 9000 ft",
+      "Dharkot: 2400 m / 8000 ft",
+      "Drive Distance (Sankri to Dharkot): 24 km | 2 hr",
+      "Trek Distance: 3-4 km | 3-4 hrs",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Osla to Seematra",
+    details: [
+      "Altitude Seematra: 3250 m/ 10700 ft",
+      "Trek Distance: 7 km | 4-5 hrs",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Seematra to Har Ki Dun and Back to Seematra",
+    details: [
+      "Altitude Har Ki Dun: 3600 m/ 11800 ft",
+      "Trek Distance: 8 km (both sides) | 6-7 hrs",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Seematra to Pauni Gharat",
+    details: [
+      "Altitude Pauni Gharat: 2500 m / 8200 ft",
+      "Trek Distance: 8-9 km | 4-5 hrs",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Pauni Gharat to Dharkot and drive to Sankri",
+    details: [
+      "Altitude Sankri: 1950 m / 6400 ft",
+      "Trek Distance: 3-4 km | 2-3 hrs",
+      "Drive Distance: 24 km | 2 hrs",
+    ],
+  },
+  {
+    day: "Day 7",
+    title: "Sankri To Dehradun | Saying Goodbye To The Mountains",
+    details: [
+      "Drive Distance: 220 km | 10 hrs",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=har+ki+dun+Uttarakhand&output=embed",
 
@@ -1001,37 +1169,87 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Dehradun to Sankri",
-        details: ["Drive Distance: 220 km", "Stay: Guesthouse"],
-      },
-      {
-        day: "Day 2",
-        title: "Sankri to Juda Ka Talab",
-        details: ["Trek Distance: 4–5 km", "Forest trail"],
-      },
-      {
-        day: "Day 3",
-        title: "Juda Ka Talab to Base Camp",
-        details: ["Gradual ascent"],
-      },
-      {
-        day: "Day 4",
-        title: "Summit Day",
-        details: ["Early morning climb", "360° views"],
-      },
-      {
-        day: "Day 5",
-        title: "Return to Sankri",
-        details: ["Descend through forest"],
-      },
-      {
-        day: "Day 6",
-        title: "Return to Dehradun",
-        details: ["Drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Arrival at Sankri",
+    details: [
+      "Altitude: 1,950m/ 6,400 ft.",
+      "Drive Distance: 220 km |10 hours approximately",
+      "Start early from Dehradun (6–7 AM).",
+      "Enjoy the scenic drive through pine forests & Tons river valley.",
+      "Reach Sankri village, complete forest permits & check-in to homestay.",
+      "Evening: Explore Sankri, visit the viewpoint, buy trek essentials.",
+      "Overnight Stay - Guest House(Sankri).",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Sankri to Juda-ka-Talab",
+    details: [
+      "Altitude: 2800 m/ 9100 ft",
+      "Trek Distance: 4-5 km | 5 hours approximately",
+      "Begin trek after breakfast.",
+      "Trail passes through: Pine & maple forests.",
+      "Reach Juda Ka Talab campsite beside the beautiful frozen lake (in winter).",
+      "Eat Lunch and enjoy evening at leisure and acclimatize.",
+      "Dinner and rest.",
+      "Overnight Stay - Campsite (Juda-ka-Talab)",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Juda-ka-Talab to Kedarkantha Base",
+    details: [
+      "Altitude: 3100 m/ 10,100 ft.",
+      "Trek Distance: 4 km | 2.5 hours approximately",
+      "Start late morning after breakfast.",
+      "Easy ascent through dense oak forest.",
+      "Scenic Himalyan Peaks - 1. Swargarohini",
+      "2. Bandarpoonch",
+      "3. Black Peak",
+      "4. Ranglana",
+      "Relax, acclimatize & prepare for the next morning summit push.",
+      "Dinner early (7–8 PM).",
+      "Overnight Stay- Kedarkantha BaseCamp.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Kedarkantha base to Kedarkantha peak, Descend to Hargaon camp",
+    details: [
+      "Altitude:",
+      "Peak - 3,800 m/ 12,500 ft.",
+      "Hargon - 2,700 m/ 8,900 ft.",
+      "Trek Distance: 6-7 km | 7 hrs approximately",
+      "Start at 2–3 AM for the sunrise summit.",
+      "Steep climb in the final 1 hour.",
+      "Reach Kedarkantha Summit by sunrise — one of the best !!!",
+      "360° Himalayan ranges:1. Swargarohini.",
+      "2. Yamunotri & Gangotri ranges.",
+      "3. Har Ki Dun valley.",
+      "4. Rupin–Supin ranges.",
+      "Spend 20–30 minutes at the summit (weather permitting).",
+      "Descend to base camp for breakfast.",
+      "Trek down further to Sankri (reach by 2–3 PM).",
+      "Drive to Dehradun, arriving late evening/night.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Hargaon camp to Sankri",
+    details: [
+      "Altitude: 1950 m/ 6400 ft.",
+      "Trek Distance: 4 km | 3-4 hours approximately",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Departure day (Sankri to Dehradun)",
+    details: [
+      "Drive Distance: 220 km | 10 hours approx.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=Kedarkantha+Uttarakhand&output=embed",
 
@@ -1122,22 +1340,56 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Dehradun to Pantwari + Trek",
-        details: ["Drive + short trek to base camp"],
-      },
-      {
-        day: "Day 2",
-        title: "Summit Day",
-        details: ["Sunrise summit trek", "Return to base camp"],
-      },
-      {
-        day: "Day 3",
-        title: "Return to Dehradun",
-        details: ["Descend and drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Dehradun → Pantwari → Nag Tibba Base Camp",
+    details: [
+      "Drive: 90 km | 4–5 hrs",
+      "Trek: 4–5 km | 3–4 hrs",
+      "Altitude Gain: Dehradun (640 m) → Pantwari (1,350 m) → Base Camp (2,350 m)",
+      "Early morning [approx. 6:30 AM] drive from Dehradun to Pantwari via Mussoorie -> Kempty fall -> Nainbagh.",
+      "Arrive at Pantwari village, freshen up, and Trek starts here.",
+      "Trail passes through rocky path and small village huts",
+      "Sunset view over Swargarohini, Bandarpoonch, Gangotri ranges",
+      "Reach Nag Tibba Base Camp by Evening.",
+      "Bonfire (if allowed), dinner & overnight stay in tents.",
+      "Overnight Stay - Nag tibba Basecamp.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Base Camp to Nag Tibba Summit and Back",
+    details: [
+      "Trek: 6–8 km | 5–6 hrs [Total]",
+      "Altitude: Base Camp (2,350 m) → Nag Tibba Summit (3,022 m)",
+      "Start Early as 4:00 AM , have a quick Energy Breakfast.",
+      "Enjoy Sunrise at Nag Tibba Submit- feels Divine.",
+      "Enjoy 180° Himalayan Peaks:",
+      "1. Bandarpoonch",
+      "2. Swargarohini",
+      "3. Kala Nag",
+      "4. Shrikantha",
+      "Explore around Submit",
+      "Perform Nag Devta Pooja Rituals at Temple.",
+      "Back to Base Camp by Lunch",
+      "Explore or Play Around Campsite",
+      "Overnight Stay - Campsite",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Pantwari to Dehradun",
+    details: [
+      "Drive : 90 Kms | 4 - 5 Hrs",
+      "Breakfast at 8:00 AM",
+      "Decend Down to Pantwari.",
+      "Board on Transport awaiting",
+      "Scenic Drive to Dehradun.",
+      "Drop At Dehradun lunch.",
+      "Trip Ends Here !!",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=nag+tibba+Uttarakhand&output=embed",
 
@@ -1233,47 +1485,134 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Kathgodam to Lohajung",
-        details: ["Drive Distance: 210 km", "Stay: Guesthouse"],
-      },
-      {
-        day: "Day 2",
-        title: "Lohajung to Didna",
-        details: ["Trek via village trails"],
-      },
-      {
-        day: "Day 3",
-        title: "Didna to Ali Bugyal",
-        details: ["Forest to meadow transition"],
-      },
-      {
-        day: "Day 4",
-        title: "Ali Bugyal to Patar Nachauni",
-        details: ["High altitude meadow trek"],
-      },
-      {
-        day: "Day 5",
-        title: "Patar Nachauni to Bhagwabasa",
-        details: ["Steep ascent"],
-      },
-      {
-        day: "Day 6",
-        title: "Roopkund Summit",
-        details: ["Visit Skeleton Lake"],
-      },
-      {
-        day: "Day 7",
-        title: "Return to Lohajung",
-        details: ["Descent trek"],
-      },
-      {
-        day: "Day 8",
-        title: "Return to Kathgodam",
-        details: ["Drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Kathgodam to Lohajung",
+    details: [
+      "Altitude 7,662 ft.",
+      "Stay in guest house.",
+      "Drive 210 km (10 hrs drive).",
+      "Local market and network is available.",
+      "Pick up time 06:00 am at the parking of Kathgodham railway station.",
+      "Route:- Kathgodam - Bheem Tal - Almora - Kausani - Gwaldam - Dewal - Lohajung.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Lohargunj to Didna Village",
+    details: [
+      "Trek 6.5 km.",
+      "7,662 to 8,045 ft.",
+      "Reach Didna before lunch.",
+      "Accommodation in village home stay.",
+      "No local market but Network is available.",
+      "Till ruan bagad bridge gradual descent (4.5 km).",
+      "Refill your water bottle at ruan bagad bridge from Neel Ganga river.",
+      "After ruan bagad bridge 2 hours of a steep ascent to Didna Village (2 km).",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Didna Village to Ali Bugyal",
+    details: [
+      "Trek 10.5 km.",
+      "8,045 to 11,320 ft.",
+      "Accommodation in tent.",
+      "Carry water and ors both.",
+      "Reach Ali Bugyal by late noon.",
+      "Keep your wind and waterproof handy.",
+      "Tolpani is the last point for drinking water.",
+      "First half of is through oak and rhododendron forest (Steep ascent).",
+      "Second half of the trek is through big alpine meadows (gradual ascent).",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Ali Bugyal to Patar Nachauni via Bedni Bugyal and Ghora Lotani",
+    details: [
+      "Trek 7 km.",
+      "11,320 to 12,818 ft.",
+      "Easiest day of the trek.",
+      "Accommodation in tent.",
+      "Reach Patar Nachauni before lunch.",
+      "Ali Bugyal to Bedni Bugyal (gradual ascent 2 km).",
+      "Bedni Bugyal to Ghora Lotani (gradual ascent 4 km).",
+      "Ghora Lotani to Patar Nachauni (gradual descent 1 km).",
+      "Spend some time at Ghora Lotani good for acclimatization.",
+      "Ware proper clothing (this is the place where most of the trekkers get AMS).",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Patar Nachauni to Bhagwabasa via Kalu Vinayak",
+    details: [
+      "Trek 4 km.",
+      "12,818 to 14,117 ft.",
+      "Accommodation in tent.",
+      "Reached Camp site by lunch.",
+      "Patar Nachauni to Kalu Vinayak Tempel .",
+      "(first 1 km is gradual ascent and rest 1.5 km is steep ascent).",
+      "Kalu Vinayak to Bhagwabasa (gradual descent 1.5 km, become tricky in may and June ).",
+      "There will be snow on the trail in the month of may and jun and in sep and oct it will be a rocky trail.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Bhagwabasa to Roopkund and back to Bedni Bugyal",
+    details: [
+      "Trek 10 km.",
+      "14,117 to 15755 ft.",
+      "Accommodation in tent.",
+      "Start your trek by 4:00 am.",
+      "Climb to Roopkund is 3 km.",
+      "Challenging day of the trek.",
+      "Carry energy bars, ors and water.",
+      "Breakfast will be at Roopkund top.",
+      "Reach Bhagwabasa back by lunch time.",
+      "Reach Patar Nachauni camp by evening.",
+      "In Aug, Sep, Oct can see skeleton but no snow.",
+      "In May and Jun snow will be there but can't see the skeleton.",
+    ],
+  },
+  {
+    day: "Day 7",
+    title: "Patar Nachauni to Lohajung via Bedni and Wan",
+    details: [
+      "Trek 15 km.",
+      "12,818 to 7,662 ft.",
+      "Accommodation in guest house.",
+      "Patar Nachauni to Ghora Lotani (1 km gradual ascent).",
+      "Ghora Lotani to Bedni Bugyal ( 4 km gradual descent).",
+      "Bedni Bugyal to Doliya Dhar ( 0.5 km gradual walk).",
+      "Doliya Dhar to Ghaeroli Patal ( 3 km steep descent ).",
+      "Ghaeroli Patal to Neel Ganga ( 4 km steep descent ).",
+      "Neel Ganga to Ranka Dhar ( 1 km moderate ascent ).",
+      "Ranka Dhat to Wan Village road head ( 1.5 km gradual descent).",
+      "Wan Village to Loharjung ( 45 minutes drive, road condition is not good).",
+      "Route :- Patar Nachauni - Ghora Lotani - Bedni Bugyal - Doliya Dhar - Ghaeroli Patal - Neel Ganga - Ranka Dhar - Wan Village - drive to Lohajung.",
+    ],
+  },
+  {
+    day: "Day 8",
+    title: "Lohajung to kathgodam",
+    details: [
+      "10 hrs drive.",
+      "Drive 210 km.",
+      "Reach Kathgodam by 6:00 pm.",
+      "On the way to Kathgodam at Kausani you can buy herbal tea and some souvenir.",
+      "Roopkund trek in Seasons.",
+      "Summer Treks (April, May, June)",
+      "1. Less colder.",
+      "2. More windy.",
+      "3. Weather is unpredictable.",
+      "4. Cant see human skeleton.",
+      "5. Roopkund is in frozen condition.",
+      "6. Higher camps covered with snow.",
+      "7. Natural source of drinking water are easily available.",
+      "8. Best for those who want to see snow and want to do a difficult level of trek.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=roopkund+Uttarakhand&output=embed",
 
@@ -1371,37 +1710,64 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Rishikesh to Pipalkoti",
-        details: ["Drive along Alaknanda River"],
-      },
-      {
-        day: "Day 2",
-        title: "Govindghat to Ghangaria",
-        details: ["Drive + trek"],
-      },
-      {
-        day: "Day 3",
-        title: "Valley of Flowers",
-        details: ["Explore the national park"],
-      },
-      {
-        day: "Day 4",
-        title: "Hemkund Sahib",
-        details: ["High altitude trek"],
-      },
-      {
-        day: "Day 5",
-        title: "Return to Pipalkoti",
-        details: ["Trek + drive"],
-      },
-      {
-        day: "Day 6",
-        title: "Return to Rishikesh",
-        details: ["Drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Rishikesh to Pipalkoti",
+    details: [
+      "Altitude: 1,340 m/ 4,400 ft.",
+      "Drive Distance: 200 km.",
+      "Driving Time: 9-10 hrs.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Drive From Pipalkoti To Govindghat - Pulna and Trek to Ghangaria",
+    details: [
+      "Altitude",
+      "Pulna: 2100 m/ 6900 ft.",
+      "Ghangharia: 3,000 m/ 9,800 ft.",
+      "Drive Distance (Pipalkoti to Govindghat): 52 Km | 2 hours.",
+      "Then Dirve Govindghat to Pulna in Local Union Transport 4km in 15min.",
+      "Trek Distance (Pulna to Ghangharia): 9 km | 4 hours.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Ghangaria to Valley of Flower and back to Ghangaria",
+    details: [
+      "Altitude: 3,500 m/ 11,500 ft.",
+      "Trek Distance- 4 km, each way | 7hrs.",
+      "Prominent flowers: Blue Poppy, Snake Foil, White Leaf Hog Foot, Himalayan Rose, Meadow Geranium, Dog Flower, Hooked Stick Seed, and River Anemone.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Ghangaria to Hemkund Sahib and back to Ghangaria",
+    details: [
+      "Altitude: 4,300 m/ 14,100 ft.",
+      "Trek Distance: 6 km, each way | 8-9 hours.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Ghangaria to Govindghat and Drive to Pipalkoti (Badrinath optional)",
+    details: [
+      "Trek Distance (Ghangharia- Pulna): 9 km | 4-5 hrs.",
+      "Drive Distance (Pulna- Govind Ghat): 4km | 15min.",
+      "Drive Distance( Govind Ghat- Badrinath): 25km | 1 hr.",
+      "Drive Distance (Badrinath-Pipalkoti): 75km | 3-4 hrs.",
+      "Note:",
+      "GovindGhat to Badrinath is a landslide-prone area in monsoon time so if our leaders find that your safety is at risk due to weather conditions/ landslide or road blockage then we shall skip Badrinath altogether and drive to Pipalkoti directly.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Pipalkoti to Rishikesh",
+    details: [
+      "Drive Distance: 200km | 9-10km.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=valley+of+flowers&output=embed",
 
@@ -1491,53 +1857,97 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Dehradun to Gangotri",
-        details: ["Drive through Uttarkashi"],
-      },
-      {
-        day: "Day 2",
-        title: "Acclimatization",
-        details: ["Explore Gangotri"],
-      },
-      {
-        day: "Day 3",
-        title: "Gangotri to Bhojbasa",
-        details: ["Trek via Chirbasa"],
-      },
-      {
-        day: "Day 4",
-        title: "Bhojbasa to Tapovan",
-        details: ["Via Gaumukh glacier"],
-      },
-      {
-        day: "Day 5",
-        title: "Tapovan to Nandanvan",
-        details: ["Glacier crossing"],
-      },
-      {
-        day: "Day 6",
-        title: "Vasuki Tal Summit",
-        details: ["Visit glacial lake"],
-      },
-      {
-        day: "Day 7",
-        title: "Return to Chirbasa",
-        details: ["Descent"],
-      },
-      {
-        day: "Day 8",
-        title: "Return to Gangotri",
-        details: ["Trek back"],
-      },
-      {
-        day: "Day 9",
-        title: "Return to Dehradun",
-        details: ["Drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Journey from Dehradun to Gangotri",
+    details: [
+      "Drive Distance: 236 km | Duration: 10–12 hrs",
+      "Early morning departure from Dehradun.",
+      "Drive via Uttarkashi with scenic views of Bhagirathi river.",
+      "Reach Gangotri by evening.",
+      "Check-in to guesthouse and rest.",
     ],
-
+  },
+  {
+    day: "Day 2",
+    title: "Acclimatization Day in Gangotri",
+    details: [
+      "Altitude: 3,100 m approx.",
+      "Short acclimatization walks around Gangotri.",
+      "Visit Gangotri Temple and nearby surroundings.",
+      "Rest and prepare for upcoming trek.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Trek from Gangotri to Bhojbasa via Chirbasa",
+    details: [
+      "Trek Distance: 14 km | Duration: 6–7 hrs",
+      "Trail passes through pine forests and along Bhagirathi river.",
+      "Reach Chirbasa (first major stop).",
+      "Continue gradual ascent to Bhojbasa.",
+      "Overnight stay at Bhojbasa campsite.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Trek from Bhojbasa to Tapovan via Gaumukh",
+    details: [
+      "Trek Distance: 13 km | Duration: 7–9 hrs",
+      "Visit Gaumukh (source of Ganga).",
+      "Glacier crossing and steep ascent towards Tapovan.",
+      "Panoramic views of Shivling and surrounding peaks.",
+      "Overnight stay at Tapovan campsite.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Trek from Tapovan to Nandanvan",
+    details: [
+      "Trek Distance: 7 km | Duration: 4–5 hrs",
+      "Cross glacier sections.",
+      "Reach Nandanvan with views of Bhagirathi peaks.",
+      "Set camp and rest.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Trek from Nandanvan to Vasuki Tal and Back",
+    details: [
+      "Trek Distance: 12 km | Duration: 6–8 hrs",
+      "Steep ascent to Vasuki Tal.",
+      "High altitude glacial lake with stunning surroundings.",
+      "Return to Nandanvan for overnight stay.",
+    ],
+  },
+  {
+    day: "Day 7",
+    title: "Trek from Nandanvan to Chirbasa",
+    details: [
+      "Trek Distance: 11 km | Duration: 5–6 hrs",
+      "Descend via glacier and valley trail.",
+      "Reach Chirbasa campsite.",
+    ],
+  },
+  {
+    day: "Day 8",
+    title: "Trek from Chirbasa to Gangotri",
+    details: [
+      "Trek Distance: 9 km | Duration: 4–5 hrs",
+      "Easy descent along Bhagirathi river.",
+      "Reach Gangotri and rest.",
+    ],
+  },
+  {
+    day: "Day 9",
+    title: "Drive from Gangotri to Dehradun",
+    details: [
+      "Drive Distance: 236 km | Duration: 10–12 hrs",
+      "Return journey via Uttarkashi.",
+      "Reach Dehradun by evening.",
+    ],
+  },
+],
     map: "https://www.google.com/maps?q=vasuki+tal+Uttarakhand&output=embed",
 
     about:
@@ -1626,37 +2036,79 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Rishikesh to Joshimath",
-        details: ["Scenic Himalayan drive"],
-      },
-      {
-        day: "Day 2",
-        title: "Joshimath to Gulling",
-        details: ["Drive + trek"],
-      },
-      {
-        day: "Day 3",
-        title: "Gulling to Khullara",
-        details: ["Forest trail"],
-      },
-      {
-        day: "Day 4",
-        title: "Kuari Pass Summit",
-        details: ["Panoramic views"],
-      },
-      {
-        day: "Day 5",
-        title: "Return to Joshimath",
-        details: ["Descent trek"],
-      },
-      {
-        day: "Day 6",
-        title: "Return to Rishikesh",
-        details: ["Drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Rishikesh to Joshimath",
+    details: [
+      "Drive Distance: ~250 km | Duration: 9–10 hrs",
+      "Early morning departure from Rishikesh.",
+      "Route: Rishikesh → Devprayag → Rudraprayag → Karnaprayag → Joshimath.",
+      "Scenic drive along Alaknanda river with multiple confluences (Prayags).",
+      "Reach Joshimath by evening and check-in to hotel/guesthouse.",
+      "Rest and acclimatize.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Joshimath to Gulling",
+    details: [
+      "Drive Distance: ~12 km (Joshimath to Dhak village) | 45–60 mins",
+      "Trek Distance: ~5–6 km | Duration: 4–5 hrs",
+      "Drive to Dhak village, the starting point of trek.",
+      "Initial steep ascent through village trails.",
+      "Gradual climb through oak and rhododendron forests.",
+      "Reach Gulling campsite with views of Dronagiri peak.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Gulling to Khullara",
+    details: [
+      "Trek Distance: ~4–5 km | Duration: 3–4 hrs",
+      "Easy to moderate trail through dense forest.",
+      "Beautiful oak, maple, and rhododendron sections.",
+      "Gradual altitude gain with occasional clearings.",
+      "Reach Khullara campsite (higher altitude).",
+      "Evening acclimatization walk.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Kuari Pass Summit",
+    details: [
+      "Trek Distance: ~10–12 km (round trip) | Duration: 6–8 hrs",
+      "Early morning summit push.",
+      "Steady ascent above treeline with open meadows.",
+      "Reach Kuari Pass (~3,650 m / 12,000 ft).",
+      "Panoramic Himalayan views: Nanda Devi, Dronagiri, Hathi-Ghoda peaks.",
+      "Spend time at summit for photos and rest.",
+      "Descend back to Khullara/Gulling campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Return to Joshimath",
+    details: [
+      "Trek Distance: ~8–10 km | Duration: 5–6 hrs",
+      "Descend from campsite to Dhak village.",
+      "Drive back to Joshimath.",
+      "Check-in to hotel and rest.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Return to Rishikesh",
+    details: [
+      "Drive Distance: ~250 km | Duration: 9–10 hrs",
+      "Early departure from Joshimath.",
+      "Drive along same scenic route via river valleys.",
+      "Reach Rishikesh by evening.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=Kuari+Pass+Uttarakhand&output=embed",
 
@@ -1746,37 +2198,76 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Rishikesh to Lohajung",
-        details: ["Scenic Himalayan drive"],
-      },
-      {
-        day: "Day 2",
-        title: "Lohajung to Didna",
-        details: ["Village and forest trail"],
-      },
-      {
-        day: "Day 3",
-        title: "Didna to Ali Bugyal",
-        details: ["Forest to meadow transition"],
-      },
-      {
-        day: "Day 4",
-        title: "Ali to Bedni Bugyal",
-        details: ["Meadow walk with peak views"],
-      },
-      {
-        day: "Day 5",
-        title: "Return to Lohajung",
-        details: ["Descent trek"],
-      },
-      {
-        day: "Day 6",
-        title: "Return to Rishikesh",
-        details: ["Drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Rishikesh to Lohajung",
+    details: [
+      "Drive Distance: ~250–270 km | Duration: 10–12 hrs",
+      "Early morning departure from Rishikesh.",
+      "Route: Rishikesh → Devprayag → Karnaprayag → Tharali → Lohajung.",
+      "Scenic drive along Alaknanda river and mountain roads.",
+      "Reach Lohajung by evening.",
+      "Check-in to guesthouse and rest.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Lohajung to Didna",
+    details: [
+      "Trek Distance: ~6–7 km | Duration: 5–6 hrs",
+      "Descend from Lohajung to Neel Ganga river.",
+      "Cross bridge and begin steep ascent towards Didna village.",
+      "Trail passes through forests and small settlements.",
+      "Reach Didna village by afternoon.",
+      "Stay in homestay.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Didna to Ali Bugyal",
+    details: [
+      "Trek Distance: ~10–11 km | Duration: 6–7 hrs",
+      "Start with steep forest climb through oak and rhododendron.",
+      "Gradual transition from forest to open alpine meadows.",
+      "Reach Ali Bugyal (one of Asia’s largest meadows).",
+      "Wide open landscapes with Himalayan views.",
+      "Overnight stay in campsite.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Ali to Bedni Bugyal",
+    details: [
+      "Trek Distance: ~5–6 km | Duration: 3–4 hrs",
+      "Easy walk across rolling meadows.",
+      "Continuous views of Trishul and Nanda Ghunti peaks.",
+      "Reach Bedni Bugyal and Bedni Kund.",
+      "Spend time exploring the meadow.",
+      "Overnight stay in campsite.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Return to Lohajung",
+    details: [
+      "Trek Distance: ~12–14 km | Duration: 6–7 hrs",
+      "Descend via Wan village route.",
+      "Trail passes through forest sections and steep descents.",
+      "Drive from Wan to Lohajung.",
+      "Check-in to guesthouse and rest.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Return to Rishikesh",
+    details: [
+      "Drive Distance: ~250–270 km | Duration: 10–12 hrs",
+      "Early morning departure from Lohajung.",
+      "Drive via Karnaprayag and Devprayag.",
+      "Reach Rishikesh by evening.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=Ali+Bedni+Bugyal+Uttarakhand&output=embed",
 
@@ -1864,37 +2355,75 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Rishikesh to Lohajung",
-        details: ["Scenic drive"],
-      },
-      {
-        day: "Day 2",
-        title: "Lohajung to Bekaltal",
-        details: ["Forest trek"],
-      },
-      {
-        day: "Day 3",
-        title: "Bekaltal to Brahmatal",
-        details: ["Meadow and forest trail"],
-      },
-      {
-        day: "Day 4",
-        title: "Summit Day",
-        details: ["Panoramic Himalayan views"],
-      },
-      {
-        day: "Day 5",
-        title: "Return to Lohajung",
-        details: ["Descent trek"],
-      },
-      {
-        day: "Day 6",
-        title: "Return to Rishikesh",
-        details: ["Drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Rishikesh to Lohajung",
+    details: [
+      "Drive Distance: ~250–270 km | Duration: 10–12 hrs",
+      "Early morning departure from Rishikesh.",
+      "Route via Devprayag, Karnaprayag, Tharali.",
+      "Scenic drive along river valleys and mountain roads.",
+      "Reach Lohajung by evening.",
+      "Check-in to guesthouse and rest.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Lohajung to Bekaltal",
+    details: [
+      "Trek Distance: ~6–7 km | Duration: 5–6 hrs",
+      "Start trek from Lohajung village.",
+      "Trail passes through dense oak and rhododendron forests.",
+      "Gradual ascent with a few steep sections.",
+      "Reach Bekaltal campsite near the lake.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Bekaltal to Brahmatal",
+    details: [
+      "Trek Distance: ~5–6 km | Duration: 4–5 hrs",
+      "Gradual climb through forest sections.",
+      "Transition to open meadows with Himalayan views.",
+      "Reach Brahmatal campsite.",
+      "Evening acclimatization walk.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Summit Day",
+    details: [
+      "Trek Distance: ~7–8 km (round trip) | Duration: 6–7 hrs",
+      "Early morning start for summit push.",
+      "Steady ascent to Brahmatal Top (~3,700 m).",
+      "Panoramic views of Trishul, Nanda Ghunti and surrounding peaks.",
+      "Spend time at summit and descend back to campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Return to Lohajung",
+    details: [
+      "Trek Distance: ~10–12 km | Duration: 6–7 hrs",
+      "Descend via same forest trail.",
+      "Reach Lohajung by afternoon/evening.",
+      "Check-in to guesthouse and rest.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Return to Rishikesh",
+    details: [
+      "Drive Distance: ~250–270 km | Duration: 10–12 hrs",
+      "Early morning departure from Lohajung.",
+      "Drive back via same route.",
+      "Reach Rishikesh by evening.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=Brahmatal+Uttarakhand&output=embed",
 
@@ -1977,37 +2506,77 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Rishikesh to Joshimath",
-        details: ["Scenic drive"],
-      },
-      {
-        day: "Day 2",
-        title: "Joshimath to Gulling",
-        details: ["Drive + trek"],
-      },
-      {
-        day: "Day 3",
-        title: "Gulling to Khullara",
-        details: ["Forest trail"],
-      },
-      {
-        day: "Day 4",
-        title: "Acclimatization",
-        details: ["Preparation for summit"],
-      },
-      {
-        day: "Day 5",
-        title: "Summit Day",
-        details: ["Peak climb and return"],
-      },
-      {
-        day: "Day 6",
-        title: "Return to Joshimath",
-        details: ["Descent and drive"],
-      },
+  {
+    day: "Day 1",
+    title: "Rishikesh to Joshimath",
+    details: [
+      "Drive Distance: ~250 km | Duration: 9–10 hrs",
+      "Early morning departure from Rishikesh.",
+      "Route: Rishikesh → Devprayag → Rudraprayag → Karnaprayag → Joshimath.",
+      "Scenic drive along Alaknanda river with multiple confluences.",
+      "Reach Joshimath by evening.",
+      "Check-in to hotel/guesthouse and rest.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Joshimath to Gulling",
+    details: [
+      "Drive Distance: ~12 km to Dhak village | 45–60 mins",
+      "Trek Distance: ~5–6 km | Duration: 4–5 hrs",
+      "Drive to Dhak, the starting point of trek.",
+      "Steep initial ascent followed by gradual climb.",
+      "Trail through oak and rhododendron forest.",
+      "Reach Gulling campsite with mountain views.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Gulling to Khullara",
+    details: [
+      "Trek Distance: ~4–5 km | Duration: 3–4 hrs",
+      "Moderate trail through dense forest.",
+      "Gradual ascent with scenic clearings.",
+      "Reach Khullara campsite (higher altitude).",
+      "Evening acclimatization walk.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Acclimatization",
+    details: [
+      "Short hikes around campsite for acclimatization.",
+      "Rest and conserve energy for summit push.",
+      "Hydration and slow movement recommended.",
+      "Overnight stay at Khullara campsite.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Summit Day",
+    details: [
+      "Trek Distance: ~10–12 km (round trip) | Duration: 6–8 hrs",
+      "Early morning start for summit.",
+      "Steady ascent above treeline.",
+      "Reach summit (~3,650 m approx.).",
+      "Panoramic Himalayan views: Nanda Devi, Dronagiri, Hathi-Ghoda peaks.",
+      "Descend back to campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Return to Joshimath",
+    details: [
+      "Trek Distance: ~8–10 km | Duration: 5–6 hrs",
+      "Descend to Dhak village.",
+      "Drive back to Joshimath.",
+      "Trip ends.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=Pangarchulla+Peak+Uttarakhand&output=embed",
 
@@ -2103,42 +2672,87 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Rishikesh to Badrinath",
-        details: ["Scenic Himalayan drive"],
-      },
-      {
-        day: "Day 2",
-        title: "Badrinath to Lakshmi Van",
-        details: ["Drive + trek via Mana village"],
-      },
-      {
-        day: "Day 3",
-        title: "Lakshmi Van to Chakrateerth",
-        details: ["Glacier and moraine trail"],
-      },
-      {
-        day: "Day 4",
-        title: "Satopanth Lake",
-        details: ["Explore sacred lake"],
-      },
-      {
-        day: "Day 5",
-        title: "Return to Chakrateerth",
-        details: ["Descent"],
-      },
-      {
-        day: "Day 6",
-        title: "Return to Badrinath",
-        details: ["Trek back"],
-      },
-      {
-        day: "Day 7",
-        title: "Return to Rishikesh",
-        details: ["Drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Rishikesh to Badrinath",
+    details: [
+      "Drive Distance: ~300 km | Duration: 10–12 hrs",
+      "Early morning departure from Rishikesh.",
+      "Route via Devprayag, Rudraprayag, Karnaprayag, Joshimath.",
+      "Drive along Alaknanda river with multiple confluences.",
+      "Reach Badrinath by evening.",
+      "Check-in to hotel and rest.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Badrinath to Lakshmi Van",
+    details: [
+      "Trek Distance: ~8–9 km | Duration: 5–6 hrs",
+      "Short drive/walk to Mana village (last Indian village).",
+      "Trek begins from Mana via Vasudhara falls trail.",
+      "Gradual ascent along Saraswati river valley.",
+      "Rocky terrain with sparse vegetation.",
+      "Reach Lakshmi Van campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Lakshmi Van to Chakrateerth",
+    details: [
+      "Trek Distance: ~6–7 km | Duration: 5–6 hrs",
+      "Trail becomes rugged with moraine and glacial sections.",
+      "Steady ascent with thinning oxygen levels.",
+      "Views of Chaukhamba massif begin to open up.",
+      "Reach Chakrateerth campsite near glacier zone.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Satopanth Lake",
+    details: [
+      "Trek Distance: ~5 km | Duration: 3–4 hrs",
+      "Gradual ascent towards Satopanth Tal (~4,600 m).",
+      "Sacred triangular glacial lake.",
+      "Surrounded by Chaukhamba peaks.",
+      "Spend time exploring and acclimatizing.",
+      "Return to Chakrateerth or camp nearby depending on plan.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Return to Chakrateerth",
+    details: [
+      "If camped near lake, descend to Chakrateerth.",
+      "Trek Distance: ~5 km | Duration: 3–4 hrs",
+      "Careful descent over moraine and loose rocks.",
+      "Rest and recovery at campsite.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Return to Badrinath",
+    details: [
+      "Trek Distance: ~12–14 km | Duration: 7–8 hrs",
+      "Descend via Lakshmi Van and Mana route.",
+      "Long downhill trek with mixed terrain.",
+      "Reach Badrinath by evening.",
+      "Stay in hotel/guesthouse.",
+    ],
+  },
+  {
+    day: "Day 7",
+    title: "Return to Rishikesh",
+    details: [
+      "Drive Distance: ~300 km | Duration: 10–12 hrs",
+      "Early departure from Badrinath.",
+      "Drive via Joshimath and river valleys.",
+      "Reach Rishikesh by evening.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=Satopanth+Lake+Uttarakhand&output=embed",
 
@@ -2234,47 +2848,101 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Dehradun to Dhaula",
-        details: ["Drive through Tons valley"],
-      },
-      {
-        day: "Day 2",
-        title: "Dhaula to Sewa",
-        details: ["Village and forest trail"],
-      },
-      {
-        day: "Day 3",
-        title: "Sewa to Jhaka",
-        details: ["Hanging village trek"],
-      },
-      {
-        day: "Day 4",
-        title: "Jhaka to Saruwas Thatch",
-        details: ["Alpine transition"],
-      },
-      {
-        day: "Day 5",
-        title: "Waterfall Camp",
-        details: ["Climb beside Rupin waterfall"],
-      },
-      {
-        day: "Day 6",
-        title: "Rupin Pass Summit",
-        details: ["Cross pass and descend"],
-      },
-      {
-        day: "Day 7",
-        title: "Ronti Gad to Sangla",
-        details: ["Descend into valley"],
-      },
-      {
-        day: "Day 8",
-        title: "Sangla to Shimla",
-        details: ["Drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Dehradun to Dhaula",
+    details: [
+      "Drive Distance: ~190–200 km | Duration: 9–10 hrs",
+      "Early morning departure from Dehradun.",
+      "Route via Mussoorie → Purola → Mori → Netwar → Dhaula.",
+      "Drive along Tons river valley with scenic mountain views.",
+      "Reach Dhaula by evening.",
+      "Stay in guesthouse/campsite.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Dhaula to Sewa",
+    details: [
+      "Trek Distance: ~10–12 km | Duration: 6–7 hrs",
+      "Trail starts along Rupin river.",
+      "Gradual ascent through villages and forest sections.",
+      "Pass through small settlements and wooden bridges.",
+      "Reach Sewa village by evening.",
+      "Stay in guesthouse/campsite.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Sewa to Jhaka",
+    details: [
+      "Trek Distance: ~10–11 km | Duration: 6–7 hrs",
+      "Trail passes through dense forests and narrow paths.",
+      "Cross suspension bridges over Rupin river.",
+      "Steep ascent towards Jhaka (hanging village).",
+      "Reach Jhaka perched on mountain slope.",
+      "Overnight stay in homestay/campsite.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Jhaka to Saruwas Thatch",
+    details: [
+      "Trek Distance: ~6–7 km | Duration: 5–6 hrs",
+      "Gradual climb through forest and open sections.",
+      "Transition from tree line to alpine terrain.",
+      "Wide valley views begin to open up.",
+      "Reach Saruwas Thatch campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Waterfall Camp",
+    details: [
+      "Trek Distance: ~5–6 km | Duration: 4–5 hrs",
+      "Climb alongside Rupin river valley.",
+      "Approach the iconic multi-tier Rupin waterfall.",
+      "Steep sections near waterfall climb.",
+      "Reach Upper Waterfall campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Rupin Pass Summit",
+    details: [
+      "Trek Distance: ~10–12 km | Duration: 8–10 hrs",
+      "Early morning start for summit push.",
+      "Steep snow climb (depending on season).",
+      "Reach Rupin Pass (~4,650 m).",
+      "Cross pass and descend towards Ronti Gad valley.",
+      "Long descent to campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 7",
+    title: "Ronti Gad to Sangla",
+    details: [
+      "Trek Distance: ~12–14 km | Duration: 6–7 hrs",
+      "Descend through alpine meadows and forest patches.",
+      "Reach road head near Sangla/Kinnaur side.",
+      "Drive to Sangla valley.",
+      "Check-in to guesthouse.",
+    ],
+  },
+  {
+    day: "Day 8",
+    title: "Sangla to Shimla",
+    details: [
+      "Drive Distance: ~220 km | Duration: 7–8 hrs",
+      "Drive through Kinnaur region along Sutlej river.",
+      "Pass through Reckong Peo and Rampur.",
+      "Reach Shimla by evening.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=Rupin+Pass+Trek&output=embed",
 
@@ -2363,47 +3031,101 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Dehradun to Sankri",
-        details: ["Drive through Tons valley"],
-      },
-      {
-        day: "Day 2",
-        title: "Sankri to Seema",
-        details: ["Drive + trek"],
-      },
-      {
-        day: "Day 3",
-        title: "Seema to Har Ki Dun",
-        details: ["Valley trek"],
-      },
-      {
-        day: "Day 4",
-        title: "Har Ki Dun to Ruinsara Tal",
-        details: ["Meadow and lake trek"],
-      },
-      {
-        day: "Day 5",
-        title: "Ruinsara to Odari",
-        details: ["High altitude trail"],
-      },
-      {
-        day: "Day 6",
-        title: "Bali Pass Summit",
-        details: ["Pass crossing and descent"],
-      },
-      {
-        day: "Day 7",
-        title: "To Yamunotri",
-        details: ["Descend to temple"],
-      },
-      {
-        day: "Day 8",
-        title: "Return to Dehradun",
-        details: ["Drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Dehradun to Sankri",
+    details: [
+      "Drive Distance: ~200 km | Duration: 9–10 hrs",
+      "Early morning departure from Dehradun.",
+      "Route via Mussoorie → Purola → Mori → Sankri.",
+      "Drive along Tons river valley with scenic mountain views.",
+      "Reach Sankri by evening.",
+      "Check-in to guesthouse and rest.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Sankri to Seema",
+    details: [
+      "Drive Distance: ~12 km to Taluka | 1 hr",
+      "Trek Distance: ~12–14 km | Duration: 6–7 hrs",
+      "Drive to Taluka, the trek starting point.",
+      "Trail follows Supin river through forests and villages.",
+      "Gradual ascent with wooden bridges and scenic views.",
+      "Reach Seema campsite.",
+      "Overnight stay in tents/guesthouse.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Seema to Har Ki Dun",
+    details: [
+      "Trek Distance: ~10–12 km | Duration: 5–6 hrs",
+      "Trail passes through dense forest and meadows.",
+      "Views of Swargarohini peaks and valley open up.",
+      "Gradual ascent along river valley.",
+      "Reach Har Ki Dun valley campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Har Ki Dun to Ruinsara Tal",
+    details: [
+      "Trek Distance: ~10–11 km | Duration: 5–6 hrs",
+      "Trail moves through alpine meadows and glacial valleys.",
+      "Cross streams and moraine sections.",
+      "Reach Ruinsara Tal (high altitude lake).",
+      "Camp near lake.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Ruinsara to Odari",
+    details: [
+      "Trek Distance: ~5–6 km | Duration: 4–5 hrs",
+      "Steady ascent through rugged terrain.",
+      "Move closer to glacier region.",
+      "Reach Odari campsite near rock shelters.",
+      "Prepare for next day pass crossing.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Bali Pass Summit",
+    details: [
+      "Trek Distance: ~12–14 km | Duration: 10–12 hrs",
+      "Early morning start for summit push.",
+      "Steep ascent over snow and rocky terrain.",
+      "Reach Bali Pass (~4,950 m).",
+      "Panoramic views of Bandarpoonch, Swargarohini peaks.",
+      "Long descent towards lower camps.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 7",
+    title: "To Yamunotri",
+    details: [
+      "Trek Distance: ~8–10 km | Duration: 5–6 hrs",
+      "Descend through forest and rocky trail.",
+      "Reach Yamunotri temple area.",
+      "Visit temple and rest.",
+      "Stay in guesthouse/lodge.",
+    ],
+  },
+  {
+    day: "Day 8",
+    title: "Return to Dehradun",
+    details: [
+      "Drive Distance: ~180–200 km | Duration: 7–8 hrs",
+      "Drive from Yamunotri (via Janki Chatti) to Dehradun.",
+      "Reach Dehradun by evening.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=Bali+Pass+Uttarakhand&output=embed",
 
@@ -2485,17 +3207,32 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Rishikesh to Sari + Trek",
-        details: ["Drive + short trek to campsite"],
-      },
-      {
-        day: "Day 2",
-        title: "Return",
-        details: ["Sunrise view and descend"],
-      },
+  {
+    day: "Day 1",
+    title: "Rishikesh to Sari + Trek",
+    details: [
+      "Drive Distance: ~190–200 km | Duration: 7–8 hrs",
+      "Early morning departure from Rishikesh.",
+      "Route via Devprayag → Rudraprayag → Ukhimath → Sari village.",
+      "Reach Sari by afternoon.",
+      "Trek Distance: ~2–3 km | Duration: 1.5–2 hrs",
+      "Short uphill trek through forest trail to Deoriatal campsite.",
+      "Camp near the lake with views of Chaukhamba peaks.",
+      "Overnight stay in tents.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Return",
+    details: [
+      "Early morning wake-up for sunrise view over Chaukhamba from Deoriatal.",
+      "Breakfast at campsite.",
+      "Descend trek back to Sari village (2–3 km | 1–2 hrs).",
+      "Drive back to Rishikesh (~190–200 km | 7–8 hrs).",
+      "Reach by evening.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=Deoria+Tal+Uttarakhand&output=embed",
 
@@ -2583,42 +3320,85 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Kathgodam to Khati",
-        details: ["Drive through Kumaon hills"],
-      },
-      {
-        day: "Day 2",
-        title: "Khati to Dwali",
-        details: ["River valley trek"],
-      },
-      {
-        day: "Day 3",
-        title: "Dwali to Phurkia",
-        details: ["Gradual ascent"],
-      },
-      {
-        day: "Day 4",
-        title: "Pindari Glacier Visit",
-        details: ["Glacier viewpoint trek"],
-      },
-      {
-        day: "Day 5",
-        title: "Return to Dwali",
-        details: ["Descent"],
-      },
-      {
-        day: "Day 6",
-        title: "Return to Khati",
-        details: ["Forest trail"],
-      },
-      {
-        day: "Day 7",
-        title: "Return to Kathgodam",
-        details: ["Drive back"],
-      },
+  {
+    day: "Day 1",
+    title: "Kathgodam to Khati",
+    details: [
+      "Drive Distance: ~210–230 km | Duration: 9–10 hrs",
+      "Early morning departure from Kathgodam.",
+      "Route via Bageshwar → Song → Loharkhet.",
+      "Final stretch involves short trek/drive to Khati village.",
+      "Scenic drive through Kumaon hills and river valleys.",
+      "Reach Khati by evening.",
+      "Stay in homestay/guesthouse.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Khati to Dwali",
+    details: [
+      "Trek Distance: ~11–12 km | Duration: 5–6 hrs",
+      "Trail follows Pindar river through dense forest.",
+      "Gradual ascent with wooden bridges and stream crossings.",
+      "Reach Dwali (confluence of Pindar and Kafni rivers).",
+      "Overnight stay in campsite/guesthouse.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Dwali to Phurkia",
+    details: [
+      "Trek Distance: ~5–6 km | Duration: 3–4 hrs",
+      "Steady gradual ascent along valley.",
+      "Tree line begins to thin out.",
+      "Views of surrounding peaks start appearing.",
+      "Reach Phurkia campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Pindari Glacier Visit",
+    details: [
+      "Trek Distance: ~6–7 km (round trip) | Duration: 5–6 hrs",
+      "Early morning start towards Zero Point (Pindari Glacier viewpoint).",
+      "Trail becomes rocky and glacial.",
+      "View of Pindari Glacier snout and surrounding peaks.",
+      "Spend time at viewpoint.",
+      "Return to Phurkia campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Return to Dwali",
+    details: [
+      "Trek Distance: ~5–6 km | Duration: 3–4 hrs",
+      "Descend along same trail.",
+      "Reach Dwali campsite.",
+      "Rest and overnight stay.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Return to Khati",
+    details: [
+      "Trek Distance: ~11–12 km | Duration: 5–6 hrs",
+      "Descend through forest trail along river.",
+      "Reach Khati village.",
+      "Stay in homestay/guesthouse.",
+    ],
+  },
+  {
+    day: "Day 7",
+    title: "Return to Kathgodam",
+    details: [
+      "Drive Distance: ~210–230 km | Duration: 9–10 hrs",
+      "Drive back via Bageshwar route.",
+      "Reach Kathgodam by evening.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=Pindari+Glacier+Uttarakhand&output=embed",
 
@@ -2710,15 +3490,85 @@ export const treksData = [
       "Personal expenses",
     ],
 
-    itinerary: [
-      { day: "Day 1", title: "Kathgodam to Khati", details: ["Drive"] },
-      { day: "Day 2", title: "Khati to Dwali", details: ["Forest trek"] },
-      { day: "Day 3", title: "Dwali to Kafni", details: ["Valley trail"] },
-      { day: "Day 4", title: "Glacier Visit", details: ["Explore glacier"] },
-      { day: "Day 5", title: "Return to Dwali", details: ["Descend"] },
-      { day: "Day 6", title: "Return to Khati", details: ["Village trail"] },
-      { day: "Day 7", title: "Return to Kathgodam", details: ["Drive"] },
+   itinerary: [
+  {
+    day: "Day 1",
+    title: "Kathgodam to Khati",
+    details: [
+      "Drive Distance: ~210–230 km | Duration: 9–10 hrs",
+      "Early morning departure from Kathgodam.",
+      "Route via Bageshwar → Song → Loharkhet.",
+      "Final stretch includes short trek/drive to Khati village.",
+      "Scenic drive through Kumaon hills and river valleys.",
+      "Reach Khati by evening.",
+      "Stay in homestay/guesthouse.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Khati to Dwali",
+    details: [
+      "Trek Distance: ~11–12 km | Duration: 5–6 hrs",
+      "Trail follows Pindar river through dense forest.",
+      "Gradual ascent with wooden bridges and stream crossings.",
+      "Reach Dwali (junction for Pindari and Kafni valleys).",
+      "Overnight stay in campsite/guesthouse.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Dwali to Kafni",
+    details: [
+      "Trek Distance: ~7–8 km | Duration: 4–5 hrs",
+      "Trail diverts into Kafni valley.",
+      "Narrow path along Kafni river with gradual ascent.",
+      "Dense forest gradually opens into alpine terrain.",
+      "Reach Kafni campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Glacier Visit",
+    details: [
+      "Trek Distance: ~6–7 km (round trip) | Duration: 5–6 hrs",
+      "Early morning hike towards Kafni Glacier viewpoint.",
+      "Rocky and moraine terrain near glacier zone.",
+      "View of glacier snout and surrounding peaks.",
+      "Return to Kafni campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Return to Dwali",
+    details: [
+      "Trek Distance: ~7–8 km | Duration: 4–5 hrs",
+      "Descend back along same valley trail.",
+      "Reach Dwali campsite.",
+      "Rest and overnight stay.",
+    ],
+  },
+  {
+    day: "Day 6",
+    title: "Return to Khati",
+    details: [
+      "Trek Distance: ~11–12 km | Duration: 5–6 hrs",
+      "Descend through forest trail along river.",
+      "Reach Khati village.",
+      "Stay in homestay/guesthouse.",
+    ],
+  },
+  {
+    day: "Day 7",
+    title: "Return to Kathgodam",
+    details: [
+      "Drive Distance: ~210–230 km | Duration: 9–10 hrs",
+      "Drive back via Bageshwar route.",
+      "Reach Kathgodam by evening.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=Kafni+Glacier+Uttarakhand&output=embed",
 
@@ -2808,35 +3658,67 @@ export const treksData = [
     ],
 
     itinerary: [
-      {
-        day: "Day 1",
-        title: "Manali to Jobra to Chika",
-        details: [
-          "Drive from Manali to Jobra",
-          "Trek through forests to Chika campsite",
-        ],
-      },
-      {
-        day: "Day 2",
-        title: "Chika to Balu Ka Ghera",
-        details: ["Trek along river valley", "Views of snow-clad peaks"],
-      },
-      {
-        day: "Day 3",
-        title: "Balu Ka Ghera to Hampta Pass to Shea Goru",
-        details: ["Climb to Hampta Pass", "Descend into Spiti valley"],
-      },
-      {
-        day: "Day 4",
-        title: "Shea Goru to Chatru",
-        details: ["Descend through rocky terrain", "Follow river trail"],
-      },
-      {
-        day: "Day 5",
-        title: "Chatru to Chandratal (optional) to Manali",
-        details: ["Visit Chandratal Lake", "Drive back to Manali"],
-      },
+  {
+    day: "Day 1",
+    title: "Manali to Jobra to Chika",
+    details: [
+      "Drive Distance: ~16–18 km | Duration: 1–1.5 hrs (Manali to Jobra)",
+      "Trek Distance: ~2–3 km | Duration: 2–3 hrs",
+      "Drive from Manali to Jobra via Prini and Sethan.",
+      "Start trek through dense pine and maple forests.",
+      "Easy gradual trail along Rani Nallah stream.",
+      "Reach Chika campsite in a wide meadow.",
+      "Overnight stay in tents.",
     ],
+  },
+  {
+    day: "Day 2",
+    title: "Chika to Balu Ka Ghera",
+    details: [
+      "Trek Distance: ~7–8 km | Duration: 5–6 hrs",
+      "Trail follows river valley with multiple stream crossings.",
+      "Gradual ascent through open meadows.",
+      "Surrounded by snow-clad peaks and alpine landscape.",
+      "Reach Balu Ka Ghera campsite (river basin).",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 3",
+    title: "Balu Ka Ghera to Hampta Pass to Shea Goru",
+    details: [
+      "Trek Distance: ~10–12 km | Duration: 8–10 hrs",
+      "Steep ascent towards Hampta Pass (~4,270 m).",
+      "Snow patches depending on season.",
+      "Reach Hampta Pass summit with panoramic views.",
+      "Descend into barren Spiti side landscape.",
+      "Steep and long descent to Shea Goru campsite.",
+      "Overnight stay in tents.",
+    ],
+  },
+  {
+    day: "Day 4",
+    title: "Shea Goru to Chatru",
+    details: [
+      "Trek Distance: ~6–7 km | Duration: 4–5 hrs",
+      "Gradual descent along Chandra river.",
+      "Rocky and rugged terrain.",
+      "Reach Chatru road head.",
+      "Overnight stay in camps/guesthouse.",
+    ],
+  },
+  {
+    day: "Day 5",
+    title: "Chatru to Chandratal (optional) to Manali",
+    details: [
+      "Drive Distance: ~80–100 km total | Duration: 6–8 hrs",
+      "Drive from Chatru towards Chandratal Lake (subject to road/weather conditions).",
+      "Visit Chandratal (high altitude lake ~4,300 m).",
+      "Return via Rohtang Pass to Manali.",
+      "Reach Manali by evening.",
+    ],
+  },
+],
 
     map: "https://www.google.com/maps?q=Hampta+Pass&output=embed",
 
@@ -2844,110 +3726,7 @@ export const treksData = [
       "At 7 Oaks Trek and Travels, we offer expertly guided Hampta Pass treks with well-planned itineraries, experienced trek leaders, and safe camping arrangements. This trek is perfect for those looking to experience both lush Himalayan valleys and the stark beauty of Spiti in one journey.",
   },
 
-  {
-    id: "beas-kund-trek",
-    title: "Beas Kund Trek",
-
-    intro:
-      "A short glacier trek near Manali leading to the origin of the Beas River.",
-
-    desc: "The Beas Kund Trek is a beginner-friendly Himalayan trek that takes you to the glacial source of the Beas River. Surrounded by towering peaks like Hanuman Tibba and Friendship Peak, it offers a perfect mix of adventure and scenic beauty in a short duration.",
-
-    difficulty: "Easy to Moderate",
-    days: "3 Days",
-    altitude: "3,700 m",
-    price: "₹6,999",
-    tag: "Glacier Trek",
-    rating: "4.7",
-    reviews: "290",
-
-    region: "Pir Panjal Range, Himachal Pradesh",
-    startingPoint: "Solang Valley (Manali)",
-    distance: "16 km",
-    bestSeason: "May – October",
-
-    images: [
-      "https://res.cloudinary.com/dyiffrkzh/image/upload/v1700289195/bbj/fiytvtsirqsomej1b2j8.jpg",
-      "https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20240923-893941706-1727088830.jpg",
-      "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl48511-Bikat-Adventures.JPG",
-      "https://raftaaradventure.in/wp-content/uploads/2021/02/beas_kund_day3.jpeg",
-    ],
-
-    highlights: [
-      {
-        title: "Beas Kund Glacier",
-        desc: "Origin point of the Beas River.",
-        image:
-          "https://static.india.com/wp-content/uploads/2019/01/Beas-Kund-Trek.jpg",
-      },
-      {
-        title: "Mountain Peaks",
-        desc: "Views of Hanuman Tibba & Friendship Peak.",
-        image:
-          "https://raftaaradventure.in/wp-content/uploads/2021/02/beas_kund_day3.jpeg",
-      },
-      {
-        title: "Alpine Meadows",
-        desc: "Lush green landscapes and campsites.",
-        image:
-          "https://www.bikatadventures.com/images/BlogspotContents/BlogspotImageUrl48511-Bikat-Adventures.JPG",
-      },
-      {
-        title: "Short Duration",
-        desc: "Perfect quick Himalayan getaway.",
-        image:
-          "https://res.cloudinary.com/dyiffrkzh/image/upload/v1700289195/bbj/fiytvtsirqsomej1b2j8.jpg",
-      },
-      {
-        title: "Beginner Friendly",
-        desc: "Ideal for first-time trekkers.",
-        image:
-          "https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20240923-893941706-1727088830.jpg",
-      },
-    ],
-
-    included: [
-      "Professional trek leader and guides",
-      "Accommodation (tents)",
-      "All meals during trek",
-      "Camping equipment",
-      "Permits and forest fees",
-      "Basic first aid kit",
-      "Trekking Gear",
-    ],
-
-    excluded: [
-      "Transport to/from Manali",
-      "Personal trekking gear",
-      "Travel insurance",
-      "Porter charges",
-      "Personal expenses",
-      "Anything not mentioned in inclusions",
-    ],
-
-    itinerary: [
-      {
-        day: "Day 1",
-        title: "Manali to Solang Valley to Dhundi",
-        details: ["Drive to Solang Valley", "Trek to Dhundi campsite"],
-      },
-      {
-        day: "Day 2",
-        title: "Dhundi to Beas Kund and back",
-        details: ["Trek to Beas Kund glacier", "Return to campsite"],
-      },
-      {
-        day: "Day 3",
-        title: "Dhundi to Solang to Manali",
-        details: ["Descend to Solang Valley", "Drive back to Manali"],
-      },
-    ],
-
-    map: "https://www.google.com/maps?q=Beas+Kund&output=embed",
-
-    about:
-      "At 7 Oaks Trek and Travels, we provide safe and well-organized Beas Kund treks ideal for beginners and families. With experienced guides and comfortable camping, this trek offers a perfect introduction to the Himalayan trekking experience.",
-  },
+  
 
   {
     id: "triund-trek",
@@ -2978,7 +3757,7 @@ export const treksData = [
       "https://imagedelivery.net/b5BaLsj4VQverR1B1BtSow/d5dffa8d-44cc-4b4a-6a30-adb789d52800/w=3840,q=auto",
       "https://curlygirlytravely.in/wp-content/uploads/2024/05/img20240427133241.jpg",
       "https://karerihikers.com/wp-content/uploads/2023/01/07.jpg",
-      "https://himtrek.co.in/wp-content/uploads/2023/09/Mcleodganj-Triund-Trek.webp"
+      "https://himtrek.co.in/wp-content/uploads/2023/09/Mcleodganj-Triund-Trek.webp",
     ],
 
     // ✅ HIGHLIGHTS
@@ -2986,17 +3765,20 @@ export const treksData = [
       {
         title: "Dhauladhar Range Views",
         desc: "Get stunning close-up views of the snow-covered Dhauladhar mountains.",
-        image: "https://www.dpolohotels.com/wp-content/uploads/2024/11/Tips-for-an-Unforgettable-Triund-Trek-Experience-1.jpg",
+        image:
+          "https://www.dpolohotels.com/wp-content/uploads/2024/11/Tips-for-an-Unforgettable-Triund-Trek-Experience-1.jpg",
       },
       {
         title: "Kangra Valley Panorama",
         desc: "Witness breathtaking views of the vast Kangra Valley below.",
-        image: "https://himtrek.co.in/wp-content/uploads/2025/10/Premium-Triund-Trek.webp",
+        image:
+          "https://himtrek.co.in/wp-content/uploads/2025/10/Premium-Triund-Trek.webp",
       },
       {
         title: "Forest Trail",
         desc: "Walk through scenic oak, rhododendron, and deodar forests.",
-        image: "https://himtrek.co.in/wp-content/uploads/2023/09/Mcleodganj-Triund-Trek.webp",
+        image:
+          "https://himtrek.co.in/wp-content/uploads/2023/09/Mcleodganj-Triund-Trek.webp",
       },
       {
         title: "Sunrise & Sunset",
@@ -3006,7 +3788,8 @@ export const treksData = [
       {
         title: "Camping Experience",
         desc: "Camp under a sky full of stars in the Himalayas.",
-        image: "https://himtrek.co.in/wp-content/uploads/2025/10/Premium-Triund-Trek.webp",
+        image:
+          "https://himtrek.co.in/wp-content/uploads/2025/10/Premium-Triund-Trek.webp",
       },
     ],
 
@@ -3059,1004 +3842,988 @@ export const treksData = [
   },
 
   {
-  id: "kheerganga-trek",
-  title: "Kheerganga Trek",
-
-  intro:
-    "A scenic Himalayan trek in the Parvati Valley, famous for its natural hot water springs, riverside trails, and spiritual aura. Perfect for beginners seeking a blend of adventure and relaxation.",
-
-  desc: "The Kheerganga Trek is one of the most popular treks in Himachal Pradesh, located in the beautiful Parvati Valley. Starting from Barshaini, the trail winds through dense pine forests, wooden bridges, waterfalls, and alongside the Parvati River. The trek is known for its relaxing hot water springs at the summit, where trekkers can soak and unwind after the climb. Kheerganga also holds spiritual significance, believed to be associated with Lord Shiva’s meditation. With its easy-to-moderate difficulty, scenic landscapes, and unique experience of natural hot springs, Kheerganga is a must-do trek for both beginners and experienced trekkers.",
-
-  difficulty: "Easy to Moderate",
-  days: "2–3 Days",
-  altitude: "9,711 ft / 2,960 m",
-  price: "₹4,499",
-  tag: "Hot Spring & Valley Trek",
-  rating: "4.8",
-  reviews: "610",
-
-  region: "Parvati Valley, Himachal Pradesh",
-  startingPoint: "Barshaini",
-  distance: "12–13 km",
-  bestSeason: "March–June & September–November",
-
-  // ✅ HERO + GALLERY
-  images: [
-    "https://himtrek.co.in/wp-content/uploads/2024/09/Kheerganga-Trek-2.webp",
-    "https://i0.wp.com/travelshoebum.com/wp-content/uploads/2017/04/dsc_5767.jpg?fit=4928%2C3264&ssl=1",
-    "https://media.moxtain.com/trekking/kheerganga-trek/1200/parvati-valley-kheerganga.webp",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKjswbAMNUjY8JksHuPiDsnObYd3ksHd4mtQ&s",
-    "https://www.trailhikers.in/wp-content/uploads/2019/11/Kheerganga-Trek-001.jpg",
-  ],
-
-  // ✅ HIGHLIGHTS
-  highlights: [
-    {
-      title: "Natural Hot Springs",
-      desc: "Relax in the natural hot water pools at the top of Kheerganga.",
-      image:
-        "https://himtrek.co.in/wp-content/uploads/2026/01/kheerganga-trek-winter-5-1200x700.webp",
-    },
-    {
-      title: "Parvati River Trail",
-      desc: "Trek alongside the beautiful Parvati River with scenic views.",
-      image:
-        "https://media.moxtain.com/trekking/kheerganga-trek/1200/parvati-valley-kheerganga.webp",
-    },
-    {
-      title: "Waterfalls & Forests",
-      desc: "Pass through dense forests, waterfalls, and wooden bridges.",
-      image:
-        "https://d3gw4aml0lneeh.cloudfront.net/assets/locations/Nu3viEo47KKL.jpg",
-    },
-    {
-      title: "Spiritual Significance",
-      desc: "A sacred site associated with Lord Shiva's meditation.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKjswbAMNUjY8JksHuPiDsnObYd3ksHd4mtQ&s",
-    },
-    {
-      title: "Camping Experience",
-      desc: "Stay overnight in camps surrounded by mountains.",
-      image:
-        "https://static.toiimg.com/photo/64354462.cms",
-    },
-  ],
-
-  included: [
-    "Professional trek leader and local guides",
-    "Accommodation (camps at Kheerganga)",
-    "Meals during the trek",
-    "Camping equipment",
-    "Basic first aid and safety support",
-  ],
-
-  excluded: [
-    "Personal trekking gear",
-    "Transport to/from base location",
-    "Travel insurance",
-    "Personal expenses",
-    "Anything not mentioned in inclusions",
-  ],
-
-  itinerary: [
-    {
-      day: "Day 1",
-      title: "Barshaini to Kheerganga Trek",
-      details: [
-        "Altitude: 9,711 ft",
-        "Trek Distance: 12–13 km | 5–6 hrs",
-        "Trail through forests and waterfalls",
-        "Walk along Parvati River",
-        "Arrival at Kheerganga campsite",
-        "Enjoy hot water springs",
-        "Overnight stay in camps",
-      ],
-    },
-    {
-      day: "Day 2",
-      title: "Kheerganga to Barshaini",
-      details: [
-        "Morning at campsite",
-        "Optional hot spring bath",
-        "Descend back to Barshaini",
-        "Trek Distance: 12–13 km | 4–5 hrs",
-        "Trip ends",
-      ],
-    },
-  ],
-
-  map: "https://www.google.com/maps?q=kheerganga+trek&output=embed",
-
-  about:
-    "At 7 Oaks Trek and Travels, we organize safe and memorable Kheerganga trekking experiences with experienced guides, comfortable camps, and well-planned itineraries. Whether you're seeking adventure, relaxation, or a spiritual escape, Kheerganga offers the perfect Himalayan getaway.",
-},
-
-{
-  id: "kareri-lake-trek",
-  title: "Kareri Lake Trek",
-
-  intro:
-    "A serene alpine lake trek in Himachal Pradesh, offering crystal-clear waters, lush forests, and breathtaking views of the Dhauladhar range.",
-
-  desc: "The Kareri Lake Trek is a beautiful and relatively lesser-known trek located in the Kangra district of Himachal Pradesh. Starting from Kareri Village near Dharamshala, the trail takes you through dense pine forests, charming villages, and scenic mountain streams. Kareri Lake, situated at a high altitude, is known for its crystal-clear glacial water and tranquil surroundings. The lake reflects the surrounding snow-covered peaks, creating a picture-perfect Himalayan landscape. This trek is ideal for beginners and nature lovers who want to experience an offbeat Himalayan trail with minimal crowds and stunning natural beauty.",
-
-  difficulty: "Easy to Moderate",
-  days: "3–4 Days",
-  altitude: "9,600 ft / 2,926 m",
-  price: "₹6,999",
-  tag: "Alpine Lake Trek",
-  rating: "4.7",
-  reviews: "320",
-
-  region: "Kangra District, Himachal Pradesh",
-  startingPoint: "Kareri Village",
-  distance: "26 km",
-  bestSeason: "April–June & September–November",
-
-  // ✅ HERO + GALLERY
-  images: [
-    "https://himtrek.co.in/wp-content/uploads/2025/10/Kareri-Lake-Trek-3-1200x700.webp",
-    "https://himalayanambition.in/wp-content/uploads/2022/10/kareri-lake-trek.jpg",
-    "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1728986046/banbanjara/tx4ci18tkj2dv2oekubz.webp",
-    "https://himalayashelter.com/static/images/20251206_105259_kareri_lake_trek.jpg",
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/10/be/ef/kareri-lake-is-a-beautiful.jpg?w=1200&h=-1&s=1",
-  ],
-
-  // ✅ HIGHLIGHTS
-  highlights: [
-    {
-      title: "Kareri Lake",
-      desc: "A pristine high-altitude lake with crystal-clear glacial water.",
-      image:
-        "https://himtrek.co.in/wp-content/uploads/2025/10/Kareri-Lake-Trek-3-1200x700.webp",
-    },
-    {
-      title: "Dhauladhar Views",
-      desc: "Witness majestic views of the snow-covered Dhauladhar range.",
-      image:
-        "https://himalayanambition.in/wp-content/uploads/2022/10/kareri-lake-trek.jpg",
-    },
-    {
-      title: "Forest Trails",
-      desc: "Trek through dense pine, oak, and rhododendron forests.",
-      image:
-        "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1728986046/banbanjara/tx4ci18tkj2dv2oekubz.webp",
-    },
-    {
-      title: "Riverside Camps",
-      desc: "Camp near flowing streams and peaceful Himalayan landscapes.",
-      image:
-        "https://himalayashelter.com/static/images/20251206_105259_kareri_lake_trek.jpg",
-    },
-    {
-      title: "Offbeat Experience",
-      desc: "Enjoy a peaceful trek away from heavy tourist crowds.",
-      image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/10/be/ef/kareri-lake-is-a-beautiful.jpg?w=1200&h=-1&s=1",
-    },
-  ],
-
-  included: [
-    "Professional trek leader and local guides",
-    "Accommodation (camps during trek)",
-    "Meals during the trek",
-    "Camping equipment",
-    "Basic first aid and safety support",
-  ],
-
-  excluded: [
-    "Personal trekking gear",
-    "Transport to/from base location",
-    "Travel insurance",
-    "Personal expenses",
-    "Anything not mentioned in inclusions",
-  ],
-
-  itinerary: [
-    {
-      day: "Day 1",
-      title: "Arrival at Kareri Village",
-      details: [
-        "Drive from Dharamshala to Kareri Village",
-        "Explore local village surroundings",
-        "Briefing about trek",
-        "Overnight stay in homestay/camp",
-      ],
-    },
-    {
-      day: "Day 2",
-      title: "Kareri Village to Kareri Lake",
-      details: [
-        "Altitude: 9,600 ft",
-        "Trek Distance: 13 km | 5–6 hrs",
-        "Trail through forests and streams",
-        "Arrival at Kareri Lake campsite",
-        "Overnight stay near lake",
-      ],
-    },
-    {
-      day: "Day 3",
-      title: "Kareri Lake to Kareri Village",
-      details: [
-        "Morning exploration of lake",
-        "Descend back to Kareri Village",
-        "Trek Distance: 13 km | 4–5 hrs",
-        "Overnight stay / Departure",
-      ],
-    },
-  ],
-
-  map: "https://www.google.com/maps?q=kareri+lake+himachal&output=embed",
-
-  about:
-    "At 7 Oaks Trek and Travels, we organize guided Kareri Lake trekking experiences with experienced local guides, comfortable camping arrangements, and carefully planned itineraries to ensure a safe and peaceful Himalayan adventure. Perfect for those seeking an offbeat and scenic trek experience.",
-},
-
-{
-  id: "bhrigu-lake-trek",
-  title: "Bhrigu Lake Trek",
-
-  intro:
-    "A high-altitude alpine lake trek known for vast meadows, panoramic Himalayan views, and a sacred glacial lake near Manali.",
-
-  desc: "The Bhrigu Lake Trek is one of the most scenic high-altitude treks in Himachal Pradesh, located near Manali. Famous for its lush green alpine meadows that resemble the grasslands of Switzerland, this trek offers breathtaking views of prominent Himalayan peaks like Hanuman Tibba, Seven Sisters, and Deo Tibba. Bhrigu Lake, situated at a high altitude, is considered sacred and is believed to be associated with Maharishi Bhrigu. The trek is unique because you quickly gain altitude and reach high-altitude landscapes within a short duration. With expansive meadows, snow patches, and stunning mountain vistas, Bhrigu Lake Trek is perfect for those seeking a short yet rewarding Himalayan adventure.",
-
-  difficulty: "Moderate",
-  days: "4 Days",
-  altitude: "14,100 ft / 4,300 m",
-  price: "₹8,999",
-  tag: "Alpine Meadow & Lake Trek",
-  rating: "4.8",
-  reviews: "410",
-
-  region: "Manali, Himachal Pradesh",
-  startingPoint: "Gulaba",
-  distance: "25 km",
-  bestSeason: "May–October",
-
-  // ✅ HERO + GALLERY
-  images: [
-    "https://backpackersunited.in/_next/image?url=https%3A%2F%2Fbpu-images-v1.s3.eu-north-1.amazonaws.com%2Fuploads%2Ftestimage-bhrigu%20ci.webp&w=1920&q=75",
-    "https://mountainsojourns.com/wp-content/uploads/36_BhriguLakeTrek-Manali.jpg",
-    "https://himalayashelter.com/static/images/20251206_104710_bhrigu_lake_trek.jpg",
-    "https://vl-prod-static.b-cdn.net/system/images/000/586/399/f44444669532e4a8d4bef8754de44893/original/1568118448921-bhrigulakeBanBanjara.jpg",
-    "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
-  ],
-
-  // ✅ HIGHLIGHTS
-  highlights: [
-    {
-      title: "Bhrigu Lake",
-      desc: "A sacred high-altitude glacial lake with stunning reflections.",
-      image:
-        "https://backpackersunited.in/_next/image?url=https%3A%2F%2Fbpu-images-v1.s3.eu-north-1.amazonaws.com%2Fuploads%2Ftestimage-bhrigu%20ci.webp&w=1920&q=75",
-    },
-    {
-      title: "Alpine Meadows",
-      desc: "Walk through vast green meadows resembling European landscapes.",
-      image:
-        "https://mountainsojourns.com/wp-content/uploads/36_BhriguLakeTrek-Manali.jpg",
-    },
-    {
-      title: "Panoramic Himalayan Views",
-      desc: "Witness peaks like Hanuman Tibba and Deo Tibba.",
-      image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/10/be/ef/kareri-lake-is-a-beautiful.jpg?w=1200&h=-1&s=1",
-    },
-    {
-      title: "High Altitude Experience",
-      desc: "Reach over 14,000 ft within a short trek duration.",
-      image:
-        "https://himalayashelter.com/static/images/20251206_105259_kareri_lake_trek.jpg",
-    },
-    {
-      title: "Camping in Meadows",
-      desc: "Enjoy scenic campsites surrounded by mountains.",
-      image:
-        "https://trekveda.com/img/packageImage/bhrigu-lake-trek-4.jpg",
-    },
-  ],
-
-  included: [
-    "Professional trek leader and local guides",
-    "Accommodation (camps during trek)",
-    "Meals during the trek",
-    "Camping equipment",
-    "Basic first aid and safety support",
-  ],
-
-  excluded: [
-    "Personal trekking gear",
-    "Transport to/from base location",
-    "Travel insurance",
-    "Personal expenses",
-    "Anything not mentioned in inclusions",
-  ],
-
-  itinerary: [
-    {
-      day: "Day 1",
-      title: "Manali to Gulaba & Trek to Rola Kholi",
-      details: [
-        "Drive Distance: 22 km from Manali",
-        "Trek Distance: 6 km | 4–5 hrs",
-        "Gradual ascent through forests and meadows",
-        "Camp at Rola Kholi",
-      ],
-    },
-    {
-      day: "Day 2",
-      title: "Rola Kholi to Bhrigu Lake & Back",
-      details: [
-        "Altitude: 14,100 ft",
-        "Trek Distance: 10 km (round trip)",
-        "Steep climb to Bhrigu Lake",
-        "Explore lake and surroundings",
-        "Return to campsite",
-      ],
-    },
-    {
-      day: "Day 3",
-      title: "Rola Kholi to Gulaba",
-      details: [
-        "Trek Distance: 6 km | 3–4 hrs",
-        "Descend through meadows",
-        "Drive back to Manali",
-      ],
-    },
-    {
-      day: "Day 4",
-      title: "Departure from Manali",
-      details: [
-        "Trip ends",
-        "Optional sightseeing in Manali",
-      ],
-    },
-  ],
-
-  map: "https://www.google.com/maps?q=bhrigu+lake+manali&output=embed",
-
-  about:
-    "At 7 Oaks Trek and Travels, we offer professionally guided Bhrigu Lake trekking experiences with experienced local guides, quality camping arrangements, and carefully planned itineraries to ensure safety and comfort. This trek is perfect for those seeking a high-altitude Himalayan adventure within a short duration.",
-},
-
-{
-  id: "beas-kund-trek",
-  title: "Beas Kund Trek",
-
-  intro:
-    "A short yet rewarding Himalayan trek leading to the origin of the Beas River, surrounded by towering snow-clad peaks near Manali.",
-
-  desc: "The Beas Kund Trek is a beautiful high-altitude trek in Himachal Pradesh that takes you to the source of the Beas River. Starting from Solang Valley near Manali, the trail passes through lush green meadows, glacial streams, and rocky terrains, offering stunning views of prominent peaks like Hanuman Tibba, Friendship Peak, and Shitidhar. Beas Kund is a small alpine lake formed by glacial meltwater and holds mythological significance, believed to be the meditation site of Sage Vyas. The trek is ideal for beginners looking for a short Himalayan adventure with incredible mountain scenery and a touch of spirituality.",
-
-  difficulty: "Moderate",
-  days: "3 Days",
-  altitude: "12,772 ft / 3,894 m",
-  price: "₹7,499",
-  tag: "Glacial Source Trek",
-  rating: "4.7",
-  reviews: "380",
-
-  region: "Manali, Himachal Pradesh",
-  startingPoint: "Solang Valley",
-  distance: "16 km",
-  bestSeason: "May–October",
-
-  // ✅ HERO + GALLERY
-  images: [
-    "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1700289195/bbj/fiytvtsirqsomej1b2j8.jpg",
-    "https://www.treksandtrails.org/system/images/000/237/726/f1f9b59fd2d8e82957d81b9e494a365e/banner/Beas-Kund.jpg",
-    "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-Beas-kund-trek2233-Bikat-Adventures.jpg",
-    "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/BeasKundManali/beas-kund-campsite.jpeg",
-    "https://himtrek.co.in/wp-content/uploads/2023/09/Beas-Kund-Trek-Manali-1-1.webp",
-  ],
-
-  // ✅ HIGHLIGHTS
-  highlights: [
-    {
-      title: "Beas Kund",
-      desc: "A sacred glacial lake and the origin of the Beas River.",
-      image:
-        "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
-    },
-    {
-      title: "Hanuman Tibba Views",
-      desc: "Close views of towering peaks like Hanuman Tibba and Friendship Peak.",
-      image:
-        "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
-    },
-    {
-      title: "Alpine Meadows",
-      desc: "Walk through lush green meadows and open landscapes.",
-      image:
-        "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
-    },
-    {
-      title: "Glacial Streams",
-      desc: "Cross crystal-clear streams flowing from glaciers.",
-      image:
-        "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
-    },
-    {
-      title: "Camping Experience",
-      desc: "Camp in scenic high-altitude campsites under the stars.",
-      image:
-        "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
-    },
-  ],
-
-  included: [
-    "Professional trek leader and local guides",
-    "Accommodation (camps during trek)",
-    "Meals during the trek",
-    "Camping equipment",
-    "Basic first aid and safety support",
-  ],
-
-  excluded: [
-    "Personal trekking gear",
-    "Transport to/from base location",
-    "Travel insurance",
-    "Personal expenses",
-    "Anything not mentioned in inclusions",
-  ],
-
-  itinerary: [
-    {
-      day: "Day 1",
-      title: "Manali to Solang Valley & Trek to Dhundi/Bakarthach",
-      details: [
-        "Drive from Manali to Solang Valley",
-        "Trek Distance: 6–7 km | 4–5 hrs",
-        "Trail through meadows and river streams",
-        "Camp at Dhundi / Bakarthach",
-      ],
-    },
-    {
-      day: "Day 2",
-      title: "Dhundi to Beas Kund & Return",
-      details: [
-        "Altitude: 12,772 ft",
-        "Trek Distance: 6 km (round trip)",
-        "Gradual ascent to Beas Kund",
-        "Explore lake and surrounding peaks",
-        "Return to campsite",
-      ],
-    },
-    {
-      day: "Day 3",
-      title: "Descend to Solang & Drive to Manali",
-      details: [
-        "Trek Distance: 6–7 km | 3–4 hrs",
-        "Descend through same route",
-        "Drive back to Manali",
-        "Trip ends",
-      ],
-    },
-  ],
-
-  map: "https://www.google.com/maps?q=beas+kund+manali&output=embed",
-
-  about:
-    "At 7 Oaks Trek and Travels, we organize professionally guided Beas Kund trekking experiences with experienced local guides, comfortable camping arrangements, and well-planned itineraries. This trek is perfect for those seeking a short yet scenic Himalayan adventure with incredible mountain views.",
-},
-
-{
-  id: "prashar-lake-trek",
-  title: "Prashar Lake Trek",
-
-  intro:
-    "A scenic Himalayan trek leading to the mystical Prashar Lake, famous for its floating island and panoramic views of the Dhauladhar range.",
-
-  desc: "The Prashar Lake Trek is a beautiful and relatively easy trek located in the Mandi district of Himachal Pradesh. The trail takes you through dense forests, charming villages, and open meadows, offering stunning views of the Dhauladhar mountain range. Prashar Lake is known for its unique floating island that changes position over time, adding to the mystery of the place. The lake is also home to the ancient Prashar Rishi Temple, making it both a scenic and spiritual destination. This trek is ideal for beginners, weekend travelers, and those looking for a peaceful Himalayan escape.",
-
-  difficulty: "Easy to Moderate",
-  days: "2–3 Days",
-  altitude: "8,956 ft / 2,730 m",
-  price: "₹5,499",
-  tag: "Lake & Cultural Trek",
-  rating: "4.7",
-  reviews: "350",
-
-  region: "Mandi District, Himachal Pradesh",
-  startingPoint: "Baggi Village",
-  distance: "16 km",
-  bestSeason: "March–June & September–December",
-
-  // ✅ HERO + GALLERY
-  images: [
-    "https://himtrek.co.in/wp-content/uploads/2024/07/Prashar-Lake.webp",
-    "https://himtrek.co.in/wp-content/uploads/2025/12/frozen-Prashar-Lake-Trek.webp",
-    "https://himtrek.co.in/wp-content/uploads/2025/12/Prashar-Lake-Trek-1200x700.webp",
-    "https://happygotrips.com/wp-content/uploads/2019/09/Prashar-Lake-Trek-Tour-2.jpg",
-    "https://gokyo.in/cdn/shop/articles/Untitled_design_76_01a37e2f-a176-4638-afb4-d315bb6e87b5.jpg?v=1764672258&width=2048",
-    "https://imagedelivery.net/b5BaLsj4VQverR1B1BtSow/d697c205-b367-451b-883f-dc6296f2d000/w=640,q=80"
-  ],
-
-  // ✅ HIGHLIGHTS
-  highlights: [
-    {
-      title: "Prashar Lake",
-      desc: "A serene lake with a mysterious floating island.",
-      image:
-        "https://himtrek.co.in/wp-content/uploads/2024/07/Prashar-Lake.webp",
-    },
-    {
-      title: "Floating Island",
-      desc: "Witness the unique floating landmass that shifts within the lake.",
-      image:
-        "https://himtrek.co.in/wp-content/uploads/2025/12/Prashar-Lake-Trek-1200x700.webp",
-    },
-    {
-      title: "Prashar Rishi Temple",
-      desc: "Ancient temple showcasing Himachali architecture and spiritual heritage.",
-      image:
-        "https://imagedelivery.net/b5BaLsj4VQverR1B1BtSow/d697c205-b367-451b-883f-dc6296f2d000/w=640,q=80",
-    },
-    {
-      title: "Dhauladhar Views",
-      desc: "Panoramic views of the Dhauladhar mountain range.",
-      image:
-        "https://happygotrips.com/wp-content/uploads/2019/09/Prashar-Lake-Trek-Tour-2.jpg",
-    },
-    {
-      title: "Forest & Meadow Trails",
-      desc: "Trek through scenic forests and open Himalayan landscapes.",
-      image:
-        "https://madtrek.com/wp-content/uploads/2022/01/prashar_lake_madtrek-scaled-1.jpg",
-    },
-  ],
-
-  included: [
-    "Professional trek leader and local guides",
-    "Accommodation (camps / guesthouse)",
-    "Meals during the trek",
-    "Camping equipment",
-    "Basic first aid and safety support",
-  ],
-
-  excluded: [
-    "Personal trekking gear",
-    "Transport to/from base location",
-    "Travel insurance",
-    "Personal expenses",
-    "Anything not mentioned in inclusions",
-  ],
-
-  itinerary: [
-    {
-      day: "Day 1",
-      title: "Drive to Baggi & Trek to Prashar Lake",
-      details: [
-        "Drive from Mandi to Baggi Village",
-        "Trek Distance: 8 km | 4–5 hrs",
-        "Trail through forests and meadows",
-        "Arrival at Prashar Lake",
-        "Explore lake and temple",
-        "Overnight stay in camps / guesthouse",
-      ],
-    },
-    {
-      day: "Day 2",
-      title: "Explore & Descend to Baggi",
-      details: [
-        "Morning exploration of lake",
-        "Optional sunrise view",
-        "Descend back to Baggi Village",
-        "Trek Distance: 8 km | 3–4 hrs",
-        "Trip ends",
-      ],
-    },
-  ],
-
-  map: "https://www.google.com/maps?q=prashar+lake+himachal&output=embed",
-
-  about:
-    "At 7 Oaks Trek and Travels, we offer professionally guided Prashar Lake trekking experiences with experienced guides, comfortable accommodations, and well-planned itineraries. This trek is perfect for those seeking a short, scenic, and culturally rich Himalayan getaway.",
-},
-
-{
-  id: "indrahar-pass-trek",
-  title: "Indrahar Pass Trek",
-
-  intro:
-    "A challenging Himalayan trek that crosses the mighty Dhauladhar range, offering dramatic landscapes, rocky terrains, and breathtaking high-altitude views.",
-
-  desc: "The Indrahar Pass Trek is one of the most thrilling and adventurous treks in Himachal Pradesh, starting from McLeod Ganj near Dharamshala. This trek takes you through dense forests, alpine meadows, and rugged rocky terrains as you ascend towards the Indrahar Pass. The pass acts as a natural gateway between the Kangra and Chamba valleys, offering stunning panoramic views of both regions. As you gain altitude, the landscape transforms dramatically from lush greenery to barren high-altitude terrain. This trek is ideal for experienced trekkers seeking a challenging Himalayan adventure with rewarding summit views and diverse landscapes.",
-
-  difficulty: "Difficult",
-  days: "5–6 Days",
-  altitude: "14,245 ft / 4,342 m",
-  price: "₹10,999",
-  tag: "High Altitude Pass Trek",
-  rating: "4.8",
-  reviews: "290",
-
-  region: "Dharamshala, Himachal Pradesh",
-  startingPoint: "McLeod Ganj / Dharamkot",
-  distance: "35 km",
-  bestSeason: "May–June & September–October",
-
-  // ✅ HERO + GALLERY
-  images: [
-    "https://d2qa7a8q0vuocm.cloudfront.net/images/26045220190611050156.png",
-    "https://imgcld.yatra.com/ytimages/image/upload/v1517481009/AdvNation/ANN_TRP341/Indrahar_Pass_Trek_(3)_1437978661_qVE6HX.jpg",
-    "https://himalayanambition.in/wp-content/uploads/2023/09/1565067-1565066_trek-to-bharmour-over-indrahar-pass.jpg",
-    "https://pmlholidays.com/admin/production/images/packages/indrahar-pass_1.png",
-    "https://www.legendindiaholidays.com/images/trek5.webp",
-  ],
-
-  // ✅ HIGHLIGHTS
-  highlights: [
-    {
-      title: "Indrahar Pass Summit",
-      desc: "Reach the high-altitude pass connecting Kangra and Chamba valleys.",
-      image:
-        "https://d2qa7a8q0vuocm.cloudfront.net/images/26045220190611050156.png",
-    },
-    {
-      title: "Dhauladhar Range",
-      desc: "Experience dramatic landscapes of the rugged Dhauladhar mountains.",
-      image:
-        "https://imgcld.yatra.com/ytimages/image/upload/v1517481009/AdvNation/ANN_TRP341/Indrahar_Pass_Trek_(3)_1437978661_qVE6HX.jpg",
-    },
-    {
-      title: "Alpine Meadows",
-      desc: "Walk through scenic meadows before entering rocky terrain.",
-      image:
-        "https://www.legendindiaholidays.com/images/trek5.webp",
-    },
-    {
-      title: "Triund & Lahesh Caves",
-      desc: "Camp at famous spots like Triund and Lahesh Caves.",
-      image:
-        "https://pmlholidays.com/admin/production/images/packages/indrahar-pass_1.png",
-    },
-    {
-      title: "Panoramic Valley Views",
-      desc: "Witness stunning views of both Kangra and Chamba valleys.",
-      image:
-        "https://himalayanambition.in/wp-content/uploads/2023/09/1565067-1565066_trek-to-bharmour-over-indrahar-pass.jpg",
-    },
-  ],
-
-  included: [
-    "Professional trek leader and local guides",
-    "Accommodation (camps during trek)",
-    "Meals during the trek",
-    "Camping equipment",
-    "Basic first aid and safety support",
-  ],
-
-  excluded: [
-    "Personal trekking gear",
-    "Transport to/from base location",
-    "Travel insurance",
-    "Personal expenses",
-    "Anything not mentioned in inclusions",
-  ],
-
-  itinerary: [
-    {
-      day: "Day 1",
-      title: "McLeod Ganj to Triund",
-      details: [
-        "Trek Distance: 9–10 km | 4–5 hrs",
-        "Forest trail with gradual ascent",
-        "Arrival at Triund campsite",
-        "Overnight stay in camps",
-      ],
-    },
-    {
-      day: "Day 2",
-      title: "Triund to Lahesh Caves",
-      details: [
-        "Trek Distance: 6 km | 4–5 hrs",
-        "Steeper trail with rocky terrain",
-        "Camp near Lahesh Caves",
-      ],
-    },
-    {
-      day: "Day 3",
-      title: "Lahesh Caves to Indrahar Pass & Return",
-      details: [
-        "Altitude: 14,245 ft",
-        "Early morning summit push",
-        "Rocky climb to pass",
-        "Panoramic Himalayan views",
-        "Return to campsite",
-      ],
-    },
-    {
-      day: "Day 4",
-      title: "Descend to Triund",
-      details: [
-        "Trek back via same route",
-        "Overnight stay at Triund",
-      ],
-    },
-    {
-      day: "Day 5",
-      title: "Triund to McLeod Ganj",
-      details: [
-        "Descend to base",
-        "Trip ends",
-      ],
-    },
-  ],
-
-  map: "https://www.google.com/maps?q=indrahar+pass&output=embed",
-
-  about:
-    "At 7 Oaks Trek and Travels, we organize professionally guided Indrahar Pass trekking experiences with experienced guides, proper acclimatization planning, and safety-focused itineraries. This trek is ideal for experienced trekkers looking for a challenging and rewarding Himalayan expedition.",
-}, 
-
-{
-  id: "sar-pass-trek",
-  title: "Sar Pass Trek",
-
-  intro:
-    "A thrilling high-altitude trek in Parvati Valley known for snow trails, dense forests, and dramatic landscape transitions from green meadows to icy slopes.",
-
-  desc: "The Sar Pass Trek is one of the most exciting treks in Himachal Pradesh, located in the beautiful Parvati Valley near Kasol. This trek is famous for its constantly changing landscapes, starting from dense pine forests and charming villages, moving into lush meadows, and finally reaching snow-covered terrain near the Sar Pass. The highlight of the trek is crossing the Sar Pass itself, often covered in snow, followed by an exhilarating descent on snow slopes. With scenic campsites, river crossings, and panoramic Himalayan views, Sar Pass is a perfect blend of adventure and natural beauty, making it ideal for thrill-seekers and trekking enthusiasts.",
-
-  difficulty: "Moderate to Difficult",
-  days: "5 Days",
-  altitude: "13,800 ft / 4,200 m",
-  price: "₹9,999",
-  tag: "Snow & Adventure Trek",
-  rating: "4.8",
-  reviews: "460",
-
-  region: "Parvati Valley, Himachal Pradesh",
-  startingPoint: "Kasol",
-  distance: "48 km",
-  bestSeason: "April–June & September–October",
-
-  // ✅ HERO + GALLERY
-  images: [
-    "https://himalayandaredevils.com/storage/uploads/694d0971df128.jpg",
-    "https://www.kailashrath.com/_next/image?url=https%3A%2F%2Fkailash-rath-treks.s3.ap-south-1.amazonaws.com%2F60433a09-8572-4-H8n_gAWq.webp&w=3840&q=75",
-    "https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20250325-284658011-1742897732.png",
-    "https://kailash-rath-treks.s3.ap-south-1.amazonaws.com/353113f7-a3a6-4-jHV6deiM.webp",
-    "https://vl-prod-static.b-cdn.net/system/images/000/854/555/66b6395d671aa45ebed2c6095e55b4f1/original/Screenshot_2025-07-24_172752.png",
-  ],
-
-  // ✅ HIGHLIGHTS
-  highlights: [
-    {
-      title: "Sar Pass Crossing",
-      desc: "Experience crossing a high-altitude snow-covered pass.",
-      image:
-        "https://himalayandaredevils.com/storage/uploads/694d0971df128.jpg",
-    },
-    {
-      title: "Snow Slides",
-      desc: "Enjoy thrilling snow descents after crossing the pass.",
-      image:
-        "https://www.kailashrath.com/_next/image?url=https%3A%2F%2Fkailash-rath-treks.s3.ap-south-1.amazonaws.com%2F60433a09-8572-4-H8n_gAWq.webp&w=3840&q=75",
-    },
-    {
-      title: "Forest Trails",
-      desc: "Walk through dense pine and oak forests near Kasol.",
-      image:
-        "https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20250325-284658011-1742897732.png",
-    },
-    {
-      title: "Beautiful Campsites",
-      desc: "Camp at scenic locations like Grahan, Min Thach, and Nagaru.",
-      image:
-        "https://kailash-rath-treks.s3.ap-south-1.amazonaws.com/353113f7-a3a6-4-jHV6deiM.webp",
-    },
-    {
-      title: "Panoramic Views",
-      desc: "Witness breathtaking Himalayan landscapes throughout the trek.",
-      image:
-        "https://www.kailashrath.com/_next/image?url=https%3A%2F%2Fkailash-rath-treks.s3.ap-south-1.amazonaws.com%2F60433a09-8572-4-H8n_gAWq.webp&w=3840&q=75",
-    },
-  ],
-
-  included: [
-    "Professional trek leader and local guides",
-    "Accommodation (camps during trek)",
-    "Meals during the trek",
-    "Camping equipment",
-    "Basic first aid and safety support",
-  ],
-
-  excluded: [
-    "Personal trekking gear",
-    "Transport to/from base location",
-    "Travel insurance",
-    "Personal expenses",
-    "Anything not mentioned in inclusions",
-  ],
-
-  itinerary: [
-    {
-      day: "Day 1",
-      title: "Kasol to Grahan Village",
-      details: [
-        "Trek Distance: 9 km | 4–5 hrs",
-        "Trail through forest and riverside",
-        "Arrival at Grahan Village",
-        "Overnight stay in camps",
-      ],
-    },
-    {
-      day: "Day 2",
-      title: "Grahan to Min Thach",
-      details: [
-        "Trek Distance: 7 km | 5–6 hrs",
-        "Steeper climb through forests",
-        "Arrival at Min Thach campsite",
-      ],
-    },
-    {
-      day: "Day 3",
-      title: "Min Thach to Nagaru",
-      details: [
-        "Trek Distance: 6 km | 4–5 hrs",
-        "Transition to alpine terrain",
-        "Cold high-altitude campsite",
-      ],
-    },
-    {
-      day: "Day 4",
-      title: "Nagaru to Sar Pass & Descend to Biskeri Thach",
-      details: [
-        "Altitude: 13,800 ft",
-        "Early morning climb to Sar Pass",
-        "Snow-covered trail",
-        "Exciting snow descent",
-        "Camp at Biskeri Thach",
-      ],
-    },
-    {
-      day: "Day 5",
-      title: "Biskeri Thach to Barshaini & Departure",
-      details: [
-        "Trek Distance: 10 km | 4–5 hrs",
-        "Descend through forests and meadows",
-        "Drive back to Kasol",
-        "Trip ends",
-      ],
-    },
-  ],
-
-  map: "https://www.google.com/maps?q=sar+pass+trek&output=embed",
-
-  about:
-    "At 7 Oaks Trek and Travels, we organize professionally guided Sar Pass trekking experiences with experienced guides, proper acclimatization planning, and safe camping arrangements. This trek is perfect for adventure seekers looking for a thrilling Himalayan experience with snow, forests, and stunning views.",
-},
-
-{
-  id: "chandratal-lake-trek",
-  title: "Chandratal Lake Trek",
-
-  intro:
-    "A breathtaking high-altitude trek to the famous Chandratal Lake, known as the 'Moon Lake', set amidst the dramatic landscapes of Spiti Valley.",
-
-  desc: "The Chandratal Lake Trek is one of the most stunning high-altitude experiences in Himachal Pradesh, located in the remote and rugged Spiti Valley. Known as the 'Moon Lake' due to its crescent shape, Chandratal sits at an altitude of over 14,000 ft and is surrounded by barren mountains and vast open skies. The trek offers a unique contrast to lush Himalayan trails, featuring cold desert terrain, crystal-clear blue waters, and mesmerizing reflections of the surrounding peaks. The journey to Chandratal itself is an adventure, passing through iconic locations like Rohtang Pass and Kunzum Pass. This trek is ideal for those seeking a raw and surreal Himalayan experience far from crowded trails.",
-
-  difficulty: "Moderate",
-  days: "4–5 Days",
-  altitude: "14,100 ft / 4,300 m",
-  price: "₹11,999",
-  tag: "High Altitude Lake Trek",
-  rating: "4.9",
-  reviews: "280",
-
-  region: "Spiti Valley, Himachal Pradesh",
-  startingPoint: "Batal",
-  distance: "14 km",
-  bestSeason: "June–September",
-
-  // ✅ HERO + GALLERY
-  images: [
-    "https://thrilltourism.com/storage/2353/oP2FIJ0VtMbwOIZGTIg4DlK6ga6N3y8KhRaiSKm7.jpg",
-    "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_images/68c9c78020591.webp",
-    "https://www.peakadventuretour.com/assets/images/chandratal-trek2.webp",
-    "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/ChandratalLake/chandratal-lake.jpg",
-    "https://vl-prod-static.b-cdn.net/system/images/000/831/144/44488055a0fa7db971593c2dd681ba0f/original/8261a49b-0c0f-4556-8821-ac404ae6a9c3.JPG",
-    "https://www.adventurush.com/wp-content/uploads/2022/08/Copy-of-Copy-of-IMG-20220709-WA0126.jpg",
-  ],
-
-  // ✅ HIGHLIGHTS
-  highlights: [
-    {
-      title: "Chandratal Lake",
-      desc: "A crescent-shaped high-altitude lake with crystal-clear blue water.",
-      image:
-        "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_images/68c9c78020591.webp",
-    },
-    {
-      title: "Spiti Landscape",
-      desc: "Experience the dramatic cold desert terrain of Spiti Valley.",
-      image:
-        "https://storage.googleapis.com/stateless-www-justwravel-com/2019/03/Spiti-Road-Trip-JustWravel-7.jpg",
-    },
-    {
-      title: "Kunzum Pass Route",
-      desc: "Cross the iconic Kunzum Pass with breathtaking views.",
-      image:
-        "hhttps://i0.wp.com/theroadsandbeyond.com/wp-content/uploads/2017/08/kunzum-pass.jpg?resize=780%2C520&ssl=1",
-    },
-    {
-      title: "Night Sky Experience",
-      desc: "Witness one of the clearest starry skies in the Himalayas.",
-      image:
-        "https://thrilltourism.com/storage/2353/oP2FIJ0VtMbwOIZGTIg4DlK6ga6N3y8KhRaiSKm7.jpg",
-    },
-    {
-      title: "Remote Himalayan Beauty",
-      desc: "Explore untouched and less crowded high-altitude terrain.",
-      image:
-        "https://himalayashelter.com/static/images/08_feb_2025_11_46_26-chandratal-baralacha-trek.jpg",
-    },
-  ],
-
-  included: [
-    "Professional trek leader and local guides",
-    "Accommodation (camps during trek)",
-    "Meals during the trek",
-    "Camping equipment",
-    "Basic first aid and safety support",
-  ],
-
-  excluded: [
-    "Personal trekking gear",
-    "Transport to/from base location",
-    "Travel insurance",
-    "Personal expenses",
-    "Anything not mentioned in inclusions",
-  ],
-
-  itinerary: [
-    {
-      day: "Day 1",
-      title: "Manali to Batal",
-      details: [
-        "Drive via Rohtang Pass",
-        "Scenic journey through high-altitude terrain",
-        "Overnight stay at Batal",
-      ],
-    },
-    {
-      day: "Day 2",
-      title: "Batal to Chandratal Trek",
-      details: [
-        "Altitude: 14,100 ft",
-        "Trek Distance: 7 km | 3–4 hrs",
-        "Gradual ascent to Chandratal Lake",
-        "Explore lake surroundings",
-        "Camp near lake",
-      ],
-    },
-    {
-      day: "Day 3",
-      title: "Explore Chandratal & Return to Batal",
-      details: [
-        "Morning exploration of lake",
-        "Photography and relaxation",
-        "Return trek to Batal",
-      ],
-    },
-    {
-      day: "Day 4",
-      title: "Return to Manali",
-      details: [
-        "Drive back via Kunzum Pass",
-        "Trip ends",
-      ],
-    },
-  ],
-
-  map: "https://www.google.com/maps?q=chandratal+lake+spiti&output=embed",
-
-  about:
-    "At 7 Oaks Trek and Travels, we organize professionally guided Chandratal Lake trekking experiences with experienced guides, safe travel arrangements, and well-planned itineraries. This trek is perfect for those seeking a unique high-altitude Himalayan adventure in the stunning landscapes of Spiti Valley.",
-}
-
+    id: "kheerganga-trek",
+    title: "Kheerganga Trek",
+
+    intro:
+      "A scenic Himalayan trek in the Parvati Valley, famous for its natural hot water springs, riverside trails, and spiritual aura. Perfect for beginners seeking a blend of adventure and relaxation.",
+
+    desc: "The Kheerganga Trek is one of the most popular treks in Himachal Pradesh, located in the beautiful Parvati Valley. Starting from Barshaini, the trail winds through dense pine forests, wooden bridges, waterfalls, and alongside the Parvati River. The trek is known for its relaxing hot water springs at the summit, where trekkers can soak and unwind after the climb. Kheerganga also holds spiritual significance, believed to be associated with Lord Shiva’s meditation. With its easy-to-moderate difficulty, scenic landscapes, and unique experience of natural hot springs, Kheerganga is a must-do trek for both beginners and experienced trekkers.",
+
+    difficulty: "Easy to Moderate",
+    days: "2–3 Days",
+    altitude: "9,711 ft / 2,960 m",
+    price: "₹4,499",
+    tag: "Hot Spring & Valley Trek",
+    rating: "4.8",
+    reviews: "610",
+
+    region: "Parvati Valley, Himachal Pradesh",
+    startingPoint: "Barshaini",
+    distance: "12–13 km",
+    bestSeason: "March–June & September–November",
+
+    // ✅ HERO + GALLERY
+    images: [
+      "https://himtrek.co.in/wp-content/uploads/2024/09/Kheerganga-Trek-2.webp",
+      "https://i0.wp.com/travelshoebum.com/wp-content/uploads/2017/04/dsc_5767.jpg?fit=4928%2C3264&ssl=1",
+      "https://media.moxtain.com/trekking/kheerganga-trek/1200/parvati-valley-kheerganga.webp",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKjswbAMNUjY8JksHuPiDsnObYd3ksHd4mtQ&s",
+      "https://www.trailhikers.in/wp-content/uploads/2019/11/Kheerganga-Trek-001.jpg",
+    ],
+
+    // ✅ HIGHLIGHTS
+    highlights: [
+      {
+        title: "Natural Hot Springs",
+        desc: "Relax in the natural hot water pools at the top of Kheerganga.",
+        image:
+          "https://himtrek.co.in/wp-content/uploads/2026/01/kheerganga-trek-winter-5-1200x700.webp",
+      },
+      {
+        title: "Parvati River Trail",
+        desc: "Trek alongside the beautiful Parvati River with scenic views.",
+        image:
+          "https://media.moxtain.com/trekking/kheerganga-trek/1200/parvati-valley-kheerganga.webp",
+      },
+      {
+        title: "Waterfalls & Forests",
+        desc: "Pass through dense forests, waterfalls, and wooden bridges.",
+        image:
+          "https://d3gw4aml0lneeh.cloudfront.net/assets/locations/Nu3viEo47KKL.jpg",
+      },
+      {
+        title: "Spiritual Significance",
+        desc: "A sacred site associated with Lord Shiva's meditation.",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKjswbAMNUjY8JksHuPiDsnObYd3ksHd4mtQ&s",
+      },
+      {
+        title: "Camping Experience",
+        desc: "Stay overnight in camps surrounded by mountains.",
+        image: "https://static.toiimg.com/photo/64354462.cms",
+      },
+    ],
+
+    included: [
+      "Professional trek leader and local guides",
+      "Accommodation (camps at Kheerganga)",
+      "Meals during the trek",
+      "Camping equipment",
+      "Basic first aid and safety support",
+    ],
+
+    excluded: [
+      "Personal trekking gear",
+      "Transport to/from base location",
+      "Travel insurance",
+      "Personal expenses",
+      "Anything not mentioned in inclusions",
+    ],
+
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "Barshaini to Kheerganga Trek",
+        details: [
+          "Altitude: 9,711 ft",
+          "Trek Distance: 12–13 km | 5–6 hrs",
+          "Trail through forests and waterfalls",
+          "Walk along Parvati River",
+          "Arrival at Kheerganga campsite",
+          "Enjoy hot water springs",
+          "Overnight stay in camps",
+        ],
+      },
+      {
+        day: "Day 2",
+        title: "Kheerganga to Barshaini",
+        details: [
+          "Morning at campsite",
+          "Optional hot spring bath",
+          "Descend back to Barshaini",
+          "Trek Distance: 12–13 km | 4–5 hrs",
+          "Trip ends",
+        ],
+      },
+    ],
+
+    map: "https://www.google.com/maps?q=kheerganga+trek&output=embed",
+
+    about:
+      "At 7 Oaks Trek and Travels, we organize safe and memorable Kheerganga trekking experiences with experienced guides, comfortable camps, and well-planned itineraries. Whether you're seeking adventure, relaxation, or a spiritual escape, Kheerganga offers the perfect Himalayan getaway.",
+  },
+
+  {
+    id: "kareri-lake-trek",
+    title: "Kareri Lake Trek",
+
+    intro:
+      "A serene alpine lake trek in Himachal Pradesh, offering crystal-clear waters, lush forests, and breathtaking views of the Dhauladhar range.",
+
+    desc: "The Kareri Lake Trek is a beautiful and relatively lesser-known trek located in the Kangra district of Himachal Pradesh. Starting from Kareri Village near Dharamshala, the trail takes you through dense pine forests, charming villages, and scenic mountain streams. Kareri Lake, situated at a high altitude, is known for its crystal-clear glacial water and tranquil surroundings. The lake reflects the surrounding snow-covered peaks, creating a picture-perfect Himalayan landscape. This trek is ideal for beginners and nature lovers who want to experience an offbeat Himalayan trail with minimal crowds and stunning natural beauty.",
+
+    difficulty: "Easy to Moderate",
+    days: "3–4 Days",
+    altitude: "9,600 ft / 2,926 m",
+    price: "₹6,999",
+    tag: "Alpine Lake Trek",
+    rating: "4.7",
+    reviews: "320",
+
+    region: "Kangra District, Himachal Pradesh",
+    startingPoint: "Kareri Village",
+    distance: "26 km",
+    bestSeason: "April–June & September–November",
+
+    // ✅ HERO + GALLERY
+    images: [
+      "https://himtrek.co.in/wp-content/uploads/2025/10/Kareri-Lake-Trek-3-1200x700.webp",
+      "https://himalayanambition.in/wp-content/uploads/2022/10/kareri-lake-trek.jpg",
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1728986046/banbanjara/tx4ci18tkj2dv2oekubz.webp",
+      "https://himalayashelter.com/static/images/20251206_105259_kareri_lake_trek.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/10/be/ef/kareri-lake-is-a-beautiful.jpg?w=1200&h=-1&s=1",
+    ],
+
+    // ✅ HIGHLIGHTS
+    highlights: [
+      {
+        title: "Kareri Lake",
+        desc: "A pristine high-altitude lake with crystal-clear glacial water.",
+        image:
+          "https://himtrek.co.in/wp-content/uploads/2025/10/Kareri-Lake-Trek-3-1200x700.webp",
+      },
+      {
+        title: "Dhauladhar Views",
+        desc: "Witness majestic views of the snow-covered Dhauladhar range.",
+        image:
+          "https://himalayanambition.in/wp-content/uploads/2022/10/kareri-lake-trek.jpg",
+      },
+      {
+        title: "Forest Trails",
+        desc: "Trek through dense pine, oak, and rhododendron forests.",
+        image:
+          "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1728986046/banbanjara/tx4ci18tkj2dv2oekubz.webp",
+      },
+      {
+        title: "Riverside Camps",
+        desc: "Camp near flowing streams and peaceful Himalayan landscapes.",
+        image:
+          "https://himalayashelter.com/static/images/20251206_105259_kareri_lake_trek.jpg",
+      },
+      {
+        title: "Offbeat Experience",
+        desc: "Enjoy a peaceful trek away from heavy tourist crowds.",
+        image:
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/10/be/ef/kareri-lake-is-a-beautiful.jpg?w=1200&h=-1&s=1",
+      },
+    ],
+
+    included: [
+      "Professional trek leader and local guides",
+      "Accommodation (camps during trek)",
+      "Meals during the trek",
+      "Camping equipment",
+      "Basic first aid and safety support",
+    ],
+
+    excluded: [
+      "Personal trekking gear",
+      "Transport to/from base location",
+      "Travel insurance",
+      "Personal expenses",
+      "Anything not mentioned in inclusions",
+    ],
+
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "Arrival at Kareri Village",
+        details: [
+          "Drive from Dharamshala to Kareri Village",
+          "Explore local village surroundings",
+          "Briefing about trek",
+          "Overnight stay in homestay/camp",
+        ],
+      },
+      {
+        day: "Day 2",
+        title: "Kareri Village to Kareri Lake",
+        details: [
+          "Altitude: 9,600 ft",
+          "Trek Distance: 13 km | 5–6 hrs",
+          "Trail through forests and streams",
+          "Arrival at Kareri Lake campsite",
+          "Overnight stay near lake",
+        ],
+      },
+      {
+        day: "Day 3",
+        title: "Kareri Lake to Kareri Village",
+        details: [
+          "Morning exploration of lake",
+          "Descend back to Kareri Village",
+          "Trek Distance: 13 km | 4–5 hrs",
+          "Overnight stay / Departure",
+        ],
+      },
+    ],
+
+    map: "https://www.google.com/maps?q=kareri+lake+himachal&output=embed",
+
+    about:
+      "At 7 Oaks Trek and Travels, we organize guided Kareri Lake trekking experiences with experienced local guides, comfortable camping arrangements, and carefully planned itineraries to ensure a safe and peaceful Himalayan adventure. Perfect for those seeking an offbeat and scenic trek experience.",
+  },
+
+  {
+    id: "bhrigu-lake-trek",
+    title: "Bhrigu Lake Trek",
+
+    intro:
+      "A high-altitude alpine lake trek known for vast meadows, panoramic Himalayan views, and a sacred glacial lake near Manali.",
+
+    desc: "The Bhrigu Lake Trek is one of the most scenic high-altitude treks in Himachal Pradesh, located near Manali. Famous for its lush green alpine meadows that resemble the grasslands of Switzerland, this trek offers breathtaking views of prominent Himalayan peaks like Hanuman Tibba, Seven Sisters, and Deo Tibba. Bhrigu Lake, situated at a high altitude, is considered sacred and is believed to be associated with Maharishi Bhrigu. The trek is unique because you quickly gain altitude and reach high-altitude landscapes within a short duration. With expansive meadows, snow patches, and stunning mountain vistas, Bhrigu Lake Trek is perfect for those seeking a short yet rewarding Himalayan adventure.",
+
+    difficulty: "Moderate",
+    days: "4 Days",
+    altitude: "14,100 ft / 4,300 m",
+    price: "₹8,999",
+    tag: "Alpine Meadow & Lake Trek",
+    rating: "4.8",
+    reviews: "410",
+
+    region: "Manali, Himachal Pradesh",
+    startingPoint: "Gulaba",
+    distance: "25 km",
+    bestSeason: "May–October",
+
+    // ✅ HERO + GALLERY
+    images: [
+      "https://backpackersunited.in/_next/image?url=https%3A%2F%2Fbpu-images-v1.s3.eu-north-1.amazonaws.com%2Fuploads%2Ftestimage-bhrigu%20ci.webp&w=1920&q=75",
+      "https://mountainsojourns.com/wp-content/uploads/36_BhriguLakeTrek-Manali.jpg",
+      "https://himalayashelter.com/static/images/20251206_104710_bhrigu_lake_trek.jpg",
+      "https://vl-prod-static.b-cdn.net/system/images/000/586/399/f44444669532e4a8d4bef8754de44893/original/1568118448921-bhrigulakeBanBanjara.jpg",
+      "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
+    ],
+
+    // ✅ HIGHLIGHTS
+    highlights: [
+      {
+        title: "Bhrigu Lake",
+        desc: "A sacred high-altitude glacial lake with stunning reflections.",
+        image:
+          "https://backpackersunited.in/_next/image?url=https%3A%2F%2Fbpu-images-v1.s3.eu-north-1.amazonaws.com%2Fuploads%2Ftestimage-bhrigu%20ci.webp&w=1920&q=75",
+      },
+      {
+        title: "Alpine Meadows",
+        desc: "Walk through vast green meadows resembling European landscapes.",
+        image:
+          "https://mountainsojourns.com/wp-content/uploads/36_BhriguLakeTrek-Manali.jpg",
+      },
+      {
+        title: "Panoramic Himalayan Views",
+        desc: "Witness peaks like Hanuman Tibba and Deo Tibba.",
+        image:
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/10/be/ef/kareri-lake-is-a-beautiful.jpg?w=1200&h=-1&s=1",
+      },
+      {
+        title: "High Altitude Experience",
+        desc: "Reach over 14,000 ft within a short trek duration.",
+        image:
+          "https://himalayashelter.com/static/images/20251206_105259_kareri_lake_trek.jpg",
+      },
+      {
+        title: "Camping in Meadows",
+        desc: "Enjoy scenic campsites surrounded by mountains.",
+        image: "https://trekveda.com/img/packageImage/bhrigu-lake-trek-4.jpg",
+      },
+    ],
+
+    included: [
+      "Professional trek leader and local guides",
+      "Accommodation (camps during trek)",
+      "Meals during the trek",
+      "Camping equipment",
+      "Basic first aid and safety support",
+    ],
+
+    excluded: [
+      "Personal trekking gear",
+      "Transport to/from base location",
+      "Travel insurance",
+      "Personal expenses",
+      "Anything not mentioned in inclusions",
+    ],
+
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "Manali to Gulaba & Trek to Rola Kholi",
+        details: [
+          "Drive Distance: 22 km from Manali",
+          "Trek Distance: 6 km | 4–5 hrs",
+          "Gradual ascent through forests and meadows",
+          "Camp at Rola Kholi",
+        ],
+      },
+      {
+        day: "Day 2",
+        title: "Rola Kholi to Bhrigu Lake & Back",
+        details: [
+          "Altitude: 14,100 ft",
+          "Trek Distance: 10 km (round trip)",
+          "Steep climb to Bhrigu Lake",
+          "Explore lake and surroundings",
+          "Return to campsite",
+        ],
+      },
+      {
+        day: "Day 3",
+        title: "Rola Kholi to Gulaba",
+        details: [
+          "Trek Distance: 6 km | 3–4 hrs",
+          "Descend through meadows",
+          "Drive back to Manali",
+        ],
+      },
+      {
+        day: "Day 4",
+        title: "Departure from Manali",
+        details: ["Trip ends", "Optional sightseeing in Manali"],
+      },
+    ],
+
+    map: "https://www.google.com/maps?q=bhrigu+lake+manali&output=embed",
+
+    about:
+      "At 7 Oaks Trek and Travels, we offer professionally guided Bhrigu Lake trekking experiences with experienced local guides, quality camping arrangements, and carefully planned itineraries to ensure safety and comfort. This trek is perfect for those seeking a high-altitude Himalayan adventure within a short duration.",
+  },
+
+  {
+    id: "beas-kund-trek",
+    title: "Beas Kund Trek",
+
+    intro:
+      "A short yet rewarding Himalayan trek leading to the origin of the Beas River, surrounded by towering snow-clad peaks near Manali.",
+
+    desc: "The Beas Kund Trek is a beautiful high-altitude trek in Himachal Pradesh that takes you to the source of the Beas River. Starting from Solang Valley near Manali, the trail passes through lush green meadows, glacial streams, and rocky terrains, offering stunning views of prominent peaks like Hanuman Tibba, Friendship Peak, and Shitidhar. Beas Kund is a small alpine lake formed by glacial meltwater and holds mythological significance, believed to be the meditation site of Sage Vyas. The trek is ideal for beginners looking for a short Himalayan adventure with incredible mountain scenery and a touch of spirituality.",
+
+    difficulty: "Moderate",
+    days: "3 Days",
+    altitude: "12,772 ft / 3,894 m",
+    price: "₹7,499",
+    tag: "Glacial Source Trek",
+    rating: "4.7",
+    reviews: "380",
+
+    region: "Manali, Himachal Pradesh",
+    startingPoint: "Solang Valley",
+    distance: "16 km",
+    bestSeason: "May–October",
+
+    // ✅ HERO + GALLERY
+    images: [
+      "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1700289195/bbj/fiytvtsirqsomej1b2j8.jpg",
+      "https://www.treksandtrails.org/system/images/000/237/726/f1f9b59fd2d8e82957d81b9e494a365e/banner/Beas-Kund.jpg",
+      "https://www.bikatadventures.com/images/Gallery/IMG1000X548/img-Beas-kund-trek2233-Bikat-Adventures.jpg",
+      "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/BeasKundManali/beas-kund-campsite.jpeg",
+      "https://himtrek.co.in/wp-content/uploads/2023/09/Beas-Kund-Trek-Manali-1-1.webp",
+    ],
+
+    // ✅ HIGHLIGHTS
+    highlights: [
+      {
+        title: "Beas Kund",
+        desc: "A sacred glacial lake and the origin of the Beas River.",
+        image:
+          "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
+      },
+      {
+        title: "Hanuman Tibba Views",
+        desc: "Close views of towering peaks like Hanuman Tibba and Friendship Peak.",
+        image:
+          "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
+      },
+      {
+        title: "Alpine Meadows",
+        desc: "Walk through lush green meadows and open landscapes.",
+        image:
+          "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
+      },
+      {
+        title: "Glacial Streams",
+        desc: "Cross crystal-clear streams flowing from glaciers.",
+        image:
+          "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
+      },
+      {
+        title: "Camping Experience",
+        desc: "Camp in scenic high-altitude campsites under the stars.",
+        image:
+          "https://res.cloudinary.com/jerrick/image/upload/v1742627723/67de638a58290e001d940bd2.jpg",
+      },
+    ],
+
+    included: [
+      "Professional trek leader and local guides",
+      "Accommodation (camps during trek)",
+      "Meals during the trek",
+      "Camping equipment",
+      "Basic first aid and safety support",
+    ],
+
+    excluded: [
+      "Personal trekking gear",
+      "Transport to/from base location",
+      "Travel insurance",
+      "Personal expenses",
+      "Anything not mentioned in inclusions",
+    ],
+
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "Manali to Solang Valley & Trek to Dhundi/Bakarthach",
+        details: [
+          "Drive from Manali to Solang Valley",
+          "Trek Distance: 6–7 km | 4–5 hrs",
+          "Trail through meadows and river streams",
+          "Camp at Dhundi / Bakarthach",
+        ],
+      },
+      {
+        day: "Day 2",
+        title: "Dhundi to Beas Kund & Return",
+        details: [
+          "Altitude: 12,772 ft",
+          "Trek Distance: 6 km (round trip)",
+          "Gradual ascent to Beas Kund",
+          "Explore lake and surrounding peaks",
+          "Return to campsite",
+        ],
+      },
+      {
+        day: "Day 3",
+        title: "Descend to Solang & Drive to Manali",
+        details: [
+          "Trek Distance: 6–7 km | 3–4 hrs",
+          "Descend through same route",
+          "Drive back to Manali",
+          "Trip ends",
+        ],
+      },
+    ],
+
+    map: "https://www.google.com/maps?q=beas+kund+manali&output=embed",
+
+    about:
+      "At 7 Oaks Trek and Travels, we organize professionally guided Beas Kund trekking experiences with experienced local guides, comfortable camping arrangements, and well-planned itineraries. This trek is perfect for those seeking a short yet scenic Himalayan adventure with incredible mountain views.",
+  },
+
+  {
+    id: "prashar-lake-trek",
+    title: "Prashar Lake Trek",
+
+    intro:
+      "A scenic Himalayan trek leading to the mystical Prashar Lake, famous for its floating island and panoramic views of the Dhauladhar range.",
+
+    desc: "The Prashar Lake Trek is a beautiful and relatively easy trek located in the Mandi district of Himachal Pradesh. The trail takes you through dense forests, charming villages, and open meadows, offering stunning views of the Dhauladhar mountain range. Prashar Lake is known for its unique floating island that changes position over time, adding to the mystery of the place. The lake is also home to the ancient Prashar Rishi Temple, making it both a scenic and spiritual destination. This trek is ideal for beginners, weekend travelers, and those looking for a peaceful Himalayan escape.",
+
+    difficulty: "Easy to Moderate",
+    days: "2–3 Days",
+    altitude: "8,956 ft / 2,730 m",
+    price: "₹5,499",
+    tag: "Lake & Cultural Trek",
+    rating: "4.7",
+    reviews: "350",
+
+    region: "Mandi District, Himachal Pradesh",
+    startingPoint: "Baggi Village",
+    distance: "16 km",
+    bestSeason: "March–June & September–December",
+
+    // ✅ HERO + GALLERY
+    images: [
+      "https://himtrek.co.in/wp-content/uploads/2024/07/Prashar-Lake.webp",
+      "https://himtrek.co.in/wp-content/uploads/2025/12/frozen-Prashar-Lake-Trek.webp",
+      "https://himtrek.co.in/wp-content/uploads/2025/12/Prashar-Lake-Trek-1200x700.webp",
+      "https://happygotrips.com/wp-content/uploads/2019/09/Prashar-Lake-Trek-Tour-2.jpg",
+      "https://gokyo.in/cdn/shop/articles/Untitled_design_76_01a37e2f-a176-4638-afb4-d315bb6e87b5.jpg?v=1764672258&width=2048",
+      "https://imagedelivery.net/b5BaLsj4VQverR1B1BtSow/d697c205-b367-451b-883f-dc6296f2d000/w=640,q=80",
+    ],
+
+    // ✅ HIGHLIGHTS
+    highlights: [
+      {
+        title: "Prashar Lake",
+        desc: "A serene lake with a mysterious floating island.",
+        image:
+          "https://himtrek.co.in/wp-content/uploads/2024/07/Prashar-Lake.webp",
+      },
+      {
+        title: "Floating Island",
+        desc: "Witness the unique floating landmass that shifts within the lake.",
+        image:
+          "https://himtrek.co.in/wp-content/uploads/2025/12/Prashar-Lake-Trek-1200x700.webp",
+      },
+      {
+        title: "Prashar Rishi Temple",
+        desc: "Ancient temple showcasing Himachali architecture and spiritual heritage.",
+        image:
+          "https://imagedelivery.net/b5BaLsj4VQverR1B1BtSow/d697c205-b367-451b-883f-dc6296f2d000/w=640,q=80",
+      },
+      {
+        title: "Dhauladhar Views",
+        desc: "Panoramic views of the Dhauladhar mountain range.",
+        image:
+          "https://happygotrips.com/wp-content/uploads/2019/09/Prashar-Lake-Trek-Tour-2.jpg",
+      },
+      {
+        title: "Forest & Meadow Trails",
+        desc: "Trek through scenic forests and open Himalayan landscapes.",
+        image:
+          "https://madtrek.com/wp-content/uploads/2022/01/prashar_lake_madtrek-scaled-1.jpg",
+      },
+    ],
+
+    included: [
+      "Professional trek leader and local guides",
+      "Accommodation (camps / guesthouse)",
+      "Meals during the trek",
+      "Camping equipment",
+      "Basic first aid and safety support",
+    ],
+
+    excluded: [
+      "Personal trekking gear",
+      "Transport to/from base location",
+      "Travel insurance",
+      "Personal expenses",
+      "Anything not mentioned in inclusions",
+    ],
+
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "Drive to Baggi & Trek to Prashar Lake",
+        details: [
+          "Drive from Mandi to Baggi Village",
+          "Trek Distance: 8 km | 4–5 hrs",
+          "Trail through forests and meadows",
+          "Arrival at Prashar Lake",
+          "Explore lake and temple",
+          "Overnight stay in camps / guesthouse",
+        ],
+      },
+      {
+        day: "Day 2",
+        title: "Explore & Descend to Baggi",
+        details: [
+          "Morning exploration of lake",
+          "Optional sunrise view",
+          "Descend back to Baggi Village",
+          "Trek Distance: 8 km | 3–4 hrs",
+          "Trip ends",
+        ],
+      },
+    ],
+
+    map: "https://www.google.com/maps?q=prashar+lake+himachal&output=embed",
+
+    about:
+      "At 7 Oaks Trek and Travels, we offer professionally guided Prashar Lake trekking experiences with experienced guides, comfortable accommodations, and well-planned itineraries. This trek is perfect for those seeking a short, scenic, and culturally rich Himalayan getaway.",
+  },
+
+  {
+    id: "indrahar-pass-trek",
+    title: "Indrahar Pass Trek",
+
+    intro:
+      "A challenging Himalayan trek that crosses the mighty Dhauladhar range, offering dramatic landscapes, rocky terrains, and breathtaking high-altitude views.",
+
+    desc: "The Indrahar Pass Trek is one of the most thrilling and adventurous treks in Himachal Pradesh, starting from McLeod Ganj near Dharamshala. This trek takes you through dense forests, alpine meadows, and rugged rocky terrains as you ascend towards the Indrahar Pass. The pass acts as a natural gateway between the Kangra and Chamba valleys, offering stunning panoramic views of both regions. As you gain altitude, the landscape transforms dramatically from lush greenery to barren high-altitude terrain. This trek is ideal for experienced trekkers seeking a challenging Himalayan adventure with rewarding summit views and diverse landscapes.",
+
+    difficulty: "Difficult",
+    days: "5–6 Days",
+    altitude: "14,245 ft / 4,342 m",
+    price: "₹10,999",
+    tag: "High Altitude Pass Trek",
+    rating: "4.8",
+    reviews: "290",
+
+    region: "Dharamshala, Himachal Pradesh",
+    startingPoint: "McLeod Ganj / Dharamkot",
+    distance: "35 km",
+    bestSeason: "May–June & September–October",
+
+    // ✅ HERO + GALLERY
+    images: [
+      "https://d2qa7a8q0vuocm.cloudfront.net/images/26045220190611050156.png",
+      "https://imgcld.yatra.com/ytimages/image/upload/v1517481009/AdvNation/ANN_TRP341/Indrahar_Pass_Trek_(3)_1437978661_qVE6HX.jpg",
+      "https://himalayanambition.in/wp-content/uploads/2023/09/1565067-1565066_trek-to-bharmour-over-indrahar-pass.jpg",
+      "https://pmlholidays.com/admin/production/images/packages/indrahar-pass_1.png",
+      "https://www.legendindiaholidays.com/images/trek5.webp",
+    ],
+
+    // ✅ HIGHLIGHTS
+    highlights: [
+      {
+        title: "Indrahar Pass Summit",
+        desc: "Reach the high-altitude pass connecting Kangra and Chamba valleys.",
+        image:
+          "https://d2qa7a8q0vuocm.cloudfront.net/images/26045220190611050156.png",
+      },
+      {
+        title: "Dhauladhar Range",
+        desc: "Experience dramatic landscapes of the rugged Dhauladhar mountains.",
+        image:
+          "https://imgcld.yatra.com/ytimages/image/upload/v1517481009/AdvNation/ANN_TRP341/Indrahar_Pass_Trek_(3)_1437978661_qVE6HX.jpg",
+      },
+      {
+        title: "Alpine Meadows",
+        desc: "Walk through scenic meadows before entering rocky terrain.",
+        image: "https://www.legendindiaholidays.com/images/trek5.webp",
+      },
+      {
+        title: "Triund & Lahesh Caves",
+        desc: "Camp at famous spots like Triund and Lahesh Caves.",
+        image:
+          "https://pmlholidays.com/admin/production/images/packages/indrahar-pass_1.png",
+      },
+      {
+        title: "Panoramic Valley Views",
+        desc: "Witness stunning views of both Kangra and Chamba valleys.",
+        image:
+          "https://himalayanambition.in/wp-content/uploads/2023/09/1565067-1565066_trek-to-bharmour-over-indrahar-pass.jpg",
+      },
+    ],
+
+    included: [
+      "Professional trek leader and local guides",
+      "Accommodation (camps during trek)",
+      "Meals during the trek",
+      "Camping equipment",
+      "Basic first aid and safety support",
+    ],
+
+    excluded: [
+      "Personal trekking gear",
+      "Transport to/from base location",
+      "Travel insurance",
+      "Personal expenses",
+      "Anything not mentioned in inclusions",
+    ],
+
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "McLeod Ganj to Triund",
+        details: [
+          "Trek Distance: 9–10 km | 4–5 hrs",
+          "Forest trail with gradual ascent",
+          "Arrival at Triund campsite",
+          "Overnight stay in camps",
+        ],
+      },
+      {
+        day: "Day 2",
+        title: "Triund to Lahesh Caves",
+        details: [
+          "Trek Distance: 6 km | 4–5 hrs",
+          "Steeper trail with rocky terrain",
+          "Camp near Lahesh Caves",
+        ],
+      },
+      {
+        day: "Day 3",
+        title: "Lahesh Caves to Indrahar Pass & Return",
+        details: [
+          "Altitude: 14,245 ft",
+          "Early morning summit push",
+          "Rocky climb to pass",
+          "Panoramic Himalayan views",
+          "Return to campsite",
+        ],
+      },
+      {
+        day: "Day 4",
+        title: "Descend to Triund",
+        details: ["Trek back via same route", "Overnight stay at Triund"],
+      },
+      {
+        day: "Day 5",
+        title: "Triund to McLeod Ganj",
+        details: ["Descend to base", "Trip ends"],
+      },
+    ],
+
+    map: "https://www.google.com/maps?q=indrahar+pass&output=embed",
+
+    about:
+      "At 7 Oaks Trek and Travels, we organize professionally guided Indrahar Pass trekking experiences with experienced guides, proper acclimatization planning, and safety-focused itineraries. This trek is ideal for experienced trekkers looking for a challenging and rewarding Himalayan expedition.",
+  },
+
+  {
+    id: "sar-pass-trek",
+    title: "Sar Pass Trek",
+
+    intro:
+      "A thrilling high-altitude trek in Parvati Valley known for snow trails, dense forests, and dramatic landscape transitions from green meadows to icy slopes.",
+
+    desc: "The Sar Pass Trek is one of the most exciting treks in Himachal Pradesh, located in the beautiful Parvati Valley near Kasol. This trek is famous for its constantly changing landscapes, starting from dense pine forests and charming villages, moving into lush meadows, and finally reaching snow-covered terrain near the Sar Pass. The highlight of the trek is crossing the Sar Pass itself, often covered in snow, followed by an exhilarating descent on snow slopes. With scenic campsites, river crossings, and panoramic Himalayan views, Sar Pass is a perfect blend of adventure and natural beauty, making it ideal for thrill-seekers and trekking enthusiasts.",
+
+    difficulty: "Moderate to Difficult",
+    days: "5 Days",
+    altitude: "13,800 ft / 4,200 m",
+    price: "₹9,999",
+    tag: "Snow & Adventure Trek",
+    rating: "4.8",
+    reviews: "460",
+
+    region: "Parvati Valley, Himachal Pradesh",
+    startingPoint: "Kasol",
+    distance: "48 km",
+    bestSeason: "April–June & September–October",
+
+    // ✅ HERO + GALLERY
+    images: [
+      "https://himalayandaredevils.com/storage/uploads/694d0971df128.jpg",
+      "https://www.kailashrath.com/_next/image?url=https%3A%2F%2Fkailash-rath-treks.s3.ap-south-1.amazonaws.com%2F60433a09-8572-4-H8n_gAWq.webp&w=3840&q=75",
+      "https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20250325-284658011-1742897732.png",
+      "https://kailash-rath-treks.s3.ap-south-1.amazonaws.com/353113f7-a3a6-4-jHV6deiM.webp",
+      "https://vl-prod-static.b-cdn.net/system/images/000/854/555/66b6395d671aa45ebed2c6095e55b4f1/original/Screenshot_2025-07-24_172752.png",
+    ],
+
+    // ✅ HIGHLIGHTS
+    highlights: [
+      {
+        title: "Sar Pass Crossing",
+        desc: "Experience crossing a high-altitude snow-covered pass.",
+        image:
+          "https://himalayandaredevils.com/storage/uploads/694d0971df128.jpg",
+      },
+      {
+        title: "Snow Slides",
+        desc: "Enjoy thrilling snow descents after crossing the pass.",
+        image:
+          "https://www.kailashrath.com/_next/image?url=https%3A%2F%2Fkailash-rath-treks.s3.ap-south-1.amazonaws.com%2F60433a09-8572-4-H8n_gAWq.webp&w=3840&q=75",
+      },
+      {
+        title: "Forest Trails",
+        desc: "Walk through dense pine and oak forests near Kasol.",
+        image:
+          "https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1200x675/Blog_20250325-284658011-1742897732.png",
+      },
+      {
+        title: "Beautiful Campsites",
+        desc: "Camp at scenic locations like Grahan, Min Thach, and Nagaru.",
+        image:
+          "https://kailash-rath-treks.s3.ap-south-1.amazonaws.com/353113f7-a3a6-4-jHV6deiM.webp",
+      },
+      {
+        title: "Panoramic Views",
+        desc: "Witness breathtaking Himalayan landscapes throughout the trek.",
+        image:
+          "https://www.kailashrath.com/_next/image?url=https%3A%2F%2Fkailash-rath-treks.s3.ap-south-1.amazonaws.com%2F60433a09-8572-4-H8n_gAWq.webp&w=3840&q=75",
+      },
+    ],
+
+    included: [
+      "Professional trek leader and local guides",
+      "Accommodation (camps during trek)",
+      "Meals during the trek",
+      "Camping equipment",
+      "Basic first aid and safety support",
+    ],
+
+    excluded: [
+      "Personal trekking gear",
+      "Transport to/from base location",
+      "Travel insurance",
+      "Personal expenses",
+      "Anything not mentioned in inclusions",
+    ],
+
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "Kasol to Grahan Village",
+        details: [
+          "Trek Distance: 9 km | 4–5 hrs",
+          "Trail through forest and riverside",
+          "Arrival at Grahan Village",
+          "Overnight stay in camps",
+        ],
+      },
+      {
+        day: "Day 2",
+        title: "Grahan to Min Thach",
+        details: [
+          "Trek Distance: 7 km | 5–6 hrs",
+          "Steeper climb through forests",
+          "Arrival at Min Thach campsite",
+        ],
+      },
+      {
+        day: "Day 3",
+        title: "Min Thach to Nagaru",
+        details: [
+          "Trek Distance: 6 km | 4–5 hrs",
+          "Transition to alpine terrain",
+          "Cold high-altitude campsite",
+        ],
+      },
+      {
+        day: "Day 4",
+        title: "Nagaru to Sar Pass & Descend to Biskeri Thach",
+        details: [
+          "Altitude: 13,800 ft",
+          "Early morning climb to Sar Pass",
+          "Snow-covered trail",
+          "Exciting snow descent",
+          "Camp at Biskeri Thach",
+        ],
+      },
+      {
+        day: "Day 5",
+        title: "Biskeri Thach to Barshaini & Departure",
+        details: [
+          "Trek Distance: 10 km | 4–5 hrs",
+          "Descend through forests and meadows",
+          "Drive back to Kasol",
+          "Trip ends",
+        ],
+      },
+    ],
+
+    map: "https://www.google.com/maps?q=sar+pass+trek&output=embed",
+
+    about:
+      "At 7 Oaks Trek and Travels, we organize professionally guided Sar Pass trekking experiences with experienced guides, proper acclimatization planning, and safe camping arrangements. This trek is perfect for adventure seekers looking for a thrilling Himalayan experience with snow, forests, and stunning views.",
+  },
+
+  {
+    id: "chandratal-lake-trek",
+    title: "Chandratal Lake Trek",
+
+    intro:
+      "A breathtaking high-altitude trek to the famous Chandratal Lake, known as the 'Moon Lake', set amidst the dramatic landscapes of Spiti Valley.",
+
+    desc: "The Chandratal Lake Trek is one of the most stunning high-altitude experiences in Himachal Pradesh, located in the remote and rugged Spiti Valley. Known as the 'Moon Lake' due to its crescent shape, Chandratal sits at an altitude of over 14,000 ft and is surrounded by barren mountains and vast open skies. The trek offers a unique contrast to lush Himalayan trails, featuring cold desert terrain, crystal-clear blue waters, and mesmerizing reflections of the surrounding peaks. The journey to Chandratal itself is an adventure, passing through iconic locations like Rohtang Pass and Kunzum Pass. This trek is ideal for those seeking a raw and surreal Himalayan experience far from crowded trails.",
+
+    difficulty: "Moderate",
+    days: "4–5 Days",
+    altitude: "14,100 ft / 4,300 m",
+    price: "₹11,999",
+    tag: "High Altitude Lake Trek",
+    rating: "4.9",
+    reviews: "280",
+
+    region: "Spiti Valley, Himachal Pradesh",
+    startingPoint: "Batal",
+    distance: "14 km",
+    bestSeason: "June–September",
+
+    // ✅ HERO + GALLERY
+    images: [
+      "https://thrilltourism.com/storage/2353/oP2FIJ0VtMbwOIZGTIg4DlK6ga6N3y8KhRaiSKm7.jpg",
+      "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_images/68c9c78020591.webp",
+      "https://www.peakadventuretour.com/assets/images/chandratal-trek2.webp",
+      "https://moxtain.s3.ap-south-1.amazonaws.com/blogs/ChandratalLake/chandratal-lake.jpg",
+      "https://vl-prod-static.b-cdn.net/system/images/000/831/144/44488055a0fa7db971593c2dd681ba0f/original/8261a49b-0c0f-4556-8821-ac404ae6a9c3.JPG",
+      "https://www.adventurush.com/wp-content/uploads/2022/08/Copy-of-Copy-of-IMG-20220709-WA0126.jpg",
+    ],
+
+    // ✅ HIGHLIGHTS
+    highlights: [
+      {
+        title: "Chandratal Lake",
+        desc: "A crescent-shaped high-altitude lake with crystal-clear blue water.",
+        image:
+          "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_images/68c9c78020591.webp",
+      },
+      {
+        title: "Spiti Landscape",
+        desc: "Experience the dramatic cold desert terrain of Spiti Valley.",
+        image:
+          "https://storage.googleapis.com/stateless-www-justwravel-com/2019/03/Spiti-Road-Trip-JustWravel-7.jpg",
+      },
+      {
+        title: "Kunzum Pass Route",
+        desc: "Cross the iconic Kunzum Pass with breathtaking views.",
+        image:
+          "hhttps://i0.wp.com/theroadsandbeyond.com/wp-content/uploads/2017/08/kunzum-pass.jpg?resize=780%2C520&ssl=1",
+      },
+      {
+        title: "Night Sky Experience",
+        desc: "Witness one of the clearest starry skies in the Himalayas.",
+        image:
+          "https://thrilltourism.com/storage/2353/oP2FIJ0VtMbwOIZGTIg4DlK6ga6N3y8KhRaiSKm7.jpg",
+      },
+      {
+        title: "Remote Himalayan Beauty",
+        desc: "Explore untouched and less crowded high-altitude terrain.",
+        image:
+          "https://himalayashelter.com/static/images/08_feb_2025_11_46_26-chandratal-baralacha-trek.jpg",
+      },
+    ],
+
+    included: [
+      "Professional trek leader and local guides",
+      "Accommodation (camps during trek)",
+      "Meals during the trek",
+      "Camping equipment",
+      "Basic first aid and safety support",
+    ],
+
+    excluded: [
+      "Personal trekking gear",
+      "Transport to/from base location",
+      "Travel insurance",
+      "Personal expenses",
+      "Anything not mentioned in inclusions",
+    ],
+
+    itinerary: [
+      {
+        day: "Day 1",
+        title: "Manali to Batal",
+        details: [
+          "Drive via Rohtang Pass",
+          "Scenic journey through high-altitude terrain",
+          "Overnight stay at Batal",
+        ],
+      },
+      {
+        day: "Day 2",
+        title: "Batal to Chandratal Trek",
+        details: [
+          "Altitude: 14,100 ft",
+          "Trek Distance: 7 km | 3–4 hrs",
+          "Gradual ascent to Chandratal Lake",
+          "Explore lake surroundings",
+          "Camp near lake",
+        ],
+      },
+      {
+        day: "Day 3",
+        title: "Explore Chandratal & Return to Batal",
+        details: [
+          "Morning exploration of lake",
+          "Photography and relaxation",
+          "Return trek to Batal",
+        ],
+      },
+      {
+        day: "Day 4",
+        title: "Return to Manali",
+        details: ["Drive back via Kunzum Pass", "Trip ends"],
+      },
+    ],
+
+    map: "https://www.google.com/maps?q=chandratal+lake+spiti&output=embed",
+
+    about:
+      "At 7 Oaks Trek and Travels, we organize professionally guided Chandratal Lake trekking experiences with experienced guides, safe travel arrangements, and well-planned itineraries. This trek is perfect for those seeking a unique high-altitude Himalayan adventure in the stunning landscapes of Spiti Valley.",
+  },
 ];
