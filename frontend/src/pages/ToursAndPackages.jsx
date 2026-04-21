@@ -311,14 +311,15 @@ const ToursAndPackages = () => {
 
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
 
-                      <div className="absolute top-3 right-3 bg-white px-3 py-1 rounded-full text-sm flex items-center gap-1 shadow">
-                        <Star size={14} className="text-yellow-400" />
-                        {tour.rating}
-                      </div>
+                      
 
-                      <div className="absolute bottom-3 left-3 bg-white px-3 py-1 rounded-full text-xs flex items-center gap-1 shadow">
+                      <div className="absolute top-3 left-3 from-black/60 hover:bg-greenH text-white px-3 py-1 rounded-full text-xs flex items-center gap-1 shadow">
                         <MapPin size={12} />
                         {tour.location}
+                      </div>
+                      <div className="absolute bottom-3 left-3 bg-white px-3 py-1 rounded-full text-xs flex items-center gap-1 shadow">
+                        <MapPin size={12} />
+                        {tour.duration}
                       </div>
                     </div>
 

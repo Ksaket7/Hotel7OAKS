@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
+
 const Footer = () => {
   return (
     <footer className="relative overflow-hidden bg-[#050505] text-white">
@@ -27,7 +28,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="inline-block">
               <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white">
-                OAK<span className="text-emerald-400">7</span>
+                OAK<span className="text-red-600">7</span>
               </h3>
             </Link>
 
@@ -116,15 +117,21 @@ const Footer = () => {
                 >
                   +91 9259600261
                 </a>
+                <a
+                  href="tel:+917817879770"
+                  className="transition-colors hover:text-emerald-400"
+                >
+                  +91 7817879770
+                </a>
               </li>
 
               <li className="flex items-start gap-3 text-gray-400">
                 <Mail size={18} className="mt-1 text-emerald-400 shrink-0" />
                 <a
-                  href="mailto:hotel7oaks7@gmail.com"
+                  href="mailto:7oakstandt@gmail.com"
                   className="transition-colors hover:text-emerald-400"
                 >
-                  hotel7oaks7@gmail.com
+                  7oakstandt@gmail.com
                 </a>
               </li>
 

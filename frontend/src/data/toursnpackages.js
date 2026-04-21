@@ -359,7 +359,7 @@ export const toursData = [
 
   {
     id: "badrinath-yatra-3d",
-    title: "Badrinath Yatra (3 Days / 2 Nights)",
+    title: "Badrinath Yatra ",
     location: "Ex-Haridwar, Uttarakhand",
     duration: "3 Days / 2 Nights",
     price: "₹ 9,999 / person",
@@ -483,7 +483,7 @@ export const toursData = [
 
   {
     id: "kedarnath-yatra-4d",
-    title: "Kedarnath Yatra (4 Days / 3 Nights)",
+    title: "Kedarnath Yatra ",
     location: "Ex-Haridwar / Rishikesh, Uttarakhand",
     duration: "4 Days / 3 Nights",
     price: "₹ 10,999 / person",
