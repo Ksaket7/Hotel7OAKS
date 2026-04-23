@@ -223,7 +223,7 @@ const ToursAndPackages = () => {
           <div
             className={`
         ${mobileFiltersOpen ? "grid" : "hidden"}
-        md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 mt-4
+        md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4
       `}
           >
             <select
@@ -253,16 +253,6 @@ const ToursAndPackages = () => {
             </select>
 
             <select
-              value={ratingMin}
-              onChange={(e) => setRatingMin(e.target.value)}
-              className="border rounded-xl px-3 py-2"
-            >
-              <option value="any">Any Rating</option>
-              <option value="4">⭐ 4+</option>
-              <option value="4.5">⭐ 4.5+</option>
-            </select>
-
-            <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
               className="border rounded-xl px-3 py-2"
@@ -270,7 +260,6 @@ const ToursAndPackages = () => {
               <option value="">Recommended</option>
               <option value="price_low">Price Low → High</option>
               <option value="price_high">Price High → Low</option>
-              <option value="rating">Rating High → Low</option>
             </select>
             {/* CLEAR FILTERS MOBILE */}
             {anyFilterActive && (
