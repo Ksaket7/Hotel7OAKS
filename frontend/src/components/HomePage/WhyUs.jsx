@@ -57,7 +57,7 @@ const WhyUs = () => {
             Why Us?
           </p>
           <h2 className="text-3xl md:text-5xl font-ssBD text-gray-900">
-            The Oak7 Advantage
+            The 7Oaks Advantage
           </h2>
          
         </div>

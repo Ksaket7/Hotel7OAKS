@@ -45,7 +45,7 @@ const AboutUs = () => {
           </span>
 
           <h1 className="text-4xl md:text-6xl font-ssBD mb-4">
-            About <span className="text-green-400">Oak7</span>
+            About <span className="text-green-400">7OAKS</span>
           </h1>
 
           <p className="text-lg font-ssLB text-gray-100 mb-4">

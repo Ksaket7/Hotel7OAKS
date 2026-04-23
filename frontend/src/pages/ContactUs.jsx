@@ -146,7 +146,7 @@ const Contact = () => {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-white max-w-3xl drop-shadow-xl">
           <span className="inline-block mb-5 px-6 py-2 font-semibold rounded-full bg-white/20 backdrop-blur-sm border border-white/20 text-green-300 text-sm tracking-wider shadow-lg">
-            Contact Oak7
+            Contact 7OAKS
           </span>
           <h1 className="text-4xl md:text-6xl font-ssBD mb-5">
             Let’s Plan Your <span className="text-green-400">Next Journey</span>

@@ -28,7 +28,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="inline-block">
               <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white">
-                OAK<span className="text-red-600">7</span>
+                <span className="text-red-600">7</span>OAKS
               </h3>
             </Link>
 
@@ -145,7 +145,7 @@ const Footer = () => {
           {/* Trust / extra */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-[0.25em] text-white/90 mb-6 font-ssBD">
-              Why Oak7
+              Why 7Oaks
             </h4>
 
             <div className="space-y-4 text-gray-400 font-ssLB">
@@ -172,7 +172,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="border-t border-white/10">
           <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-gray-500">
-            <p>© {new Date().getFullYear()} Oak7 Tours & Travels. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} 7oaks Tours & Travels. All rights reserved.</p>
 
             <div className="flex flex-wrap items-center gap-5">
               <Link
