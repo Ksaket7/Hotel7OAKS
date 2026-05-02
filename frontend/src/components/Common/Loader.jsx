@@ -5,7 +5,6 @@ import logo from "../../assets/hotel-7-logo.png";
 const Loader = ({ onDone }) => {
   const containerRef = useRef(null);
   const ringRef = useRef(null);
-  const arcRef = useRef(null);
   const logoRef = useRef(null);
 
   useEffect(() => {
@@ -14,12 +13,10 @@ const Loader = ({ onDone }) => {
       defaults: { ease: "power2.out" },
     });
 
-    // ✅ FIX: slight right shift for visual centering
-    gsap.set(logoRef.current, { x: 4 });
-
-    gsap.set([ringRef.current, arcRef.current, logoRef.current], {
+    gsap.set([ringRef.current, logoRef.current], {
       opacity: 0,
       scale: 0.8,
+      transformOrigin: "center center",
     });
 
     // ENTRY
@@ -56,18 +53,6 @@ const Loader = ({ onDone }) => {
       ease: "sine.inOut",
     });
 
-    // 🔥 PROGRESS BAR
-    tl.fromTo(
-      arcRef.current,
-      { scaleX: 0 },
-      {
-        scaleX: 1,
-        transformOrigin: "left center",
-        duration: 6,
-      },
-      "-=0.6"
-    );
-
     // ✨ LOGO ENTRY
     tl.fromTo(
       logoRef.current,
@@ -79,15 +64,6 @@ const Loader = ({ onDone }) => {
         ease: "back.out(1.7)",
       }
     );
-
-    // ✨ FLOATING (no rotation now)
-    gsap.to(logoRef.current, {
-      y: -6,
-      repeat: -1,
-      yoyo: true,
-      duration: 2,
-      ease: "sine.inOut",
-    });
 
     // ✨ GLOW (brand color)
     gsap.to(logoRef.current, {
@@ -145,37 +121,25 @@ const Loader = ({ onDone }) => {
       className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-orange-50 via-red-50 to-amber-100"
     >
       <div className="relative flex flex-col items-center gap-6">
-        <div className="relative w-44 h-44 md:w-56 md:h-56">
+        <div className="relative w-40 h-40 md:w-48 md:h-48">
 
           {/* 🔴 OUTER RING */}
           <div
             ref={ringRef}
             className="absolute inset-0 rounded-full border-[6px]
             border-orange-300/50
-            border-t-red-500
+            border-t-orange-500
             border-b-orange-500
             shadow-[0_0_35px_rgba(239,68,68,0.5)]"
           />
 
-          {/* 🔥 PROGRESS BAR */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative w-[90%] h-[90%] overflow-hidden rounded-full">
-              <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-orange-300 to-red-400">
-                <div
-                  ref={arcRef}
-                  className="h-full bg-gradient-to-r from-red-500 to-orange-400"
-                />
-              </div>
-            </div>
-          </div>
-
           {/* 🟠 LOGO */}
-          <div className="absolute inset-2 rounded-full bg-white flex items-center justify-center shadow-inner">
+          <div className="absolute inset-0 flex items-center justify-center">
             <div ref={logoRef} className="flex items-center justify-center">
               <img
                 src={logo}
                 alt="7 Oaks Logo"
-                className="w-20 h-20 md:w-28 md:h-28 object-contain"
+                className="w-40 h-40 md:w-48 md:h-48 object-contain"
               />
             </div>
           </div>
