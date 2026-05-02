@@ -38,18 +38,10 @@ const Footer = () => {
             </p>
 
             <div className="mt-6 flex items-center gap-3">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-gray-300 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400/40 hover:bg-emerald-500 hover:text-white"
-              >
-                <Facebook size={18} />
-              </a>
+              
 
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/7oaks.in?igsh=MWEyZWdjNzBlM2tkMQ=="
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -174,20 +166,7 @@ const Footer = () => {
           <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-gray-500">
             <p>© {new Date().getFullYear()} 7oaks Tours & Travels. All rights reserved.</p>
 
-            <div className="flex flex-wrap items-center gap-5">
-              <Link
-                to="/privacy"
-                className="transition-colors hover:text-emerald-400"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                to="/terms"
-                className="transition-colors hover:text-emerald-400"
-              >
-                Terms & Conditions
-              </Link>
-            </div>
+            
           </div>
         </div>
       </div>
